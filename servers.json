@@ -2786,8 +2786,8 @@
     "title": "Iran Gold Prices",
     "category": "prices",
     "site": "https://milli.gold",
-    "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
-    "version": "0.1.1",
+    "description": "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.",
+    "version": "0.2.0",
     "pypi": "iran-gold-mcp",
     "repository": "https://github.com/sepehr071/iran-gold-mcp",
     "registry_name": "io.github.sepehr071/iran-gold-mcp",
@@ -2806,7 +2806,7 @@
       {
         "name": "gold_prices",
         "title": "Live gold prices on Iranian platforms",
-        "summary": "Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold and Daric, in Toman per gram."
+        "summary": "Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric and Taline, in Toman per gram."
       },
       {
         "name": "gold_milli_history",
