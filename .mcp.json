@@ -183,7 +183,7 @@
     "iran-gold": {
       "command": "uvx",
       "args": [
-        "iran-gold-mcp@0.1.1"
+        "iran-gold-mcp@0.2.0"
       ]
     },
     "tsetmc": {

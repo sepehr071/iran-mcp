@@ -190,7 +190,7 @@
     {
       "name": "iran-gold",
       "source": "./plugins/iran-gold",
-      "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
+      "description": "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.",
       "category": "prices"
     },
     {

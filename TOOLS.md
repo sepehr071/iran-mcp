@@ -564,9 +564,9 @@ Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quote
 
 ## Iran Gold Prices (`iran-gold-mcp`, 3 tools)
 
-Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.
+Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.
 
-- `gold_prices`: Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold and Daric, in Toman per gram.
+- `gold_prices`: Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric and Taline, in Toman per gram.
 - `gold_milli_history`: Get the Milli.gold 18k gold price series for a day, week or month, with high, low and change.
 - `gold_milli_stats`: Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches.
 

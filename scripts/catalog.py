@@ -72,7 +72,8 @@ NOTES = {
     "This is Milli.gold's own price, not a market-wide gold quote.",
     "iran-gold-mcp": "gold_prices is Toman per gram; gold_milli_history is Rial per milligram (x100 = Toman per "
     "gram). Each price is that platform's own quote and excludes its trading fee (often about 0.5 %). Sites: "
-    "Milli.gold, Wallgold, Melligold, Daric.",
+    "Milli.gold, Wallgold, Melligold, Daric, Taline. Taline answers only connections from Iran; outside Iran the user needs "
+    "IRAN_GOLD_MCP_PROXY.",
     "iran-tax-mcp": "The first goods-ID search for a phrase takes 15 to 30 s; repeats are cached. The tax sites often "
     "refuse foreign connections; outside Iran the user needs IRAN_TAX_MCP_PROXY. Sites: tax.gov.ir, "
     "stuffid.tax.gov.ir (goods IDs), regulation.tax.gov.ir (laws and circulars).",

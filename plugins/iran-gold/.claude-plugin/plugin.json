@@ -1,8 +1,8 @@
 {
   "name": "iran-gold",
   "displayName": "Iran Gold Prices",
-  "version": "0.1.1",
-  "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
+  "version": "0.2.0",
+  "description": "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -20,7 +20,7 @@
     "iran-gold": {
       "command": "uvx",
       "args": [
-        "iran-gold-mcp@0.1.1"
+        "iran-gold-mcp@0.2.0"
       ]
     }
   }
