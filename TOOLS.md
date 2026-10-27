@@ -562,6 +562,14 @@ Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quote
 - `mg_fees`: Get Milli.gold's current fees for buying, selling, transferring and delivering gold and for wallet withdrawals.
 - `mg_trade_quote`: Estimate what a gold trade on Milli.gold costs or pays out right now, fee included, at the live price.
 
+## Iran Gold Prices (`iran-gold-mcp`, 3 tools)
+
+Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.
+
+- `gold_prices`: Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold and Daric, in Toman per gram.
+- `gold_milli_history`: Get the Milli.gold 18k gold price series for a day, week or month, with high, low and change.
+- `gold_milli_stats`: Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches.
+
 ## TSETMC Tehran Stock Exchange (`tsetmc-mcp`, 8 tools)
 
 Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book, history, indices.

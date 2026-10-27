@@ -180,6 +180,12 @@
         "milligold-mcp@0.2.0"
       ]
     },
+    "iran-gold": {
+      "command": "uvx",
+      "args": [
+        "iran-gold-mcp@0.1.0"
+      ]
+    },
     "tsetmc": {
       "command": "uvx",
       "args": [

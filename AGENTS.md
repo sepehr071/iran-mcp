@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 39 MCP servers for Iranian websites, 493 tools in
+Guide for AI agents using or working on **iran-mcp**: 40 MCP servers for Iranian websites, 496 tools in
 total. 37 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
@@ -38,7 +38,8 @@ sign-in).
 | Food near an address on Tapsi Food, flash deals | `tapsifood-mcp` | `tf_find_location`, then `tf_search_dishes`, `tf_deals` |
 | Live gold, coin, dollar or crypto prices, price history | `tgju-mcp` | `tj_get_prices`, `tj_market_summary`, `tj_price_history` |
 | A coin's price on every Iranian crypto exchange (Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir), order books, candles | `iran-crypto-mcp` | `ic_compare_price`, then `ic_get_orderbook`, `ic_candles` |
-| The live Milli.gold 18k gold price and its history | `milligold-mcp` | `mg_get_price`, `mg_price_history` |
+| The live Milli.gold 18k gold price, its history, fees and the cost of a trade, Milli news and help | `milligold-mcp` | `mg_get_price`, `mg_price_history`, `mg_trade_quote`, `mg_latest_posts` |
+| The live 18k gold price on Milli.gold, Wallgold, Melligold and Daric side by side, the cheapest place to buy | `iran-gold-mcp` | `gold_prices`, then `gold_milli_history` |
 | Tehran Stock Exchange and Fara Bourse quotes, top movers, order book, indices, real versus legal trading | `tsetmc-mcp` | `ts_search_symbols`, then `ts_get_quote`, `ts_market_movers`, `ts_indices` |
 | Latest Iranian news (Mehr, Khabaronline, Hamshahri, Tabnak, Entekhab, Asriran, Zoomit, Digiato, Varzesh3, Khabarvarzeshi), a topic in the news, a full article | `iran-news-mcp` | `nw_latest_all`, `nw_search`, then `nw_article` |
 | Recent or strong earthquakes in Iran (IRSC, USGS, EMSC) | `iran-quake-mcp` | `eq_latest`, `eq_significant`, `eq_detail` |
@@ -78,7 +79,7 @@ claude plugin install iran-all --marketplace sepehr071/iran-mcp     # all read-o
 Bundles: `iran-all`, `iran-food`, `iran-shopping`, `iran-beauty`, `iran-travel`, `iran-health`, `iran-books`, `iran-fashion`, `iran-software`, `iran-prices`.
 Skills only, for any agent: `npx skills add sepehr071/iran-mcp`.
 
-The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 39.
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 40.
 Requires [uv](https://docs.astral.sh/uv/) (`pasavard-mcp` and `swapwallet-mcp` don't). Add only the servers the task needs: each one adds 3 to 31 tools.
 
 ## Rules every server follows
@@ -123,7 +124,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the 39 / 493 counts written in both READMEs.
+  READMEs and the table above. Update the 40 / 496 counts written in both READMEs.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card

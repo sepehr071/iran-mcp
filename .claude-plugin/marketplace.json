@@ -188,6 +188,12 @@
       "category": "prices"
     },
     {
+      "name": "iran-gold",
+      "source": "./plugins/iran-gold",
+      "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
+      "category": "prices"
+    },
+    {
       "name": "tsetmc",
       "source": "./plugins/tsetmc",
       "description": "Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book, history, indices.",
@@ -244,7 +250,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 36 read-only Iranian site servers in one install.",
+      "description": "All 37 read-only Iranian site servers in one install.",
       "category": "bundle"
     },
     {
@@ -298,7 +304,7 @@
     {
       "name": "iran-prices",
       "source": "./plugins/iran-prices",
-      "description": "Everything for live gold, coin, currency or crypto prices in Iran: TGJU Prices, Iran Crypto Exchanges, Milli.gold Prices.",
+      "description": "Everything for live gold, coin, currency or crypto prices in Iran: TGJU Prices, Iran Crypto Exchanges, Milli.gold Prices, Iran Gold Prices.",
       "category": "bundle"
     }
   ]

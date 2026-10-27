@@ -115,3 +115,6 @@
 [submodule "servers/milligold-mcp"]
 	path = servers/milligold-mcp
 	url = https://github.com/sepehr071/milligold-mcp.git
+[submodule "servers/iran-gold-mcp"]
+	path = servers/iran-gold-mcp
+	url = https://github.com/sepehr071/iran-gold-mcp
