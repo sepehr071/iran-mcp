@@ -70,6 +70,9 @@ NOTES = {
     "Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir.",
     "milligold-mcp": "Prices come as Rial per milligram, Rial per gram and Toman per gram: say which unit you quote. "
     "This is Milli.gold's own price, not a market-wide gold quote.",
+    "iran-gold-mcp": "gold_prices is Toman per gram; gold_milli_history is Rial per milligram (x100 = Toman per "
+    "gram). Each price is that platform's own quote and excludes its trading fee (often about 0.5 %). Sites: "
+    "Milli.gold, Wallgold, Melligold, Daric.",
     "iran-tax-mcp": "The first goods-ID search for a phrase takes 15 to 30 s; repeats are cached. The tax sites often "
     "refuse foreign connections; outside Iran the user needs IRAN_TAX_MCP_PROXY. Sites: tax.gov.ir, "
     "stuffid.tax.gov.ir (goods IDs), regulation.tax.gov.ir (laws and circulars).",
@@ -107,6 +110,7 @@ SERVERS = {
     "tgju-mcp": ("prices", "https://www.tgju.org"),
     "iran-crypto-mcp": ("prices", "https://nobitex.ir"),
     "milligold-mcp": ("prices", "https://milli.gold"),
+    "iran-gold-mcp": ("prices", "https://milli.gold"),
     "tsetmc-mcp": ("stocks", "https://tsetmc.com"),
     "iran-news-mcp": ("news", "https://www.mehrnews.com"),
     "iran-quake-mcp": ("quakes", "https://irsc.ut.ac.ir"),

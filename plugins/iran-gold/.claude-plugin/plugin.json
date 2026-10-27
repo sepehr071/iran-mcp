@@ -1,0 +1,27 @@
+{
+  "name": "iran-gold",
+  "displayName": "Iran Gold Prices",
+  "version": "0.1.0",
+  "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-gold-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "prices",
+    "milli.gold"
+  ],
+  "mcpServers": {
+    "iran-gold": {
+      "command": "uvx",
+      "args": [
+        "iran-gold-mcp@0.1.0"
+      ]
+    }
+  }
+}

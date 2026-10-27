@@ -2782,6 +2782,45 @@
     ]
   },
   {
+    "name": "iran-gold-mcp",
+    "title": "Iran Gold Prices",
+    "category": "prices",
+    "site": "https://milli.gold",
+    "description": "Unofficial read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric.",
+    "version": "0.1.0",
+    "pypi": "iran-gold-mcp",
+    "repository": "https://github.com/sepehr071/iran-gold-mcp",
+    "registry_name": "io.github.sepehr071/iran-gold-mcp",
+    "run": "uvx iran-gold-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_GOLD_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the gold platform requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 3,
+    "tools": [
+      {
+        "name": "gold_prices",
+        "title": "Live gold prices on Iranian platforms",
+        "summary": "Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold and Daric, in Toman per gram."
+      },
+      {
+        "name": "gold_milli_history",
+        "title": "Milli.gold price history",
+        "summary": "Get the Milli.gold 18k gold price series for a day, week or month, with high, low and change."
+      },
+      {
+        "name": "gold_milli_stats",
+        "title": "Milli.gold platform statistics",
+        "summary": "Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches."
+      }
+    ]
+  },
+  {
     "name": "tsetmc-mcp",
     "title": "TSETMC Tehran Stock Exchange",
     "category": "stocks",
