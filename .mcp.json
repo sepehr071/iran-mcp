@@ -177,7 +177,7 @@
     "milligold": {
       "command": "uvx",
       "args": [
-        "milligold-mcp@0.1.2"
+        "milligold-mcp@0.2.0"
       ]
     },
     "tsetmc": {

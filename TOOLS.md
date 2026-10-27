@@ -549,13 +549,18 @@ Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, tra
 - `ic_candles`: Get recent OHLC candles of one coin from Nobitex or Wallex, oldest first.
 - `ic_top_movers`: List the biggest 24h gainers or losers on one exchange, with illiquid coins filtered out.
 
-## Milli.gold Prices (`milligold-mcp`, 3 tools)
+## Milli.gold Prices (`milligold-mcp`, 8 tools)
 
-Unofficial read-only Milli.gold: live 18k gold price per milligram, history and platform stats.
+Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quotes, news and help.
 
+- `mg_latest_posts`: List the newest posts on Milli.gold's news, magazine or help site, with date, categories, summary and URL.
+- `mg_help_topics`: Find Milli.gold help-center articles (how to buy, sell, deliver, transfer, verify, fees) by English keyword.
+- `mg_read`: Read the text of one Milli.gold news, magazine or help post, with tables flattened to 'a | b | c' lines.
 - `mg_get_price`: Get the current Milli.gold price of 18k melted gold, in Rial per milligram and per gram.
 - `mg_price_history`: Get the Milli.gold 18k gold price series for a day, week or month, with high, low and change.
 - `mg_platform_stats`: Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches.
+- `mg_fees`: Get Milli.gold's current fees for buying, selling, transferring and delivering gold and for wallet withdrawals.
+- `mg_trade_quote`: Estimate what a gold trade on Milli.gold costs or pays out right now, fee included, at the live price.
 
 ## TSETMC Tehran Stock Exchange (`tsetmc-mcp`, 8 tools)
 

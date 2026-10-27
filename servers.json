@@ -2722,8 +2722,8 @@
     "title": "Milli.gold Prices",
     "category": "prices",
     "site": "https://milli.gold",
-    "description": "Unofficial read-only Milli.gold: live 18k gold price per milligram, history and platform stats.",
-    "version": "0.1.2",
+    "description": "Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quotes, news and help.",
+    "version": "0.2.0",
     "pypi": "milligold-mcp",
     "repository": "https://github.com/sepehr071/milligold-mcp",
     "registry_name": "io.github.sepehr071/milligold-mcp",
@@ -2737,8 +2737,23 @@
         "description": "Optional HTTP proxy URL for milli.gold requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
       }
     ],
-    "tool_count": 3,
+    "tool_count": 8,
     "tools": [
+      {
+        "name": "mg_latest_posts",
+        "title": "Milli.gold latest posts",
+        "summary": "List the newest posts on Milli.gold's news, magazine or help site, with date, categories, summary and URL."
+      },
+      {
+        "name": "mg_help_topics",
+        "title": "Milli.gold help topics",
+        "summary": "Find Milli.gold help-center articles (how to buy, sell, deliver, transfer, verify, fees) by English keyword."
+      },
+      {
+        "name": "mg_read",
+        "title": "Milli.gold read post",
+        "summary": "Read the text of one Milli.gold news, magazine or help post, with tables flattened to 'a | b | c' lines."
+      },
       {
         "name": "mg_get_price",
         "title": "Milli.gold live gold price",
@@ -2753,6 +2768,16 @@
         "name": "mg_platform_stats",
         "title": "Milli.gold platform statistics",
         "summary": "Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches."
+      },
+      {
+        "name": "mg_fees",
+        "title": "Milli.gold fees",
+        "summary": "Get Milli.gold's current fees for buying, selling, transferring and delivering gold and for wallet withdrawals."
+      },
+      {
+        "name": "mg_trade_quote",
+        "title": "Milli.gold trade cost quote",
+        "summary": "Estimate what a gold trade on Milli.gold costs or pays out right now, fee included, at the live price."
       }
     ]
   },

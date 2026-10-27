@@ -184,7 +184,7 @@
     {
       "name": "milligold",
       "source": "./plugins/milligold",
-      "description": "Unofficial read-only Milli.gold: live 18k gold price per milligram, history and platform stats.",
+      "description": "Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quotes, news and help.",
       "category": "prices"
     },
     {
