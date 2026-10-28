@@ -536,7 +536,7 @@ Unofficial read-only TGJU: live Iranian gold, coin, currency and crypto prices w
 - `tj_market_summary`: Key Iranian market rates in one call: dollar, euro, dirham, pound, lira, gold gram and ounce, coins, silver, Brent, Bitcoin, Ethereum, Tether.
 - `tj_price_history`: Daily history (open, low, high, close, change) of a TGJU symbol, for charts and trend questions.
 
-## Iran Crypto Exchanges (`iran-crypto-mcp`, 8 tools)
+## Iran Crypto Exchanges (`iran-crypto-mcp`, 12 tools)
 
 Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, trades, candles.
 
@@ -546,8 +546,12 @@ Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, tra
 - `ic_get_ticker`: Get the live price, best bid and ask, 24h range, change and volume of one coin on one exchange.
 - `ic_get_orderbook`: Get the top bids and asks of one coin's order book on one exchange, with the spread.
 - `ic_recent_trades`: Get the most recent public trades of one coin on one exchange, newest first.
-- `ic_candles`: Get recent OHLC candles of one coin from Nobitex or Wallex, oldest first.
+- `ic_candles`: Get recent OHLC candles of one coin on one exchange, oldest first.
 - `ic_top_movers`: List the biggest 24h gainers or losers on one exchange, with illiquid coins filtered out.
+- `ic_best_deal`: Rank every exchange by what a buy or sell of a given size actually gets, with order-book slippage.
+- `ic_arbitrage`: Scan every coin on every exchange for the biggest price gaps: buy where it is cheapest, sell where it is dearest.
+- `ic_market_overview`: Get the key Iranian crypto rates in one call: the Tether rate in Toman and major coins across all exchanges.
+- `ic_fees`: Compare trading fees and, for one coin, each exchange's withdrawal networks, fees and minimums.
 
 ## Milli.gold Prices (`milligold-mcp`, 8 tools)
 

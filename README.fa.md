@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.fa.svg" alt="iran-mcp: ۴۰ سرور MCP و ۴۹۶ ابزار برای فروشگاه‌ها، غذا، سفر، سلامت، کتاب، قیمت، بورس، خبر، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
+<img src="assets/banner.fa.svg" alt="iran-mcp: ۴۰ سرور MCP و ۵۰۰ ابزار برای فروشگاه‌ها، غذا، سفر، سلامت، کتاب، قیمت، بورس، خبر، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
 
 [English](README.md) · **فارسی**
 
@@ -151,7 +151,7 @@ cd iran-mcp && claude
 <div dir="rtl">
 
 > [!TIP]
-> ۴۹۶ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
+> ۵۰۰ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
 
 ## سرورها
 
@@ -228,7 +228,7 @@ cd iran-mcp && claude
 | سرور | سایت | ابزار | نسخه | آخرین تغییر | ایجنت چه می‌تواند بکند |
 |---|---|---:|:---:|:---:|---|
 | [tgju-mcp](https://github.com/sepehr071/tgju-mcp) | [تی‌جی‌یو](https://www.tgju.org) | ۶ | [![PyPI](https://img.shields.io/pypi/v/tgju-mcp?label=&color=2fe0cf)](https://pypi.org/project/tgju-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tgju-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tgju-mcp/commits/main) | قیمت لحظه‌ای طلا، سکه، دلار، یورو و رمزارز، جدول بازارها، تاریخچهٔ روزانه |
-| [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp) | [نوبیتکس](https://nobitex.ir)، [والکس](https://wallex.ir)، [بیت‌پین](https://bitpin.ir)، [رمزینکس](https://ramzinex.com)، [تبدیل](https://tabdeal.org)، [او‌ام‌پی‌فینکس](https://ompfinex.com)، [اکسیر](https://exir.io) | ۸ | [![PyPI](https://img.shields.io/pypi/v/iran-crypto-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-crypto-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-crypto-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-crypto-mcp/commits/main) | مقایسهٔ قیمت یک ارز در ۷ صرافی به تومان، دفتر سفارش، معاملات، کندل و بیشترین تغییر |
+| [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp) | [نوبیتکس](https://nobitex.ir)، [والکس](https://wallex.ir)، [بیت‌پین](https://bitpin.ir)، [رمزینکس](https://ramzinex.com)، [تبدیل](https://tabdeal.org)، [او‌ام‌پی‌فینکس](https://ompfinex.com)، [اکسیر](https://exir.io) | ۱۲ | [![PyPI](https://img.shields.io/pypi/v/iran-crypto-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-crypto-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-crypto-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-crypto-mcp/commits/main) | مقایسهٔ قیمت یک ارز در ۷ صرافی به تومان، دفتر سفارش، معاملات، کندل و بیشترین تغییر |
 | [milligold-mcp](https://github.com/sepehr071/milligold-mcp) | [میلی](https://milli.gold) | ۸ | [![PyPI](https://img.shields.io/pypi/v/milligold-mcp?label=&color=2fe0cf)](https://pypi.org/project/milligold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/milligold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/milligold-mcp/commits/main) | قیمت لحظه‌ای طلای ۱۸ عیار به گرم، تاریخچه، کارمزدها و محاسبهٔ هزینهٔ معامله، تازه‌ترین اخبار و راهنما، آمار پلتفرم |
 | [iran-gold-mcp](https://github.com/sepehr071/iran-gold-mcp) | [میلی](https://milli.gold)، [وال‌گلد](https://wallgold.ir)، [ملی‌گلد](https://melligold.com)، [داریک](https://daric.gold)، [طلاین](https://taline.ir) | ۳ | [![PyPI](https://img.shields.io/pypi/v/iran-gold-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-gold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-gold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-gold-mcp/commits/main) | مقایسهٔ قیمت خرید و فروش هر گرم طلای ۱۸ عیار در ۵ پلتفرم به تومان، ارزان‌ترین جا برای خرید و بهترین جا برای فروش، تاریخچهٔ قیمت میلی |
 | [tsetmc-mcp](https://github.com/sepehr071/tsetmc-mcp) | [TSETMC](https://tsetmc.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/tsetmc-mcp?label=&color=2fe0cf)](https://pypi.org/project/tsetmc-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tsetmc-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tsetmc-mcp/commits/main) | قیمت و معاملات بورس تهران: نماد، بیشترین رشد و افت، دفتر سفارش، تاریخچه، شاخص، حقیقی و حقوقی (ریال) |
@@ -255,7 +255,7 @@ cd iran-mcp && claude
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | کدام سرور برای کدام کار، قراردادها، قوانین ایمنی، نحوهٔ کار در این مخزن |
 | [`servers.json`](servers.json) | کاتالوگ ماشین‌خوان: پکیج یا آدرس، نسخه، دسته، متغیرهای محیطی و همهٔ ابزارهای هر سرور |
-| [`TOOLS.md`](TOOLS.md) | هر ۴۹۶ ابزار به تفکیک سرور |
+| [`TOOLS.md`](TOOLS.md) | هر ۵۰۰ ابزار به تفکیک سرور |
 | [`llms.txt`](llms.txt) | فهرست کوتاه برای LLMها |
 | [`.mcp.json`](.mcp.json) | تنظیمات آماده برای همهٔ سرورها |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | مارکت‌پلیس پلاگین `iran-mcp`: یک پلاگین برای هر سرور به‌اضافهٔ بسته‌ها |

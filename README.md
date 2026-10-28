@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="iran-mcp: 40 MCP servers and 496 tools for Iranian shopping, classifieds, food, travel, health, book, course, app, price, stock, news, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
+<img src="assets/banner.svg" alt="iran-mcp: 40 MCP servers and 500 tools for Iranian shopping, classifieds, food, travel, health, book, course, app, price, stock, news, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
 
 **English** · [فارسی](README.fa.md)
 
@@ -12,7 +12,7 @@ Search, compare prices in Toman, find free slots and today's deals from Claude, 
 Install them as Claude Code plugins with skills, or as Agent Skills for Codex, Cursor, Antigravity and Grok Build.
 
 [![Servers](https://img.shields.io/badge/servers-40-3fd6c9)](#the-servers)
-[![Tools](https://img.shields.io/badge/tools-496-f4b54a)](TOOLS.md)
+[![Tools](https://img.shields.io/badge/tools-500-f4b54a)](TOOLS.md)
 [![Claude Code plugins](https://img.shields.io/badge/Claude_Code-plugin_marketplace-d97757)](#quick-start)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071-7c3aed)](https://registry.modelcontextprotocol.io/?q=sepehr071)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
@@ -167,7 +167,7 @@ cd iran-mcp && claude
 ```
 
 > [!TIP]
-> 496 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
+> 500 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
 
 ## The servers
 
@@ -244,7 +244,7 @@ cd iran-mcp && claude
 | Server | Site | Tools | Version | Updated | What your agent can do |
 |---|---|---:|:---:|:---:|---|
 | [tgju-mcp](https://github.com/sepehr071/tgju-mcp) | [TGJU](https://www.tgju.org) | 6 | [![PyPI](https://img.shields.io/pypi/v/tgju-mcp?label=&color=2fe0cf)](https://pypi.org/project/tgju-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tgju-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tgju-mcp/commits/main) | Live gold, coin, dollar, euro and crypto prices, market tables, daily history |
-| [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp) | [Nobitex](https://nobitex.ir), [Wallex](https://wallex.ir), [Bitpin](https://bitpin.ir), [Ramzinex](https://ramzinex.com), [Tabdeal](https://tabdeal.org), [OMPFinex](https://ompfinex.com), [Exir](https://exir.io) | 8 | [![PyPI](https://img.shields.io/pypi/v/iran-crypto-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-crypto-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-crypto-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-crypto-mcp/commits/main) | Compare a coin's price across 7 exchanges in Toman, order books, trades, candles, top movers |
+| [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp) | [Nobitex](https://nobitex.ir), [Wallex](https://wallex.ir), [Bitpin](https://bitpin.ir), [Ramzinex](https://ramzinex.com), [Tabdeal](https://tabdeal.org), [OMPFinex](https://ompfinex.com), [Exir](https://exir.io) | 12 | [![PyPI](https://img.shields.io/pypi/v/iran-crypto-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-crypto-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-crypto-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-crypto-mcp/commits/main) | Compare a coin's price across 7 exchanges in Toman, order books, trades, candles, top movers |
 | [milligold-mcp](https://github.com/sepehr071/milligold-mcp) | [Milli.gold](https://milli.gold) | 8 | [![PyPI](https://img.shields.io/pypi/v/milligold-mcp?label=&color=2fe0cf)](https://pypi.org/project/milligold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/milligold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/milligold-mcp/commits/main) | Live 18k gold price per gram, history, fees and trade cost quotes, latest news and help articles, platform statistics |
 | [iran-gold-mcp](https://github.com/sepehr071/iran-gold-mcp) | [Milli.gold](https://milli.gold), [Wallgold](https://wallgold.ir), [Melligold](https://melligold.com), [Daric](https://daric.gold), [Taline](https://taline.ir) | 3 | [![PyPI](https://img.shields.io/pypi/v/iran-gold-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-gold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-gold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-gold-mcp/commits/main) | Compare the live 18k gold buy and sell price per gram on 5 platforms in Toman, cheapest to buy and best to sell, Milli.gold history |
 | [tsetmc-mcp](https://github.com/sepehr071/tsetmc-mcp) | [TSETMC](https://tsetmc.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/tsetmc-mcp?label=&color=2fe0cf)](https://pypi.org/project/tsetmc-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tsetmc-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tsetmc-mcp/commits/main) | Tehran Stock Exchange quotes, movers, order book, history, indices, real versus legal trading (Rial) |
@@ -271,7 +271,7 @@ This repo is built to be read by agents as much as by people:
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Which server to pick for which task, conventions, safety rules, how to work in this repo |
 | [`servers.json`](servers.json) | Machine-readable catalog: package or URL, version, category, env vars and every tool of each server |
-| [`TOOLS.md`](TOOLS.md) | All 496 tools grouped by server, one line each |
+| [`TOOLS.md`](TOOLS.md) | All 500 tools grouped by server, one line each |
 | [`llms.txt`](llms.txt) | Short index for LLMs ([llmstxt.org](https://llmstxt.org)) |
 | [`.mcp.json`](.mcp.json) | Ready-to-use config for every server |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | The `iran-mcp` plugin marketplace: one plugin per server plus bundles |

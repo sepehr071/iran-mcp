@@ -2659,7 +2659,7 @@
     "category": "prices",
     "site": "https://nobitex.ir",
     "description": "Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, trades, candles.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "pypi": "iran-crypto-mcp",
     "repository": "https://github.com/sepehr071/iran-crypto-mcp",
     "registry_name": "io.github.sepehr071/iran-crypto-mcp",
@@ -2673,7 +2673,7 @@
         "description": "Optional HTTP proxy URL for exchange requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
       }
     ],
-    "tool_count": 8,
+    "tool_count": 12,
     "tools": [
       {
         "name": "ic_list_exchanges",
@@ -2708,12 +2708,32 @@
       {
         "name": "ic_candles",
         "title": "Price Candles",
-        "summary": "Get recent OHLC candles of one coin from Nobitex or Wallex, oldest first."
+        "summary": "Get recent OHLC candles of one coin on one exchange, oldest first."
       },
       {
         "name": "ic_top_movers",
         "title": "Top Movers",
         "summary": "List the biggest 24h gainers or losers on one exchange, with illiquid coins filtered out."
+      },
+      {
+        "name": "ic_best_deal",
+        "title": "Best Deal For An Amount",
+        "summary": "Rank every exchange by what a buy or sell of a given size actually gets, with order-book slippage."
+      },
+      {
+        "name": "ic_arbitrage",
+        "title": "Arbitrage Scanner",
+        "summary": "Scan every coin on every exchange for the biggest price gaps: buy where it is cheapest, sell where it is dearest."
+      },
+      {
+        "name": "ic_market_overview",
+        "title": "Market Overview",
+        "summary": "Get the key Iranian crypto rates in one call: the Tether rate in Toman and major coins across all exchanges."
+      },
+      {
+        "name": "ic_fees",
+        "title": "Fees And Networks",
+        "summary": "Compare trading fees and, for one coin, each exchange's withdrawal networks, fees and minimums."
       }
     ]
   },
