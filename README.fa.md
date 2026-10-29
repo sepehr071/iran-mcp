@@ -17,6 +17,8 @@
 به‌صورت پلاگین Claude Code همراه با اسکیل نصب کنید، یا به‌صورت Agent Skills برای Codex، Cursor، Antigravity و Grok Build.
 </p>
 
+<p align="center">نسخهٔ وب این فهرست، در بازارچهٔ MCP فارسی: <a href="https://mcpfarsi.ir/">mcpfarsi.ir</a></p>
+
 <p align="center">
 <a href="#تازه‌های-نسخهٔ-۲۰">تازه‌ها</a> · <a href="#سرورها">سرورها</a> · <a href="#شروع-سریع">شروع سریع</a> · <a href="#برای-ایجنت‌ها">برای ایجنت‌ها</a> · <a href="TOOLS.md">همهٔ ابزارها</a> · <a href="#پرسش‌های-رایج">پرسش‌های رایج</a>
 </p>

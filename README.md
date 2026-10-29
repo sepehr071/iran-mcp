@@ -18,6 +18,8 @@ Install them as Claude Code plugins with skills, or as Agent Skills for Codex, C
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/sepehr071/iran-mcp?style=social)](https://github.com/sepehr071/iran-mcp)
 
+Web catalog (in Persian): [mcpfarsi.ir](https://mcpfarsi.ir/), the Persian MCP marketplace.
+
 [What's new](#whats-new-in-v20) · [Quick start](#quick-start) · [The servers](#the-servers) · [For AI agents](#for-ai-agents) · [All tools](TOOLS.md) · [FAQ](#faq)
 
 </div>
