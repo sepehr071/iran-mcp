@@ -25,12 +25,12 @@ ZWNJ = "&#x200C;"
 # Banner tiles: English label, Persian label, servers.json categories, accent colour.
 # A new server lands in its category's tile; only a new category needs a line here.
 GROUPS = [
-    ("Buy &amp; sell", "خرید و فروش", {"shopping", "fashion", "beauty", "classifieds"}, "#2fe0cf"),
+    ("Buy &amp; sell", "خرید و فروش", {"shopping", "fashion", "beauty", "classifieds", "cars"}, "#2fe0cf"),
     ("Food &amp; groceries", "غذا و سوپرمارکت", {"food"}, "#ff5c8f"),
-    ("Travel &amp; stays", "سفر و اقامت", {"travel"}, "#6aa0ff"),
+    ("Travel &amp; maps", "سفر و نقشه", {"travel", "maps"}, "#6aa0ff"),
     ("Doctors &amp; clinics", "پزشک و درمان", {"health"}, "#7ee08a"),
-    # the banner fits 3 rows of 2 tiles, so public-data categories share the books tile
-    ("Books, news &amp; data", "کتاب، خبر و داده", {"books", "learning", "software", "prices", "stocks", "news", "quakes", "law", "tax"}, "#ffc23d"),
+    # the banner fits 3 rows of 2 tiles, so public-data categories share one tile
+    ("Jobs, news &amp; data", "کار، خبر و داده", {"books", "learning", "jobs", "freelance", "software", "cloud", "prices", "stocks", "economy", "news", "sports", "entertainment", "calendar", "quakes", "law", "tax"}, "#ffc23d"),
     ("Your own accounts", f"حساب{ZWNJ}های شخصی", {"business", "messaging", "crypto"}, "#b88cff"),
 ]
 
@@ -152,11 +152,11 @@ def banner(fa: bool, catalog: list, h: int = H) -> str:
 
 # Release banner: version and the changelog's headline numbers, updated by hand each release.
 # (figure, Persian figure, English line, Persian line, colour)
-RELEASE = "v2.0"
+RELEASE = "v2.3"
 HIGHLIGHTS = [
-    ("+12", "+۱۲", "new servers", "سرور تازه", "#2fe0cf"),
-    ("7", "۷", "new categories", "دستهٔ تازه", "#ffc23d"),
-    ("10", "۱۰", "news sources", "منبع خبری", "#ff5c8f"),
+    ("+31", "+۳۱", "new servers", "سرور تازه", "#2fe0cf"),
+    ("9", "۹", "new categories", "دستهٔ تازه", "#ffc23d"),
+    ("+383", "+۳۸۳", "new tools", "ابزار تازه", "#ff5c8f"),
     ("Same", "همان", "tools and parameters", "ابزارها و پارامترها", "#7c3aed"),
 ]
 
@@ -166,14 +166,14 @@ def release(fa: bool, catalog: list, h: int = H) -> str:
     card_x, panel_x = (650, 40) if fa else (40, 670)
     if fa:
         anchor, tx, font = "end", card_x + 590 - 44, PERSIAN
-        title, subtitle, changes = "۱۲ سرور تازه", "قیمت، خبر، قانون و اپ", "همهٔ تغییرها: CHANGELOG.md"
+        title, subtitle, changes = "۳۱ سرور تازه", "کار، خودرو، نقشه و بورس", "همهٔ تغییرها: CHANGELOG.md"
         stats = [(f"{servers} سرور".translate(FA_DIGITS), "#2fe0cf", 140),
                  (f"{tools} ابزار".translate(FA_DIGITS), "#ffc23d", 140),
                  ("فقط خواندنی", "#ff5c8f", 170)]
         desc = f"iran-mcp {RELEASE}: " + "، ".join(f"{n} {fa_line}" for _, n, _, fa_line, _ in HIGHLIGHTS)
     else:
         anchor, tx, font = "start", card_x + 44, LATIN
-        title, subtitle, changes = "12 new servers.", "Prices, news, law, apps.", "Full changelog: CHANGELOG.md"
+        title, subtitle, changes = "31 new servers.", "Jobs, cars, maps, markets.", "Full changelog: CHANGELOG.md"
         stats = [(f"{servers} servers", "#2fe0cf", 150), (f"{tools} tools", "#ffc23d", 140),
                  ("Read-only", "#ff5c8f", 150)]
         desc = f"iran-mcp {RELEASE}: " + ", ".join(f"{n} {en_line}" for n, _, en_line, _, _ in HIGHLIGHTS)

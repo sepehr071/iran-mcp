@@ -1,0 +1,27 @@
+{
+  "name": "ponisha",
+  "displayName": "Ponisha Freelance",
+  "version": "0.1.0",
+  "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/ponisha-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "freelance",
+    "ponisha.ir"
+  ],
+  "mcpServers": {
+    "ponisha": {
+      "command": "uvx",
+      "args": [
+        "ponisha-mcp@0.1.0"
+      ]
+    }
+  }
+}

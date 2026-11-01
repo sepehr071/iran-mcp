@@ -1,0 +1,14 @@
+{
+  "name": "iran-economy",
+  "description": "Everything for official exchange rates, inflation, unemployment or other economic statistics in Iran: Central Bank of Iran, Statistical Centre of Iran.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "cbi",
+    "amar"
+  ]
+}

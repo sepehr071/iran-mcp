@@ -942,6 +942,273 @@
     ]
   },
   {
+    "name": "emalls-ir-mcp",
+    "title": "Emalls Price Comparison",
+    "category": "shopping",
+    "site": "https://emalls.ir",
+    "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
+    "version": "0.1.1",
+    "pypi": "emalls-ir-mcp",
+    "repository": "https://github.com/sepehr071/emalls-ir-mcp",
+    "registry_name": "io.github.sepehr071/emalls-ir-mcp",
+    "run": "uvx emalls-ir-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "EMALLS_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Emalls requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "em_search",
+        "title": "Search products and price lists",
+        "summary": "Search Emalls (Iranian price comparison) for products, with price range, category, brand, spec and sort filters."
+      },
+      {
+        "name": "em_categories",
+        "title": "Find product categories",
+        "summary": "Find Emalls category ids by words, or browse the category tree (top level, then children of a category id)."
+      },
+      {
+        "name": "em_filters",
+        "title": "Brand and spec filters of a category",
+        "summary": "List the brands and spec filters (RAM, storage, ...) Emalls offers in one category, with their ids."
+      },
+      {
+        "name": "em_product",
+        "title": "Product details and specs",
+        "summary": "Get one Emalls product: title, category path, lowest and highest shop price, rating and specs."
+      },
+      {
+        "name": "em_compare",
+        "title": "Compare products side by side",
+        "summary": "Compare 2-5 Emalls products: prices, rating and only the specs whose values differ."
+      },
+      {
+        "name": "em_similar",
+        "title": "Similar products",
+        "summary": "List products Emalls shows as similar to one product, with lowest price and shop count."
+      },
+      {
+        "name": "em_offers",
+        "title": "Shop offers for a product",
+        "summary": "List the shops selling one Emalls product with price, city, shop rating, warranty and buy link, cheapest first."
+      },
+      {
+        "name": "em_price_history",
+        "title": "Price history of a product",
+        "summary": "Get the price history of one Emalls product: the average price over time in about 3-day steps (last ~3 months)."
+      },
+      {
+        "name": "em_shop",
+        "title": "Shop profile",
+        "summary": "Get an Emalls shop's public profile: name, rating, website, address, phone, time with Emalls and trust badge."
+      },
+      {
+        "name": "em_shops",
+        "title": "Find shops by name",
+        "summary": "Search Emalls' list of shops by name and return their ids."
+      }
+    ]
+  },
+  {
+    "name": "mobile-ir-mcp",
+    "title": "Mobile.ir Phones",
+    "category": "shopping",
+    "site": "https://www.mobile.ir",
+    "description": "Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.",
+    "version": "0.1.0",
+    "pypi": "mobile-ir-mcp",
+    "repository": "https://github.com/sepehr071/mobile-ir-mcp",
+    "registry_name": "io.github.sepehr071/mobile-ir-mcp",
+    "run": "uvx mobile-ir-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "MOBILE_IR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the mobile.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 17,
+    "tools": [
+      {
+        "name": "mi_compare",
+        "title": "Compare phones side by side",
+        "summary": "Compare 2 to 4 phones, tablets or watches on Mobile.ir: price range, rating and each spec row side by side."
+      },
+      {
+        "name": "mi_comments",
+        "title": "User comments on a phone",
+        "summary": "Read what Mobile.ir users wrote about a phone, tablet or watch: comment text, date (Persian calendar), likes."
+      },
+      {
+        "name": "mi_articles",
+        "title": "Mobile.ir news and expert reviews",
+        "summary": "List the news and the expert reviews on Mobile.ir, newest first, optionally for one phone or brand."
+      },
+      {
+        "name": "mi_article",
+        "title": "Read a news article or review",
+        "summary": "Read the text of one Mobile.ir news item, expert review or product introduction (Persian, images dropped)."
+      },
+      {
+        "name": "mi_shop",
+        "title": "A shop's phone price list",
+        "summary": "Show one Mobile.ir shop's profile and the phones it lists with their current prices in Toman."
+      },
+      {
+        "name": "mi_brand_models",
+        "title": "All models of a brand",
+        "summary": "Page through every model Mobile.ir lists for one brand (id, rating, year, screen, camera, lowest shop price)."
+      },
+      {
+        "name": "mi_sim_summary",
+        "title": "SIM number market summary",
+        "summary": "Summarise the numbered-SIM market on Mobile.ir per operator: ad counts and the three cheapest priced numbers."
+      },
+      {
+        "name": "mi_search",
+        "title": "Search phones by name",
+        "summary": "Find phones, tablets and smartwatches on Mobile.ir by name and get their ids (autocomplete, up to about 20)."
+      },
+      {
+        "name": "mi_find",
+        "title": "Find phones with filters",
+        "summary": "Filter Mobile.ir's phone database like its 'mobile finder': brand, shop price range, OS, camera, weight, name."
+      },
+      {
+        "name": "mi_phone",
+        "title": "Phone specifications",
+        "summary": "Get the full specification sheet of one phone, tablet or smartwatch from Mobile.ir, with rating and price range."
+      },
+      {
+        "name": "mi_shop_prices",
+        "title": "Shop prices of a phone",
+        "summary": "List what each shop currently charges for a phone on Mobile.ir (price in Toman, shop, city, note, warranty)."
+      },
+      {
+        "name": "mi_price_history",
+        "title": "Price history of a phone",
+        "summary": "Get a phone's shop-price history from Mobile.ir: per-shop first/last/min/max and the daily lowest price in Toman."
+      },
+      {
+        "name": "mi_market_prices",
+        "title": "Latest shop prices market-wide",
+        "summary": "List the newest price rows that shops posted on Mobile.ir (one row per shop and model), with filters."
+      },
+      {
+        "name": "mi_used_search",
+        "title": "Search used-phone ads",
+        "summary": "Search the used and new phone ads that users post on Mobile.ir (price, condition, city, description)."
+      },
+      {
+        "name": "mi_used_ad",
+        "title": "One used-phone ad",
+        "summary": "Read one used/new phone ad on Mobile.ir: price, market price, condition, box, city, description, photos, shops."
+      },
+      {
+        "name": "mi_sim_search",
+        "title": "Search SIM card numbers",
+        "summary": "Search the SIM card numbers users sell on Mobile.ir (Iran's numbered-SIM market): operator, number, price."
+      },
+      {
+        "name": "mi_options",
+        "title": "Brands, provinces, shops, operators",
+        "summary": "List the ids the other Mobile.ir tools take: brands, provinces, price-listing shops, SIM operator prefixes."
+      }
+    ]
+  },
+  {
+    "name": "zoomit-mcp",
+    "title": "Zoomit Products",
+    "category": "shopping",
+    "site": "https://www.zoomit.ir",
+    "description": "Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price history, comparisons.",
+    "version": "0.1.0",
+    "pypi": "zoomit-mcp",
+    "repository": "https://github.com/sepehr071/zoomit-mcp",
+    "registry_name": "io.github.sepehr071/zoomit-mcp",
+    "run": "uvx zoomit-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "ZOOMIT_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Zoomit requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 12,
+    "tools": [
+      {
+        "name": "zm_categories",
+        "title": "List product categories",
+        "summary": "List the product categories of Zoomit's product database (slug and Persian name)."
+      },
+      {
+        "name": "zm_search",
+        "title": "Search products by name",
+        "summary": "Find products by name across all categories (or one) and return cards with the lowest price in Toman."
+      },
+      {
+        "name": "zm_list",
+        "title": "List products with filters",
+        "summary": "List one category's products with the site's filters: brand, price, score, specs, stock, sort."
+      },
+      {
+        "name": "zm_filters",
+        "title": "Show a category's filters",
+        "summary": "Show what zm_list can filter by in a category: price range, brand slugs, spec filters with values, buying guides."
+      },
+      {
+        "name": "zm_product",
+        "title": "Get product specs",
+        "summary": "Get one product's full spec table, user score, Zoomit's pros and cons and its price range in Toman."
+      },
+      {
+        "name": "zm_prices",
+        "title": "Get sellers and price history",
+        "summary": "List a product's seller offers (cheapest first, Toman, with the shop's own listing title and link) and its price history."
+      },
+      {
+        "name": "zm_compare",
+        "title": "Compare products side by side",
+        "summary": "Compare 2-4 products: price, scores and a spec table where each row lists the values in the order of `products`."
+      },
+      {
+        "name": "zm_similar",
+        "title": "Find similar products",
+        "summary": "Suggest alternatives to a product: the ones people compare it with, others of its brand, or in its price range."
+      },
+      {
+        "name": "zm_articles",
+        "title": "Search Zoomit articles",
+        "summary": "Search Zoomit's news and review articles (title, lead, date, link)."
+      },
+      {
+        "name": "zm_reviews",
+        "title": "Read user reviews and questions",
+        "summary": "Read what buyers say about a product: star breakdown, Zoomit's summary of strengths and weaknesses, reviews or Q&A."
+      },
+      {
+        "name": "zm_guides",
+        "title": "List buying guides",
+        "summary": "List Zoomit's buying guides (\"best phones under...\", \"best gaming phones\") of a category with their article links."
+      },
+      {
+        "name": "zm_rank",
+        "title": "Rank products by a spec or value",
+        "summary": "Rank a category's popular products by one numeric spec (battery, weight, RAM, brightness) or by value for money."
+      }
+    ]
+  },
+  {
     "name": "khanoumi-mcp",
     "title": "Khanoumi",
     "category": "beauty",
@@ -1442,6 +1709,352 @@
     ]
   },
   {
+    "name": "sheypoor-mcp",
+    "title": "Sheypoor Classifieds",
+    "category": "classifieds",
+    "site": "https://www.sheypoor.com",
+    "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
+    "version": "0.1.0",
+    "pypi": "sheypoor-mcp",
+    "repository": "https://github.com/sepehr071/sheypoor-mcp",
+    "registry_name": "io.github.sepehr071/sheypoor-mcp",
+    "run": "uvx sheypoor-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "SHEYPOOR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Sheypoor requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "sp_search",
+        "title": "Search ads",
+        "summary": "Search Sheypoor classified ads (cars, real estate, goods, jobs, services) by words, city, category and price."
+      },
+      {
+        "name": "sp_ad",
+        "title": "Ad details",
+        "summary": "Get one Sheypoor ad in full: description, price, location, seller, every attribute and photo links."
+      },
+      {
+        "name": "sp_price_summary",
+        "title": "Price summary for a search",
+        "summary": "Summarise asking prices of the newest ads for a search: count, min, median, quartiles, max, plus cheapest and priciest ads."
+      },
+      {
+        "name": "sp_categories",
+        "title": "Categories",
+        "summary": "List Sheypoor's categories with the slug sp_search and sp_filters take, grouped under 11 top-level groups."
+      },
+      {
+        "name": "sp_cities",
+        "title": "Cities and provinces",
+        "summary": "Find the city or province slug that sp_search, sp_price_summary and sp_filters take."
+      },
+      {
+        "name": "sp_filters",
+        "title": "Filters of a category",
+        "summary": "List the filters, sort orders, sub-categories (car brands, models) and neighbourhoods Sheypoor offers in one category."
+      },
+      {
+        "name": "sp_similar",
+        "title": "Similar ads",
+        "summary": "Find ads comparable to one ad: same city and deepest category (car model...), price within a percent band."
+      },
+      {
+        "name": "sp_shops",
+        "title": "Internet shops",
+        "summary": "List Sheypoor's internet shops and agencies (real-estate offices, car dealers...) in a city and group."
+      },
+      {
+        "name": "sp_shop",
+        "title": "Shop details",
+        "summary": "Get one internet shop or agency: name, hours, group, its agents and its current ads."
+      },
+      {
+        "name": "sp_car_prices",
+        "title": "Daily car prices",
+        "summary": "Get Sheypoor's daily car price list (قیمت روز خودرو): market price and factory price per model and year, with the day's change."
+      },
+      {
+        "name": "sp_area_prices",
+        "title": "Prices per neighbourhood",
+        "summary": "Compare asking prices between neighbourhoods of a city: median price, price per square metre, rent and deposit."
+      }
+    ]
+  },
+  {
+    "name": "bama-ir-mcp",
+    "title": "Bama Cars",
+    "category": "cars",
+    "site": "https://bama.ir",
+    "description": "Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.",
+    "version": "0.1.0",
+    "pypi": "bama-ir-mcp",
+    "repository": "https://github.com/sepehr071/bama-ir-mcp",
+    "registry_name": "io.github.sepehr071/bama-ir-mcp",
+    "run": "uvx bama-ir-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "BAMA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Bama requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 12,
+    "tools": [
+      {
+        "name": "ba_search",
+        "title": "Search car ads",
+        "summary": "Search used and new car ads on Bama (bama.ir) with filters; returns up to 30 compact ads per page."
+      },
+      {
+        "name": "ba_ad",
+        "title": "Ad details",
+        "summary": "Get one Bama ad (car, motorcycle or truck) in full: price, specs, condition, seller, description and photos."
+      },
+      {
+        "name": "ba_market_stats",
+        "title": "Used-car market price stats",
+        "summary": "Price statistics (min, quartiles, median, max, per year) for a car model from live Bama ads."
+      },
+      {
+        "name": "ba_dealers",
+        "title": "Dealers selling a model",
+        "summary": "List car dealers (showrooms) with ads for a model or city on Bama, with address, rating and how many ads match."
+      },
+      {
+        "name": "ba_vehicles",
+        "title": "Brands, models and trims",
+        "summary": "Look up the brand, model and trim values that ba_search, ba_market_stats and ba_new_prices take."
+      },
+      {
+        "name": "ba_filters",
+        "title": "Filter values",
+        "summary": "List the allowed values of one ba_search filter (states and cities, body types, fuels, colors, years...)."
+      },
+      {
+        "name": "ba_new_prices",
+        "title": "New-car prices",
+        "summary": "Current price of every new-car trim of a brand or model on Bama's price list (market price or factory price)."
+      },
+      {
+        "name": "ba_search_bikes_trucks",
+        "title": "Search motorcycle and truck ads",
+        "summary": "Search motorcycle or truck (heavy vehicle, bus, machinery) ads on Bama with filters."
+      },
+      {
+        "name": "ba_dealer_ads",
+        "title": "Dealer inventory",
+        "summary": "List the ads of one dealer (showroom) on Bama: the dealer's whole inventory, up to the first 100 ads."
+      },
+      {
+        "name": "ba_price_list",
+        "title": "New-car price list",
+        "summary": "Search Bama's daily price list of new cars (or motorcycles) across all brands and rank it."
+      },
+      {
+        "name": "ba_market_pulse",
+        "title": "Car market pulse",
+        "summary": "Today's car market mood from Bama (score, trend and a short analysis per market) plus the biggest price movers."
+      },
+      {
+        "name": "ba_car_specs",
+        "title": "Car and motorcycle specs and review",
+        "summary": "Technical specifications and the editorial review score of a car or motorcycle model from Bama's research pages."
+      }
+    ]
+  },
+  {
+    "name": "karnameh-mcp",
+    "title": "Karnameh Cars",
+    "category": "cars",
+    "site": "https://karnameh.com",
+    "description": "Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.",
+    "version": "0.1.0",
+    "pypi": "karnameh-mcp",
+    "repository": "https://github.com/sepehr071/karnameh-mcp",
+    "registry_name": "io.github.sepehr071/karnameh-mcp",
+    "run": "uvx karnameh-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "KARNAMEH_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Karnameh requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 15,
+    "tools": [
+      {
+        "name": "kn_specs_search",
+        "title": "Search car variants with specs",
+        "summary": "Find car variants in Karnameh's specs catalog and return the `slug` that kn_specs and kn_compare_specs take."
+      },
+      {
+        "name": "kn_specs",
+        "title": "Car specs and review summary",
+        "summary": "Get one car variant's technical specs, Karnameh's expert review score, pros and cons and web reviews."
+      },
+      {
+        "name": "kn_compare_specs",
+        "title": "Compare car specs",
+        "summary": "Compare two to four car variants side by side: review score, pros, cons and every spec row."
+      },
+      {
+        "name": "kn_articles",
+        "title": "Car blog articles",
+        "summary": "Search or list articles of the Karnameh car magazine (karnameh.com/blog): news, reviews, maintenance, laws."
+      },
+      {
+        "name": "kn_article",
+        "title": "Read a blog article",
+        "summary": "Read one article of the Karnameh car magazine as plain text."
+      },
+      {
+        "name": "kn_price_movers",
+        "title": "Biggest new-car price movers",
+        "summary": "Rank new (zero-km) car variants by the percent change of their latest price quote."
+      },
+      {
+        "name": "kn_city_stats",
+        "title": "Used-car listing counts per city",
+        "summary": "Count Karnameh's used-car ads in every city, optionally for one brand, model or price ceiling."
+      },
+      {
+        "name": "kn_inspection_centers",
+        "title": "Karnameh inspection centers",
+        "summary": "List Karnameh's walk-in car inspection and paint-check centers in a city, with address and map coordinates."
+      },
+      {
+        "name": "kn_cars",
+        "title": "Search used-car ads",
+        "summary": "Search Karnameh's used-car ads (karnameh.com/buy-used-cars) by brand, model, city, price, year and mileage."
+      },
+      {
+        "name": "kn_car",
+        "title": "Get one used-car ad",
+        "summary": "Get one Karnameh used-car ad: price, specs, seller's description, strengths and the inspection summary."
+      },
+      {
+        "name": "kn_brands",
+        "title": "Look up car brands and models",
+        "summary": "Look up Karnameh's car brands and models, Persian and English, to get the names the other tools expect."
+      },
+      {
+        "name": "kn_cities",
+        "title": "List cities",
+        "summary": "List the cities Karnameh serves, with the slug kn_cars takes as `city` and the id kn_inspection_centers takes."
+      },
+      {
+        "name": "kn_price_list",
+        "title": "New-car market prices",
+        "summary": "List today's market prices of new (zero-km) cars from Karnameh's car-price pages (karnameh.com/car-price)."
+      },
+      {
+        "name": "kn_latest_prices",
+        "title": "Latest new-car price quotes",
+        "summary": "List the most recent price quotes of new cars with the day's percent change."
+      },
+      {
+        "name": "kn_price_history",
+        "title": "New-car price history",
+        "summary": "Get the daily average market price history of one new-car variant, per production year."
+      }
+    ]
+  },
+  {
+    "name": "hamrah-mechanic-mcp",
+    "title": "Hamrah Mechanic Cars",
+    "category": "cars",
+    "site": "https://www.hamrah-mechanic.com",
+    "description": "Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.",
+    "version": "0.1.0",
+    "pypi": "hamrah-mechanic-mcp",
+    "repository": "https://github.com/sepehr071/hamrah-mechanic-mcp",
+    "registry_name": "io.github.sepehr071/hamrah-mechanic-mcp",
+    "run": "uvx hamrah-mechanic-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "HAMRAH_MECHANIC_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Hamrah Mechanic requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 12,
+    "tools": [
+      {
+        "name": "hm_brands",
+        "title": "Car brands",
+        "summary": "List the car brands Hamrah Mechanic knows, with the slug the other tools take."
+      },
+      {
+        "name": "hm_models",
+        "title": "Car models of a brand",
+        "summary": "List the models of one brand with their slugs and trims (types)."
+      },
+      {
+        "name": "hm_prices",
+        "title": "Car market prices",
+        "summary": "Get today's market (used and zero-km) prices of cars from Hamrah Mechanic's daily price list."
+      },
+      {
+        "name": "hm_price_estimate",
+        "title": "Price estimate for one trim and year",
+        "summary": "Get the market price range and recent monthly change for one trim in one model year."
+      },
+      {
+        "name": "hm_search_cars",
+        "title": "Search used cars for sale",
+        "summary": "Search the used and zero-km cars Hamrah Mechanic's showrooms sell, with filters."
+      },
+      {
+        "name": "hm_car",
+        "title": "One car for sale",
+        "summary": "Get the full details of one car for sale: price, specs, condition, inspection notes, photos and showroom."
+      },
+      {
+        "name": "hm_inspection_prices",
+        "title": "Car inspection prices",
+        "summary": "Get what Hamrah Mechanic charges to inspect a given car at its location, for each inspection package."
+      },
+      {
+        "name": "hm_branches",
+        "title": "Hamrah Mechanic showrooms and inspection centers",
+        "summary": "List Hamrah Mechanic's car showrooms and inspection centers in a province with address, hours and cars in stock."
+      },
+      {
+        "name": "hm_price_history",
+        "title": "Price history of one trim",
+        "summary": "Get the monthly market-price history of one trim and year, with today's price range and the same trim's other years."
+      },
+      {
+        "name": "hm_price_list",
+        "title": "Whole price list, domestic or imported",
+        "summary": "List the market price of every car on Hamrah Mechanic's front price list, filtered by budget or brand."
+      },
+      {
+        "name": "hm_reviews",
+        "title": "Expert review and owner ratings",
+        "summary": "Get Hamrah Mechanic's expert review of a model (pros, cons, engine and safety notes) with owner scores and comments."
+      },
+      {
+        "name": "hm_articles",
+        "title": "Magazine articles",
+        "summary": "Search the Hamrah Mechanic magazine (3,000+ Persian articles) or read one article."
+      }
+    ]
+  },
+  {
     "name": "otaghak-mcp",
     "title": "Otaghak",
     "category": "travel",
@@ -1938,6 +2551,342 @@
     ]
   },
   {
+    "name": "alibaba-ir-mcp",
+    "title": "Alibaba Travel",
+    "category": "travel",
+    "site": "https://www.alibaba.ir",
+    "description": "Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.",
+    "version": "0.1.0",
+    "pypi": "alibaba-ir-mcp",
+    "repository": "https://github.com/sepehr071/alibaba-ir-mcp",
+    "registry_name": "io.github.sepehr071/alibaba-ir-mcp",
+    "run": "uvx alibaba-ir-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "ALIBABA_IR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Alibaba requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "al_flights_international",
+        "title": "International flights",
+        "summary": "Search international flights between Iran and abroad (or any two cities Alibaba sells) on one day."
+      },
+      {
+        "name": "al_stays",
+        "title": "Villas and holiday homes",
+        "summary": "Search villas, suites, cottages and other holiday homes for rent in a city, with price, rating and capacity."
+      },
+      {
+        "name": "al_stay_detail",
+        "title": "Villa or holiday home details",
+        "summary": "Show one villa or holiday home in full: capacity, beds, amenities, house rules, cancellation terms, calendar, reviews."
+      },
+      {
+        "name": "al_hotels",
+        "title": "Hotels",
+        "summary": "Search hotels in a city for a stay: stars, rating, price for the whole stay, meal plan, perks (domestic and abroad)."
+      },
+      {
+        "name": "al_tours",
+        "title": "Tour packages",
+        "summary": "Search tour packages (round trip plus hotel) from a city to a destination such as Kish, Mashhad, Istanbul or Dubai."
+      },
+      {
+        "name": "al_tours_cheapest",
+        "title": "Cheapest tour per day",
+        "summary": "List the lowest tour price per person for 11 departure days around a date (5 before, 5 after), to pick the cheapest day."
+      },
+      {
+        "name": "al_cities",
+        "title": "City and airport codes",
+        "summary": "Look up the city codes the other tools take (THR for Tehran, MHD for Mashhad) and what is sold for each city."
+      },
+      {
+        "name": "al_trains",
+        "title": "Train tickets",
+        "summary": "Search train tickets between two Iranian cities on one day: company, class, times, price and seats left."
+      },
+      {
+        "name": "al_trains_cheapest",
+        "title": "Cheapest train per day",
+        "summary": "List the lowest train price for each day from a start date, to pick the cheapest day to travel."
+      },
+      {
+        "name": "al_buses",
+        "title": "Bus tickets",
+        "summary": "Search intercity bus tickets between two Iranian cities on one day: company, bus type, times, price, seats."
+      },
+      {
+        "name": "al_buses_cheapest",
+        "title": "Cheapest bus per day",
+        "summary": "List the lowest bus price and the number of buses for each day from a start date (the site has no bus calendar)."
+      },
+      {
+        "name": "al_bus_seats",
+        "title": "Bus seat map",
+        "summary": "Show which seats are free on one bus: counts per status and the free seat numbers (no booking)."
+      },
+      {
+        "name": "al_flights",
+        "title": "Domestic flights",
+        "summary": "Search domestic flights between two Iranian airports on one day: airline, flight number, times, fare, seats."
+      },
+      {
+        "name": "al_flights_cheapest",
+        "title": "Cheapest flight per day",
+        "summary": "List the lowest domestic fare for each day from a start date, to pick the cheapest day to fly."
+      }
+    ]
+  },
+  {
+    "name": "eghamat24-mcp",
+    "title": "Eghamat24 Hotels",
+    "category": "travel",
+    "site": "https://www.eghamat24.com",
+    "description": "Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.",
+    "version": "0.1.0",
+    "pypi": "eghamat24-mcp",
+    "repository": "https://github.com/sepehr071/eghamat24-mcp",
+    "registry_name": "io.github.sepehr071/eghamat24-mcp",
+    "run": "uvx eghamat24-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "EGHAMAT24_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Eghamat24 requests; system proxy settings are ignored."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "eg_tours",
+        "title": "Flight and hotel tours",
+        "summary": "Find flight-plus-hotel tour packages to a city, or the packages of one hotel with their flight times."
+      },
+      {
+        "name": "eg_tour_calendar",
+        "title": "Tour price calendar",
+        "summary": "Show the cheapest flight-plus-hotel package price for each departure day, to pick the cheapest day to leave."
+      },
+      {
+        "name": "eg_attractions",
+        "title": "Tourist attractions",
+        "summary": "List the sights, shrines, malls and other places of a city, or read the description of one."
+      },
+      {
+        "name": "eg_photos",
+        "title": "Hotel photos",
+        "summary": "List the photo URLs of a hotel: the main picture, the hotel gallery and the photos of each room type."
+      },
+      {
+        "name": "eg_similar",
+        "title": "Similar hotels",
+        "summary": "List the hotels the site suggests as alternatives to one hotel, with a starting price."
+      },
+      {
+        "name": "eg_specials",
+        "title": "Special offers",
+        "summary": "List hotels on one of the site's offer pages: free cancellation, one-night offers or the latest discounts."
+      },
+      {
+        "name": "eg_cities",
+        "title": "Iranian destinations",
+        "summary": "List the destinations Eghamat24 has hotels in, with how many hotels and stays each has."
+      },
+      {
+        "name": "eg_search",
+        "title": "Search hotels",
+        "summary": "Search hotels in a city for given dates, with the filters the site offers, and return cards with the lowest price."
+      },
+      {
+        "name": "eg_deals",
+        "title": "Hotel deals",
+        "summary": "List the hotels of a city with the biggest discounts for the given dates, bookable ones only."
+      },
+      {
+        "name": "eg_hotel",
+        "title": "Hotel details",
+        "summary": "Get one hotel's profile: address, stars, check-in times, description, facilities, rules, guest scores, extras and nearby places."
+      },
+      {
+        "name": "eg_rooms",
+        "title": "Room prices",
+        "summary": "List a hotel's bookable rooms with the price for the stay, cheapest first."
+      },
+      {
+        "name": "eg_price_calendar",
+        "title": "Price calendar",
+        "summary": "Show the cheapest bookable room price for each night over a date range, to find the cheapest days to stay."
+      },
+      {
+        "name": "eg_reviews",
+        "title": "Hotel reviews",
+        "summary": "Read guest reviews of a hotel, newest first, with the overall guest scores and who travelled."
+      },
+      {
+        "name": "eg_questions",
+        "title": "Hotel questions",
+        "summary": "Read the public questions guests asked about a hotel and the answers, if any."
+      }
+    ]
+  },
+  {
+    "name": "neshan-mcp",
+    "title": "Neshan Maps",
+    "category": "maps",
+    "site": "https://neshan.org",
+    "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
+    "version": "0.1.0",
+    "pypi": "neshan-mcp",
+    "repository": "https://github.com/sepehr071/neshan-mcp",
+    "registry_name": "io.github.sepehr071/neshan-mcp",
+    "run": "uvx neshan-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "NESHAN_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the neshan.org requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "ns_search",
+        "title": "Search places on Neshan",
+        "summary": "Find places, businesses, streets and squares on the Neshan map by name or category near a city or point."
+      },
+      {
+        "name": "ns_place",
+        "title": "Neshan place details",
+        "summary": "Get one place's details on Neshan: address, coordinates, phones, website, rating, opening hours and photos."
+      },
+      {
+        "name": "ns_reviews",
+        "title": "Neshan place reviews",
+        "summary": "List visitors' reviews of a place on Neshan: star rating, Persian date, comment, likes and owner reply."
+      },
+      {
+        "name": "ns_photos",
+        "title": "Neshan place photos",
+        "summary": "List a place's photos on Neshan as image URLs, 10 per page, with date and uploader, including menu photos."
+      },
+      {
+        "name": "ns_nearby",
+        "title": "What is near a place on Neshan",
+        "summary": "List what is around a place on Neshan by category: restaurants, cafes, parks, toilets, banks, ATMs, parking."
+      },
+      {
+        "name": "ns_reverse_geocode",
+        "title": "Address of a point on Neshan",
+        "summary": "Turn a latitude/longitude into Neshan's street address and province (reverse geocoding)."
+      },
+      {
+        "name": "ns_air_quality",
+        "title": "Neshan air quality",
+        "summary": "Get today's air quality index (AQI) of an Iranian city from Neshan, with pollutants and the readings of each station."
+      },
+      {
+        "name": "ns_route",
+        "title": "Neshan directions",
+        "summary": "Get car, motorcycle, bicycle or walking directions on Neshan: distance, travel time and turn-by-turn steps."
+      },
+      {
+        "name": "ns_travel_times",
+        "title": "Neshan travel times to several places",
+        "summary": "Get the travel time from one point to several places on Neshan, fastest first."
+      },
+      {
+        "name": "ns_zone_check",
+        "title": "Tehran traffic and odd-even zone check",
+        "summary": "Check whether a point is inside Tehran's traffic-plan zone or odd-even (air-pollution) zone, with plan hours."
+      },
+      {
+        "name": "ns_transit_route",
+        "title": "Neshan public transit directions",
+        "summary": "Get bus, BRT and metro options between two points on Neshan, with lines, stops, walking and fares."
+      }
+    ]
+  },
+  {
+    "name": "balad-mcp",
+    "title": "Balad Maps",
+    "category": "maps",
+    "site": "https://balad.ir",
+    "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
+    "version": "0.1.0",
+    "pypi": "balad-mcp",
+    "repository": "https://github.com/sepehr071/balad-mcp",
+    "registry_name": "io.github.sepehr071/balad-mcp",
+    "run": "uvx balad-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "BALAD_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Balad requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "bl_search",
+        "title": "Search places and addresses",
+        "summary": "Search Balad (Iranian map) for places, streets, neighbourhoods and cities by name, with coordinates and address."
+      },
+      {
+        "name": "bl_nearby",
+        "title": "Nearby places by category",
+        "summary": "List places of one kind (pharmacy, restaurant, gas station...) around a point, with address, phone and rating."
+      },
+      {
+        "name": "bl_place",
+        "title": "Place details",
+        "summary": "Get one place's full details from Balad: address, phones, hours, open now, rating, amenities, photos, reviews."
+      },
+      {
+        "name": "bl_reviews",
+        "title": "Place reviews",
+        "summary": "Get one page of user reviews of a place on Balad, newest first, with stars and the rating breakdown."
+      },
+      {
+        "name": "bl_reverse_geocode",
+        "title": "Address of a point",
+        "summary": "Turn coordinates into a Persian street address with city, county and neighbourhood (reverse geocoding)."
+      },
+      {
+        "name": "bl_route",
+        "title": "Driving route with live traffic",
+        "summary": "Get driving routes in Iran with distance, travel time in current traffic, tolls, roads and traffic-zone warnings."
+      },
+      {
+        "name": "bl_nearest_by_drive",
+        "title": "Closest places by driving time",
+        "summary": "Rank places of one kind around a point by driving time from it in current traffic, quickest first."
+      },
+      {
+        "name": "bl_along_route",
+        "title": "Places along a driving route",
+        "summary": "Find places of one kind (gas station, restaurant, pharmacy...) along the suggested driving route between two points."
+      },
+      {
+        "name": "bl_categories",
+        "title": "Place categories",
+        "summary": "List Balad's place categories with the slug bl_nearby takes, grouped (food, health, shopping, services...)."
+      }
+    ]
+  },
+  {
     "name": "paziresh24-mcp",
     "title": "Paziresh24",
     "category": "health",
@@ -2157,6 +3106,90 @@
         "name": "ey_specialties",
         "title": "List specialties",
         "summary": "Medical specialties on exiryab.com with their doctor count, most doctors first; sub-specialties name their `parent`."
+      }
+    ]
+  },
+  {
+    "name": "darukade-mcp",
+    "title": "Darukade Pharmacy",
+    "category": "health",
+    "site": "https://darukade.com",
+    "description": "Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.",
+    "version": "0.1.0",
+    "pypi": "darukade-mcp",
+    "repository": "https://github.com/sepehr071/darukade-mcp",
+    "registry_name": "io.github.sepehr071/darukade-mcp",
+    "run": "uvx darukade-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "DARUKADE_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Darukade requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 12,
+    "tools": [
+      {
+        "name": "dr_search",
+        "title": "Search products",
+        "summary": "Search Darukade's online pharmacy catalog (drugs-adjacent products, supplements, cosmetics, baby) with filters."
+      },
+      {
+        "name": "dr_cheapest",
+        "title": "Cheapest products",
+        "summary": "List the lowest-priced products of a category, brand or search, cheapest first, skipping unpriced items."
+      },
+      {
+        "name": "dr_product",
+        "title": "Product details",
+        "summary": "Get one product's price per variant, stock, brand, ingredients, usage and dosage, warnings and properties."
+      },
+      {
+        "name": "dr_reviews",
+        "title": "Product comments and questions",
+        "summary": "Get a product's user comments and its questions with the pharmacy's answers, plus the rating summary."
+      },
+      {
+        "name": "dr_related",
+        "title": "Related products",
+        "summary": "List products related to one: alternatives, similar, same-brand and complementary ones, with prices."
+      },
+      {
+        "name": "dr_categories",
+        "title": "Categories",
+        "summary": "List Darukade's product categories with the ids that dr_search and dr_cheapest take as `category`."
+      },
+      {
+        "name": "dr_brands",
+        "title": "Brands",
+        "summary": "Find a brand by name and get the id that dr_search and dr_cheapest take as `brand`, or read a brand's profile."
+      },
+      {
+        "name": "dr_forms",
+        "title": "Product forms",
+        "summary": "List product forms (capsule, tablet, syrup, cream, spray, ampoule ...) with the ids dr_search takes as `form`."
+      },
+      {
+        "name": "dr_compare",
+        "title": "Compare products",
+        "summary": "Compare 2 to 5 products side by side: price, stock, rating, properties, ingredient amounts and dosage."
+      },
+      {
+        "name": "dr_home",
+        "title": "Home page offers",
+        "summary": "Show what Darukade's home page promotes now: golden offers, newest, best-selling and most-loved products."
+      },
+      {
+        "name": "dr_articles",
+        "title": "Health magazine articles",
+        "summary": "Search the Darukade health magazine (about 2,900 articles on illnesses, supplements, skin, drugs)."
+      },
+      {
+        "name": "dr_article",
+        "title": "Read a magazine article",
+        "summary": "Read one Darukade magazine article as plain text, with its author, sources and the products it recommends."
       }
     ]
   },
@@ -2418,6 +3451,95 @@
     ]
   },
   {
+    "name": "iranketab-mcp",
+    "title": "Iranketab Books",
+    "category": "books",
+    "site": "https://www.iranketab.ir",
+    "description": "Read-only Iranketab (iranketab.ir) books: search, translations compared, ratings, reviews, prices.",
+    "version": "0.1.0",
+    "pypi": "iranketab-mcp",
+    "repository": "https://github.com/sepehr071/iranketab-mcp",
+    "registry_name": "io.github.sepehr071/iranketab-mcp",
+    "run": "uvx iranketab-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRANKETAB_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Iranketab requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 13,
+    "tools": [
+      {
+        "name": "ik_search",
+        "title": "Search Iranketab",
+        "summary": "Search Iranketab by name and return matching books, authors/translators, publishers or categories with their ids."
+      },
+      {
+        "name": "ik_book",
+        "title": "Book details",
+        "summary": "Read one book (a work): title, authors, categories, introduction, review count and a short list of every edition."
+      },
+      {
+        "name": "ik_editions",
+        "title": "Compare translations and editions",
+        "summary": "Compare every translation and publisher edition of one book side by side: rating, votes, price, pages, year, ISBN."
+      },
+      {
+        "name": "ik_reviews",
+        "title": "Book reviews",
+        "summary": "Read reader comments about a book, 20 per page, newest first, with the publisher/edition when the reader named one."
+      },
+      {
+        "name": "ik_profile",
+        "title": "Author or translator",
+        "summary": "Read an author's or translator's profile (name, biography) and the books they wrote or translated."
+      },
+      {
+        "name": "ik_publisher_books",
+        "title": "Publisher books",
+        "summary": "List the books of one publisher (انتشارات) on Iranketab, best sellers first by default."
+      },
+      {
+        "name": "ik_browse",
+        "title": "Browse a category",
+        "summary": "List books of a category, bestseller list or award list, with sort, in-list search and sub-category filters."
+      },
+      {
+        "name": "ik_categories",
+        "title": "Categories and filters",
+        "summary": "List Iranketab's menu categories, or the sub-category filter groups of one category."
+      },
+      {
+        "name": "ik_book_extras",
+        "title": "Book extras",
+        "summary": "Read what else a book page offers: awards, series, praise quotes, excerpts, author bio, related books and articles."
+      },
+      {
+        "name": "ik_recommend",
+        "title": "What to read next",
+        "summary": "Suggest books to read next from books the reader liked, using Iranketab's own recommender (\"چی بخونم؟\")."
+      },
+      {
+        "name": "ik_lists",
+        "title": "Curated lists and awards",
+        "summary": "List Iranketab's literary prizes, best-of lists, book series, countries, genres or literary movements with ids."
+      },
+      {
+        "name": "ik_articles",
+        "title": "Articles",
+        "summary": "Find articles on Iranketab's blog (book reviews, author profiles, reading lists), by search or newest first."
+      },
+      {
+        "name": "ik_article",
+        "title": "Read an article",
+        "summary": "Read one Iranketab blog article (a book review or author essay) as plain text, with the book and author ids it links to."
+      }
+    ]
+  },
+  {
     "name": "maktabkhooneh-mcp",
     "title": "Maktabkhooneh",
     "category": "learning",
@@ -2498,6 +3620,639 @@
         "name": "mkh_organization",
         "title": "Publisher profile",
         "summary": "A publisher's totals (courses, students, rating) and its most popular courses."
+      }
+    ]
+  },
+  {
+    "name": "faradars-mcp",
+    "title": "Faradars Courses",
+    "category": "learning",
+    "site": "https://faradars.org",
+    "description": "Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.",
+    "version": "0.1.0",
+    "pypi": "faradars-mcp",
+    "repository": "https://github.com/sepehr071/faradars-mcp",
+    "registry_name": "io.github.sepehr071/faradars-mcp",
+    "run": "uvx faradars-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "FARADARS_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Faradars requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 16,
+    "tools": [
+      {
+        "name": "fr_search_courses",
+        "title": "Search courses",
+        "summary": "Search Faradars (faradars.org) courses and videos by text, category, price, length, certificate or instructor."
+      },
+      {
+        "name": "fr_course",
+        "title": "Course details",
+        "summary": "Get one Faradars course: price and current discount, duration, rating, students, instructors, syllabus."
+      },
+      {
+        "name": "fr_course_reviews",
+        "title": "Course reviews",
+        "summary": "Get student reviews (stars and comment text) of a Faradars course, newest first."
+      },
+      {
+        "name": "fr_categories",
+        "title": "Course categories",
+        "summary": "List Faradars course categories (برنامه‌نویسی, زبان, ...) as a tree of slugs and names."
+      },
+      {
+        "name": "fr_instructors",
+        "title": "Find instructors",
+        "summary": "Find Faradars instructors (مدرس) by name, or the leading instructors of a category."
+      },
+      {
+        "name": "fr_instructor",
+        "title": "Instructor profile",
+        "summary": "Get a Faradars instructor's profile (field, university, students, total hours) and their courses."
+      },
+      {
+        "name": "fr_learning_paths",
+        "title": "Learning paths",
+        "summary": "Find Faradars learning paths (مسیر یادگیری): curated course collections for a topic, beginner to advanced."
+      },
+      {
+        "name": "fr_learning_path",
+        "title": "Learning path",
+        "summary": "Get one Faradars learning path (مسیر یادگیری): its ordered course list, totals and related paths."
+      },
+      {
+        "name": "fr_related_courses",
+        "title": "Related courses",
+        "summary": "Get courses related to one Faradars course: more by the same instructor, recommended next steps, similar topics."
+      },
+      {
+        "name": "fr_compare_courses",
+        "title": "Compare courses",
+        "summary": "Compare 2-4 Faradars courses side by side: price, sale, length, lessons, students, rating, certificate, exams."
+      },
+      {
+        "name": "fr_offers",
+        "title": "Offers and subscription",
+        "summary": "List the current Faradars discount campaigns, public coupon codes and subscription plans."
+      },
+      {
+        "name": "fr_faq",
+        "title": "Faradars FAQ",
+        "summary": "Get Faradars' general help answers: buying and subscription, access validity, certificates, support, refunds."
+      },
+      {
+        "name": "fr_suggest",
+        "title": "Search suggestions",
+        "summary": "Get Faradars search-box suggestions for the start of a phrase (autocomplete)."
+      },
+      {
+        "name": "fr_articles",
+        "title": "Magazine articles",
+        "summary": "Search Faradars Magazine (مجله فرادرس, blog.faradars.org) articles by text, category or tag, or list the newest."
+      },
+      {
+        "name": "fr_article",
+        "title": "Magazine article",
+        "summary": "Read one Faradars Magazine article: summary points, outline, readable text, author, views and rating."
+      },
+      {
+        "name": "fr_article_topics",
+        "title": "Magazine topics",
+        "summary": "List Faradars Magazine categories or tags with their article counts, biggest first."
+      }
+    ]
+  },
+  {
+    "name": "jobinja-mcp",
+    "title": "Jobinja Jobs",
+    "category": "jobs",
+    "site": "https://jobinja.ir",
+    "description": "Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.",
+    "version": "0.1.0",
+    "pypi": "jobinja-mcp",
+    "repository": "https://github.com/sepehr071/jobinja-mcp",
+    "registry_name": "io.github.sepehr071/jobinja-mcp",
+    "run": "uvx jobinja-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "JOBINJA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Jobinja requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "jj_search_jobs",
+        "title": "Search jobs",
+        "summary": "Search Jobinja job ads by keyword, province, city, category, remote, contract type, experience, benefits and minimum salary."
+      },
+      {
+        "name": "jj_job",
+        "title": "Job details",
+        "summary": "Read one Jobinja job ad: title, company, salary, contract, experience, skills, degree, gender, military status and the full description."
+      },
+      {
+        "name": "jj_company",
+        "title": "Company profile",
+        "summary": "Read a company's Jobinja profile: name, founding year, industry, size, website, open job count and its intro, culture and benefits text."
+      },
+      {
+        "name": "jj_company_jobs",
+        "title": "Company open jobs",
+        "summary": "List a company's open job ads on Jobinja (or, with expired_page, its past ads, which show its hiring history)."
+      },
+      {
+        "name": "jj_search_companies",
+        "title": "Search companies",
+        "summary": "Find companies on Jobinja by name, or browse one industry (8 per page)."
+      },
+      {
+        "name": "jj_top_companies",
+        "title": "Top 50 companies",
+        "summary": "Jobinja's yearly list of the 50 best companies to work for, with each one's score out of 10 and its three sub-scores."
+      },
+      {
+        "name": "jj_market",
+        "title": "Job market counts",
+        "summary": "Count the open Jobinja ads right now per job category, province, company industry and top skill (live site statistics)."
+      },
+      {
+        "name": "jj_skills",
+        "title": "Skill demand",
+        "summary": "Find skills on Jobinja matching a word, with how many ads ever listed each (a demand signal)."
+      },
+      {
+        "name": "jj_salary_stats",
+        "title": "Salary statistics",
+        "summary": "Estimate monthly salaries (Toman) for a kind of job by reading the ad pages of the top search results."
+      },
+      {
+        "name": "jj_filters",
+        "title": "Search filter values",
+        "summary": "List every value the Jobinja search accepts: provinces, job categories, industries, experience levels, salary steps, sort orders."
+      }
+    ]
+  },
+  {
+    "name": "jobvision-mcp",
+    "title": "Jobvision Jobs",
+    "category": "jobs",
+    "site": "https://jobvision.ir",
+    "description": "Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.",
+    "version": "0.1.0",
+    "pypi": "jobvision-mcp",
+    "repository": "https://github.com/sepehr071/jobvision-mcp",
+    "registry_name": "io.github.sepehr071/jobvision-mcp",
+    "run": "uvx jobvision-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "JOBVISION_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Jobvision requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "jv_careers",
+        "title": "Career salary ranking",
+        "summary": "Rank the ~100 job titles in Jobvision's career guide by satisfaction, median salary or open ads."
+      },
+      {
+        "name": "jv_career",
+        "title": "Career profile",
+        "summary": "Get Jobvision's career-guide profile of one job title: salary distribution, demand, duties, skills, path."
+      },
+      {
+        "name": "jv_companies",
+        "title": "Find companies",
+        "summary": "Find companies on Jobvision by name or filters, best rated first (the site's company ranking)."
+      },
+      {
+        "name": "jv_interviews",
+        "title": "Interview experiences",
+        "summary": "Get what candidates report about interviewing at a company: scores, difficulty, process and questions."
+      },
+      {
+        "name": "jv_search",
+        "title": "Search jobs",
+        "summary": "Search Jobvision job ads (استخدام) with filters and return one page of compact job cards."
+      },
+      {
+        "name": "jv_job",
+        "title": "Job ad details",
+        "summary": "Get the full text and requirements of one Jobvision job ad."
+      },
+      {
+        "name": "jv_similar_jobs",
+        "title": "Similar jobs",
+        "summary": "List job ads Jobvision considers similar to one ad."
+      },
+      {
+        "name": "jv_company",
+        "title": "Company profile",
+        "summary": "Get an employer's profile and its currently open job ads."
+      },
+      {
+        "name": "jv_pay_stats",
+        "title": "Advertised pay statistics",
+        "summary": "Estimate pay for a role from the salaries open Jobvision ads advertise (million Toman per month)."
+      },
+      {
+        "name": "jv_suggest",
+        "title": "Suggest job titles",
+        "summary": "Autocomplete job titles the way Jobvision's search box does, most used first."
+      },
+      {
+        "name": "jv_locations",
+        "title": "Find locations",
+        "summary": "Find the province, city or Tehran area names and slugs that jv_search's city filter accepts."
+      },
+      {
+        "name": "jv_options",
+        "title": "Filter options",
+        "summary": "List the values of one Jobvision filter: ids and slugs with Persian and English names."
+      },
+      {
+        "name": "jv_market",
+        "title": "Job market counts",
+        "summary": "Count open Jobvision ads per category, province, work type, seniority, experience, pay band or age."
+      },
+      {
+        "name": "jv_government_news",
+        "title": "Government recruitment news",
+        "summary": "List Jobvision's recruitment announcements for a public-sector group (banks, ministries, oil and gas...)."
+      }
+    ]
+  },
+  {
+    "name": "irantalent-mcp",
+    "title": "IranTalent Jobs",
+    "category": "jobs",
+    "site": "https://www.irantalent.com",
+    "description": "Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.",
+    "version": "0.1.0",
+    "pypi": "irantalent-mcp",
+    "repository": "https://github.com/sepehr071/irantalent-mcp",
+    "registry_name": "io.github.sepehr071/irantalent-mcp",
+    "run": "uvx irantalent-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRANTALENT_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the IranTalent requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "it_salary_reports",
+        "title": "Salary reports",
+        "summary": "List IranTalent salary reports (salary.irantalent.com): one per job specialty and seniority level."
+      },
+      {
+        "name": "it_salary",
+        "title": "Salary figures",
+        "summary": "Read the salary figures of one IranTalent salary report, or of every seniority level of one specialty."
+      },
+      {
+        "name": "it_search_jobs",
+        "title": "Search jobs",
+        "summary": "Search IranTalent job ads (iran's professional job portal) by keyword and filters, newest first."
+      },
+      {
+        "name": "it_job",
+        "title": "Job details",
+        "summary": "Read one IranTalent job ad in full: description, requirements, salary, location, employer, view counts."
+      },
+      {
+        "name": "it_companies",
+        "title": "Find companies",
+        "summary": "List or search companies in IranTalent's employer directory (about 34,000), most open jobs first."
+      },
+      {
+        "name": "it_top_companies",
+        "title": "Top rated companies",
+        "summary": "List IranTalent's 50 top companies by employee rating (the site's \"best companies\" list)."
+      },
+      {
+        "name": "it_company",
+        "title": "Company profile",
+        "summary": "Read a company profile: about text, industry, size, address, website, rating breakdown and newest open jobs."
+      },
+      {
+        "name": "it_company_reviews",
+        "title": "Company reviews",
+        "summary": "Read anonymous employee reviews of a company on IranTalent: ratings, pros, cons, reviewer's job title."
+      },
+      {
+        "name": "it_lookups",
+        "title": "Filter lookups",
+        "summary": "List the valid filter values (slug, English and Persian name) for it_search_jobs."
+      },
+      {
+        "name": "it_job_market",
+        "title": "Job market overview",
+        "summary": "Count IranTalent's open jobs by category, industry, seniority, employment type, location or hiring company."
+      },
+      {
+        "name": "it_similar_jobs",
+        "title": "Similar jobs",
+        "summary": "Find open jobs similar to one ad: same job category (and city), newest first, without the ad itself."
+      }
+    ]
+  },
+  {
+    "name": "quera-mcp",
+    "title": "Quera",
+    "category": "jobs",
+    "site": "https://quera.org",
+    "description": "Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.",
+    "version": "0.1.0",
+    "pypi": "quera-mcp",
+    "repository": "https://github.com/sepehr071/quera-mcp",
+    "registry_name": "io.github.sepehr071/quera-mcp",
+    "run": "uvx quera-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "QUERA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Quera requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "qr_jobs",
+        "title": "Search Quera jobs",
+        "summary": "Search the open tech jobs on Quera Magnet (Iran's developer job board), 15 per page."
+      },
+      {
+        "name": "qr_job",
+        "title": "Get a Quera job",
+        "summary": "Get one Quera job posting: description, requirements, benefits, skills, salary, deadline and related jobs."
+      },
+      {
+        "name": "qr_job_filters",
+        "title": "Quera job filter choices",
+        "summary": "List the filter values qr_jobs and qr_companies accept: cities, industries, company sizes, popular tech codes and companies."
+      },
+      {
+        "name": "qr_companies",
+        "title": "Search Quera companies",
+        "summary": "Search the 3,000+ companies with a Quera Magnet profile, 15 per page."
+      },
+      {
+        "name": "qr_company",
+        "title": "Get a Quera company",
+        "summary": "Get a company's Quera profile (about, size, industry, tech stack, benefits, contacts) and its open jobs."
+      },
+      {
+        "name": "qr_contests",
+        "title": "Quera contests",
+        "summary": "List Quera programming contests: with no filter, those running or upcoming now plus the latest finished ones."
+      },
+      {
+        "name": "qr_problems",
+        "title": "Search Quera problems",
+        "summary": "Search Quera's public problemset (about 2,000 programming problems), 25 per page."
+      },
+      {
+        "name": "qr_problem",
+        "title": "Get a Quera problem",
+        "summary": "Get one Quera problem: statement (Markdown with LaTeX), limits, difficulty, tags, solve stats and languages."
+      },
+      {
+        "name": "qr_courses",
+        "title": "Quera courses",
+        "summary": "List Quera College's paid programming courses (about 70) with level and price."
+      },
+      {
+        "name": "qr_salaries",
+        "title": "Quera job salaries",
+        "summary": "Summarize the salaries employers published in open Quera jobs, grouped by seniority level (Toman per month)."
+      },
+      {
+        "name": "qr_problem_filters",
+        "title": "Quera problem filters",
+        "summary": "List the topic slugs, contest ids, origins and judging types that qr_problems accepts."
+      },
+      {
+        "name": "qr_event",
+        "title": "Get a Quera event",
+        "summary": "Get a Quera event or competition page (CodeCup, hackathon, contest series): schedule, prizes, price, sub-events."
+      },
+      {
+        "name": "qr_bootcamps",
+        "title": "Quera bootcamps",
+        "summary": "List Quera's intensive paid bootcamps open for registration with price, dates and seats, or get one in full."
+      },
+      {
+        "name": "qr_blog",
+        "title": "Quera blog",
+        "summary": "Search or read the Quera blog (quera.org/blog): Persian programming articles, career and tech news."
+      }
+    ]
+  },
+  {
+    "name": "ponisha-mcp",
+    "title": "Ponisha Freelance",
+    "category": "freelance",
+    "site": "https://ponisha.ir",
+    "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
+    "version": "0.1.0",
+    "pypi": "ponisha-mcp",
+    "repository": "https://github.com/sepehr071/ponisha-mcp",
+    "registry_name": "io.github.sepehr071/ponisha-mcp",
+    "run": "uvx ponisha-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "PONISHA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Ponisha requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "pn_search_projects",
+        "title": "Search projects",
+        "summary": "Search Ponisha projects (Iran's freelance marketplace) by text, skills, category, status and budget."
+      },
+      {
+        "name": "pn_project",
+        "title": "Project details",
+        "summary": "Get one Ponisha project: full description, budget, skills, deadline and the employer's track record."
+      },
+      {
+        "name": "pn_bids",
+        "title": "Project bids",
+        "summary": "List the offers freelancers made on a Ponisha project: price, days, pitch and each bidder's track record."
+      },
+      {
+        "name": "pn_search_freelancers",
+        "title": "Search freelancers",
+        "summary": "Search Ponisha freelancers by text, skills, category, level and portfolio, ranked by score."
+      },
+      {
+        "name": "pn_profile",
+        "title": "User profile",
+        "summary": "Get a public Ponisha profile (freelancer or employer): level, skills, statistics, rating and activity."
+      },
+      {
+        "name": "pn_skills",
+        "title": "Find skills",
+        "summary": "Find Ponisha skills (about 700 tags) by name to use in the skills filters of other tools."
+      },
+      {
+        "name": "pn_categories",
+        "title": "Categories",
+        "summary": "List Ponisha's top-level project categories, or the sub-categories of one."
+      },
+      {
+        "name": "pn_market",
+        "title": "Skill market",
+        "summary": "Summarize demand and supply for one skill on Ponisha: open projects, budgets, competition, related skills."
+      },
+      {
+        "name": "pn_reviews",
+        "title": "Reviews",
+        "summary": "Read the reviews employers wrote about a Ponisha user, or recent reviews for a whole skill."
+      },
+      {
+        "name": "pn_portfolios",
+        "title": "Portfolios",
+        "summary": "Search Ponisha portfolio items (about 500k work samples), or list one user's portfolio."
+      },
+      {
+        "name": "pn_services",
+        "title": "Service packages",
+        "summary": "Browse Ponisha's ready-made service packages (fixed-price offers such as logo design or WordPress themes)."
+      },
+      {
+        "name": "pn_service",
+        "title": "Service package details",
+        "summary": "Get one Ponisha service package: price, delivery time, what is included, requirements and paid add-ons."
+      },
+      {
+        "name": "pn_user_projects",
+        "title": "User projects",
+        "summary": "List the projects a Ponisha user is attached to: an employer's own projects or a freelancer's finished work."
+      },
+      {
+        "name": "pn_trend",
+        "title": "Skill trend",
+        "summary": "Show how demand and budgets for one skill changed over time on Ponisha, from the newest to the oldest projects."
+      }
+    ]
+  },
+  {
+    "name": "karlancer-mcp",
+    "title": "Karlancer Freelance",
+    "category": "freelance",
+    "site": "https://www.karlancer.com",
+    "description": "Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.",
+    "version": "0.1.0",
+    "pypi": "karlancer-mcp",
+    "repository": "https://github.com/sepehr071/karlancer-mcp",
+    "registry_name": "io.github.sepehr071/karlancer-mcp",
+    "run": "uvx karlancer-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "KARLANCER_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Karlancer requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "kl_projects",
+        "title": "Search projects",
+        "summary": "Search open freelance projects on Karlancer (karlancer.com) by keyword, skill, category and budget."
+      },
+      {
+        "name": "kl_project",
+        "title": "Project details",
+        "summary": "Get one Karlancer project in full: brief, budget, duration, hire deadline, skills, category path, city."
+      },
+      {
+        "name": "kl_skills",
+        "title": "Find skill ids",
+        "summary": "Look up Karlancer skill ids by name, with how many freelancer profiles list each skill."
+      },
+      {
+        "name": "kl_categories",
+        "title": "List categories",
+        "summary": "List Karlancer's top-level categories with the ids kl_projects takes as `category_id`, and the provinces."
+      },
+      {
+        "name": "kl_freelancers",
+        "title": "Search freelancers",
+        "summary": "Search Karlancer freelancers by keyword, skill and province, with rating and skills."
+      },
+      {
+        "name": "kl_top_freelancers",
+        "title": "Top freelancers",
+        "summary": "List the freelancers Karlancer features on its home page as top rated, with rating and skills."
+      },
+      {
+        "name": "kl_freelancer",
+        "title": "Freelancer profile",
+        "summary": "Get a Karlancer freelancer's public profile: bio, rating, success rate, skills, experience and client reviews."
+      },
+      {
+        "name": "kl_services",
+        "title": "Search services",
+        "summary": "Search Karlancer services (ready-made gigs freelancers sell at a fixed price) by keyword, skill and price."
+      },
+      {
+        "name": "kl_service",
+        "title": "Service details",
+        "summary": "Get one Karlancer service in full: description, price, delivery time, requirements, FAQ, skills and seller stats."
+      },
+      {
+        "name": "kl_worksamples",
+        "title": "Search portfolio items",
+        "summary": "Search the portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio."
+      },
+      {
+        "name": "kl_worksample",
+        "title": "Portfolio item details",
+        "summary": "Get one Karlancer portfolio item in full: description, skills, price range, duration, owner and similar items."
+      },
+      {
+        "name": "kl_similar_projects",
+        "title": "Similar projects",
+        "summary": "List the projects Karlancer suggests as similar to one project, with budget and duration."
+      },
+      {
+        "name": "kl_market_rate",
+        "title": "Market rate for a skill",
+        "summary": "Estimate what a skill pays on Karlancer: budget spread of recent projects, service prices and supply."
+      },
+      {
+        "name": "kl_trending_skills",
+        "title": "Trending skills",
+        "summary": "Show which skills employers ask for most in the newest Karlancer projects."
       }
     ]
   },
@@ -2596,6 +4351,80 @@
         "name": "dl_item",
         "title": "Download item details",
         "summary": "Return the details of one download item: name, version, size, category, date, description and system requirements."
+      }
+    ]
+  },
+  {
+    "name": "iran-cloud-status-mcp",
+    "title": "Iran Cloud Status",
+    "category": "cloud",
+    "site": "https://www.arvancloud.ir",
+    "description": "Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.",
+    "version": "0.1.0",
+    "pypi": "iran-cloud-status-mcp",
+    "repository": "https://github.com/sepehr071/iran-cloud-status-mcp",
+    "registry_name": "io.github.sepehr071/iran-cloud-status-mcp",
+    "run": "uvx iran-cloud-status-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_CLOUD_STATUS_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the status page requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "cs_status",
+        "title": "Cloud status now",
+        "summary": "Show the live status of every Iranian cloud provider this server reads (ArvanCloud, Hamravesh, Chabokan, ParsPack, Mihan WebHost) in one call."
+      },
+      {
+        "name": "cs_providers",
+        "title": "Providers and coverage",
+        "summary": "List the providers this server covers, what each one publishes, and which are not covered."
+      },
+      {
+        "name": "cs_components",
+        "title": "Components of a provider",
+        "summary": "List one provider's status components (services, regions, clusters, servers) with their current status."
+      },
+      {
+        "name": "cs_regions",
+        "title": "Status per region",
+        "summary": "Summarise status per region or group: component count, worst status and what is not operational."
+      },
+      {
+        "name": "cs_incidents",
+        "title": "Incidents",
+        "summary": "List recent incidents (outages, degradations, announcements) of the Iranian cloud providers, newest first, with their latest update."
+      },
+      {
+        "name": "cs_incident",
+        "title": "One incident in detail",
+        "summary": "Show one incident with its full update timeline, affected components and the status each was set to."
+      },
+      {
+        "name": "cs_maintenance",
+        "title": "Planned maintenance",
+        "summary": "List announced maintenance windows that are upcoming or running, per provider, optionally with recent finished ones."
+      },
+      {
+        "name": "cs_reliability",
+        "title": "Reliability over a period",
+        "summary": "Count incidents and add up incident time per provider over the last days, with the most affected components."
+      },
+      {
+        "name": "cs_pricing",
+        "title": "Public cloud prices",
+        "summary": "Show a provider's public price list in Toman, read from its own pricing page."
+      },
+      {
+        "name": "cs_compare_prices",
+        "title": "Compare prices for a size",
+        "summary": "Price one server size (vCPU, RAM, disk) per month at Hamravesh and Liara, cheapest first."
       }
     ]
   },
@@ -2905,6 +4734,495 @@
     ]
   },
   {
+    "name": "codal-mcp",
+    "title": "Codal (کدال) Disclosures",
+    "category": "stocks",
+    "site": "https://codal.ir",
+    "description": "Read-only codal.ir: search disclosures of Iranian listed companies, read letters and statements.",
+    "version": "0.1.0",
+    "pypi": "codal-mcp",
+    "repository": "https://github.com/sepehr071/codal-mcp",
+    "registry_name": "io.github.sepehr071/codal-mcp",
+    "run": "uvx codal-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "CODAL_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the codal.ir requests; system proxy settings are ignored. codal.ir often answers only Iranian connections. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 5,
+    "tools": [
+      {
+        "name": "cd_search_letters",
+        "title": "Search Codal disclosures",
+        "summary": "Search codal.ir disclosures (letters) of Iranian listed companies, newest first, 20 per page."
+      },
+      {
+        "name": "cd_letter",
+        "title": "Read one Codal letter",
+        "summary": "Read one codal.ir letter: its text or tables, plus links to its page, PDF, Excel and attachments."
+      },
+      {
+        "name": "cd_company",
+        "title": "Find a company on Codal",
+        "summary": "Find companies and funds on codal.ir by symbol or name, with their market, industry and type."
+      },
+      {
+        "name": "cd_letter_types",
+        "title": "List Codal letter types",
+        "summary": "List codal.ir letter groups, or the letter types of one group with the ids cd_search_letters takes."
+      },
+      {
+        "name": "cd_financial_years",
+        "title": "Fiscal years of a company",
+        "summary": "List the fiscal year-end dates codal.ir knows for one company, newest first (Jalali)."
+      }
+    ]
+  },
+  {
+    "name": "ifb-mcp",
+    "title": "Iran Fara Bourse",
+    "category": "stocks",
+    "site": "https://www.ifb.ir",
+    "description": "Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.",
+    "version": "0.1.0",
+    "pypi": "ifb-mcp",
+    "repository": "https://github.com/sepehr071/ifb-mcp",
+    "registry_name": "io.github.sepehr071/ifb-mcp",
+    "run": "uvx ifb-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IFB_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the ifb.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 16,
+    "tools": [
+      {
+        "name": "ifb_search",
+        "title": "Search instruments by symbol or name",
+        "summary": "Find Iran Fara Bourse instruments (stocks, bonds, sukuk, treasury bills, funds, options) by symbol or name."
+      },
+      {
+        "name": "ifb_yields",
+        "title": "Bond, sukuk and treasury bill yields",
+        "summary": "List fixed-income papers on Fara Bourse with last price, maturity and yield to maturity (YTM), filtered and ranked."
+      },
+      {
+        "name": "ifb_instrument",
+        "title": "Instrument details and coupon schedule",
+        "summary": "Describe one Fara Bourse instrument: name, ISIN, market, and for bonds the coupon rate, maturity, issuer, guarantor and payment schedule."
+      },
+      {
+        "name": "ifb_quote",
+        "title": "Live quote and order book",
+        "summary": "Get the live trading data of one instrument: last and closing price, change, volume, value, order book, and YTM for bonds."
+      },
+      {
+        "name": "ifb_history",
+        "title": "Price and yield history",
+        "summary": "Get daily price history of one instrument: first, high, low and closing price and volume per trading day, newest first."
+      },
+      {
+        "name": "ifb_ipos",
+        "title": "IPOs and share offerings",
+        "summary": "List Fara Bourse initial public offerings (IPOs): finished ones with price and volume, or those upcoming and under way."
+      },
+      {
+        "name": "ifb_underwritings",
+        "title": "Securities underwritten on Fara Bourse",
+        "summary": "List securities offered through underwriting (پذیره‌نویسی) on Fara Bourse, newest first."
+      },
+      {
+        "name": "ifb_announcements",
+        "title": "Announcements, news and market messages",
+        "summary": "Search Fara Bourse announcements, news and market messages by keyword and date, newest first."
+      },
+      {
+        "name": "ifb_article",
+        "title": "Read a news article",
+        "summary": "Read the text of one Fara Bourse news article (weekly trading statistics, listings, rule changes)."
+      },
+      {
+        "name": "ifb_market_summary",
+        "title": "Market summary",
+        "summary": "Summarise the Fara Bourse session: index, bond indices, total turnover, and each market's value traded with its top movers."
+      },
+      {
+        "name": "ifb_yield_curve",
+        "title": "Yield curves",
+        "summary": "Get Fara Bourse's fitted yield curves (Svensson/Nelson model) for government papers, non-government papers and treasury bills."
+      },
+      {
+        "name": "ifb_sukuk_flows",
+        "title": "Islamic securities trading by investor type",
+        "summary": "Show daily trading value of Islamic financial securities (sukuk, treasury bills) by who bought and sold, newest day first."
+      },
+      {
+        "name": "ifb_market_watch",
+        "title": "Live market watch and top movers",
+        "summary": "Show the live Fara Bourse market watch: every symbol's price, change, volume and best bid and ask, ranked and filtered."
+      },
+      {
+        "name": "ifb_index_history",
+        "title": "Index history",
+        "summary": "Get the daily history of a Fara Bourse index since 2009, with change over a day, week, month and year."
+      },
+      {
+        "name": "ifb_corporate_actions",
+        "title": "Capital increases, listings and market transfers",
+        "summary": "List corporate actions on Fara Bourse: capital increases under way, board transfers, and moves to or from the Tehran Stock Exchange."
+      },
+      {
+        "name": "ifb_halted",
+        "title": "Halted symbols and issuer status",
+        "summary": "List the symbols halted on Fara Bourse with the date and reason, or the issuers flagged for weak disclosure."
+      }
+    ]
+  },
+  {
+    "name": "fipiran-mcp",
+    "title": "Fipiran Funds",
+    "category": "stocks",
+    "site": "https://fipiran.ir",
+    "description": "Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.",
+    "version": "0.1.0",
+    "pypi": "fipiran-mcp",
+    "repository": "https://github.com/sepehr071/fipiran-mcp",
+    "registry_name": "io.github.sepehr071/fipiran-mcp",
+    "run": "uvx fipiran-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "FIPIRAN_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Fipiran requests; system proxy settings are ignored. The site answers Iranian lines only."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "fp_search_funds",
+        "title": "Search and rank funds",
+        "summary": "Search Iranian mutual funds and ETFs by name, type or manager, and rank them by return or size."
+      },
+      {
+        "name": "fp_fund_types",
+        "title": "Fund types and averages",
+        "summary": "List fund types (equity, fixed income, gold, mixed...) with fund counts, total size and average returns."
+      },
+      {
+        "name": "fp_fund",
+        "title": "Fund details",
+        "summary": "Get one fund in full: NAV, returns, size, allocation, investors, manager, auditor, custodian, website."
+      },
+      {
+        "name": "fp_history",
+        "title": "Fund history",
+        "summary": "Get a fund's daily history: NAV, returns, size and flows, investor mix or dividends, at most 60 points."
+      },
+      {
+        "name": "fp_compare",
+        "title": "Compare funds",
+        "summary": "Put 2 to 8 funds side by side: type, size, NAV, returns for every period, allocation, manager."
+      },
+      {
+        "name": "fp_managers",
+        "title": "Fund managers",
+        "summary": "Rank fund management companies by total assets under management, with their fund count and typical return."
+      },
+      {
+        "name": "fp_indices",
+        "title": "Market overview and indices",
+        "summary": "Show the Tehran and Farabourse market summary and rank the 65 market and industry indices by return."
+      },
+      {
+        "name": "fp_index_history",
+        "title": "Index history",
+        "summary": "Get the daily history of one market or industry index, oldest first, at most 60 evenly spaced points."
+      },
+      {
+        "name": "fp_stocks",
+        "title": "Search and rank stocks",
+        "summary": "Search and rank listed shares traded on the last trading day: top gainers, losers, most traded, by industry."
+      },
+      {
+        "name": "fp_stock",
+        "title": "Stock quote",
+        "summary": "Get one listed share in full: last trade, range, order book, buyers and sellers, period returns, industry."
+      },
+      {
+        "name": "fp_industries",
+        "title": "Industry trading",
+        "summary": "Rank the stock-market industries by trading on the last day: traded value, volume, number of trades."
+      }
+    ]
+  },
+  {
+    "name": "ime-mcp",
+    "title": "Iran Mercantile Exchange",
+    "category": "stocks",
+    "site": "https://www.ime.co.ir",
+    "description": "Read-only Iran Mercantile Exchange (ime.co.ir): physical trades, supply, prices, market totals.",
+    "version": "0.1.0",
+    "pypi": "ime-mcp",
+    "repository": "https://github.com/sepehr071/ime-mcp",
+    "registry_name": "io.github.sepehr071/ime-mcp",
+    "run": "uvx ime-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IME_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the ime.co.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 14,
+    "tools": [
+      {
+        "name": "ime_categories",
+        "title": "Commodity groups",
+        "summary": "List the exchange's commodity groups: main groups, then groups, then subgroups, with their ids."
+      },
+      {
+        "name": "ime_producers",
+        "title": "Find producers",
+        "summary": "Find producers and suppliers listed on the exchange by name, to get the producer id for the trade and supply tools."
+      },
+      {
+        "name": "ime_trades",
+        "title": "Trades on the exchange",
+        "summary": "List commodity trades (price, volume, supply, demand, buyer broker) for a date range, with totals."
+      },
+      {
+        "name": "ime_supply",
+        "title": "Supply offers",
+        "summary": "List supply offers (اطلاعیه عرضه): what is up for sale on which session, volume and base price."
+      },
+      {
+        "name": "ime_price_history",
+        "title": "Price history of a commodity",
+        "summary": "Daily price series (low, high, volume-weighted average, volume) per symbol over a date range."
+      },
+      {
+        "name": "ime_market_summary",
+        "title": "Market totals",
+        "summary": "Exchange-wide trade value and volume for a date range: by market, by physical-market hall, plus the USD rate."
+      },
+      {
+        "name": "ime_daily_totals",
+        "title": "Daily trade totals",
+        "summary": "Day-by-day trade value and volume of one market over a date range (the site's market chart)."
+      },
+      {
+        "name": "ime_news",
+        "title": "Exchange news",
+        "summary": "Latest news and notices from the exchange's news archive: title, lead, date and link."
+      },
+      {
+        "name": "ime_trade_stats",
+        "title": "Trade statistics by group",
+        "summary": "Rank producers, commodities, brokers or halls by traded value over a date range, with each one's market share."
+      },
+      {
+        "name": "ime_weekly_reports",
+        "title": "Weekly reports",
+        "summary": "List the exchange's weekly market reports (گزارش هفتگی), newest first, with the PDF link of each."
+      },
+      {
+        "name": "ime_options",
+        "title": "Options board",
+        "summary": "Options on gold, gold coin, gold funds and saffron futures (اختیار معامله): one day's board or one contract's history."
+      },
+      {
+        "name": "ime_securities",
+        "title": "Commodity securities trades",
+        "summary": "Daily trades of the exchange's financial-market symbols: salaf, commodity deposit certificates and commodity funds."
+      },
+      {
+        "name": "ime_certificates",
+        "title": "Gold and other deposit certificates",
+        "summary": "Continuous commodity deposit certificates (گواهی سپرده پیوسته): gold bar, gold coin, silver, copper, steel and more."
+      },
+      {
+        "name": "ime_board",
+        "title": "Live board of funds, certificates and salaf",
+        "summary": "Market-view board (cdn.ime.co.ir) with the best bid and ask: use it to see where a fund or certificate trades now."
+      }
+    ]
+  },
+  {
+    "name": "cbi-mcp",
+    "title": "Central Bank of Iran",
+    "category": "economy",
+    "site": "https://www.cbi.ir",
+    "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
+    "version": "0.1.0",
+    "pypi": "cbi-mcp",
+    "repository": "https://github.com/sepehr071/cbi-mcp",
+    "registry_name": "io.github.sepehr071/cbi-mcp",
+    "run": "uvx cbi-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "CBI_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the cbi.ir requests; system proxy settings are ignored."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "cb_exchange_rates",
+        "title": "Official exchange rates",
+        "summary": "Get the Central Bank of Iran's official reference exchange rates for one day, in rials per currency unit."
+      },
+      {
+        "name": "cb_rate_history",
+        "title": "Currency rate history",
+        "summary": "Get the official CBI rate of one currency over time, oldest first, with the total change."
+      },
+      {
+        "name": "cb_inflation",
+        "title": "Inflation rate",
+        "summary": "Get Iran's inflation rate as published by the Central Bank: the monthly series for one year and annual history."
+      },
+      {
+        "name": "cb_policy_rates",
+        "title": "Policy and interbank rates",
+        "summary": "Get the Central Bank's weekly interest rates: interbank market rate and the standing-facility corridor."
+      },
+      {
+        "name": "cb_news",
+        "title": "Central Bank news",
+        "summary": "List the Central Bank's latest news and announcements (title, date, id), optionally filtered by a word."
+      },
+      {
+        "name": "cb_news_item",
+        "title": "Central Bank news article",
+        "summary": "Read one Central Bank news item or announcement in full: title, date, text and attached files."
+      },
+      {
+        "name": "cb_liquidity",
+        "title": "Liquidity and monetary news",
+        "summary": "Get Iran's liquidity (نقدینگی, M2) as numbers from the newest monthly report, plus the latest statements on it."
+      },
+      {
+        "name": "cb_publications",
+        "title": "Publications and reports",
+        "summary": "List the newest Central Bank publications of one kind with download links (PDF/Excel), newest first."
+      },
+      {
+        "name": "cb_statistics",
+        "title": "Monthly statistics tables",
+        "summary": "Read one table of the Central Bank's monthly statistics Excel file as rows of numbers and Persian labels."
+      },
+      {
+        "name": "cb_bond_auctions",
+        "title": "Government bond auctions",
+        "summary": "Get the results of the Central Bank's weekly government Islamic securities (sukuk) auctions: sold amounts and yields."
+      },
+      {
+        "name": "cb_open_market",
+        "title": "Open market operations",
+        "summary": "List the Central Bank's weekly open market operation reports and read the newest one's repo auction figures."
+      }
+    ]
+  },
+  {
+    "name": "amar-mcp",
+    "title": "Statistical Centre of Iran",
+    "category": "economy",
+    "site": "https://amar.org.ir",
+    "description": "Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.",
+    "version": "0.1.0",
+    "pypi": "amar-mcp",
+    "repository": "https://github.com/sepehr071/amar-mcp",
+    "registry_name": "io.github.sepehr071/amar-mcp",
+    "run": "uvx amar-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "AMAR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the amar.org.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 12,
+    "tools": [
+      {
+        "name": "am_inflation",
+        "title": "Inflation (CPI)",
+        "summary": "Get Iran's official consumer price index (CPI) and inflation from the Statistical Centre of Iran, latest first."
+      },
+      {
+        "name": "am_inflation_groups",
+        "title": "Inflation by CPI group",
+        "summary": "Compare official inflation across CPI groups (food, housing, transport, health...) for one month."
+      },
+      {
+        "name": "am_labour_force",
+        "title": "Labour force",
+        "summary": "Get Iran's official unemployment and labour-force participation rates by quarter, latest first."
+      },
+      {
+        "name": "am_population",
+        "title": "Population of provinces and counties",
+        "summary": "Get population and households by province, or by county within one province, from Iran's 1395 census."
+      },
+      {
+        "name": "am_table",
+        "title": "Read an Excel table",
+        "summary": "Read an Excel table of a statistical release as compact rows (works for any release with an xlsx/xls file)."
+      },
+      {
+        "name": "am_indicators",
+        "title": "Macro indicators",
+        "summary": "Read the Centre's monthly macro-indicators workbook: trade, housing, money, budget, prices by decile and more."
+      },
+      {
+        "name": "am_gdp",
+        "title": "GDP growth (quarterly)",
+        "summary": "Get Iran's official GDP growth by quarter or year, with the main sectors, latest first."
+      },
+      {
+        "name": "am_ppi",
+        "title": "Producer price index",
+        "summary": "Get Iran's producer price index (PPI, factory-gate prices) by quarter and sector, latest first."
+      },
+      {
+        "name": "am_search",
+        "title": "Search statistical releases",
+        "summary": "Search the Statistical Centre of Iran (amar.org.ir) catalog of releases: tables, time series, reports."
+      },
+      {
+        "name": "am_release",
+        "title": "Get one release",
+        "summary": "Get one statistical release from amar.org.ir: title, topic path, period and its downloadable files."
+      },
+      {
+        "name": "am_calendar",
+        "title": "Release calendar",
+        "summary": "Get the Statistical Centre of Iran's publishing calendar: which statistics come out on which day of a month."
+      },
+      {
+        "name": "am_news",
+        "title": "News and press releases",
+        "summary": "List the latest news and press releases of the Statistical Centre of Iran, or read one item."
+      }
+    ]
+  },
+  {
     "name": "iran-news-mcp",
     "title": "Iran News RSS",
     "category": "news",
@@ -2955,6 +5273,298 @@
         "name": "nw_tech_news",
         "title": "Tech news (Digiato, Zoomit)",
         "summary": "Return the newest technology news (phones, laptops, AI, gadgets, apps, crypto, cars, security, games) with long summaries."
+      }
+    ]
+  },
+  {
+    "name": "varzesh3-mcp",
+    "title": "Varzesh3 Sports",
+    "category": "sports",
+    "site": "https://www.varzesh3.com",
+    "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
+    "version": "0.1.0",
+    "pypi": "varzesh3-mcp",
+    "repository": "https://github.com/sepehr071/varzesh3-mcp",
+    "registry_name": "io.github.sepehr071/varzesh3-mcp",
+    "run": "uvx varzesh3-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "VARZESH3_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Varzesh3 requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 18,
+    "tools": [
+      {
+        "name": "v3_scores",
+        "title": "Scores of a day",
+        "summary": "Get the live scores, results and fixtures of one day across leagues, as the Varzesh3 live score page lists them."
+      },
+      {
+        "name": "v3_match",
+        "title": "Match detail",
+        "summary": "Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video and next matches."
+      },
+      {
+        "name": "v3_league",
+        "title": "Leagues and seasons",
+        "summary": "List the football leagues with their ids, or get one league's current season id and past seasons with winners."
+      },
+      {
+        "name": "v3_standings",
+        "title": "League table",
+        "summary": "Get the table of a football league (rank, played, won, drawn, lost, goals, points, recent form), group tables or a cup bracket."
+      },
+      {
+        "name": "v3_league_matches",
+        "title": "League fixtures and results",
+        "summary": "Get a league's matches round by round: scores of played rounds and dates of coming ones."
+      },
+      {
+        "name": "v3_top_players",
+        "title": "Top players of a league",
+        "summary": "Get the best players of a football (or futsal) league by one statistic, e.g. top scorers or most assists."
+      },
+      {
+        "name": "v3_team",
+        "title": "Team page",
+        "summary": "Get a football team's page: name, followers, recent form, squad by position and optionally transfers."
+      },
+      {
+        "name": "v3_team_matches",
+        "title": "Team matches",
+        "summary": "Get a football team's latest results or its upcoming matches across all competitions."
+      },
+      {
+        "name": "v3_news",
+        "title": "News",
+        "summary": "Get Varzesh3 news headlines with a short summary: latest, most read, most commented, or about a team, league, player, match or sport."
+      },
+      {
+        "name": "v3_article",
+        "title": "News story",
+        "summary": "Read one news story: title, publish time, full text (plain text, up to 6000 characters), tags and the match it is about."
+      },
+      {
+        "name": "v3_videos",
+        "title": "Videos",
+        "summary": "Get Varzesh3 videos (goals, match summaries, interviews): latest, or about one team, league, match or player."
+      },
+      {
+        "name": "v3_search",
+        "title": "Search",
+        "summary": "Search Varzesh3 for teams, people, leagues, news and videos by name; the way to turn a name into an id."
+      },
+      {
+        "name": "v3_player",
+        "title": "Player profile",
+        "summary": "Get a player's profile (team, position, shirt number, age, country) with his latest news and videos."
+      },
+      {
+        "name": "v3_team_players",
+        "title": "Players of a team",
+        "summary": "Get the season statistics of one football team's players: goals, assists, appearances, minutes, cards."
+      },
+      {
+        "name": "v3_head_to_head",
+        "title": "Head to head",
+        "summary": "Get the past meetings of two football teams with a won/drawn/lost summary for team_id."
+      },
+      {
+        "name": "v3_transfers",
+        "title": "Transfers",
+        "summary": "Get the football transfer list of a window, club by club: players signed and players who left."
+      },
+      {
+        "name": "v3_tv_schedule",
+        "title": "TV schedule",
+        "summary": "Get the live broadcast schedule (جدول پخش زنده) of sports matches for the next days, with start times and stream links."
+      },
+      {
+        "name": "v3_league_stats",
+        "title": "League statistics",
+        "summary": "Get a football league's season statistics: goals per match, cards per match, goal timing, streak notes and team rankings."
+      }
+    ]
+  },
+  {
+    "name": "gamefa-mcp",
+    "title": "Gamefa",
+    "category": "entertainment",
+    "site": "https://gamefa.com",
+    "description": "Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, profiles, releases.",
+    "version": "0.1.0",
+    "pypi": "gamefa-mcp",
+    "repository": "https://github.com/sepehr071/gamefa-mcp",
+    "registry_name": "io.github.sepehr071/gamefa-mcp",
+    "run": "uvx gamefa-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "GAMEFA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Gamefa requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 13,
+    "tools": [
+      {
+        "name": "gf_search_articles",
+        "title": "Search articles",
+        "summary": "Search Gamefa's news, reviews and features by keyword, newest matches first."
+      },
+      {
+        "name": "gf_latest_articles",
+        "title": "Latest articles",
+        "summary": "List the newest Gamefa articles, optionally for one section such as news, reviews, trailers or pc."
+      },
+      {
+        "name": "gf_article",
+        "title": "Read an article",
+        "summary": "Read one Gamefa article as plain text, with the editors' score box when it is a review."
+      },
+      {
+        "name": "gf_reviews",
+        "title": "Game reviews with scores",
+        "summary": "List Gamefa's game reviews (نقد و بررسی) newest first, each with the editors' score out of 10, label, pros and cons."
+      },
+      {
+        "name": "gf_popular",
+        "title": "Most read articles",
+        "summary": "List the most viewed Gamefa articles of the past week, month, season or year, most viewed first."
+      },
+      {
+        "name": "gf_games",
+        "title": "Game profiles",
+        "summary": "Browse or search Gamefa's game profiles with the editors' score, user score, genres, platforms and release date."
+      },
+      {
+        "name": "gf_upcoming_games",
+        "title": "Upcoming game releases",
+        "summary": "List games that have not been released yet, soonest first (Gamefa's release calendar), with ISO release dates."
+      },
+      {
+        "name": "gf_films",
+        "title": "Film and series profiles",
+        "summary": "Browse or search Gamefa's film and TV series profiles with IMDb score, user score, genres, director and release date."
+      },
+      {
+        "name": "gf_game",
+        "title": "Game profile",
+        "summary": "Get one game's Gamefa profile: editors' score, user score and votes, Metacritic, release date, description."
+      },
+      {
+        "name": "gf_film",
+        "title": "Film profile",
+        "summary": "Get one film or series profile: IMDb and user score, genres, cast, director, writers, countries, runtime, release date."
+      },
+      {
+        "name": "gf_terms",
+        "title": "Find filter slugs",
+        "summary": "Find the slug of a platform, genre, developer, publisher, film person or studio, or an article topic tag."
+      },
+      {
+        "name": "gf_comments",
+        "title": "Comments on an article or profile",
+        "summary": "Read the public reader comments under a Gamefa article or a game/film profile, with likes and dislikes."
+      },
+      {
+        "name": "gf_related",
+        "title": "Related articles or titles",
+        "summary": "List the articles Gamefa links to a game or film profile, or the games/films it shows as similar."
+      }
+    ]
+  },
+  {
+    "name": "time-ir-mcp",
+    "title": "Time.ir Calendar",
+    "category": "calendar",
+    "site": "https://www.time.ir",
+    "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
+    "version": "0.1.0",
+    "pypi": "time-ir-mcp",
+    "repository": "https://github.com/sepehr071/time-ir-mcp",
+    "registry_name": "io.github.sepehr071/time-ir-mcp",
+    "run": "uvx time-ir-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "TIME_IR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Time.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 13,
+    "tools": [
+      {
+        "name": "ti_today",
+        "title": "Today",
+        "summary": "Get today's date in the Jalali, Gregorian and Hijri calendars with the Tehran time, weekday, zodiac sign and today's events."
+      },
+      {
+        "name": "ti_convert_date",
+        "title": "Convert date",
+        "summary": "Convert a date between the Jalali (Solar Hijri), Gregorian and Hijri (lunar) calendars, using time.ir's own converter."
+      },
+      {
+        "name": "ti_month",
+        "title": "Month calendar",
+        "summary": "Show one Jalali month: its Gregorian and Hijri month spans, weekday of day 1, holidays and every event of the month."
+      },
+      {
+        "name": "ti_events",
+        "title": "Events of a day",
+        "summary": "List the occasions (Persian: monasebat) and official holidays of one day, with a short description when time.ir has one."
+      },
+      {
+        "name": "ti_holidays",
+        "title": "Holidays of a year",
+        "summary": "List all official holidays (تعطیلات رسمی) of a Jalali year with Gregorian and Hijri dates and weekdays."
+      },
+      {
+        "name": "ti_upcoming_holidays",
+        "title": "Upcoming holidays",
+        "summary": "List the next official holidays in Iran starting today (or from_date), with days until each."
+      },
+      {
+        "name": "ti_cities",
+        "title": "Cities",
+        "summary": "List Iran's provinces, or the cities of one province, with the ids ti_prayer_times takes."
+      },
+      {
+        "name": "ti_prayer_times",
+        "title": "Prayer times",
+        "summary": "Get the Islamic prayer times (اوقات شرعی) for an Iranian city and day: fajr, sunrise, noon, sunset, maghrib and Islamic midnight."
+      },
+      {
+        "name": "ti_qibla",
+        "title": "Qibla direction",
+        "summary": "Get the qibla direction (bearing to the Kaaba in Mecca, degrees clockwise from true north) and distance for an Iranian city."
+      },
+      {
+        "name": "ti_on_this_day",
+        "title": "On this day in history",
+        "summary": "List today's historical events, birthdays and deaths of notable people, as Time.ir's \"today\" page shows them."
+      },
+      {
+        "name": "ti_search_events",
+        "title": "Search occasions",
+        "summary": "Search all occasions (monasebat) of a Jalali year by keyword and return each match with its dates."
+      },
+      {
+        "name": "ti_date_difference",
+        "title": "Date difference",
+        "summary": "Count the days between two dates and give the span as Jalali years, months and days (age calculator)."
+      },
+      {
+        "name": "ti_long_weekends",
+        "title": "Long weekends",
+        "summary": "Find runs of consecutive days off in a Jalali year: official holidays joined with Fridays (optionally Thursdays)."
       }
     ]
   },
@@ -3063,6 +5673,55 @@
         "name": "qv_lookup",
         "title": "Look up filter ids",
         "summary": "Find the ids that qv_search filters take: approving bodies, executing bodies, subjects, types, statuses, lists."
+      }
+    ]
+  },
+  {
+    "name": "rrk-mcp",
+    "title": "Official Gazette of Iran",
+    "category": "law",
+    "site": "https://rrk.ir",
+    "description": "Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.",
+    "version": "0.1.0",
+    "pypi": "rrk-mcp",
+    "repository": "https://github.com/sepehr071/rrk-mcp",
+    "registry_name": "io.github.sepehr071/rrk-mcp",
+    "run": "uvx rrk-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "RRK_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the rrk.ir requests; system proxy settings are ignored."
+      }
+    ],
+    "tool_count": 5,
+    "tools": [
+      {
+        "name": "rk_exchange_offices",
+        "title": "Licensed exchange offices",
+        "summary": "List the licensed currency exchange offices (صرافی مجاز) the Central Bank published in the Official Gazette (rrk.ir)."
+      },
+      {
+        "name": "rk_search_laws",
+        "title": "Search laws and regulations",
+        "summary": "Search the Official Gazette's laws and regulations database (rrk.ir) by title, full text, group, approver, special number or gazette date."
+      },
+      {
+        "name": "rk_law_filters",
+        "title": "Law groups and approvers",
+        "summary": "List the law groups (categories) and approving authorities that rk_search_laws can filter by."
+      },
+      {
+        "name": "rk_latest_laws",
+        "title": "Latest laws and regulations",
+        "summary": "List the newest laws, rulings and regulations published in the Official Gazette (rrk.ir), newest gazette first."
+      },
+      {
+        "name": "rk_law_text",
+        "title": "Read a law's text",
+        "summary": "Read the full text of one law or ruling from the Official Gazette (rrk.ir): approver, gazette number and date, body."
       }
     ]
   },

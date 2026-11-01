@@ -1,6 +1,6 @@
 {
   "name": "iran-travel",
-  "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday.",
+  "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday, Alibaba Travel, Eghamat24 Hotels.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -11,6 +11,8 @@
     "otaghak",
     "jabama",
     "mrbilit",
-    "flytoday"
+    "flytoday",
+    "alibaba-ir",
+    "eghamat24"
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "name": "emalls-ir",
+  "displayName": "Emalls Price Comparison",
+  "version": "0.1.1",
+  "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/emalls-ir-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "shopping",
+    "emalls.ir"
+  ],
+  "mcpServers": {
+    "emalls-ir": {
+      "command": "uvx",
+      "args": [
+        "emalls-ir-mcp@0.1.1"
+      ]
+    }
+  }
+}

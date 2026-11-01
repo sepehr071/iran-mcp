@@ -1,0 +1,27 @@
+{
+  "name": "neshan",
+  "displayName": "Neshan Maps",
+  "version": "0.1.0",
+  "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/neshan-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "maps",
+    "neshan.org"
+  ],
+  "mcpServers": {
+    "neshan": {
+      "command": "uvx",
+      "args": [
+        "neshan-mcp@0.1.0"
+      ]
+    }
+  }
+}

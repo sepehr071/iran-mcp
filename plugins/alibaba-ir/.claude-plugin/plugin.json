@@ -1,0 +1,27 @@
+{
+  "name": "alibaba-ir",
+  "displayName": "Alibaba Travel",
+  "version": "0.1.0",
+  "description": "Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/alibaba-ir-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "travel",
+    "alibaba.ir"
+  ],
+  "mcpServers": {
+    "alibaba-ir": {
+      "command": "uvx",
+      "args": [
+        "alibaba-ir-mcp@0.1.0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ifb",
+  "displayName": "Iran Fara Bourse",
+  "version": "0.1.0",
+  "description": "Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/ifb-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "stocks",
+    "ifb.ir"
+  ],
+  "mcpServers": {
+    "ifb": {
+      "command": "uvx",
+      "args": [
+        "ifb-mcp@0.1.0"
+      ]
+    }
+  }
+}

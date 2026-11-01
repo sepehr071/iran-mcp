@@ -1,0 +1,27 @@
+{
+  "name": "balad",
+  "displayName": "Balad Maps",
+  "version": "0.1.0",
+  "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/balad-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "maps",
+    "balad.ir"
+  ],
+  "mcpServers": {
+    "balad": {
+      "command": "uvx",
+      "args": [
+        "balad-mcp@0.1.0"
+      ]
+    }
+  }
+}

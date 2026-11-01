@@ -1,5 +1,49 @@
 # Changelog
 
+## v2.3 (2026-11-01)
+
+31 new servers: cars, maps, jobs and freelance work, markets and economic data, sports, games, the calendar and more.
+Every existing server keeps its tool names and parameters.
+
+### Added
+
+- **[emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp)**, 10 tools: Emalls price comparison: products, every shop's offer, price history and shops.
+- **[mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp)**, 17 tools: Mobile.ir: phone specs, shop prices, price history, used phones and SIM numbers.
+- **[zoomit-mcp](https://github.com/sepehr071/zoomit-mcp)**, 12 tools: Zoomit products (Zoobin): phone, laptop and GPU specs, shop prices, price history, comparisons.
+- **[sheypoor-mcp](https://github.com/sepehr071/sheypoor-mcp)**, 11 tools: Sheypoor classifieds: ads in any city, ad details, price summaries for cars and homes.
+- **[bama-ir-mcp](https://github.com/sepehr071/bama-ir-mcp)**, 12 tools: Bama: car ads, market prices, new-car price lists, dealers and specs.
+- **[karnameh-mcp](https://github.com/sepehr071/karnameh-mcp)**, 15 tools: Karnameh: used-car ads, specs and comparisons, new-car market prices and history.
+- **[hamrah-mechanic-mcp](https://github.com/sepehr071/hamrah-mechanic-mcp)**, 12 tools: Hamrah Mechanic: daily car prices, price estimates, used cars for sale, inspection fees.
+- **[alibaba-ir-mcp](https://github.com/sepehr071/alibaba-ir-mcp)**, 14 tools: Alibaba: domestic and international flights, trains, buses, hotels, villas and tours.
+- **[eghamat24-mcp](https://github.com/sepehr071/eghamat24-mcp)**, 14 tools: Eghamat24: hotels, room prices for given dates, price calendar, deals and reviews.
+- **[neshan-mcp](https://github.com/sepehr071/neshan-mcp)**, 11 tools: Neshan map: place search, reviews, nearby places, reverse geocoding, air quality, car, bike, walking and transit directions, traffic-zone checks.
+- **[balad-mcp](https://github.com/sepehr071/balad-mcp)**, 9 tools: Balad map: places and addresses, nearby and nearest by driving time, places along a route, driving directions with live Tehran traffic.
+- **[darukade-mcp](https://github.com/sepehr071/darukade-mcp)**, 12 tools: Darukade online pharmacy: products, prices, ingredients, usage and reviews.
+- **[iranketab-mcp](https://github.com/sepehr071/iranketab-mcp)**, 13 tools: Iranketab printed books: translations and editions compared, ratings, reviews, prices.
+- **[faradars-mcp](https://github.com/sepehr071/faradars-mcp)**, 16 tools: Faradars Persian online courses: prices, syllabus, instructors, learning paths.
+- **[jobinja-mcp](https://github.com/sepehr071/jobinja-mcp)**, 10 tools: Jobinja: job ads, companies, salary stats, skills in demand. Iranian connections only.
+- **[jobvision-mcp](https://github.com/sepehr071/jobvision-mcp)**, 14 tools: Jobvision: job ads, advertised pay, companies, interview reports, job market.
+- **[irantalent-mcp](https://github.com/sepehr071/irantalent-mcp)**, 11 tools: IranTalent: job ads, companies, employee reviews, salary reports.
+- **[quera-mcp](https://github.com/sepehr071/quera-mcp)**, 14 tools: Quera: tech jobs, companies, salaries, contests, problems, courses and bootcamps.
+- **[ponisha-mcp](https://github.com/sepehr071/ponisha-mcp)**, 14 tools: Ponisha: freelance projects and bids, freelancers, services, skill demand.
+- **[karlancer-mcp](https://github.com/sepehr071/karlancer-mcp)**, 14 tools: Karlancer: freelance projects, freelancers, services, market rates.
+- **[iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp)**, 10 tools: Live status, incidents, maintenance and public prices of ArvanCloud, Hamravesh, Chabokan and Liara.
+- **[codal-mcp](https://github.com/sepehr071/codal-mcp)**, 5 tools: Codal filings of listed companies: financial statements, EPS and monthly activity reports as tables, meeting decisions. Amounts as published, usually million Rial.
+- **[ifb-mcp](https://github.com/sepehr071/ifb-mcp)**, 16 tools: Iran Fara Bourse: bond and sukuk yields, treasury bills, yield curve, IPOs, announcements. Rial; Iranian connections only.
+- **[fipiran-mcp](https://github.com/sepehr071/fipiran-mcp)**, 11 tools: Fipiran: mutual funds and ETFs, NAV, returns, size, managers. Iranian connections only.
+- **[ime-mcp](https://github.com/sepehr071/ime-mcp)**, 14 tools: Iran Mercantile Exchange: physical market trades, supply offers, price history, market totals, options, certificates. Rial; Iranian connections only.
+- **[cbi-mcp](https://github.com/sepehr071/cbi-mcp)**, 11 tools: Central Bank of Iran: official exchange rates and history, inflation, policy rates, liquidity, news. Rial.
+- **[amar-mcp](https://github.com/sepehr071/amar-mcp)**, 12 tools: Statistical Centre of Iran: CPI inflation, unemployment, population, GDP, release tables. Iranian connections only.
+- **[varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp)**, 18 tools: Varzesh3: live scores, league tables, fixtures, teams, players, transfers, TV schedule, news.
+- **[gamefa-mcp](https://github.com/sepehr071/gamefa-mcp)**, 13 tools: Gamefa: game and film news, reviews with scores, game and film profiles, upcoming releases.
+- **[time-ir-mcp](https://github.com/sepehr071/time-ir-mcp)**, 13 tools: Time.ir: Jalali, Gregorian and Hijri dates, holidays, events, prayer times, qibla.
+- **[rrk-mcp](https://github.com/sepehr071/rrk-mcp)**, 5 tools: Official Gazette of Iran (rrk.ir): laws, regulations and rulings, latest and full text.
+- New skill categories `cars`, `maps`, `jobs`, `freelance`, `economy`, `sports`, `entertainment`, `calendar` and
+  `cloud`. `tsetmc-mcp` and the four new market servers share `stocks`. The banner's travel tile now also counts maps,
+  and its last tile is now "Jobs, news & data".
+- New bundles `iran-cars`, `iran-maps`, `iran-jobs`, `iran-freelance`, `iran-economy`, `iran-stocks`,
+  `iran-classifieds`, `iran-learning` and `iran-law`.
+
 ## v2.0 (2026-10-20)
 
 12 new servers: shops, food, prices, news, earthquakes, laws, tax, courses, apps and software downloads. Every

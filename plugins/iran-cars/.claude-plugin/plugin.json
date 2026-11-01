@@ -1,0 +1,15 @@
+{
+  "name": "iran-cars",
+  "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "bama-ir",
+    "karnameh",
+    "hamrah-mechanic"
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: tsetmc
-description: "Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book, history, indices. Use when the user asks about TSETMC Tehran Stock Exchange (tsetmc.com) or wants Tehran stock exchange quotes, indices, order books or real versus legal trading in Iran."
+description: "Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book, history, indices. Use when the user asks about TSETMC Tehran Stock Exchange (tsetmc.com) or wants stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran."
 ---
 
 # TSETMC Tehran Stock Exchange

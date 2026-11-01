@@ -1,0 +1,27 @@
+{
+  "name": "iranketab",
+  "displayName": "Iranketab Books",
+  "version": "0.1.0",
+  "description": "Read-only Iranketab (iranketab.ir) books: search, translations compared, ratings, reviews, prices.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iranketab-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "books",
+    "iranketab.ir"
+  ],
+  "mcpServers": {
+    "iranketab": {
+      "command": "uvx",
+      "args": [
+        "iranketab-mcp@0.1.0"
+      ]
+    }
+  }
+}

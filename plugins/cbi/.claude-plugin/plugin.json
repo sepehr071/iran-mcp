@@ -1,0 +1,27 @@
+{
+  "name": "cbi",
+  "displayName": "Central Bank of Iran",
+  "version": "0.1.0",
+  "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/cbi-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "economy",
+    "cbi.ir"
+  ],
+  "mcpServers": {
+    "cbi": {
+      "command": "uvx",
+      "args": [
+        "cbi-mcp@0.1.0"
+      ]
+    }
+  }
+}

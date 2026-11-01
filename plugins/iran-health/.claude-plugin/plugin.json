@@ -1,6 +1,6 @@
 {
   "name": "iran-health",
-  "description": "Everything for doctors, clinics, labs or appointments in Iran: Paziresh24, Doctoreto, ExirYab.",
+  "description": "Everything for doctors, clinics, labs, appointments or pharmacy products in Iran: Paziresh24, Doctoreto, ExirYab, Darukade Pharmacy.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -10,6 +10,7 @@
   "dependencies": [
     "paziresh24",
     "doctoreto",
-    "exiryab"
+    "exiryab",
+    "darukade"
   ]
 }
