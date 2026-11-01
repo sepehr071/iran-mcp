@@ -376,7 +376,8 @@ Read https://raw.githubusercontent.com/sepehr071/iran-mcp/main/AGENTS.md, then a
 
 ## Shared conventions
 
-- **Prices are always Toman**, even where the site's API returns Rial.
+- **Prices are Toman**, even where the site's API returns Rial. The exceptions are market data that is quoted in Rial:
+  `tsetmc-mcp`, `codal-mcp`, `ifb-mcp`, `ime-mcp`, `cbi-mcp` and the NAV in `fipiran-mcp`. Their skills name the unit.
 - **Site servers are read-only.** Shop, travel, health and book servers never log in, fill a basket, book or pay.
   `payping-mcp` and `bale-mcp` can write, but only to your own account, with your token, on your machine.
   `swapwallet-mcp` works on your own SwapWallet account after you sign in, and a swap, transfer or withdrawal it asks
