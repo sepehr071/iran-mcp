@@ -8,19 +8,21 @@ How the `iran-mcp` plugin marketplace is built, which agents can use it, and wha
 
 ```
 .claude-plugin/marketplace.json        the `iran-mcp` marketplace: one entry per plugin
-plugins/<name>/                        one plugin per server (36)
+plugins/<name>/                        one plugin per server (71)
   .claude-plugin/plugin.json           manifest: version + the MCP server, pinned to that version
   skills/<name>/SKILL.md               when to use the server, its tools, its rules
-plugins/iran-<bundle>/                 bundles (9): a manifest with `dependencies` and nothing else
+plugins/iran-<bundle>/                 bundles (19): a manifest with `dependencies` and nothing else
   .claude-plugin/plugin.json
 ```
 
 - `<name>` is the package name without `-mcp` (`digikala`, `30book`, ...).
 - A server plugin's `version` is the server's release on PyPI. Its MCP server runs `uvx <package>@<version>`.
-  A hosted server's plugin (`swapwallet`) points its MCP server at the URL and takes `version` from the
+  A hosted server's plugin (`pasavard`, `swapwallet`) points its MCP server at the URL and takes `version` from the
   `server.json` in its repo.
 - Bundles are `iran-all` (every read-only site server) plus one per category with two or more servers:
-  `iran-food`, `iran-shopping`, `iran-beauty`, `iran-travel`, `iran-health`, `iran-books`, `iran-fashion`, `iran-software`, `iran-prices`. `payping`, `bale` and
+  `iran-food`, `iran-shopping`, `iran-beauty`, `iran-fashion`, `iran-classifieds`, `iran-cars`, `iran-travel`, `iran-maps`,
+  `iran-health`, `iran-books`, `iran-learning`, `iran-jobs`, `iran-freelance`, `iran-software`, `iran-prices`,
+  `iran-stocks`, `iran-economy`, `iran-law`. `payping`, `bale` and
   `swapwallet` act on the user's own account, so no bundle includes them.
 - Bundles have no `version`. Claude Code then versions them by git commit, so a changed member list reaches users.
 - Skill text comes from `skill()`, `USE` and `NOTES` in `scripts/catalog.py`. Tool lists come from the server code,
