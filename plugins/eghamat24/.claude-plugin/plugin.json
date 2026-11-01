@@ -1,0 +1,27 @@
+{
+  "name": "eghamat24",
+  "displayName": "Eghamat24 Hotels",
+  "version": "0.1.0",
+  "description": "Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/eghamat24-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "travel",
+    "eghamat24.com"
+  ],
+  "mcpServers": {
+    "eghamat24": {
+      "command": "uvx",
+      "args": [
+        "eghamat24-mcp@0.1.0"
+      ]
+    }
+  }
+}

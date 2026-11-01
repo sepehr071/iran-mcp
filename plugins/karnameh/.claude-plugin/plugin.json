@@ -1,0 +1,27 @@
+{
+  "name": "karnameh",
+  "displayName": "Karnameh Cars",
+  "version": "0.1.0",
+  "description": "Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/karnameh-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "cars",
+    "karnameh.com"
+  ],
+  "mcpServers": {
+    "karnameh": {
+      "command": "uvx",
+      "args": [
+        "karnameh-mcp@0.1.0"
+      ]
+    }
+  }
+}

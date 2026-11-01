@@ -1,0 +1,14 @@
+{
+  "name": "iran-maps",
+  "description": "Everything for places, addresses, routes or travel times on a map in Iran: Neshan Maps, Balad Maps.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "neshan",
+    "balad"
+  ]
+}

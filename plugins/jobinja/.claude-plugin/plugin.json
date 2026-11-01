@@ -1,0 +1,27 @@
+{
+  "name": "jobinja",
+  "displayName": "Jobinja Jobs",
+  "version": "0.1.0",
+  "description": "Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/jobinja-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "jobs",
+    "jobinja.ir"
+  ],
+  "mcpServers": {
+    "jobinja": {
+      "command": "uvx",
+      "args": [
+        "jobinja-mcp@0.1.0"
+      ]
+    }
+  }
+}

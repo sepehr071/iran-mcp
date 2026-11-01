@@ -1,0 +1,27 @@
+{
+  "name": "varzesh3",
+  "displayName": "Varzesh3 Sports",
+  "version": "0.1.0",
+  "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/varzesh3-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "sports",
+    "varzesh3.com"
+  ],
+  "mcpServers": {
+    "varzesh3": {
+      "command": "uvx",
+      "args": [
+        "varzesh3-mcp@0.1.0"
+      ]
+    }
+  }
+}

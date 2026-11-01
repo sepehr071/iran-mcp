@@ -1,0 +1,27 @@
+{
+  "name": "karlancer",
+  "displayName": "Karlancer Freelance",
+  "version": "0.1.0",
+  "description": "Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/karlancer-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "freelance",
+    "karlancer.com"
+  ],
+  "mcpServers": {
+    "karlancer": {
+      "command": "uvx",
+      "args": [
+        "karlancer-mcp@0.1.0"
+      ]
+    }
+  }
+}

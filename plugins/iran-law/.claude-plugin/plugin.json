@@ -1,0 +1,14 @@
+{
+  "name": "iran-law",
+  "description": "Everything for laws, regulations, court votes, legal opinions or Official Gazette texts in Iran: Qavanin, Official Gazette of Iran.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "qavanin",
+    "rrk"
+  ]
+}

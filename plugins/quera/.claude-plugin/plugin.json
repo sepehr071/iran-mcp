@@ -1,0 +1,27 @@
+{
+  "name": "quera",
+  "displayName": "Quera",
+  "version": "0.1.0",
+  "description": "Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/quera-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "jobs",
+    "quera.org"
+  ],
+  "mcpServers": {
+    "quera": {
+      "command": "uvx",
+      "args": [
+        "quera-mcp@0.1.0"
+      ]
+    }
+  }
+}

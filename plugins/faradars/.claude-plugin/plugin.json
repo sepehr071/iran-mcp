@@ -1,0 +1,27 @@
+{
+  "name": "faradars",
+  "displayName": "Faradars Courses",
+  "version": "0.1.0",
+  "description": "Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/faradars-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "learning",
+    "faradars.org"
+  ],
+  "mcpServers": {
+    "faradars": {
+      "command": "uvx",
+      "args": [
+        "faradars-mcp@0.1.0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bama-ir",
+  "displayName": "Bama Cars",
+  "version": "0.1.0",
+  "description": "Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/bama-ir-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "cars",
+    "bama.ir"
+  ],
+  "mcpServers": {
+    "bama-ir": {
+      "command": "uvx",
+      "args": [
+        "bama-ir-mcp@0.1.0"
+      ]
+    }
+  }
+}

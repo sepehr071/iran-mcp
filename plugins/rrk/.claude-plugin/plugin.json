@@ -1,0 +1,27 @@
+{
+  "name": "rrk",
+  "displayName": "Official Gazette of Iran",
+  "version": "0.1.0",
+  "description": "Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/rrk-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "law",
+    "rrk.ir"
+  ],
+  "mcpServers": {
+    "rrk": {
+      "command": "uvx",
+      "args": [
+        "rrk-mcp@0.1.0"
+      ]
+    }
+  }
+}

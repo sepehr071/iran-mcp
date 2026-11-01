@@ -1,0 +1,27 @@
+{
+  "name": "fipiran",
+  "displayName": "Fipiran Funds",
+  "version": "0.1.0",
+  "description": "Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/fipiran-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "stocks",
+    "fipiran.ir"
+  ],
+  "mcpServers": {
+    "fipiran": {
+      "command": "uvx",
+      "args": [
+        "fipiran-mcp@0.1.0"
+      ]
+    }
+  }
+}

@@ -191,6 +191,60 @@ Unofficial read-only Basalam marketplace: search products, cheapest offers, shop
 - `bs_vendor_products`: List one shop's products with prices in Toman, searchable and sortable.
 - `bs_reviews`: Read customer reviews of a product with the star histogram, newest first.
 
+## Emalls Price Comparison (`emalls-ir-mcp`, 10 tools)
+
+Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.
+
+- `em_search`: Search Emalls (Iranian price comparison) for products, with price range, category, brand, spec and sort filters.
+- `em_categories`: Find Emalls category ids by words, or browse the category tree (top level, then children of a category id).
+- `em_filters`: List the brands and spec filters (RAM, storage, ...) Emalls offers in one category, with their ids.
+- `em_product`: Get one Emalls product: title, category path, lowest and highest shop price, rating and specs.
+- `em_compare`: Compare 2-5 Emalls products: prices, rating and only the specs whose values differ.
+- `em_similar`: List products Emalls shows as similar to one product, with lowest price and shop count.
+- `em_offers`: List the shops selling one Emalls product with price, city, shop rating, warranty and buy link, cheapest first.
+- `em_price_history`: Get the price history of one Emalls product: the average price over time in about 3-day steps (last ~3 months).
+- `em_shop`: Get an Emalls shop's public profile: name, rating, website, address, phone, time with Emalls and trust badge.
+- `em_shops`: Search Emalls' list of shops by name and return their ids.
+
+## Mobile.ir Phones (`mobile-ir-mcp`, 17 tools)
+
+Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.
+
+- `mi_compare`: Compare 2 to 4 phones, tablets or watches on Mobile.ir: price range, rating and each spec row side by side.
+- `mi_comments`: Read what Mobile.ir users wrote about a phone, tablet or watch: comment text, date (Persian calendar), likes.
+- `mi_articles`: List the news and the expert reviews on Mobile.ir, newest first, optionally for one phone or brand.
+- `mi_article`: Read the text of one Mobile.ir news item, expert review or product introduction (Persian, images dropped).
+- `mi_shop`: Show one Mobile.ir shop's profile and the phones it lists with their current prices in Toman.
+- `mi_brand_models`: Page through every model Mobile.ir lists for one brand (id, rating, year, screen, camera, lowest shop price).
+- `mi_sim_summary`: Summarise the numbered-SIM market on Mobile.ir per operator: ad counts and the three cheapest priced numbers.
+- `mi_search`: Find phones, tablets and smartwatches on Mobile.ir by name and get their ids (autocomplete, up to about 20).
+- `mi_find`: Filter Mobile.ir's phone database like its 'mobile finder': brand, shop price range, OS, camera, weight, name.
+- `mi_phone`: Get the full specification sheet of one phone, tablet or smartwatch from Mobile.ir, with rating and price range.
+- `mi_shop_prices`: List what each shop currently charges for a phone on Mobile.ir (price in Toman, shop, city, note, warranty).
+- `mi_price_history`: Get a phone's shop-price history from Mobile.ir: per-shop first/last/min/max and the daily lowest price in Toman.
+- `mi_market_prices`: List the newest price rows that shops posted on Mobile.ir (one row per shop and model), with filters.
+- `mi_used_search`: Search the used and new phone ads that users post on Mobile.ir (price, condition, city, description).
+- `mi_used_ad`: Read one used/new phone ad on Mobile.ir: price, market price, condition, box, city, description, photos, shops.
+- `mi_sim_search`: Search the SIM card numbers users sell on Mobile.ir (Iran's numbered-SIM market): operator, number, price.
+- `mi_options`: List the ids the other Mobile.ir tools take: brands, provinces, price-listing shops, SIM operator prefixes.
+
+## Zoomit Products (`zoomit-mcp`, 12 tools)
+
+Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price history, comparisons.
+
+- `zm_categories`: List the product categories of Zoomit's product database (slug and Persian name).
+- `zm_search`: Find products by name across all categories (or one) and return cards with the lowest price in Toman.
+- `zm_list`: List one category's products with the site's filters: brand, price, score, specs, stock, sort.
+- `zm_filters`: Show what zm_list can filter by in a category: price range, brand slugs, spec filters with values, buying guides.
+- `zm_product`: Get one product's full spec table, user score, Zoomit's pros and cons and its price range in Toman.
+- `zm_prices`: List a product's seller offers (cheapest first, Toman, with the shop's own listing title and link) and its price history.
+- `zm_compare`: Compare 2-4 products: price, scores and a spec table where each row lists the values in the order of `products`.
+- `zm_similar`: Suggest alternatives to a product: the ones people compare it with, others of its brand, or in its price range.
+- `zm_articles`: Search Zoomit's news and review articles (title, lead, date, link).
+- `zm_reviews`: Read what buyers say about a product: star breakdown, Zoomit's summary of strengths and weaknesses, reviews or Q&A.
+- `zm_guides`: List Zoomit's buying guides ("best phones under...", "best gaming phones") of a category with their article links.
+- `zm_rank`: Rank a category's popular products by one numeric spec (battery, weight, RAM, brightness) or by value for money.
+
 ## Khanoumi (`khanoumi-mcp`, 12 tools)
 
 Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.
@@ -292,6 +346,76 @@ Unofficial read-only Divar: search Iran's classified ads, cheapest and best-valu
 - `dv_watch`: Save a search and later get only the ads that appeared since the last check; stored in a local file, nothing is pushed.
 - `dv_price_trend`: The median asking price of a search over the days you have checked it: records one point per day in a local file.
 
+## Sheypoor Classifieds (`sheypoor-mcp`, 11 tools)
+
+Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.
+
+- `sp_search`: Search Sheypoor classified ads (cars, real estate, goods, jobs, services) by words, city, category and price.
+- `sp_ad`: Get one Sheypoor ad in full: description, price, location, seller, every attribute and photo links.
+- `sp_price_summary`: Summarise asking prices of the newest ads for a search: count, min, median, quartiles, max, plus cheapest and priciest ads.
+- `sp_categories`: List Sheypoor's categories with the slug sp_search and sp_filters take, grouped under 11 top-level groups.
+- `sp_cities`: Find the city or province slug that sp_search, sp_price_summary and sp_filters take.
+- `sp_filters`: List the filters, sort orders, sub-categories (car brands, models) and neighbourhoods Sheypoor offers in one category.
+- `sp_similar`: Find ads comparable to one ad: same city and deepest category (car model...), price within a percent band.
+- `sp_shops`: List Sheypoor's internet shops and agencies (real-estate offices, car dealers...) in a city and group.
+- `sp_shop`: Get one internet shop or agency: name, hours, group, its agents and its current ads.
+- `sp_car_prices`: Get Sheypoor's daily car price list (قیمت روز خودرو): market price and factory price per model and year, with the day's change.
+- `sp_area_prices`: Compare asking prices between neighbourhoods of a city: median price, price per square metre, rent and deposit.
+
+## Bama Cars (`bama-ir-mcp`, 12 tools)
+
+Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.
+
+- `ba_search`: Search used and new car ads on Bama (bama.ir) with filters; returns up to 30 compact ads per page.
+- `ba_ad`: Get one Bama ad (car, motorcycle or truck) in full: price, specs, condition, seller, description and photos.
+- `ba_market_stats`: Price statistics (min, quartiles, median, max, per year) for a car model from live Bama ads.
+- `ba_dealers`: List car dealers (showrooms) with ads for a model or city on Bama, with address, rating and how many ads match.
+- `ba_vehicles`: Look up the brand, model and trim values that ba_search, ba_market_stats and ba_new_prices take.
+- `ba_filters`: List the allowed values of one ba_search filter (states and cities, body types, fuels, colors, years...).
+- `ba_new_prices`: Current price of every new-car trim of a brand or model on Bama's price list (market price or factory price).
+- `ba_search_bikes_trucks`: Search motorcycle or truck (heavy vehicle, bus, machinery) ads on Bama with filters.
+- `ba_dealer_ads`: List the ads of one dealer (showroom) on Bama: the dealer's whole inventory, up to the first 100 ads.
+- `ba_price_list`: Search Bama's daily price list of new cars (or motorcycles) across all brands and rank it.
+- `ba_market_pulse`: Today's car market mood from Bama (score, trend and a short analysis per market) plus the biggest price movers.
+- `ba_car_specs`: Technical specifications and the editorial review score of a car or motorcycle model from Bama's research pages.
+
+## Karnameh Cars (`karnameh-mcp`, 15 tools)
+
+Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.
+
+- `kn_specs_search`: Find car variants in Karnameh's specs catalog and return the `slug` that kn_specs and kn_compare_specs take.
+- `kn_specs`: Get one car variant's technical specs, Karnameh's expert review score, pros and cons and web reviews.
+- `kn_compare_specs`: Compare two to four car variants side by side: review score, pros, cons and every spec row.
+- `kn_articles`: Search or list articles of the Karnameh car magazine (karnameh.com/blog): news, reviews, maintenance, laws.
+- `kn_article`: Read one article of the Karnameh car magazine as plain text.
+- `kn_price_movers`: Rank new (zero-km) car variants by the percent change of their latest price quote.
+- `kn_city_stats`: Count Karnameh's used-car ads in every city, optionally for one brand, model or price ceiling.
+- `kn_inspection_centers`: List Karnameh's walk-in car inspection and paint-check centers in a city, with address and map coordinates.
+- `kn_cars`: Search Karnameh's used-car ads (karnameh.com/buy-used-cars) by brand, model, city, price, year and mileage.
+- `kn_car`: Get one Karnameh used-car ad: price, specs, seller's description, strengths and the inspection summary.
+- `kn_brands`: Look up Karnameh's car brands and models, Persian and English, to get the names the other tools expect.
+- `kn_cities`: List the cities Karnameh serves, with the slug kn_cars takes as `city` and the id kn_inspection_centers takes.
+- `kn_price_list`: List today's market prices of new (zero-km) cars from Karnameh's car-price pages (karnameh.com/car-price).
+- `kn_latest_prices`: List the most recent price quotes of new cars with the day's percent change.
+- `kn_price_history`: Get the daily average market price history of one new-car variant, per production year.
+
+## Hamrah Mechanic Cars (`hamrah-mechanic-mcp`, 12 tools)
+
+Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.
+
+- `hm_brands`: List the car brands Hamrah Mechanic knows, with the slug the other tools take.
+- `hm_models`: List the models of one brand with their slugs and trims (types).
+- `hm_prices`: Get today's market (used and zero-km) prices of cars from Hamrah Mechanic's daily price list.
+- `hm_price_estimate`: Get the market price range and recent monthly change for one trim in one model year.
+- `hm_search_cars`: Search the used and zero-km cars Hamrah Mechanic's showrooms sell, with filters.
+- `hm_car`: Get the full details of one car for sale: price, specs, condition, inspection notes, photos and showroom.
+- `hm_inspection_prices`: Get what Hamrah Mechanic charges to inspect a given car at its location, for each inspection package.
+- `hm_branches`: List Hamrah Mechanic's car showrooms and inspection centers in a province with address, hours and cars in stock.
+- `hm_price_history`: Get the monthly market-price history of one trim and year, with today's price range and the same trim's other years.
+- `hm_price_list`: List the market price of every car on Hamrah Mechanic's front price list, filtered by budget or brand.
+- `hm_reviews`: Get Hamrah Mechanic's expert review of a model (pros, cons, engine and safety notes) with owner scores and comments.
+- `hm_articles`: Search the Hamrah Mechanic magazine (3,000+ Persian articles) or read one article.
+
 ## Otaghak (`otaghak-mcp`, 15 tools)
 
 Unofficial read-only Otaghak: search Iranian villas, availability, exact stay prices, reviews.
@@ -392,6 +516,74 @@ Unofficial read-only Flytoday: Iranian and international flights, hotels, villas
 - `ft_train_calendar`: Cheapest train price per day for the next ~16 days, with sold-out days flagged.
 - `ft_train_stops`: Stops of one train with arrival and departure times, plus (with wagon_id) the class amenities and extra meals.
 
+## Alibaba Travel (`alibaba-ir-mcp`, 14 tools)
+
+Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.
+
+- `al_flights_international`: Search international flights between Iran and abroad (or any two cities Alibaba sells) on one day.
+- `al_stays`: Search villas, suites, cottages and other holiday homes for rent in a city, with price, rating and capacity.
+- `al_stay_detail`: Show one villa or holiday home in full: capacity, beds, amenities, house rules, cancellation terms, calendar, reviews.
+- `al_hotels`: Search hotels in a city for a stay: stars, rating, price for the whole stay, meal plan, perks (domestic and abroad).
+- `al_tours`: Search tour packages (round trip plus hotel) from a city to a destination such as Kish, Mashhad, Istanbul or Dubai.
+- `al_tours_cheapest`: List the lowest tour price per person for 11 departure days around a date (5 before, 5 after), to pick the cheapest day.
+- `al_cities`: Look up the city codes the other tools take (THR for Tehran, MHD for Mashhad) and what is sold for each city.
+- `al_trains`: Search train tickets between two Iranian cities on one day: company, class, times, price and seats left.
+- `al_trains_cheapest`: List the lowest train price for each day from a start date, to pick the cheapest day to travel.
+- `al_buses`: Search intercity bus tickets between two Iranian cities on one day: company, bus type, times, price, seats.
+- `al_buses_cheapest`: List the lowest bus price and the number of buses for each day from a start date (the site has no bus calendar).
+- `al_bus_seats`: Show which seats are free on one bus: counts per status and the free seat numbers (no booking).
+- `al_flights`: Search domestic flights between two Iranian airports on one day: airline, flight number, times, fare, seats.
+- `al_flights_cheapest`: List the lowest domestic fare for each day from a start date, to pick the cheapest day to fly.
+
+## Eghamat24 Hotels (`eghamat24-mcp`, 14 tools)
+
+Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.
+
+- `eg_tours`: Find flight-plus-hotel tour packages to a city, or the packages of one hotel with their flight times.
+- `eg_tour_calendar`: Show the cheapest flight-plus-hotel package price for each departure day, to pick the cheapest day to leave.
+- `eg_attractions`: List the sights, shrines, malls and other places of a city, or read the description of one.
+- `eg_photos`: List the photo URLs of a hotel: the main picture, the hotel gallery and the photos of each room type.
+- `eg_similar`: List the hotels the site suggests as alternatives to one hotel, with a starting price.
+- `eg_specials`: List hotels on one of the site's offer pages: free cancellation, one-night offers or the latest discounts.
+- `eg_cities`: List the destinations Eghamat24 has hotels in, with how many hotels and stays each has.
+- `eg_search`: Search hotels in a city for given dates, with the filters the site offers, and return cards with the lowest price.
+- `eg_deals`: List the hotels of a city with the biggest discounts for the given dates, bookable ones only.
+- `eg_hotel`: Get one hotel's profile: address, stars, check-in times, description, facilities, rules, guest scores, extras and nearby places.
+- `eg_rooms`: List a hotel's bookable rooms with the price for the stay, cheapest first.
+- `eg_price_calendar`: Show the cheapest bookable room price for each night over a date range, to find the cheapest days to stay.
+- `eg_reviews`: Read guest reviews of a hotel, newest first, with the overall guest scores and who travelled.
+- `eg_questions`: Read the public questions guests asked about a hotel and the answers, if any.
+
+## Neshan Maps (`neshan-mcp`, 11 tools)
+
+Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.
+
+- `ns_search`: Find places, businesses, streets and squares on the Neshan map by name or category near a city or point.
+- `ns_place`: Get one place's details on Neshan: address, coordinates, phones, website, rating, opening hours and photos.
+- `ns_reviews`: List visitors' reviews of a place on Neshan: star rating, Persian date, comment, likes and owner reply.
+- `ns_photos`: List a place's photos on Neshan as image URLs, 10 per page, with date and uploader, including menu photos.
+- `ns_nearby`: List what is around a place on Neshan by category: restaurants, cafes, parks, toilets, banks, ATMs, parking.
+- `ns_reverse_geocode`: Turn a latitude/longitude into Neshan's street address and province (reverse geocoding).
+- `ns_air_quality`: Get today's air quality index (AQI) of an Iranian city from Neshan, with pollutants and the readings of each station.
+- `ns_route`: Get car, motorcycle, bicycle or walking directions on Neshan: distance, travel time and turn-by-turn steps.
+- `ns_travel_times`: Get the travel time from one point to several places on Neshan, fastest first.
+- `ns_zone_check`: Check whether a point is inside Tehran's traffic-plan zone or odd-even (air-pollution) zone, with plan hours.
+- `ns_transit_route`: Get bus, BRT and metro options between two points on Neshan, with lines, stops, walking and fares.
+
+## Balad Maps (`balad-mcp`, 9 tools)
+
+Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.
+
+- `bl_search`: Search Balad (Iranian map) for places, streets, neighbourhoods and cities by name, with coordinates and address.
+- `bl_nearby`: List places of one kind (pharmacy, restaurant, gas station...) around a point, with address, phone and rating.
+- `bl_place`: Get one place's full details from Balad: address, phones, hours, open now, rating, amenities, photos, reviews.
+- `bl_reviews`: Get one page of user reviews of a place on Balad, newest first, with stars and the rating breakdown.
+- `bl_reverse_geocode`: Turn coordinates into a Persian street address with city, county and neighbourhood (reverse geocoding).
+- `bl_route`: Get driving routes in Iran with distance, travel time in current traffic, tolls, roads and traffic-zone warnings.
+- `bl_nearest_by_drive`: Rank places of one kind around a point by driving time from it in current traffic, quickest first.
+- `bl_along_route`: Find places of one kind (gas station, restaurant, pharmacy...) along the suggested driving route between two points.
+- `bl_categories`: List Balad's place categories with the slug bl_nearby takes, grouped (food, health, shopping, services...).
+
 ## Paziresh24 (`paziresh24-mcp`, 12 tools)
 
 Unofficial read-only Paziresh24: find Iranian doctors, profiles, prices, reviews and free slots.
@@ -435,6 +627,23 @@ Official read-only ExirYab: find Iranian doctors by name, city and specialty, wi
 - `ey_search_doctors`: Find an Iranian doctor on exiryab.com by name, city and/or specialty: the best match plus alternatives, each with profile URL, clinics, phones, working hours and map links.
 - `ey_cities`: Cities that have doctors on exiryab.com, with their province and doctor count, most doctors first.
 - `ey_specialties`: Medical specialties on exiryab.com with their doctor count, most doctors first; sub-specialties name their `parent`.
+
+## Darukade Pharmacy (`darukade-mcp`, 12 tools)
+
+Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.
+
+- `dr_search`: Search Darukade's online pharmacy catalog (drugs-adjacent products, supplements, cosmetics, baby) with filters.
+- `dr_cheapest`: List the lowest-priced products of a category, brand or search, cheapest first, skipping unpriced items.
+- `dr_product`: Get one product's price per variant, stock, brand, ingredients, usage and dosage, warnings and properties.
+- `dr_reviews`: Get a product's user comments and its questions with the pharmacy's answers, plus the rating summary.
+- `dr_related`: List products related to one: alternatives, similar, same-brand and complementary ones, with prices.
+- `dr_categories`: List Darukade's product categories with the ids that dr_search and dr_cheapest take as `category`.
+- `dr_brands`: Find a brand by name and get the id that dr_search and dr_cheapest take as `brand`, or read a brand's profile.
+- `dr_forms`: List product forms (capsule, tablet, syrup, cream, spray, ampoule ...) with the ids dr_search takes as `form`.
+- `dr_compare`: Compare 2 to 5 products side by side: price, stock, rating, properties, ingredient amounts and dosage.
+- `dr_home`: Show what Darukade's home page promotes now: golden offers, newest, best-selling and most-loved products.
+- `dr_articles`: Search the Darukade health magazine (about 2,900 articles on illnesses, supplements, skin, drugs).
+- `dr_article`: Read one Darukade magazine article as plain text, with its author, sources and the products it recommends.
 
 ## Taaghche (`taaghche-mcp`, 12 tools)
 
@@ -488,6 +697,24 @@ Unofficial read-only 30book: search Iranian printed books, compare editions and 
 - `sb_categories`: Category sections (کتاب عمومی, ...) or, for one section, its subjects (تاریخ, ...). Codes go to
 - `sb_collections`: Home-page genres, nations, award lists and tags; ids go to sb_browse(kind=...).
 
+## Iranketab Books (`iranketab-mcp`, 13 tools)
+
+Read-only Iranketab (iranketab.ir) books: search, translations compared, ratings, reviews, prices.
+
+- `ik_search`: Search Iranketab by name and return matching books, authors/translators, publishers or categories with their ids.
+- `ik_book`: Read one book (a work): title, authors, categories, introduction, review count and a short list of every edition.
+- `ik_editions`: Compare every translation and publisher edition of one book side by side: rating, votes, price, pages, year, ISBN.
+- `ik_reviews`: Read reader comments about a book, 20 per page, newest first, with the publisher/edition when the reader named one.
+- `ik_profile`: Read an author's or translator's profile (name, biography) and the books they wrote or translated.
+- `ik_publisher_books`: List the books of one publisher (انتشارات) on Iranketab, best sellers first by default.
+- `ik_browse`: List books of a category, bestseller list or award list, with sort, in-list search and sub-category filters.
+- `ik_categories`: List Iranketab's menu categories, or the sub-category filter groups of one category.
+- `ik_book_extras`: Read what else a book page offers: awards, series, praise quotes, excerpts, author bio, related books and articles.
+- `ik_recommend`: Suggest books to read next from books the reader liked, using Iranketab's own recommender ("چی بخونم؟").
+- `ik_lists`: List Iranketab's literary prizes, best-of lists, book series, countries, genres or literary movements with ids.
+- `ik_articles`: Find articles on Iranketab's blog (book reviews, author profiles, reading lists), by search or newest first.
+- `ik_article`: Read one Iranketab blog article (a book review or author essay) as plain text, with the book and author ids it links to.
+
 ## Maktabkhooneh (`maktabkhooneh-mcp`, 12 tools)
 
 Unofficial read-only Maktabkhooneh: search Persian online courses, compare prices, find free ones.
@@ -504,6 +731,134 @@ Unofficial read-only Maktabkhooneh: search Persian online courses, compare price
 - `mkh_teacher`: A teacher's profile (bio, students, rating, teaching hours, links) and their courses with prices.
 - `mkh_organizations`: Course publishers (universities, companies, Maktabkhooneh itself, about 180) with the id used as a filter.
 - `mkh_organization`: A publisher's totals (courses, students, rating) and its most popular courses.
+
+## Faradars Courses (`faradars-mcp`, 16 tools)
+
+Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.
+
+- `fr_search_courses`: Search Faradars (faradars.org) courses and videos by text, category, price, length, certificate or instructor.
+- `fr_course`: Get one Faradars course: price and current discount, duration, rating, students, instructors, syllabus.
+- `fr_course_reviews`: Get student reviews (stars and comment text) of a Faradars course, newest first.
+- `fr_categories`: List Faradars course categories (برنامه‌نویسی, زبان, ...) as a tree of slugs and names.
+- `fr_instructors`: Find Faradars instructors (مدرس) by name, or the leading instructors of a category.
+- `fr_instructor`: Get a Faradars instructor's profile (field, university, students, total hours) and their courses.
+- `fr_learning_paths`: Find Faradars learning paths (مسیر یادگیری): curated course collections for a topic, beginner to advanced.
+- `fr_learning_path`: Get one Faradars learning path (مسیر یادگیری): its ordered course list, totals and related paths.
+- `fr_related_courses`: Get courses related to one Faradars course: more by the same instructor, recommended next steps, similar topics.
+- `fr_compare_courses`: Compare 2-4 Faradars courses side by side: price, sale, length, lessons, students, rating, certificate, exams.
+- `fr_offers`: List the current Faradars discount campaigns, public coupon codes and subscription plans.
+- `fr_faq`: Get Faradars' general help answers: buying and subscription, access validity, certificates, support, refunds.
+- `fr_suggest`: Get Faradars search-box suggestions for the start of a phrase (autocomplete).
+- `fr_articles`: Search Faradars Magazine (مجله فرادرس, blog.faradars.org) articles by text, category or tag, or list the newest.
+- `fr_article`: Read one Faradars Magazine article: summary points, outline, readable text, author, views and rating.
+- `fr_article_topics`: List Faradars Magazine categories or tags with their article counts, biggest first.
+
+## Jobinja Jobs (`jobinja-mcp`, 10 tools)
+
+Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.
+
+- `jj_search_jobs`: Search Jobinja job ads by keyword, province, city, category, remote, contract type, experience, benefits and minimum salary.
+- `jj_job`: Read one Jobinja job ad: title, company, salary, contract, experience, skills, degree, gender, military status and the full description.
+- `jj_company`: Read a company's Jobinja profile: name, founding year, industry, size, website, open job count and its intro, culture and benefits text.
+- `jj_company_jobs`: List a company's open job ads on Jobinja (or, with expired_page, its past ads, which show its hiring history).
+- `jj_search_companies`: Find companies on Jobinja by name, or browse one industry (8 per page).
+- `jj_top_companies`: Jobinja's yearly list of the 50 best companies to work for, with each one's score out of 10 and its three sub-scores.
+- `jj_market`: Count the open Jobinja ads right now per job category, province, company industry and top skill (live site statistics).
+- `jj_skills`: Find skills on Jobinja matching a word, with how many ads ever listed each (a demand signal).
+- `jj_salary_stats`: Estimate monthly salaries (Toman) for a kind of job by reading the ad pages of the top search results.
+- `jj_filters`: List every value the Jobinja search accepts: provinces, job categories, industries, experience levels, salary steps, sort orders.
+
+## Jobvision Jobs (`jobvision-mcp`, 14 tools)
+
+Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.
+
+- `jv_careers`: Rank the ~100 job titles in Jobvision's career guide by satisfaction, median salary or open ads.
+- `jv_career`: Get Jobvision's career-guide profile of one job title: salary distribution, demand, duties, skills, path.
+- `jv_companies`: Find companies on Jobvision by name or filters, best rated first (the site's company ranking).
+- `jv_interviews`: Get what candidates report about interviewing at a company: scores, difficulty, process and questions.
+- `jv_search`: Search Jobvision job ads (استخدام) with filters and return one page of compact job cards.
+- `jv_job`: Get the full text and requirements of one Jobvision job ad.
+- `jv_similar_jobs`: List job ads Jobvision considers similar to one ad.
+- `jv_company`: Get an employer's profile and its currently open job ads.
+- `jv_pay_stats`: Estimate pay for a role from the salaries open Jobvision ads advertise (million Toman per month).
+- `jv_suggest`: Autocomplete job titles the way Jobvision's search box does, most used first.
+- `jv_locations`: Find the province, city or Tehran area names and slugs that jv_search's city filter accepts.
+- `jv_options`: List the values of one Jobvision filter: ids and slugs with Persian and English names.
+- `jv_market`: Count open Jobvision ads per category, province, work type, seniority, experience, pay band or age.
+- `jv_government_news`: List Jobvision's recruitment announcements for a public-sector group (banks, ministries, oil and gas...).
+
+## IranTalent Jobs (`irantalent-mcp`, 11 tools)
+
+Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.
+
+- `it_salary_reports`: List IranTalent salary reports (salary.irantalent.com): one per job specialty and seniority level.
+- `it_salary`: Read the salary figures of one IranTalent salary report, or of every seniority level of one specialty.
+- `it_search_jobs`: Search IranTalent job ads (iran's professional job portal) by keyword and filters, newest first.
+- `it_job`: Read one IranTalent job ad in full: description, requirements, salary, location, employer, view counts.
+- `it_companies`: List or search companies in IranTalent's employer directory (about 34,000), most open jobs first.
+- `it_top_companies`: List IranTalent's 50 top companies by employee rating (the site's "best companies" list).
+- `it_company`: Read a company profile: about text, industry, size, address, website, rating breakdown and newest open jobs.
+- `it_company_reviews`: Read anonymous employee reviews of a company on IranTalent: ratings, pros, cons, reviewer's job title.
+- `it_lookups`: List the valid filter values (slug, English and Persian name) for it_search_jobs.
+- `it_job_market`: Count IranTalent's open jobs by category, industry, seniority, employment type, location or hiring company.
+- `it_similar_jobs`: Find open jobs similar to one ad: same job category (and city), newest first, without the ad itself.
+
+## Quera (`quera-mcp`, 14 tools)
+
+Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.
+
+- `qr_jobs`: Search the open tech jobs on Quera Magnet (Iran's developer job board), 15 per page.
+- `qr_job`: Get one Quera job posting: description, requirements, benefits, skills, salary, deadline and related jobs.
+- `qr_job_filters`: List the filter values qr_jobs and qr_companies accept: cities, industries, company sizes, popular tech codes and companies.
+- `qr_companies`: Search the 3,000+ companies with a Quera Magnet profile, 15 per page.
+- `qr_company`: Get a company's Quera profile (about, size, industry, tech stack, benefits, contacts) and its open jobs.
+- `qr_contests`: List Quera programming contests: with no filter, those running or upcoming now plus the latest finished ones.
+- `qr_problems`: Search Quera's public problemset (about 2,000 programming problems), 25 per page.
+- `qr_problem`: Get one Quera problem: statement (Markdown with LaTeX), limits, difficulty, tags, solve stats and languages.
+- `qr_courses`: List Quera College's paid programming courses (about 70) with level and price.
+- `qr_salaries`: Summarize the salaries employers published in open Quera jobs, grouped by seniority level (Toman per month).
+- `qr_problem_filters`: List the topic slugs, contest ids, origins and judging types that qr_problems accepts.
+- `qr_event`: Get a Quera event or competition page (CodeCup, hackathon, contest series): schedule, prizes, price, sub-events.
+- `qr_bootcamps`: List Quera's intensive paid bootcamps open for registration with price, dates and seats, or get one in full.
+- `qr_blog`: Search or read the Quera blog (quera.org/blog): Persian programming articles, career and tech news.
+
+## Ponisha Freelance (`ponisha-mcp`, 14 tools)
+
+Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.
+
+- `pn_search_projects`: Search Ponisha projects (Iran's freelance marketplace) by text, skills, category, status and budget.
+- `pn_project`: Get one Ponisha project: full description, budget, skills, deadline and the employer's track record.
+- `pn_bids`: List the offers freelancers made on a Ponisha project: price, days, pitch and each bidder's track record.
+- `pn_search_freelancers`: Search Ponisha freelancers by text, skills, category, level and portfolio, ranked by score.
+- `pn_profile`: Get a public Ponisha profile (freelancer or employer): level, skills, statistics, rating and activity.
+- `pn_skills`: Find Ponisha skills (about 700 tags) by name to use in the skills filters of other tools.
+- `pn_categories`: List Ponisha's top-level project categories, or the sub-categories of one.
+- `pn_market`: Summarize demand and supply for one skill on Ponisha: open projects, budgets, competition, related skills.
+- `pn_reviews`: Read the reviews employers wrote about a Ponisha user, or recent reviews for a whole skill.
+- `pn_portfolios`: Search Ponisha portfolio items (about 500k work samples), or list one user's portfolio.
+- `pn_services`: Browse Ponisha's ready-made service packages (fixed-price offers such as logo design or WordPress themes).
+- `pn_service`: Get one Ponisha service package: price, delivery time, what is included, requirements and paid add-ons.
+- `pn_user_projects`: List the projects a Ponisha user is attached to: an employer's own projects or a freelancer's finished work.
+- `pn_trend`: Show how demand and budgets for one skill changed over time on Ponisha, from the newest to the oldest projects.
+
+## Karlancer Freelance (`karlancer-mcp`, 14 tools)
+
+Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.
+
+- `kl_projects`: Search open freelance projects on Karlancer (karlancer.com) by keyword, skill, category and budget.
+- `kl_project`: Get one Karlancer project in full: brief, budget, duration, hire deadline, skills, category path, city.
+- `kl_skills`: Look up Karlancer skill ids by name, with how many freelancer profiles list each skill.
+- `kl_categories`: List Karlancer's top-level categories with the ids kl_projects takes as `category_id`, and the provinces.
+- `kl_freelancers`: Search Karlancer freelancers by keyword, skill and province, with rating and skills.
+- `kl_top_freelancers`: List the freelancers Karlancer features on its home page as top rated, with rating and skills.
+- `kl_freelancer`: Get a Karlancer freelancer's public profile: bio, rating, success rate, skills, experience and client reviews.
+- `kl_services`: Search Karlancer services (ready-made gigs freelancers sell at a fixed price) by keyword, skill and price.
+- `kl_service`: Get one Karlancer service in full: description, price, delivery time, requirements, FAQ, skills and seller stats.
+- `kl_worksamples`: Search the portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio.
+- `kl_worksample`: Get one Karlancer portfolio item in full: description, skills, price range, duration, owner and similar items.
+- `kl_similar_projects`: List the projects Karlancer suggests as similar to one project, with budget and duration.
+- `kl_market_rate`: Estimate what a skill pays on Karlancer: budget spread of recent projects, service prices and supply.
+- `kl_trending_skills`: Show which skills employers ask for most in the newest Karlancer projects.
 
 ## Iran Apps (`iran-apps-mcp`, 6 tools)
 
@@ -524,6 +879,21 @@ Unofficial read-only metadata search of Soft98, P30Download, Downloadly and VGDL
 - `dl_search`: Search the download sites by name and return metadata (title, item page url, category, date, short summary).
 - `dl_latest`: Return the newest uploads of the download sites (soft98 has no latest listing), merged and sorted by date.
 - `dl_item`: Return the details of one download item: name, version, size, category, date, description and system requirements.
+
+## Iran Cloud Status (`iran-cloud-status-mcp`, 10 tools)
+
+Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.
+
+- `cs_status`: Show the live status of every Iranian cloud provider this server reads (ArvanCloud, Hamravesh, Chabokan, ParsPack, Mihan WebHost) in one call.
+- `cs_providers`: List the providers this server covers, what each one publishes, and which are not covered.
+- `cs_components`: List one provider's status components (services, regions, clusters, servers) with their current status.
+- `cs_regions`: Summarise status per region or group: component count, worst status and what is not operational.
+- `cs_incidents`: List recent incidents (outages, degradations, announcements) of the Iranian cloud providers, newest first, with their latest update.
+- `cs_incident`: Show one incident with its full update timeline, affected components and the status each was set to.
+- `cs_maintenance`: List announced maintenance windows that are upcoming or running, per provider, optionally with recent finished ones.
+- `cs_reliability`: Count incidents and add up incident time per provider over the last days, with the most affected components.
+- `cs_pricing`: Show a provider's public price list in Toman, read from its own pricing page.
+- `cs_compare_prices`: Price one server size (vCPU, RAM, disk) per month at Hamravesh and Liara, cheapest first.
 
 ## TGJU Prices (`tgju-mcp`, 6 tools)
 
@@ -587,6 +957,105 @@ Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book,
 - `ts_indices`: TSE total index, market state and trading totals, plus every sector and market index with its change.
 - `ts_index_history`: Daily close, high, low and percent change of a TSE index (total, equal-weight, sector...), newest first.
 
+## Codal (کدال) Disclosures (`codal-mcp`, 5 tools)
+
+Read-only codal.ir: search disclosures of Iranian listed companies, read letters and statements.
+
+- `cd_search_letters`: Search codal.ir disclosures (letters) of Iranian listed companies, newest first, 20 per page.
+- `cd_letter`: Read one codal.ir letter: its text or tables, plus links to its page, PDF, Excel and attachments.
+- `cd_company`: Find companies and funds on codal.ir by symbol or name, with their market, industry and type.
+- `cd_letter_types`: List codal.ir letter groups, or the letter types of one group with the ids cd_search_letters takes.
+- `cd_financial_years`: List the fiscal year-end dates codal.ir knows for one company, newest first (Jalali).
+
+## Iran Fara Bourse (`ifb-mcp`, 16 tools)
+
+Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.
+
+- `ifb_search`: Find Iran Fara Bourse instruments (stocks, bonds, sukuk, treasury bills, funds, options) by symbol or name.
+- `ifb_yields`: List fixed-income papers on Fara Bourse with last price, maturity and yield to maturity (YTM), filtered and ranked.
+- `ifb_instrument`: Describe one Fara Bourse instrument: name, ISIN, market, and for bonds the coupon rate, maturity, issuer, guarantor and payment schedule.
+- `ifb_quote`: Get the live trading data of one instrument: last and closing price, change, volume, value, order book, and YTM for bonds.
+- `ifb_history`: Get daily price history of one instrument: first, high, low and closing price and volume per trading day, newest first.
+- `ifb_ipos`: List Fara Bourse initial public offerings (IPOs): finished ones with price and volume, or those upcoming and under way.
+- `ifb_underwritings`: List securities offered through underwriting (پذیره‌نویسی) on Fara Bourse, newest first.
+- `ifb_announcements`: Search Fara Bourse announcements, news and market messages by keyword and date, newest first.
+- `ifb_article`: Read the text of one Fara Bourse news article (weekly trading statistics, listings, rule changes).
+- `ifb_market_summary`: Summarise the Fara Bourse session: index, bond indices, total turnover, and each market's value traded with its top movers.
+- `ifb_yield_curve`: Get Fara Bourse's fitted yield curves (Svensson/Nelson model) for government papers, non-government papers and treasury bills.
+- `ifb_sukuk_flows`: Show daily trading value of Islamic financial securities (sukuk, treasury bills) by who bought and sold, newest day first.
+- `ifb_market_watch`: Show the live Fara Bourse market watch: every symbol's price, change, volume and best bid and ask, ranked and filtered.
+- `ifb_index_history`: Get the daily history of a Fara Bourse index since 2009, with change over a day, week, month and year.
+- `ifb_corporate_actions`: List corporate actions on Fara Bourse: capital increases under way, board transfers, and moves to or from the Tehran Stock Exchange.
+- `ifb_halted`: List the symbols halted on Fara Bourse with the date and reason, or the issuers flagged for weak disclosure.
+
+## Fipiran Funds (`fipiran-mcp`, 11 tools)
+
+Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.
+
+- `fp_search_funds`: Search Iranian mutual funds and ETFs by name, type or manager, and rank them by return or size.
+- `fp_fund_types`: List fund types (equity, fixed income, gold, mixed...) with fund counts, total size and average returns.
+- `fp_fund`: Get one fund in full: NAV, returns, size, allocation, investors, manager, auditor, custodian, website.
+- `fp_history`: Get a fund's daily history: NAV, returns, size and flows, investor mix or dividends, at most 60 points.
+- `fp_compare`: Put 2 to 8 funds side by side: type, size, NAV, returns for every period, allocation, manager.
+- `fp_managers`: Rank fund management companies by total assets under management, with their fund count and typical return.
+- `fp_indices`: Show the Tehran and Farabourse market summary and rank the 65 market and industry indices by return.
+- `fp_index_history`: Get the daily history of one market or industry index, oldest first, at most 60 evenly spaced points.
+- `fp_stocks`: Search and rank listed shares traded on the last trading day: top gainers, losers, most traded, by industry.
+- `fp_stock`: Get one listed share in full: last trade, range, order book, buyers and sellers, period returns, industry.
+- `fp_industries`: Rank the stock-market industries by trading on the last day: traded value, volume, number of trades.
+
+## Iran Mercantile Exchange (`ime-mcp`, 14 tools)
+
+Read-only Iran Mercantile Exchange (ime.co.ir): physical trades, supply, prices, market totals.
+
+- `ime_categories`: List the exchange's commodity groups: main groups, then groups, then subgroups, with their ids.
+- `ime_producers`: Find producers and suppliers listed on the exchange by name, to get the producer id for the trade and supply tools.
+- `ime_trades`: List commodity trades (price, volume, supply, demand, buyer broker) for a date range, with totals.
+- `ime_supply`: List supply offers (اطلاعیه عرضه): what is up for sale on which session, volume and base price.
+- `ime_price_history`: Daily price series (low, high, volume-weighted average, volume) per symbol over a date range.
+- `ime_market_summary`: Exchange-wide trade value and volume for a date range: by market, by physical-market hall, plus the USD rate.
+- `ime_daily_totals`: Day-by-day trade value and volume of one market over a date range (the site's market chart).
+- `ime_news`: Latest news and notices from the exchange's news archive: title, lead, date and link.
+- `ime_trade_stats`: Rank producers, commodities, brokers or halls by traded value over a date range, with each one's market share.
+- `ime_weekly_reports`: List the exchange's weekly market reports (گزارش هفتگی), newest first, with the PDF link of each.
+- `ime_options`: Options on gold, gold coin, gold funds and saffron futures (اختیار معامله): one day's board or one contract's history.
+- `ime_securities`: Daily trades of the exchange's financial-market symbols: salaf, commodity deposit certificates and commodity funds.
+- `ime_certificates`: Continuous commodity deposit certificates (گواهی سپرده پیوسته): gold bar, gold coin, silver, copper, steel and more.
+- `ime_board`: Market-view board (cdn.ime.co.ir) with the best bid and ask: use it to see where a fund or certificate trades now.
+
+## Central Bank of Iran (`cbi-mcp`, 11 tools)
+
+Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.
+
+- `cb_exchange_rates`: Get the Central Bank of Iran's official reference exchange rates for one day, in rials per currency unit.
+- `cb_rate_history`: Get the official CBI rate of one currency over time, oldest first, with the total change.
+- `cb_inflation`: Get Iran's inflation rate as published by the Central Bank: the monthly series for one year and annual history.
+- `cb_policy_rates`: Get the Central Bank's weekly interest rates: interbank market rate and the standing-facility corridor.
+- `cb_news`: List the Central Bank's latest news and announcements (title, date, id), optionally filtered by a word.
+- `cb_news_item`: Read one Central Bank news item or announcement in full: title, date, text and attached files.
+- `cb_liquidity`: Get Iran's liquidity (نقدینگی, M2) as numbers from the newest monthly report, plus the latest statements on it.
+- `cb_publications`: List the newest Central Bank publications of one kind with download links (PDF/Excel), newest first.
+- `cb_statistics`: Read one table of the Central Bank's monthly statistics Excel file as rows of numbers and Persian labels.
+- `cb_bond_auctions`: Get the results of the Central Bank's weekly government Islamic securities (sukuk) auctions: sold amounts and yields.
+- `cb_open_market`: List the Central Bank's weekly open market operation reports and read the newest one's repo auction figures.
+
+## Statistical Centre of Iran (`amar-mcp`, 12 tools)
+
+Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.
+
+- `am_inflation`: Get Iran's official consumer price index (CPI) and inflation from the Statistical Centre of Iran, latest first.
+- `am_inflation_groups`: Compare official inflation across CPI groups (food, housing, transport, health...) for one month.
+- `am_labour_force`: Get Iran's official unemployment and labour-force participation rates by quarter, latest first.
+- `am_population`: Get population and households by province, or by county within one province, from Iran's 1395 census.
+- `am_table`: Read an Excel table of a statistical release as compact rows (works for any release with an xlsx/xls file).
+- `am_indicators`: Read the Centre's monthly macro-indicators workbook: trade, housing, money, budget, prices by decile and more.
+- `am_gdp`: Get Iran's official GDP growth by quarter or year, with the main sectors, latest first.
+- `am_ppi`: Get Iran's producer price index (PPI, factory-gate prices) by quarter and sector, latest first.
+- `am_search`: Search the Statistical Centre of Iran (amar.org.ir) catalog of releases: tables, time series, reports.
+- `am_release`: Get one statistical release from amar.org.ir: title, topic path, period and its downloadable files.
+- `am_calendar`: Get the Statistical Centre of Iran's publishing calendar: which statistics come out on which day of a month.
+- `am_news`: List the latest news and press releases of the Statistical Centre of Iran, or read one item.
+
 ## Iran News RSS (`iran-news-mcp`, 6 tools)
 
 Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3, more.
@@ -597,6 +1066,65 @@ Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3,
 - `nw_search`: Search recent headlines of several sources for a keyword (client-side over their current feeds, newest first).
 - `nw_latest_all`: Return the newest headlines from every source (or the chosen ones), merged and sorted by time.
 - `nw_tech_news`: Return the newest technology news (phones, laptops, AI, gadgets, apps, crypto, cars, security, games) with long summaries.
+
+## Varzesh3 Sports (`varzesh3-mcp`, 18 tools)
+
+Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.
+
+- `v3_scores`: Get the live scores, results and fixtures of one day across leagues, as the Varzesh3 live score page lists them.
+- `v3_match`: Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video and next matches.
+- `v3_league`: List the football leagues with their ids, or get one league's current season id and past seasons with winners.
+- `v3_standings`: Get the table of a football league (rank, played, won, drawn, lost, goals, points, recent form), group tables or a cup bracket.
+- `v3_league_matches`: Get a league's matches round by round: scores of played rounds and dates of coming ones.
+- `v3_top_players`: Get the best players of a football (or futsal) league by one statistic, e.g. top scorers or most assists.
+- `v3_team`: Get a football team's page: name, followers, recent form, squad by position and optionally transfers.
+- `v3_team_matches`: Get a football team's latest results or its upcoming matches across all competitions.
+- `v3_news`: Get Varzesh3 news headlines with a short summary: latest, most read, most commented, or about a team, league, player, match or sport.
+- `v3_article`: Read one news story: title, publish time, full text (plain text, up to 6000 characters), tags and the match it is about.
+- `v3_videos`: Get Varzesh3 videos (goals, match summaries, interviews): latest, or about one team, league, match or player.
+- `v3_search`: Search Varzesh3 for teams, people, leagues, news and videos by name; the way to turn a name into an id.
+- `v3_player`: Get a player's profile (team, position, shirt number, age, country) with his latest news and videos.
+- `v3_team_players`: Get the season statistics of one football team's players: goals, assists, appearances, minutes, cards.
+- `v3_head_to_head`: Get the past meetings of two football teams with a won/drawn/lost summary for team_id.
+- `v3_transfers`: Get the football transfer list of a window, club by club: players signed and players who left.
+- `v3_tv_schedule`: Get the live broadcast schedule (جدول پخش زنده) of sports matches for the next days, with start times and stream links.
+- `v3_league_stats`: Get a football league's season statistics: goals per match, cards per match, goal timing, streak notes and team rankings.
+
+## Gamefa (`gamefa-mcp`, 13 tools)
+
+Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, profiles, releases.
+
+- `gf_search_articles`: Search Gamefa's news, reviews and features by keyword, newest matches first.
+- `gf_latest_articles`: List the newest Gamefa articles, optionally for one section such as news, reviews, trailers or pc.
+- `gf_article`: Read one Gamefa article as plain text, with the editors' score box when it is a review.
+- `gf_reviews`: List Gamefa's game reviews (نقد و بررسی) newest first, each with the editors' score out of 10, label, pros and cons.
+- `gf_popular`: List the most viewed Gamefa articles of the past week, month, season or year, most viewed first.
+- `gf_games`: Browse or search Gamefa's game profiles with the editors' score, user score, genres, platforms and release date.
+- `gf_upcoming_games`: List games that have not been released yet, soonest first (Gamefa's release calendar), with ISO release dates.
+- `gf_films`: Browse or search Gamefa's film and TV series profiles with IMDb score, user score, genres, director and release date.
+- `gf_game`: Get one game's Gamefa profile: editors' score, user score and votes, Metacritic, release date, description.
+- `gf_film`: Get one film or series profile: IMDb and user score, genres, cast, director, writers, countries, runtime, release date.
+- `gf_terms`: Find the slug of a platform, genre, developer, publisher, film person or studio, or an article topic tag.
+- `gf_comments`: Read the public reader comments under a Gamefa article or a game/film profile, with likes and dislikes.
+- `gf_related`: List the articles Gamefa links to a game or film profile, or the games/films it shows as similar.
+
+## Time.ir Calendar (`time-ir-mcp`, 13 tools)
+
+Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.
+
+- `ti_today`: Get today's date in the Jalali, Gregorian and Hijri calendars with the Tehran time, weekday, zodiac sign and today's events.
+- `ti_convert_date`: Convert a date between the Jalali (Solar Hijri), Gregorian and Hijri (lunar) calendars, using time.ir's own converter.
+- `ti_month`: Show one Jalali month: its Gregorian and Hijri month spans, weekday of day 1, holidays and every event of the month.
+- `ti_events`: List the occasions (Persian: monasebat) and official holidays of one day, with a short description when time.ir has one.
+- `ti_holidays`: List all official holidays (تعطیلات رسمی) of a Jalali year with Gregorian and Hijri dates and weekdays.
+- `ti_upcoming_holidays`: List the next official holidays in Iran starting today (or from_date), with days until each.
+- `ti_cities`: List Iran's provinces, or the cities of one province, with the ids ti_prayer_times takes.
+- `ti_prayer_times`: Get the Islamic prayer times (اوقات شرعی) for an Iranian city and day: fajr, sunrise, noon, sunset, maghrib and Islamic midnight.
+- `ti_qibla`: Get the qibla direction (bearing to the Kaaba in Mecca, degrees clockwise from true north) and distance for an Iranian city.
+- `ti_on_this_day`: List today's historical events, birthdays and deaths of notable people, as Time.ir's "today" page shows them.
+- `ti_search_events`: Search all occasions (monasebat) of a Jalali year by keyword and return each match with its dates.
+- `ti_date_difference`: Count the days between two dates and give the span as Jalali years, months and days (age calculator).
+- `ti_long_weekends`: Find runs of consecutive days off in a Jalali year: official holidays joined with Fridays (optionally Thursdays).
 
 ## Iran Earthquakes (`iran-quake-mcp`, 5 tools)
 
@@ -619,6 +1147,16 @@ Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full 
 - `qv_related`: Documents related to a law: other laws, and regulations, court votes and legal opinions that cite or
 - `qv_search`: Search the Iranian law and regulation database (qavanin.ir, 168,000 documents) and list matching titles.
 - `qv_lookup`: Find the ids that qv_search filters take: approving bodies, executing bodies, subjects, types, statuses, lists.
+
+## Official Gazette of Iran (`rrk-mcp`, 5 tools)
+
+Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.
+
+- `rk_exchange_offices`: List the licensed currency exchange offices (صرافی مجاز) the Central Bank published in the Official Gazette (rrk.ir).
+- `rk_search_laws`: Search the Official Gazette's laws and regulations database (rrk.ir) by title, full text, group, approver, special number or gazette date.
+- `rk_law_filters`: List the law groups (categories) and approving authorities that rk_search_laws can filter by.
+- `rk_latest_laws`: List the newest laws, rulings and regulations published in the Official Gazette (rrk.ir), newest gazette first.
+- `rk_law_text`: Read the full text of one law or ruling from the Official Gazette (rrk.ir): approver, gazette number and date, body.
 
 ## Iran Tax (`iran-tax-mcp`, 6 tools)
 

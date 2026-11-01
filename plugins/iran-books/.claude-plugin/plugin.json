@@ -1,6 +1,6 @@
 {
   "name": "iran-books",
-  "description": "Everything for ebooks, audiobooks or printed books in Iran: Taaghche, Fidibo, 30book.",
+  "description": "Everything for ebooks, audiobooks or printed books in Iran: Taaghche, Fidibo, 30book, Iranketab Books.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -10,6 +10,7 @@
   "dependencies": [
     "taaghche",
     "fidibo",
-    "30book"
+    "30book",
+    "iranketab"
   ]
 }

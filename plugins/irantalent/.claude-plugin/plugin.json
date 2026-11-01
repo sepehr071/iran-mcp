@@ -1,0 +1,27 @@
+{
+  "name": "irantalent",
+  "displayName": "IranTalent Jobs",
+  "version": "0.1.0",
+  "description": "Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/irantalent-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "jobs",
+    "irantalent.com"
+  ],
+  "mcpServers": {
+    "irantalent": {
+      "command": "uvx",
+      "args": [
+        "irantalent-mcp@0.1.0"
+      ]
+    }
+  }
+}

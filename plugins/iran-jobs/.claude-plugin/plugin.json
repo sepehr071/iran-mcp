@@ -1,0 +1,16 @@
+{
+  "name": "iran-jobs",
+  "description": "Everything for job ads, employers or salaries in Iran: Jobinja Jobs, Jobvision Jobs, IranTalent Jobs, Quera.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "jobinja",
+    "jobvision",
+    "irantalent",
+    "quera"
+  ]
+}

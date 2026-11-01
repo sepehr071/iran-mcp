@@ -1,0 +1,27 @@
+{
+  "name": "jobvision",
+  "displayName": "Jobvision Jobs",
+  "version": "0.1.0",
+  "description": "Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/jobvision-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "jobs",
+    "jobvision.ir"
+  ],
+  "mcpServers": {
+    "jobvision": {
+      "command": "uvx",
+      "args": [
+        "jobvision-mcp@0.1.0"
+      ]
+    }
+  }
+}

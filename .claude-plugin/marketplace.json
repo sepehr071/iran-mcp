@@ -1,6 +1,6 @@
 {
   "name": "iran-mcp",
-  "description": "MCP servers and skills for Iranian websites: shopping, classifieds, food, travel, doctors, books, crypto.",
+  "description": "MCP servers and skills for Iranian websites: shopping, classifieds, cars, food, travel, maps, doctors, books, jobs, markets, crypto.",
   "owner": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -62,6 +62,24 @@
       "category": "shopping"
     },
     {
+      "name": "emalls-ir",
+      "source": "./plugins/emalls-ir",
+      "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
+      "category": "shopping"
+    },
+    {
+      "name": "mobile-ir",
+      "source": "./plugins/mobile-ir",
+      "description": "Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.",
+      "category": "shopping"
+    },
+    {
+      "name": "zoomit",
+      "source": "./plugins/zoomit",
+      "description": "Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price history, comparisons.",
+      "category": "shopping"
+    },
+    {
       "name": "khanoumi",
       "source": "./plugins/khanoumi",
       "description": "Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.",
@@ -92,6 +110,30 @@
       "category": "classifieds"
     },
     {
+      "name": "sheypoor",
+      "source": "./plugins/sheypoor",
+      "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
+      "category": "classifieds"
+    },
+    {
+      "name": "bama-ir",
+      "source": "./plugins/bama-ir",
+      "description": "Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.",
+      "category": "cars"
+    },
+    {
+      "name": "karnameh",
+      "source": "./plugins/karnameh",
+      "description": "Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.",
+      "category": "cars"
+    },
+    {
+      "name": "hamrah-mechanic",
+      "source": "./plugins/hamrah-mechanic",
+      "description": "Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.",
+      "category": "cars"
+    },
+    {
       "name": "otaghak",
       "source": "./plugins/otaghak",
       "description": "Unofficial read-only Otaghak: search Iranian villas, availability, exact stay prices, reviews.",
@@ -116,6 +158,30 @@
       "category": "travel"
     },
     {
+      "name": "alibaba-ir",
+      "source": "./plugins/alibaba-ir",
+      "description": "Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.",
+      "category": "travel"
+    },
+    {
+      "name": "eghamat24",
+      "source": "./plugins/eghamat24",
+      "description": "Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.",
+      "category": "travel"
+    },
+    {
+      "name": "neshan",
+      "source": "./plugins/neshan",
+      "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
+      "category": "maps"
+    },
+    {
+      "name": "balad",
+      "source": "./plugins/balad",
+      "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
+      "category": "maps"
+    },
+    {
       "name": "paziresh24",
       "source": "./plugins/paziresh24",
       "description": "Unofficial read-only Paziresh24: find Iranian doctors, profiles, prices, reviews and free slots.",
@@ -131,6 +197,12 @@
       "name": "exiryab",
       "source": "./plugins/exiryab",
       "description": "Official read-only ExirYab: find Iranian doctors by name, city and specialty, with clinics and maps.",
+      "category": "health"
+    },
+    {
+      "name": "darukade",
+      "source": "./plugins/darukade",
+      "description": "Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.",
       "category": "health"
     },
     {
@@ -152,10 +224,58 @@
       "category": "books"
     },
     {
+      "name": "iranketab",
+      "source": "./plugins/iranketab",
+      "description": "Read-only Iranketab (iranketab.ir) books: search, translations compared, ratings, reviews, prices.",
+      "category": "books"
+    },
+    {
       "name": "maktabkhooneh",
       "source": "./plugins/maktabkhooneh",
       "description": "Unofficial read-only Maktabkhooneh: search Persian online courses, compare prices, find free ones.",
       "category": "learning"
+    },
+    {
+      "name": "faradars",
+      "source": "./plugins/faradars",
+      "description": "Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.",
+      "category": "learning"
+    },
+    {
+      "name": "jobinja",
+      "source": "./plugins/jobinja",
+      "description": "Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.",
+      "category": "jobs"
+    },
+    {
+      "name": "jobvision",
+      "source": "./plugins/jobvision",
+      "description": "Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.",
+      "category": "jobs"
+    },
+    {
+      "name": "irantalent",
+      "source": "./plugins/irantalent",
+      "description": "Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.",
+      "category": "jobs"
+    },
+    {
+      "name": "quera",
+      "source": "./plugins/quera",
+      "description": "Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.",
+      "category": "jobs"
+    },
+    {
+      "name": "ponisha",
+      "source": "./plugins/ponisha",
+      "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
+      "category": "freelance"
+    },
+    {
+      "name": "karlancer",
+      "source": "./plugins/karlancer",
+      "description": "Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.",
+      "category": "freelance"
     },
     {
       "name": "iran-apps",
@@ -168,6 +288,12 @@
       "source": "./plugins/iran-downloads",
       "description": "Unofficial read-only metadata search of Soft98, P30Download, Downloadly and VGDL. Links only.",
       "category": "software"
+    },
+    {
+      "name": "iran-cloud-status",
+      "source": "./plugins/iran-cloud-status",
+      "description": "Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.",
+      "category": "cloud"
     },
     {
       "name": "tgju",
@@ -200,10 +326,64 @@
       "category": "stocks"
     },
     {
+      "name": "codal",
+      "source": "./plugins/codal",
+      "description": "Read-only codal.ir: search disclosures of Iranian listed companies, read letters and statements.",
+      "category": "stocks"
+    },
+    {
+      "name": "ifb",
+      "source": "./plugins/ifb",
+      "description": "Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.",
+      "category": "stocks"
+    },
+    {
+      "name": "fipiran",
+      "source": "./plugins/fipiran",
+      "description": "Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.",
+      "category": "stocks"
+    },
+    {
+      "name": "ime",
+      "source": "./plugins/ime",
+      "description": "Read-only Iran Mercantile Exchange (ime.co.ir): physical trades, supply, prices, market totals.",
+      "category": "stocks"
+    },
+    {
+      "name": "cbi",
+      "source": "./plugins/cbi",
+      "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
+      "category": "economy"
+    },
+    {
+      "name": "amar",
+      "source": "./plugins/amar",
+      "description": "Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.",
+      "category": "economy"
+    },
+    {
       "name": "iran-news",
       "source": "./plugins/iran-news",
       "description": "Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3, more.",
       "category": "news"
+    },
+    {
+      "name": "varzesh3",
+      "source": "./plugins/varzesh3",
+      "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
+      "category": "sports"
+    },
+    {
+      "name": "gamefa",
+      "source": "./plugins/gamefa",
+      "description": "Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, profiles, releases.",
+      "category": "entertainment"
+    },
+    {
+      "name": "time-ir",
+      "source": "./plugins/time-ir",
+      "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
+      "category": "calendar"
     },
     {
       "name": "iran-quake",
@@ -215,6 +395,12 @@
       "name": "qavanin",
       "source": "./plugins/qavanin",
       "description": "Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full text and status.",
+      "category": "law"
+    },
+    {
+      "name": "rrk",
+      "source": "./plugins/rrk",
+      "description": "Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.",
       "category": "law"
     },
     {
@@ -250,7 +436,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 37 read-only Iranian site servers in one install.",
+      "description": "All 68 read-only Iranian site servers in one install.",
       "category": "bundle"
     },
     {
@@ -262,7 +448,7 @@
     {
       "name": "iran-shopping",
       "source": "./plugins/iran-shopping",
-      "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Pasavard.",
+      "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Emalls Price Comparison, Mobile.ir Phones, Zoomit Products, Pasavard.",
       "category": "bundle"
     },
     {
@@ -278,21 +464,57 @@
       "category": "bundle"
     },
     {
+      "name": "iran-classifieds",
+      "source": "./plugins/iran-classifieds",
+      "description": "Everything for classified ads for homes, cars, phones and more in Iran: Divar, Sheypoor Classifieds.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-cars",
+      "source": "./plugins/iran-cars",
+      "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars.",
+      "category": "bundle"
+    },
+    {
       "name": "iran-travel",
       "source": "./plugins/iran-travel",
-      "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday.",
+      "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday, Alibaba Travel, Eghamat24 Hotels.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-maps",
+      "source": "./plugins/iran-maps",
+      "description": "Everything for places, addresses, routes or travel times on a map in Iran: Neshan Maps, Balad Maps.",
       "category": "bundle"
     },
     {
       "name": "iran-health",
       "source": "./plugins/iran-health",
-      "description": "Everything for doctors, clinics, labs or appointments in Iran: Paziresh24, Doctoreto, ExirYab.",
+      "description": "Everything for doctors, clinics, labs, appointments or pharmacy products in Iran: Paziresh24, Doctoreto, ExirYab, Darukade Pharmacy.",
       "category": "bundle"
     },
     {
       "name": "iran-books",
       "source": "./plugins/iran-books",
-      "description": "Everything for ebooks, audiobooks or printed books in Iran: Taaghche, Fidibo, 30book.",
+      "description": "Everything for ebooks, audiobooks or printed books in Iran: Taaghche, Fidibo, 30book, Iranketab Books.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-learning",
+      "source": "./plugins/iran-learning",
+      "description": "Everything for online courses, lessons or certificates in Iran: Maktabkhooneh, Faradars Courses.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-jobs",
+      "source": "./plugins/iran-jobs",
+      "description": "Everything for job ads, employers or salaries in Iran: Jobinja Jobs, Jobvision Jobs, IranTalent Jobs, Quera.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-freelance",
+      "source": "./plugins/iran-freelance",
+      "description": "Everything for freelance projects, freelancers or services in Iran: Ponisha Freelance, Karlancer Freelance.",
       "category": "bundle"
     },
     {
@@ -305,6 +527,24 @@
       "name": "iran-prices",
       "source": "./plugins/iran-prices",
       "description": "Everything for live gold, coin, currency or crypto prices in Iran: TGJU Prices, Iran Crypto Exchanges, Milli.gold Prices, Iran Gold Prices.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-stocks",
+      "source": "./plugins/iran-stocks",
+      "description": "Everything for stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran: TSETMC Tehran Stock Exchange, Codal (کدال) Disclosures, Iran Fara Bourse, Fipiran Funds, Iran Mercantile Exchange.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-economy",
+      "source": "./plugins/iran-economy",
+      "description": "Everything for official exchange rates, inflation, unemployment or other economic statistics in Iran: Central Bank of Iran, Statistical Centre of Iran.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-law",
+      "source": "./plugins/iran-law",
+      "description": "Everything for laws, regulations, court votes, legal opinions or Official Gazette texts in Iran: Qavanin, Official Gazette of Iran.",
       "category": "bundle"
     }
   ]

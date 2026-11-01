@@ -54,6 +54,24 @@
         "basalam-mcp@0.1.2"
       ]
     },
+    "emalls-ir": {
+      "command": "uvx",
+      "args": [
+        "emalls-ir-mcp@0.1.1"
+      ]
+    },
+    "mobile-ir": {
+      "command": "uvx",
+      "args": [
+        "mobile-ir-mcp@0.1.0"
+      ]
+    },
+    "zoomit": {
+      "command": "uvx",
+      "args": [
+        "zoomit-mcp@0.1.0"
+      ]
+    },
     "khanoumi": {
       "command": "uvx",
       "args": [
@@ -84,6 +102,30 @@
         "divar-mcp@0.2.2"
       ]
     },
+    "sheypoor": {
+      "command": "uvx",
+      "args": [
+        "sheypoor-mcp@0.1.0"
+      ]
+    },
+    "bama-ir": {
+      "command": "uvx",
+      "args": [
+        "bama-ir-mcp@0.1.0"
+      ]
+    },
+    "karnameh": {
+      "command": "uvx",
+      "args": [
+        "karnameh-mcp@0.1.0"
+      ]
+    },
+    "hamrah-mechanic": {
+      "command": "uvx",
+      "args": [
+        "hamrah-mechanic-mcp@0.1.0"
+      ]
+    },
     "otaghak": {
       "command": "uvx",
       "args": [
@@ -108,6 +150,30 @@
         "flytoday-mcp@0.3.2"
       ]
     },
+    "alibaba-ir": {
+      "command": "uvx",
+      "args": [
+        "alibaba-ir-mcp@0.1.0"
+      ]
+    },
+    "eghamat24": {
+      "command": "uvx",
+      "args": [
+        "eghamat24-mcp@0.1.0"
+      ]
+    },
+    "neshan": {
+      "command": "uvx",
+      "args": [
+        "neshan-mcp@0.1.0"
+      ]
+    },
+    "balad": {
+      "command": "uvx",
+      "args": [
+        "balad-mcp@0.1.0"
+      ]
+    },
     "paziresh24": {
       "command": "uvx",
       "args": [
@@ -124,6 +190,12 @@
       "command": "uvx",
       "args": [
         "exiryab-mcp@0.1.0"
+      ]
+    },
+    "darukade": {
+      "command": "uvx",
+      "args": [
+        "darukade-mcp@0.1.0"
       ]
     },
     "taaghche": {
@@ -144,10 +216,58 @@
         "30book-mcp@0.3.2"
       ]
     },
+    "iranketab": {
+      "command": "uvx",
+      "args": [
+        "iranketab-mcp@0.1.0"
+      ]
+    },
     "maktabkhooneh": {
       "command": "uvx",
       "args": [
         "maktabkhooneh-mcp@0.1.2"
+      ]
+    },
+    "faradars": {
+      "command": "uvx",
+      "args": [
+        "faradars-mcp@0.1.0"
+      ]
+    },
+    "jobinja": {
+      "command": "uvx",
+      "args": [
+        "jobinja-mcp@0.1.0"
+      ]
+    },
+    "jobvision": {
+      "command": "uvx",
+      "args": [
+        "jobvision-mcp@0.1.0"
+      ]
+    },
+    "irantalent": {
+      "command": "uvx",
+      "args": [
+        "irantalent-mcp@0.1.0"
+      ]
+    },
+    "quera": {
+      "command": "uvx",
+      "args": [
+        "quera-mcp@0.1.0"
+      ]
+    },
+    "ponisha": {
+      "command": "uvx",
+      "args": [
+        "ponisha-mcp@0.1.0"
+      ]
+    },
+    "karlancer": {
+      "command": "uvx",
+      "args": [
+        "karlancer-mcp@0.1.0"
       ]
     },
     "iran-apps": {
@@ -160,6 +280,12 @@
       "command": "uvx",
       "args": [
         "iran-downloads-mcp@0.1.2"
+      ]
+    },
+    "iran-cloud-status": {
+      "command": "uvx",
+      "args": [
+        "iran-cloud-status-mcp@0.1.0"
       ]
     },
     "tgju": {
@@ -192,10 +318,64 @@
         "tsetmc-mcp@0.1.2"
       ]
     },
+    "codal": {
+      "command": "uvx",
+      "args": [
+        "codal-mcp@0.1.0"
+      ]
+    },
+    "ifb": {
+      "command": "uvx",
+      "args": [
+        "ifb-mcp@0.1.0"
+      ]
+    },
+    "fipiran": {
+      "command": "uvx",
+      "args": [
+        "fipiran-mcp@0.1.0"
+      ]
+    },
+    "ime": {
+      "command": "uvx",
+      "args": [
+        "ime-mcp@0.1.0"
+      ]
+    },
+    "cbi": {
+      "command": "uvx",
+      "args": [
+        "cbi-mcp@0.1.0"
+      ]
+    },
+    "amar": {
+      "command": "uvx",
+      "args": [
+        "amar-mcp@0.1.0"
+      ]
+    },
     "iran-news": {
       "command": "uvx",
       "args": [
         "iran-news-mcp@0.2.2"
+      ]
+    },
+    "varzesh3": {
+      "command": "uvx",
+      "args": [
+        "varzesh3-mcp@0.1.0"
+      ]
+    },
+    "gamefa": {
+      "command": "uvx",
+      "args": [
+        "gamefa-mcp@0.1.0"
+      ]
+    },
+    "time-ir": {
+      "command": "uvx",
+      "args": [
+        "time-ir-mcp@0.1.0"
       ]
     },
     "iran-quake": {
@@ -208,6 +388,12 @@
       "command": "uvx",
       "args": [
         "qavanin-mcp@0.1.2"
+      ]
+    },
+    "rrk": {
+      "command": "uvx",
+      "args": [
+        "rrk-mcp@0.1.0"
       ]
     },
     "iran-tax": {

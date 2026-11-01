@@ -1,0 +1,27 @@
+{
+  "name": "amar",
+  "displayName": "Statistical Centre of Iran",
+  "version": "0.1.0",
+  "description": "Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/amar-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "economy",
+    "amar.org.ir"
+  ],
+  "mcpServers": {
+    "amar": {
+      "command": "uvx",
+      "args": [
+        "amar-mcp@0.1.0"
+      ]
+    }
+  }
+}

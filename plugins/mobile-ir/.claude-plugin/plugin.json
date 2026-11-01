@@ -1,0 +1,27 @@
+{
+  "name": "mobile-ir",
+  "displayName": "Mobile.ir Phones",
+  "version": "0.1.0",
+  "description": "Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/mobile-ir-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "shopping",
+    "mobile.ir"
+  ],
+  "mcpServers": {
+    "mobile-ir": {
+      "command": "uvx",
+      "args": [
+        "mobile-ir-mcp@0.1.0"
+      ]
+    }
+  }
+}

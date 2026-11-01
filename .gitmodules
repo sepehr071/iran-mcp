@@ -118,3 +118,96 @@
 [submodule "servers/iran-gold-mcp"]
 	path = servers/iran-gold-mcp
 	url = https://github.com/sepehr071/iran-gold-mcp
+[submodule "servers/neshan-mcp"]
+	path = servers/neshan-mcp
+	url = https://github.com/sepehr071/neshan-mcp
+[submodule "servers/balad-mcp"]
+	path = servers/balad-mcp
+	url = https://github.com/sepehr071/balad-mcp
+[submodule "servers/codal-mcp"]
+	path = servers/codal-mcp
+	url = https://github.com/sepehr071/codal-mcp
+[submodule "servers/alibaba-ir-mcp"]
+	path = servers/alibaba-ir-mcp
+	url = https://github.com/sepehr071/alibaba-ir-mcp
+[submodule "servers/amar-mcp"]
+	path = servers/amar-mcp
+	url = https://github.com/sepehr071/amar-mcp
+[submodule "servers/bama-ir-mcp"]
+	path = servers/bama-ir-mcp
+	url = https://github.com/sepehr071/bama-ir-mcp
+[submodule "servers/cbi-mcp"]
+	path = servers/cbi-mcp
+	url = https://github.com/sepehr071/cbi-mcp
+[submodule "servers/darukade-mcp"]
+	path = servers/darukade-mcp
+	url = https://github.com/sepehr071/darukade-mcp
+[submodule "servers/eghamat24-mcp"]
+	path = servers/eghamat24-mcp
+	url = https://github.com/sepehr071/eghamat24-mcp
+[submodule "servers/emalls-ir-mcp"]
+	path = servers/emalls-ir-mcp
+	url = https://github.com/sepehr071/emalls-ir-mcp
+[submodule "servers/faradars-mcp"]
+	path = servers/faradars-mcp
+	url = https://github.com/sepehr071/faradars-mcp
+[submodule "servers/fipiran-mcp"]
+	path = servers/fipiran-mcp
+	url = https://github.com/sepehr071/fipiran-mcp
+[submodule "servers/gamefa-mcp"]
+	path = servers/gamefa-mcp
+	url = https://github.com/sepehr071/gamefa-mcp
+[submodule "servers/hamrah-mechanic-mcp"]
+	path = servers/hamrah-mechanic-mcp
+	url = https://github.com/sepehr071/hamrah-mechanic-mcp
+[submodule "servers/ifb-mcp"]
+	path = servers/ifb-mcp
+	url = https://github.com/sepehr071/ifb-mcp
+[submodule "servers/ime-mcp"]
+	path = servers/ime-mcp
+	url = https://github.com/sepehr071/ime-mcp
+[submodule "servers/iran-cloud-status-mcp"]
+	path = servers/iran-cloud-status-mcp
+	url = https://github.com/sepehr071/iran-cloud-status-mcp
+[submodule "servers/iranketab-mcp"]
+	path = servers/iranketab-mcp
+	url = https://github.com/sepehr071/iranketab-mcp
+[submodule "servers/irantalent-mcp"]
+	path = servers/irantalent-mcp
+	url = https://github.com/sepehr071/irantalent-mcp
+[submodule "servers/jobinja-mcp"]
+	path = servers/jobinja-mcp
+	url = https://github.com/sepehr071/jobinja-mcp
+[submodule "servers/jobvision-mcp"]
+	path = servers/jobvision-mcp
+	url = https://github.com/sepehr071/jobvision-mcp
+[submodule "servers/karlancer-mcp"]
+	path = servers/karlancer-mcp
+	url = https://github.com/sepehr071/karlancer-mcp
+[submodule "servers/karnameh-mcp"]
+	path = servers/karnameh-mcp
+	url = https://github.com/sepehr071/karnameh-mcp
+[submodule "servers/mobile-ir-mcp"]
+	path = servers/mobile-ir-mcp
+	url = https://github.com/sepehr071/mobile-ir-mcp
+[submodule "servers/ponisha-mcp"]
+	path = servers/ponisha-mcp
+	url = https://github.com/sepehr071/ponisha-mcp
+[submodule "servers/quera-mcp"]
+	path = servers/quera-mcp
+	url = https://github.com/sepehr071/quera-mcp
+[submodule "servers/rrk-mcp"]
+	path = servers/rrk-mcp
+	url = https://github.com/sepehr071/rrk-mcp
+[submodule "servers/sheypoor-mcp"]
+	path = servers/sheypoor-mcp
+	url = https://github.com/sepehr071/sheypoor-mcp
+[submodule "servers/time-ir-mcp"]
+	path = servers/time-ir-mcp
+	url = https://github.com/sepehr071/time-ir-mcp
+[submodule "servers/varzesh3-mcp"]
+	path = servers/varzesh3-mcp
+	url = https://github.com/sepehr071/varzesh3-mcp
+[submodule "servers/zoomit-mcp"]
+	path = servers/zoomit-mcp
+	url = https://github.com/sepehr071/zoomit-mcp

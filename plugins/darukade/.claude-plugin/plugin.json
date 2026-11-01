@@ -1,0 +1,27 @@
+{
+  "name": "darukade",
+  "displayName": "Darukade Pharmacy",
+  "version": "0.1.0",
+  "description": "Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/darukade-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "health",
+    "darukade.com"
+  ],
+  "mcpServers": {
+    "darukade": {
+      "command": "uvx",
+      "args": [
+        "darukade-mcp@0.1.0"
+      ]
+    }
+  }
+}

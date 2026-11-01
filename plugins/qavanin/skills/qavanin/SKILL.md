@@ -1,6 +1,6 @@
 ---
 name: qavanin
-description: "Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full text and status. Use when the user asks about Qavanin (qavanin.ir) or wants laws, regulations, court votes or legal opinions in Iran."
+description: "Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full text and status. Use when the user asks about Qavanin (qavanin.ir) or wants laws, regulations, court votes, legal opinions or Official Gazette texts in Iran."
 ---
 
 # Qavanin

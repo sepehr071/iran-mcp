@@ -1,0 +1,27 @@
+{
+  "name": "iran-cloud-status",
+  "displayName": "Iran Cloud Status",
+  "version": "0.1.0",
+  "description": "Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-cloud-status-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "cloud",
+    "arvancloud.ir"
+  ],
+  "mcpServers": {
+    "iran-cloud-status": {
+      "command": "uvx",
+      "args": [
+        "iran-cloud-status-mcp@0.1.0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sheypoor",
+  "displayName": "Sheypoor Classifieds",
+  "version": "0.1.0",
+  "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/sheypoor-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "classifieds",
+    "sheypoor.com"
+  ],
+  "mcpServers": {
+    "sheypoor": {
+      "command": "uvx",
+      "args": [
+        "sheypoor-mcp@0.1.0"
+      ]
+    }
+  }
+}
