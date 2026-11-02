@@ -1,7 +1,7 @@
 {
   "name": "mobile-ir",
   "displayName": "Mobile.ir Phones",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "mobile-ir": {
       "command": "uvx",
       "args": [
-        "mobile-ir-mcp@0.1.0"
+        "mobile-ir-mcp@0.1.1"
       ]
     }
   }
