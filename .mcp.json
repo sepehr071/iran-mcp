@@ -27,7 +27,7 @@
     "technolife": {
       "command": "uvx",
       "args": [
-        "technolife-mcp@0.4.2"
+        "technolife-mcp@0.4.3"
       ]
     },
     "masterkala": {
@@ -39,7 +39,7 @@
     "baneh": {
       "command": "uvx",
       "args": [
-        "baneh-mcp@0.1.2"
+        "baneh-mcp@0.1.3"
       ]
     },
     "torob": {
@@ -93,13 +93,13 @@
     "banimode": {
       "command": "uvx",
       "args": [
-        "banimode-mcp@0.1.2"
+        "banimode-mcp@0.1.3"
       ]
     },
     "divar": {
       "command": "uvx",
       "args": [
-        "divar-mcp@0.2.3"
+        "divar-mcp@0.2.4"
       ]
     },
     "sheypoor": {
@@ -111,7 +111,7 @@
     "bama-ir": {
       "command": "uvx",
       "args": [
-        "bama-ir-mcp@0.1.0"
+        "bama-ir-mcp@0.1.1"
       ]
     },
     "karnameh": {
@@ -147,19 +147,19 @@
     "flytoday": {
       "command": "uvx",
       "args": [
-        "flytoday-mcp@0.3.2"
+        "flytoday-mcp@0.3.3"
       ]
     },
     "alibaba-ir": {
       "command": "uvx",
       "args": [
-        "alibaba-ir-mcp@0.1.1"
+        "alibaba-ir-mcp@0.1.2"
       ]
     },
     "eghamat24": {
       "command": "uvx",
       "args": [
-        "eghamat24-mcp@0.1.0"
+        "eghamat24-mcp@0.1.1"
       ]
     },
     "neshan": {
@@ -177,7 +177,7 @@
     "paziresh24": {
       "command": "uvx",
       "args": [
-        "paziresh24-mcp@0.4.2"
+        "paziresh24-mcp@0.4.3"
       ]
     },
     "doctoreto": {
@@ -231,7 +231,7 @@
     "faradars": {
       "command": "uvx",
       "args": [
-        "faradars-mcp@0.1.1"
+        "faradars-mcp@0.1.2"
       ]
     },
     "jobinja": {
@@ -243,7 +243,7 @@
     "jobvision": {
       "command": "uvx",
       "args": [
-        "jobvision-mcp@0.1.1"
+        "jobvision-mcp@0.1.2"
       ]
     },
     "irantalent": {
@@ -273,7 +273,7 @@
     "iran-apps": {
       "command": "uvx",
       "args": [
-        "iran-apps-mcp@0.1.2"
+        "iran-apps-mcp@0.1.3"
       ]
     },
     "iran-downloads": {
@@ -315,7 +315,7 @@
     "tsetmc": {
       "command": "uvx",
       "args": [
-        "tsetmc-mcp@0.1.2"
+        "tsetmc-mcp@0.1.3"
       ]
     },
     "codal": {
@@ -357,13 +357,13 @@
     "iran-news": {
       "command": "uvx",
       "args": [
-        "iran-news-mcp@0.2.2"
+        "iran-news-mcp@0.2.3"
       ]
     },
     "varzesh3": {
       "command": "uvx",
       "args": [
-        "varzesh3-mcp@0.1.0"
+        "varzesh3-mcp@0.1.1"
       ]
     },
     "gamefa": {
@@ -393,7 +393,7 @@
     "rrk": {
       "command": "uvx",
       "args": [
-        "rrk-mcp@0.1.1"
+        "rrk-mcp@0.1.2"
       ]
     },
     "iran-tax": {
