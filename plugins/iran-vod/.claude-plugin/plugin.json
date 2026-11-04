@@ -1,0 +1,27 @@
+{
+  "name": "iran-vod",
+  "displayName": "Filimo and Namava",
+  "version": "0.1.1",
+  "description": "Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-vod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "video",
+    "filimo.com"
+  ],
+  "mcpServers": {
+    "iran-vod": {
+      "command": "uvx",
+      "args": [
+        "iran-vod-mcp@0.1.1"
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="iran-mcp: 71 MCP servers and 883 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, economy, news, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
+<img src="assets/banner.svg" alt="iran-mcp: 72 MCP servers and 896 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, economy, news, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
 
 **English** · [فارسی](README.fa.md)
 
@@ -11,8 +11,8 @@
 Search, compare prices in Toman, find free slots and today's deals from Claude, Cursor, GitHub Copilot in VS Code or any MCP client.<br>
 Install them as Claude Code plugins with skills, or as Agent Skills for Codex, Cursor, Antigravity and Grok Build.
 
-[![Servers](https://img.shields.io/badge/servers-71-3fd6c9)](#the-servers)
-[![Tools](https://img.shields.io/badge/tools-883-f4b54a)](TOOLS.md)
+[![Servers](https://img.shields.io/badge/servers-72-3fd6c9)](#the-servers)
+[![Tools](https://img.shields.io/badge/tools-896-f4b54a)](TOOLS.md)
 [![Claude Code plugins](https://img.shields.io/badge/Claude_Code-plugin_marketplace-d97757)](#quick-start)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071-7c3aed)](https://registry.modelcontextprotocol.io/?q=sepehr071)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
@@ -197,7 +197,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 `swapwallet-mcp` is added by URL, and each client takes a URL in its own shape (Windsurf uses `serverUrl`, Claude
 Desktop takes it under Settings → Connectors): see [its setup for each client](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**All 71 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
+**All 72 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
 registers every server; approve the ones you want.
 
 ```bash
@@ -206,7 +206,7 @@ cd iran-mcp && claude
 ```
 
 > [!TIP]
-> 883 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
+> 896 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
 
 ## The servers
 
@@ -339,6 +339,7 @@ cd iran-mcp && claude
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [tax.gov.ir](https://tax.gov.ir), [stuffid.tax.gov.ir](https://stuffid.tax.gov.ir), [regulation.tax.gov.ir](https://regulation.tax.gov.ir) | 6 | [![PyPI](https://img.shields.io/pypi/v/iran-tax-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-tax-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-tax-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-tax-mcp/commits/main) | E-invoice goods/service IDs with VAT rate, activity codes, property transaction values, tax laws and circulars, official FAQ |
 | [varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp) | [Varzesh3](https://www.varzesh3.com) | 18 | [![PyPI](https://img.shields.io/pypi/v/varzesh3-mcp?label=&color=2fe0cf)](https://pypi.org/project/varzesh3-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/varzesh3-mcp?label=&color=ffc23d)](https://github.com/sepehr071/varzesh3-mcp/commits/main) | Live scores, league tables, fixtures, teams, players, top scorers, transfers, TV schedule, news |
 | [gamefa-mcp](https://github.com/sepehr071/gamefa-mcp) | [Gamefa](https://gamefa.com) | 13 | [![PyPI](https://img.shields.io/pypi/v/gamefa-mcp?label=&color=2fe0cf)](https://pypi.org/project/gamefa-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/gamefa-mcp?label=&color=ffc23d)](https://github.com/sepehr071/gamefa-mcp/commits/main) | Game and film news, reviews with scores, game and film profiles, upcoming releases |
+| [iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp) | [Filimo](https://www.filimo.com), [Namava](https://www.namava.ir) | 13 | [![PyPI](https://img.shields.io/pypi/v/iran-vod-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-vod-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-vod-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-vod-mcp/commits/main) | Films and series on Filimo and Namava: search, where to watch, title details, episodes, new releases, collections, plans |
 | [time-ir-mcp](https://github.com/sepehr071/time-ir-mcp) | [Time.ir](https://www.time.ir) | 13 | [![PyPI](https://img.shields.io/pypi/v/time-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/time-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/time-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/time-ir-mcp/commits/main) | Jalali, Gregorian and Hijri dates, holidays and long weekends, events, prayer times, qibla |
 | [rrk-mcp](https://github.com/sepehr071/rrk-mcp) | [Official Gazette](https://rrk.ir) (rrk.ir) | 5 | [![PyPI](https://img.shields.io/pypi/v/rrk-mcp?label=&color=2fe0cf)](https://pypi.org/project/rrk-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/rrk-mcp?label=&color=ffc23d)](https://github.com/sepehr071/rrk-mcp/commits/main) | Laws, regulations and rulings published in the Official Gazette: search, latest, full text |
 | [iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp) | [ArvanCloud](https://www.arvancloud.ir), [Hamravesh](https://hamravesh.com), [Chabokan](https://chabokan.net), [Liara](https://liara.ir) | 10 | [![PyPI](https://img.shields.io/pypi/v/iran-cloud-status-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-cloud-status-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-cloud-status-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-cloud-status-mcp/commits/main) | Live status, incidents, planned maintenance, reliability, public prices compared |
@@ -361,7 +362,7 @@ This repo is built to be read by agents as much as by people:
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Which server to pick for which task, conventions, safety rules, how to work in this repo |
 | [`servers.json`](servers.json) | Machine-readable catalog: package or URL, version, category, env vars and every tool of each server |
-| [`TOOLS.md`](TOOLS.md) | All 883 tools grouped by server, one line each |
+| [`TOOLS.md`](TOOLS.md) | All 896 tools grouped by server, one line each |
 | [`llms.txt`](llms.txt) | Short index for LLMs ([llmstxt.org](https://llmstxt.org)) |
 | [`.mcp.json`](.mcp.json) | Ready-to-use config for every server |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | The `iran-mcp` plugin marketplace: one plugin per server plus bundles |

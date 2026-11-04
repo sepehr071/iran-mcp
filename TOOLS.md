@@ -1108,6 +1108,24 @@ Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, 
 - `gf_comments`: Read the public reader comments under a Gamefa article or a game/film profile, with likes and dislikes.
 - `gf_related`: List the articles Gamefa links to a game or film profile, or the games/films it shows as similar.
 
+## Filimo and Namava (`iran-vod-mcp`, 13 tools)
+
+Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.
+
+- `vod_search`: Search the Filimo and Namava catalogs by title and return matching movies and series with a ref for each.
+- `vod_where`: Tell which of Filimo and Namava carries a title, by searching both and matching the title text.
+- `vod_title`: Get full details of one movie or series on Filimo or Namava: synopsis, genres, year, rating, age rating, cast, director.
+- `vod_episodes`: List the seasons of a series and the episodes of one season (title, summary, length, publish date).
+- `vod_new`: List the newest titles added to Filimo and Namava, most recent first.
+- `vod_featured`: Show what Filimo and Namava promote right now: Filimo's front-page rows (new, popular, box office, genres) and Namava's top slider and top list.
+- `vod_genres`: List the genre names vod_browse accepts for Filimo and Namava, with the English aliases.
+- `vod_browse`: List movies and series of one genre on Filimo and Namava, with Filimo's sort and country filters.
+- `vod_person`: Look up an actor, director or writer on Filimo and Namava: short bio and the titles they appear in.
+- `vod_related`: List titles similar to one movie or series on Filimo or Namava ("viewers also watch").
+- `vod_collections`: List the curated lists vod_collection can open on Filimo and Namava: IMDb top 250, Oscar, kids, coming soon and more.
+- `vod_collection`: Show the titles of one curated list on Filimo or Namava, such as the IMDb top 250 or coming soon.
+- `vod_plans`: Show Namava's public subscription plans and prices (Filimo's prices are not available in its JSON API).
+
 ## Time.ir Calendar (`time-ir-mcp`, 13 tools)
 
 Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.

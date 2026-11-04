@@ -30,7 +30,7 @@ GROUPS = [
     ("Travel &amp; maps", "سفر و نقشه", {"travel", "maps"}, "#6aa0ff"),
     ("Doctors &amp; clinics", "پزشک و درمان", {"health"}, "#7ee08a"),
     # the banner fits 3 rows of 2 tiles, so public-data categories share one tile
-    ("Jobs, news &amp; data", "کار، خبر و داده", {"books", "learning", "jobs", "freelance", "software", "cloud", "prices", "stocks", "economy", "news", "sports", "entertainment", "calendar", "quakes", "law", "tax"}, "#ffc23d"),
+    ("Jobs, news &amp; data", "کار، خبر و داده", {"books", "learning", "jobs", "freelance", "software", "cloud", "prices", "stocks", "economy", "news", "sports", "entertainment", "video", "calendar", "quakes", "law", "tax"}, "#ffc23d"),
     ("Your own accounts", f"حساب{ZWNJ}های شخصی", {"business", "messaging", "crypto"}, "#b88cff"),
 ]
 

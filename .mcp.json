@@ -372,6 +372,12 @@
         "gamefa-mcp@0.1.1"
       ]
     },
+    "iran-vod": {
+      "command": "uvx",
+      "args": [
+        "iran-vod-mcp@0.1.1"
+      ]
+    },
     "time-ir": {
       "command": "uvx",
       "args": [
