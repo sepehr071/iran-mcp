@@ -5480,6 +5480,95 @@
     ]
   },
   {
+    "name": "iran-vod-mcp",
+    "title": "Filimo and Namava",
+    "category": "video",
+    "site": "https://www.filimo.com",
+    "description": "Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.",
+    "version": "0.1.1",
+    "pypi": "iran-vod-mcp",
+    "repository": "https://github.com/sepehr071/iran-vod-mcp",
+    "registry_name": "io.github.sepehr071/iran-vod-mcp",
+    "run": "uvx iran-vod-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_VOD_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Filimo and Namava requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 13,
+    "tools": [
+      {
+        "name": "vod_search",
+        "title": "Search Filimo and Namava",
+        "summary": "Search the Filimo and Namava catalogs by title and return matching movies and series with a ref for each."
+      },
+      {
+        "name": "vod_where",
+        "title": "Where to watch a title",
+        "summary": "Tell which of Filimo and Namava carries a title, by searching both and matching the title text."
+      },
+      {
+        "name": "vod_title",
+        "title": "Title details",
+        "summary": "Get full details of one movie or series on Filimo or Namava: synopsis, genres, year, rating, age rating, cast, director."
+      },
+      {
+        "name": "vod_episodes",
+        "title": "Series seasons and episodes",
+        "summary": "List the seasons of a series and the episodes of one season (title, summary, length, publish date)."
+      },
+      {
+        "name": "vod_new",
+        "title": "New releases",
+        "summary": "List the newest titles added to Filimo and Namava, most recent first."
+      },
+      {
+        "name": "vod_featured",
+        "title": "Front-page picks",
+        "summary": "Show what Filimo and Namava promote right now: Filimo's front-page rows (new, popular, box office, genres) and Namava's top slider and top list."
+      },
+      {
+        "name": "vod_genres",
+        "title": "List genres",
+        "summary": "List the genre names vod_browse accepts for Filimo and Namava, with the English aliases."
+      },
+      {
+        "name": "vod_browse",
+        "title": "Browse by genre",
+        "summary": "List movies and series of one genre on Filimo and Namava, with Filimo's sort and country filters."
+      },
+      {
+        "name": "vod_person",
+        "title": "Actor or director profile",
+        "summary": "Look up an actor, director or writer on Filimo and Namava: short bio and the titles they appear in."
+      },
+      {
+        "name": "vod_related",
+        "title": "Similar titles",
+        "summary": "List titles similar to one movie or series on Filimo or Namava (\"viewers also watch\")."
+      },
+      {
+        "name": "vod_collections",
+        "title": "List collections",
+        "summary": "List the curated lists vod_collection can open on Filimo and Namava: IMDb top 250, Oscar, kids, coming soon and more."
+      },
+      {
+        "name": "vod_collection",
+        "title": "Open a collection",
+        "summary": "Show the titles of one curated list on Filimo or Namava, such as the IMDb top 250 or coming soon."
+      },
+      {
+        "name": "vod_plans",
+        "title": "Subscription plans",
+        "summary": "Show Namava's public subscription plans and prices (Filimo's prices are not available in its JSON API)."
+      }
+    ]
+  },
+  {
     "name": "time-ir-mcp",
     "title": "Time.ir Calendar",
     "category": "calendar",

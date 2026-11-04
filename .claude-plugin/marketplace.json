@@ -380,6 +380,12 @@
       "category": "entertainment"
     },
     {
+      "name": "iran-vod",
+      "source": "./plugins/iran-vod",
+      "description": "Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.",
+      "category": "video"
+    },
+    {
       "name": "time-ir",
       "source": "./plugins/time-ir",
       "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
@@ -436,7 +442,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 68 read-only Iranian site servers in one install.",
+      "description": "All 69 read-only Iranian site servers in one install.",
       "category": "bundle"
     },
     {

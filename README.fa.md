@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.fa.svg" alt="iran-mcp: ۷۱ سرور MCP و ۸۸۳ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، اقتصاد، خبر، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
+<img src="assets/banner.fa.svg" alt="iran-mcp: ۷۲ سرور MCP و ۸۹۶ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، اقتصاد، خبر، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
 
 [English](README.md) · **فارسی**
 
@@ -159,7 +159,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 
 `swapwallet-mcp` با آدرسش اضافه می‌شود و هر کلاینت آدرس را به شکل خودش می‌گیرد (Windsurf با `serverUrl`، و Claude Desktop از Settings ← Connectors): [راه‌اندازی آن در هر کلاینت](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**هر ۷۱ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
+**هر ۷۲ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
 
 </div>
 
@@ -171,7 +171,7 @@ cd iran-mcp && claude
 <div dir="rtl">
 
 > [!TIP]
-> ۸۸۳ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
+> ۸۹۶ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
 
 ## سرورها
 
@@ -304,6 +304,7 @@ cd iran-mcp && claude
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [سازمان امور مالیاتی](https://tax.gov.ir)، [سامانهٔ شناسه کالا](https://stuffid.tax.gov.ir)، [پایگاه قوانین مالیاتی](https://regulation.tax.gov.ir) | ۶ | [![PyPI](https://img.shields.io/pypi/v/iran-tax-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-tax-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-tax-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-tax-mcp/commits/main) | شناسهٔ کالا و خدمت با نرخ ارزش افزوده، کد فعالیت، ارزش معاملاتی املاک، قوانین و بخشنامه‌های مالیاتی، پرسش‌های متداول |
 | [varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp) | [ورزش۳](https://www.varzesh3.com) | ۱۸ | [![PyPI](https://img.shields.io/pypi/v/varzesh3-mcp?label=&color=2fe0cf)](https://pypi.org/project/varzesh3-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/varzesh3-mcp?label=&color=ffc23d)](https://github.com/sepehr071/varzesh3-mcp/commits/main) | نتایج زنده، جدول لیگ، برنامهٔ بازی‌ها، تیم‌ها، بازیکنان، گلزنان، نقل‌وانتقالات، پخش تلویزیونی، خبر |
 | [gamefa-mcp](https://github.com/sepehr071/gamefa-mcp) | [گیمفا](https://gamefa.com) | ۱۳ | [![PyPI](https://img.shields.io/pypi/v/gamefa-mcp?label=&color=2fe0cf)](https://pypi.org/project/gamefa-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/gamefa-mcp?label=&color=ffc23d)](https://github.com/sepehr071/gamefa-mcp/commits/main) | خبر بازی و فیلم، نقد با امتیاز، معرفی بازی و فیلم، بازی‌های در راه |
+| [iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp) | [فیلیمو](https://www.filimo.com) و [نماوا](https://www.namava.ir) | ۱۳ | [![PyPI](https://img.shields.io/pypi/v/iran-vod-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-vod-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-vod-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-vod-mcp/commits/main) | فیلم و سریال در فیلیمو و نماوا: جست‌وجو، کجا ببینیم، جزئیات، قسمت‌ها، تازه‌ها، مجموعه‌ها، اشتراک‌ها |
 | [time-ir-mcp](https://github.com/sepehr071/time-ir-mcp) | [تایم](https://www.time.ir) | ۱۳ | [![PyPI](https://img.shields.io/pypi/v/time-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/time-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/time-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/time-ir-mcp/commits/main) | تاریخ شمسی، میلادی و قمری، تعطیلات و تعطیلی‌های پشت‌سرهم، مناسبت‌ها، اوقات شرعی، قبله |
 | [rrk-mcp](https://github.com/sepehr071/rrk-mcp) | [روزنامهٔ رسمی](https://rrk.ir) | ۵ | [![PyPI](https://img.shields.io/pypi/v/rrk-mcp?label=&color=2fe0cf)](https://pypi.org/project/rrk-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/rrk-mcp?label=&color=ffc23d)](https://github.com/sepehr071/rrk-mcp/commits/main) | قوانین، مصوبات و آرای منتشرشده در روزنامهٔ رسمی: جست‌وجو، تازه‌ترین‌ها، متن کامل |
 | [iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp) | [ابر آروان](https://www.arvancloud.ir)، [هم‌روش](https://hamravesh.com)، [چابکان](https://chabokan.net)، [لیارا](https://liara.ir) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/iran-cloud-status-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-cloud-status-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-cloud-status-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-cloud-status-mcp/commits/main) | وضعیت لحظه‌ای، قطعی‌ها، تعمیرات برنامه‌ریزی‌شده، پایداری، مقایسهٔ قیمت‌های عمومی |
@@ -326,7 +327,7 @@ cd iran-mcp && claude
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | کدام سرور برای کدام کار، قراردادها، قوانین ایمنی، نحوهٔ کار در این مخزن |
 | [`servers.json`](servers.json) | کاتالوگ ماشین‌خوان: پکیج یا آدرس، نسخه، دسته، متغیرهای محیطی و همهٔ ابزارهای هر سرور |
-| [`TOOLS.md`](TOOLS.md) | هر ۸۸۳ ابزار به تفکیک سرور |
+| [`TOOLS.md`](TOOLS.md) | هر ۸۹۶ ابزار به تفکیک سرور |
 | [`llms.txt`](llms.txt) | فهرست کوتاه برای LLMها |
 | [`.mcp.json`](.mcp.json) | تنظیمات آماده برای همهٔ سرورها |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | مارکت‌پلیس پلاگین `iran-mcp`: یک پلاگین برای هر سرور به‌اضافهٔ بسته‌ها |

@@ -211,3 +211,6 @@
 [submodule "servers/zoomit-mcp"]
 	path = servers/zoomit-mcp
 	url = https://github.com/sepehr071/zoomit-mcp
+[submodule "servers/iran-vod-mcp"]
+	path = servers/iran-vod-mcp
+	url = https://github.com/sepehr071/iran-vod-mcp

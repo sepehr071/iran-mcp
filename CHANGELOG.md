@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **[iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp)**, 13 tools: Filimo and Namava films and series: search, where to watch, title details, episodes, new releases, collections, plans.
+
 ## v2.3 (2026-11-01)
 
 31 new servers: cars, maps, jobs and freelance work, markets and economic data, sports, games, the calendar and more.

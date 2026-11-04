@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 71 MCP servers for Iranian websites, 883 tools in
+Guide for AI agents using or working on **iran-mcp**: 72 MCP servers for Iranian websites, 896 tools in
 total. 68 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
@@ -63,6 +63,7 @@ sign-in).
 | Latest Iranian news (Mehr, Khabaronline, Hamshahri, Tabnak, Entekhab, Asriran, Zoomit, Digiato, Varzesh3, Khabarvarzeshi), a topic in the news, a full article | `iran-news-mcp` | `nw_latest_all`, `nw_search`, then `nw_article` |
 | Live scores, league tables, fixtures, transfers | `varzesh3-mcp` | `v3_scores`, `v3_standings`, `v3_league_matches` |
 | Game and film news, reviews and release dates | `gamefa-mcp` | `gf_latest_articles`, `gf_reviews`, `gf_upcoming_games` |
+| A film or series on Filimo or Namava: where to watch, details, episodes, new releases | `iran-vod-mcp` | `vod_search`, `vod_where`, then `vod_title`, `vod_episodes` |
 | Today's Jalali, Gregorian and Hijri date, date conversion, holidays, prayer times | `time-ir-mcp` | `ti_today`, `ti_convert_date`, `ti_holidays`, `ti_prayer_times` |
 | Recent or strong earthquakes in Iran (IRSC, USGS, EMSC) | `iran-quake-mcp` | `eq_latest`, `eq_significant`, `eq_detail` |
 | An Iranian law, regulation or court vote, one article, its amendments | `qavanin-mcp` | `qv_search`, then `qv_law`, `qv_amendments` |
@@ -104,7 +105,7 @@ Bundles: `iran-all`, `iran-food`, `iran-shopping`, `iran-beauty`, `iran-fashion`
 `iran-prices`, `iran-stocks`, `iran-economy`, `iran-law`.
 Skills only, for any agent: `npx skills add sepehr071/iran-mcp`.
 
-The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 71.
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 72.
 Requires [uv](https://docs.astral.sh/uv/) (`pasavard-mcp` and `swapwallet-mcp` don't). Add only the servers the task needs: each one adds 3 to 31 tools.
 
 ## Rules every server follows
@@ -154,7 +155,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the 71 / 883 counts written in both READMEs.
+  READMEs and the table above. Update the 72 / 896 counts written in both READMEs.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card
