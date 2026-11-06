@@ -462,7 +462,7 @@
     "category": "shopping",
     "site": "https://www.technolife.com",
     "description": "Unofficial read-only Technolife: search electronics, compare sellers and installment prices, deals.",
-    "version": "0.4.3",
+    "version": "0.4.5",
     "pypi": "technolife-mcp",
     "repository": "https://github.com/sepehr071/technolife-mcp",
     "registry_name": "io.github.sepehr071/technolife-mcp",

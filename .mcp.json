@@ -27,7 +27,7 @@
     "technolife": {
       "command": "uvx",
       "args": [
-        "technolife-mcp@0.4.3"
+        "technolife-mcp@0.4.5"
       ]
     },
     "masterkala": {
