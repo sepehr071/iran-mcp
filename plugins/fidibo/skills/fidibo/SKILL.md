@@ -17,7 +17,7 @@ The tools below come from the `fidibo-mcp` MCP server. If they are not available
 - `fd_new`: Newest books and audiobooks, per kind and category (Toman).
 - `fd_free`: Free ebooks and audiobooks (price 0), per kind and category.
 - `fd_categories`: List category and sub-category slugs (with Persian titles) of one top level.
-- `fd_book`: One book's full record: price (Toman), format, pages or duration, size, people, rating and star
+- `fd_book`: One book's full record: price (Toman), pages or duration, size, people, rating distribution, description
 - `fd_reviews`: Reader reviews of a book: text (cut at 400 chars unless full_text), 1-5 stars, date, likes, replies, total count.
 - `fd_similar`: Books like this one: bestsellers of its category, the book itself left out (Toman).
 - `fd_author`: An author's, translator's or narrator's profile and books (Toman).

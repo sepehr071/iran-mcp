@@ -1,7 +1,7 @@
 {
   "name": "iran-vod",
   "displayName": "Filimo and Namava",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "iran-vod": {
       "command": "uvx",
       "args": [
-        "iran-vod-mcp@0.1.1"
+        "iran-vod-mcp@0.2.0"
       ]
     }
   }

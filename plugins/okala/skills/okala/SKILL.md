@@ -11,22 +11,22 @@ The tools below come from the `okala-mcp` MCP server. If they are not available,
 
 ## Tools
 
-- `ok_login`: Log in to the user's Okala account, which unlocks Okala's real text search in ok_search
-- `ok_login_verify`: Finish a login started with ok_login: the code the user received by SMS. Saves the login on this
-- `ok_account`: Whether the server is logged in to Okala (and as which phone, masked). Logged in = ok_search uses
+- `ok_login`: Log in to the user's Okala account, unlocking real text search in ok_search. Optional.
+- `ok_login_verify`: Finish a login started with ok_login with the SMS code. Saves the login on this machine.
+- `ok_account`: Whether the server is logged in to Okala (phone masked); guest = category-only ok_search.
 - `ok_logout`: Delete the saved Okala login on this machine; the server continues as a guest.
 - `ok_categories`: Category tree (id, slug, Persian name, children) of everything sold near a point, or in one store.
 - `ok_search`: Find products by text near a point (or in one store with store_id), best matches first, then
-- `ok_compare`: Which open nearby store sells the same product cheapest: a category and/or brand from every store,
-- `ok_store_products`: A whole category of one store (the API returns all of it at once), sorted and optionally filtered by
+- `ok_compare`: Which open nearby store sells the same product cheapest: a category and/or brand, grouped by product id,
+- `ok_store_products`: A whole category of one store, sorted and optionally filtered by name, prices in Toman. `total` counts
 - `ok_product`: One product in one store: price and discount (Toman), stock, max per order, brand, category,
-- `ok_brands`: Brand ids for ok_compare (`brand_id`) and slugs. Okala publishes only a short list of featured brands;
-- `ok_deals`: Deal rows running now, with their end time (UTC) and top products (Toman, discount, store).
-- `ok_offer`: Every product of one deal row (from ok_deals), Toman. Without store_id: across all open stores that
+- `ok_brands`: Brand ids for ok_compare (`brand_id`) and slugs. Only featured brands are listed; any other is looked
+- `ok_deals`: Deal rows running now, with end time (UTC) and top products (Toman).
+- `ok_offer`: Every product of one deal row (from ok_deals), Toman. Without store_id: all open stores near the point,
 - `ok_locate`: Turn an address into coordinates (lat, lon) for every other tool, plus the street address of the best hit.
 - `ok_stores`: Okala stores that deliver to a point, in the site's order: id, type, rating, distance, earliest
 - `ok_store`: One store as seen from the delivery point: whether it delivers there now, minimum order (Toman),
-- `ok_store_reviews`: Read customers' reviews of a store: 1-5 stars, comment, date and the reasons they ticked
+- `ok_store_reviews`: Read customers' reviews of a store: 1-5 stars, comment, date and the reasons they ticked.
 
 ## Rules
 

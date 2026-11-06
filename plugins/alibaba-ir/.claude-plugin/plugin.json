@@ -1,7 +1,7 @@
 {
   "name": "alibaba-ir",
   "displayName": "Alibaba Travel",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "alibaba-ir": {
       "command": "uvx",
       "args": [
-        "alibaba-ir-mcp@0.1.2"
+        "alibaba-ir-mcp@0.2.0"
       ]
     }
   }

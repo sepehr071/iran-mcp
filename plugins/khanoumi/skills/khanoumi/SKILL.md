@@ -11,7 +11,7 @@ The tools below come from the `khanoumi-mcp` MCP server. If they are not availab
 
 ## Tools
 
-- `kh_search`: Search products by keyword: price, discount and stock of each match. Also returns the best-matching
+- `kh_search`: Search products by keyword: price, discount and stock of each match, plus matching category ids and brand slugs.
 - `kh_find_cheapest`: Find the cheapest in-stock products for a keyword, one flat list by payable price (Toman).
 - `kh_browse`: List products of a category, brand(s) or campaign tag with sorting, price range and filters.
 - `kh_filters`: List the filters of a category, brand, tag or search: sub-categories, brands, colors and attribute facets

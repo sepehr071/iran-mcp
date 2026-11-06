@@ -1,7 +1,7 @@
 {
   "name": "bama-ir",
   "displayName": "Bama Cars",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "bama-ir": {
       "command": "uvx",
       "args": [
-        "bama-ir-mcp@0.1.1"
+        "bama-ir-mcp@0.2.0"
       ]
     }
   }

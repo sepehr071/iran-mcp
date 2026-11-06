@@ -11,16 +11,16 @@ The tools below come from the `varzesh3-mcp` MCP server. If they are not availab
 
 ## Tools
 
-- `v3_scores`: Get the live scores, results and fixtures of one day across leagues, as the Varzesh3 live score page lists them.
-- `v3_match`: Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video and next matches.
+- `v3_scores`: Get the live scores, results and fixtures of one day across leagues.
+- `v3_match`: Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video.
 - `v3_league`: List the football leagues with their ids, or get one league's current season id and past seasons with winners.
-- `v3_standings`: Get the table of a football league (rank, played, won, drawn, lost, goals, points, recent form), group tables or a cup bracket.
+- `v3_standings`: Get a league table (rank, played, won, drawn, lost, goals, points, form), group tables or a cup bracket.
 - `v3_league_matches`: Get a league's matches round by round: scores of played rounds and dates of coming ones.
 - `v3_top_players`: Get the best players of a football (or futsal) league by one statistic, e.g. top scorers or most assists.
 - `v3_team`: Get a football team's page: name, followers, recent form, squad by position and optionally transfers.
-- `v3_team_matches`: Get a football team's latest results or its upcoming matches across all competitions.
+- `v3_team_matches`: Get a football team's latest results or upcoming matches across all competitions.
 - `v3_news`: Get Varzesh3 news headlines with a short summary: latest, most read, most commented, or about a team, league, player, match or sport.
-- `v3_article`: Read one news story: title, publish time, full text (plain text, up to 6000 characters), tags and the match it is about.
+- `v3_article`: Read one news story: title, publish time, full text (up to 6000 characters), tags and the match it is about.
 - `v3_videos`: Get Varzesh3 videos (goals, match summaries, interviews): latest, or about one team, league, match or player.
 - `v3_search`: Search Varzesh3 for teams, people, leagues, news and videos by name; the way to turn a name into an id.
 - `v3_player`: Get a player's profile (team, position, shirt number, age, country) with his latest news and videos.

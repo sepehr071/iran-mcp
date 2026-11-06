@@ -14,7 +14,7 @@ The tools below come from the `gamefa-mcp` MCP server. If they are not available
 - `gf_search_articles`: Search Gamefa's news, reviews and features by keyword, newest matches first.
 - `gf_latest_articles`: List the newest Gamefa articles, optionally for one section such as news, reviews, trailers or pc.
 - `gf_article`: Read one Gamefa article as plain text, with the editors' score box when it is a review.
-- `gf_reviews`: List Gamefa's game reviews (نقد و بررسی) newest first, each with the editors' score out of 10, label, pros and cons.
+- `gf_reviews`: List Gamefa's game reviews newest first, each with the editors' score out of 10, label, pros and cons.
 - `gf_popular`: List the most viewed Gamefa articles of the past week, month, season or year, most viewed first.
 - `gf_games`: Browse or search Gamefa's game profiles with the editors' score, user score, genres, platforms and release date.
 - `gf_upcoming_games`: List games that have not been released yet, soonest first (Gamefa's release calendar), with ISO release dates.

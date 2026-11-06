@@ -1,7 +1,7 @@
 {
   "name": "gamefa",
   "displayName": "Gamefa",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, profiles, releases.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "gamefa": {
       "command": "uvx",
       "args": [
-        "gamefa-mcp@0.1.1"
+        "gamefa-mcp@0.2.0"
       ]
     }
   }

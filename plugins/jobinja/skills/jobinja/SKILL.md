@@ -11,16 +11,16 @@ The tools below come from the `jobinja-mcp` MCP server. If they are not availabl
 
 ## Tools
 
-- `jj_search_jobs`: Search Jobinja job ads by keyword, province, city, category, remote, contract type, experience, benefits and minimum salary.
-- `jj_job`: Read one Jobinja job ad: title, company, salary, contract, experience, skills, degree, gender, military status and the full description.
-- `jj_company`: Read a company's Jobinja profile: name, founding year, industry, size, website, open job count and its intro, culture and benefits text.
-- `jj_company_jobs`: List a company's open job ads on Jobinja (or, with expired_page, its past ads, which show its hiring history).
+- `jj_search_jobs`: Search Jobinja job ads by keyword and filters (AND).
+- `jj_job`: Read one Jobinja job ad: salary, skills, degree and the full description.
+- `jj_company`: Read a company's Jobinja profile: industry, size, website, open job count and intro/culture text.
+- `jj_company_jobs`: List a company's open job ads (or past ads with expired_page).
 - `jj_search_companies`: Find companies on Jobinja by name, or browse one industry (8 per page).
-- `jj_top_companies`: Jobinja's yearly list of the 50 best companies to work for, with each one's score out of 10 and its three sub-scores.
-- `jj_market`: Count the open Jobinja ads right now per job category, province, company industry and top skill (live site statistics).
-- `jj_skills`: Find skills on Jobinja matching a word, with how many ads ever listed each (a demand signal).
-- `jj_salary_stats`: Estimate monthly salaries (Toman) for a kind of job by reading the ad pages of the top search results.
-- `jj_filters`: List every value the Jobinja search accepts: provinces, job categories, industries, experience levels, salary steps, sort orders.
+- `jj_top_companies`: Jobinja's top-50 companies with score out of 10 and three sub-scores.
+- `jj_market`: Count open Jobinja ads now per category, province, industry and top skill.
+- `jj_skills`: Find skills matching a word, with how many ads ever listed each (demand signal).
+- `jj_salary_stats`: Estimate monthly salaries (Toman) from the ad pages of the top search results.
+- `jj_filters`: List every value the search accepts: provinces, categories, industries, experience, salary steps, sort.
 
 ## Rules
 

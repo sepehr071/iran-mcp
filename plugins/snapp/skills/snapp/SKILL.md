@@ -31,7 +31,7 @@ The tools below come from the `snapp-mcp` MCP server. If they are not available,
 - `market_categories`: List SnappMarket product categories and sub-categories with their ids.
 - `market_product`: Get one product's details and price in one store.
 - `market_party_deals`: List current SnappMarket "market party" flash deals near the point, biggest discount first.
-- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5.
+- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5. No paging.
 
 ## Rules
 

@@ -12,7 +12,7 @@ The tools below come from the `hamrah-mechanic-mcp` MCP server. If they are not 
 ## Tools
 
 - `hm_brands`: List the car brands Hamrah Mechanic knows, with the slug the other tools take.
-- `hm_models`: List the models of one brand with their slugs and trims (types).
+- `hm_models`: List the models of one brand with their slugs.
 - `hm_prices`: Get today's market (used and zero-km) prices of cars from Hamrah Mechanic's daily price list.
 - `hm_price_estimate`: Get the market price range and recent monthly change for one trim in one model year.
 - `hm_search_cars`: Search the used and zero-km cars Hamrah Mechanic's showrooms sell, with filters.

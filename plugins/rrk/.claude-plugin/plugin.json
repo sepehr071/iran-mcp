@@ -1,7 +1,7 @@
 {
   "name": "rrk",
   "displayName": "Official Gazette of Iran",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "rrk": {
       "command": "uvx",
       "args": [
-        "rrk-mcp@0.1.2"
+        "rrk-mcp@0.2.0"
       ]
     }
   }

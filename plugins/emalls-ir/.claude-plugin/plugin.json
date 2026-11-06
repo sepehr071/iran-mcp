@@ -1,7 +1,7 @@
 {
   "name": "emalls-ir",
   "displayName": "Emalls Price Comparison",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "emalls-ir": {
       "command": "uvx",
       "args": [
-        "emalls-ir-mcp@0.1.2"
+        "emalls-ir-mcp@0.2.0"
       ]
     }
   }

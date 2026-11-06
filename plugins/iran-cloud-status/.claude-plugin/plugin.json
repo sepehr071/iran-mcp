@@ -1,7 +1,7 @@
 {
   "name": "iran-cloud-status",
   "displayName": "Iran Cloud Status",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "iran-cloud-status": {
       "command": "uvx",
       "args": [
-        "iran-cloud-status-mcp@0.1.0"
+        "iran-cloud-status-mcp@0.2.0"
       ]
     }
   }

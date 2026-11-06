@@ -28,7 +28,7 @@ The tools below come from the `technolife-mcp` MCP server. If they are not avail
 - `tl_price_basket`: Get the exact total for a set of seller items: discounts, insurance, quantity limits, cash vs installment price.
 - `tl_suggest`: Turn a product name into Technolife product codes (typeahead, up to 30 products, no prices).
 - `tl_search`: Search Technolife products with prices, discount, stock and rating.
-- `tl_find_cheapest`: Find the cheapest in-stock products for a search, one flat list sorted by the real price after discount.
+- `tl_find_cheapest`: Find the cheapest in-stock products for a search, one flat list sorted by the price after discount.
 - `tl_find_brand`: Look up a brand by its Persian name: filter code and brand page.
 
 ## Rules

@@ -1,7 +1,7 @@
 {
   "name": "ponisha",
   "displayName": "Ponisha Freelance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "ponisha": {
       "command": "uvx",
       "args": [
-        "ponisha-mcp@0.1.0"
+        "ponisha-mcp@0.2.0"
       ]
     }
   }

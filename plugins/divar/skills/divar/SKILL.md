@@ -35,7 +35,7 @@ The tools below come from the `divar-mcp` MCP server. If they are not available,
 - `dv_search`: Search Divar ads in one or more cities by category, text and filters; compact cards, prices in Toman.
 - `dv_count`: How many active ads match a search, in one cheap call (capped: 10,000 means '10,000 or more').
 - `dv_cheapest`: The cheapest ads of a search, cheapest first. Skips negotiable ads, placeholder or absurd prices and far-below-median outliers.
-- `dv_best_for_budget`: Within a budget: the best-value ads (furthest below their peers' median) and the most you can get (closest to the budget).
+- `dv_best_for_budget`: Within a budget: the best-value ads (furthest below their peers' median) and the ads closest to the budget.
 - `dv_find_deals`: Ads priced well below the median of the same search, without a budget: scored deals, with bait and junk prices removed.
 - `dv_new_since`: Ads published after a moment, newest first: poll this to watch a search (a new flat, a cheap car) without repeats.
 - `dv_export`: The ads of a search as CSV or JSON lines text, ready to save to a spreadsheet or analyse.

@@ -1,7 +1,7 @@
 {
   "name": "faradars",
   "displayName": "Faradars Courses",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "faradars": {
       "command": "uvx",
       "args": [
-        "faradars-mcp@0.1.2"
+        "faradars-mcp@0.2.0"
       ]
     }
   }

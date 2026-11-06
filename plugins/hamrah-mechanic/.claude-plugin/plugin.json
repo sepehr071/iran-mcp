@@ -1,7 +1,7 @@
 {
   "name": "hamrah-mechanic",
   "displayName": "Hamrah Mechanic Cars",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "hamrah-mechanic": {
       "command": "uvx",
       "args": [
-        "hamrah-mechanic-mcp@0.1.1"
+        "hamrah-mechanic-mcp@0.2.0"
       ]
     }
   }

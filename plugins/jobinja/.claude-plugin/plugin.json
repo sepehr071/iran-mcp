@@ -1,7 +1,7 @@
 {
   "name": "jobinja",
   "displayName": "Jobinja Jobs",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "jobinja": {
       "command": "uvx",
       "args": [
-        "jobinja-mcp@0.1.1"
+        "jobinja-mcp@0.2.0"
       ]
     }
   }

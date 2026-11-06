@@ -1,7 +1,7 @@
 {
   "name": "jobvision",
   "displayName": "Jobvision Jobs",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "jobvision": {
       "command": "uvx",
       "args": [
-        "jobvision-mcp@0.1.2"
+        "jobvision-mcp@0.2.0"
       ]
     }
   }

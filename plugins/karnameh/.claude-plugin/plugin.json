@@ -1,7 +1,7 @@
 {
   "name": "karnameh",
   "displayName": "Karnameh Cars",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "karnameh": {
       "command": "uvx",
       "args": [
-        "karnameh-mcp@0.1.1"
+        "karnameh-mcp@0.2.0"
       ]
     }
   }

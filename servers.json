@@ -5,7 +5,7 @@
     "category": "food",
     "site": "https://snappfood.ir",
     "description": "Unofficial read-only Snappfood & SnappMarket: search food and groceries, compare prices, deals.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "pypi": "snapp-mcp",
     "repository": "https://github.com/sepehr071/snapp-mcp",
     "registry_name": "io.github.sepehr071/snapp-mcp",
@@ -124,7 +124,7 @@
       {
         "name": "market_reviews",
         "title": "Grocery store reviews",
-        "summary": "Read a store's 30 most relevant customer comments, rating 0-5."
+        "summary": "Read a store's 30 most relevant customer comments, rating 0-5. No paging."
       }
     ]
   },
@@ -134,7 +134,7 @@
     "category": "food",
     "site": "https://okala.com",
     "description": "Unofficial read-only Okala: grocery stores that deliver to you, compare prices across stores.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "pypi": "okala-mcp",
     "repository": "https://github.com/sepehr071/okala-mcp",
     "registry_name": "io.github.sepehr071/okala-mcp",
@@ -159,17 +159,17 @@
       {
         "name": "ok_login",
         "title": "Log in to Okala (sends an SMS code)",
-        "summary": "Log in to the user's Okala account, which unlocks Okala's real text search in ok_search"
+        "summary": "Log in to the user's Okala account, unlocking real text search in ok_search. Optional."
       },
       {
         "name": "ok_login_verify",
         "title": "Finish the Okala login",
-        "summary": "Finish a login started with ok_login: the code the user received by SMS. Saves the login on this"
+        "summary": "Finish a login started with ok_login with the SMS code. Saves the login on this machine."
       },
       {
         "name": "ok_account",
         "title": "Okala login status",
-        "summary": "Whether the server is logged in to Okala (and as which phone, masked). Logged in = ok_search uses"
+        "summary": "Whether the server is logged in to Okala (phone masked); guest = category-only ok_search."
       },
       {
         "name": "ok_logout",
@@ -189,12 +189,12 @@
       {
         "name": "ok_compare",
         "title": "Compare prices across stores",
-        "summary": "Which open nearby store sells the same product cheapest: a category and/or brand from every store,"
+        "summary": "Which open nearby store sells the same product cheapest: a category and/or brand, grouped by product id,"
       },
       {
         "name": "ok_store_products",
         "title": "Products of one store",
-        "summary": "A whole category of one store (the API returns all of it at once), sorted and optionally filtered by"
+        "summary": "A whole category of one store, sorted and optionally filtered by name, prices in Toman. `total` counts"
       },
       {
         "name": "ok_product",
@@ -204,17 +204,17 @@
       {
         "name": "ok_brands",
         "title": "Find brands",
-        "summary": "Brand ids for ok_compare (`brand_id`) and slugs. Okala publishes only a short list of featured brands;"
+        "summary": "Brand ids for ok_compare (`brand_id`) and slugs. Only featured brands are listed; any other is looked"
       },
       {
         "name": "ok_deals",
         "title": "Current deals",
-        "summary": "Deal rows running now, with their end time (UTC) and top products (Toman, discount, store)."
+        "summary": "Deal rows running now, with end time (UTC) and top products (Toman)."
       },
       {
         "name": "ok_offer",
         "title": "One deal row in full",
-        "summary": "Every product of one deal row (from ok_deals), Toman. Without store_id: across all open stores that"
+        "summary": "Every product of one deal row (from ok_deals), Toman. Without store_id: all open stores near the point,"
       },
       {
         "name": "ok_locate",
@@ -234,7 +234,7 @@
       {
         "name": "ok_store_reviews",
         "title": "Store reviews",
-        "summary": "Read customers' reviews of a store: 1-5 stars, comment, date and the reasons they ticked"
+        "summary": "Read customers' reviews of a store: 1-5 stars, comment, date and the reasons they ticked."
       }
     ]
   },
@@ -244,7 +244,7 @@
     "category": "food",
     "site": "https://tapsi.food",
     "description": "Unofficial read-only Tapsi Food: search dishes and restaurants, menus, reviews, flash deals.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "tapsifood-mcp",
     "repository": "https://github.com/sepehr071/tapsifood-mcp",
     "registry_name": "io.github.sepehr071/tapsifood-mcp",
@@ -323,7 +323,7 @@
     "category": "shopping",
     "site": "https://www.digikala.com",
     "description": "Unofficial read-only Digikala: search products, compare sellers, price history, reviews, deals.",
-    "version": "0.5.2",
+    "version": "0.6.0",
     "pypi": "digikala-mcp",
     "repository": "https://github.com/sepehr071/digikala-mcp",
     "registry_name": "io.github.sepehr071/digikala-mcp",
@@ -422,7 +422,7 @@
       {
         "name": "dk_similar",
         "title": "Similar products",
-        "summary": "List products similar to one (same kind, other models and brands)."
+        "summary": "List products similar to one (same kind, other models and brands); sort='cheapest' for cheaper ones."
       },
       {
         "name": "dk_compare",
@@ -442,7 +442,7 @@
       {
         "name": "dk_plus_plans",
         "title": "Digikala Plus plans",
-        "summary": "List Digikala Plus plans (free shipments per month: jet = same-day Tehran/Karaj, fresh = supermarket) with price in Toman and benefits."
+        "summary": "List Digikala Plus plans (monthly free shipments; fresh = supermarket) with price in Toman and benefits."
       },
       {
         "name": "dk_gold_prices",
@@ -462,7 +462,7 @@
     "category": "shopping",
     "site": "https://www.technolife.com",
     "description": "Unofficial read-only Technolife: search electronics, compare sellers and installment prices, deals.",
-    "version": "0.4.5",
+    "version": "0.5.0",
     "pypi": "technolife-mcp",
     "repository": "https://github.com/sepehr071/technolife-mcp",
     "registry_name": "io.github.sepehr071/technolife-mcp",
@@ -566,7 +566,7 @@
       {
         "name": "tl_find_cheapest",
         "title": "Find cheapest products",
-        "summary": "Find the cheapest in-stock products for a search, one flat list sorted by the real price after discount."
+        "summary": "Find the cheapest in-stock products for a search, one flat list sorted by the price after discount."
       },
       {
         "name": "tl_find_brand",
@@ -581,7 +581,7 @@
     "category": "shopping",
     "site": "https://masterkala.com",
     "description": "Unofficial read-only MasterKala: search gadgets, compare prices and specs, stock, delivery, deals.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "masterkala-mcp",
     "repository": "https://github.com/sepehr071/masterkala-mcp",
     "registry_name": "io.github.sepehr071/masterkala-mcp",
@@ -615,7 +615,7 @@
       {
         "name": "mk_find_cheapest",
         "title": "Find cheapest product",
-        "summary": "Find the cheapest in-stock products for a keyword, one flat list sorted by payable price."
+        "summary": "Find the cheapest in-stock products for a keyword, one flat list sorted by final_price."
       },
       {
         "name": "mk_browse",
@@ -625,12 +625,12 @@
       {
         "name": "mk_filters",
         "title": "Filters of a category or brand",
-        "summary": "List the filters of a category, brand or tag page (brands, colors, attributes) with their ids, and its price range."
+        "summary": "List the filters of a category, brand or tag page with their ids, and its price range."
       },
       {
         "name": "mk_categories",
         "title": "List categories",
-        "summary": "List MasterKala's product categories with their ids (about 100 main categories)."
+        "summary": "List MasterKala's product categories with their ids (about 100)."
       },
       {
         "name": "mk_brands",
@@ -640,22 +640,22 @@
       {
         "name": "mk_deals",
         "title": "Current deals",
-        "summary": "List every product on MasterKala's discount page right now, biggest discount first."
+        "summary": "List products on MasterKala's discount page, biggest discount first."
       },
       {
         "name": "mk_product",
         "title": "Product details",
-        "summary": "Get one product's full record: price and discount (Toman), stock status and count, colors and"
+        "summary": "Get one product's full record: price (Toman), stock count, colors, category path, rating, branches."
       },
       {
         "name": "mk_specs",
         "title": "Specs and comparison",
-        "summary": "Get the specification table of 1-4 products side by side, with each product's stock count."
+        "summary": "Get the spec table of 1-4 products side by side, with stock counts."
       },
       {
         "name": "mk_reviews",
         "title": "Product reviews",
-        "summary": "Read customer reviews of a product (1-5 stars, newest first) with the store's replies and the star breakdown."
+        "summary": "Read customer reviews of a product (newest first) with store replies and the star breakdown."
       },
       {
         "name": "mk_shipping",
@@ -675,7 +675,7 @@
     "category": "shopping",
     "site": "https://baaneeh.com",
     "description": "Unofficial read-only Baneh: search appliances, TVs, electronics, find the cheapest in-stock price.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "baneh-mcp",
     "repository": "https://github.com/sepehr071/baneh-mcp",
     "registry_name": "io.github.sepehr071/baneh-mcp",
@@ -734,7 +734,7 @@
     "category": "shopping",
     "site": "https://torob.com",
     "description": "Unofficial read-only Torob: compare Iranian shop prices, price history, deal checks and baskets.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "torob-mcp",
     "repository": "https://github.com/sepehr071/torob-mcp",
     "registry_name": "io.github.sepehr071/torob-mcp",
@@ -778,7 +778,7 @@
       {
         "name": "tb_product",
         "title": "Product details",
-        "summary": "Full record of one product: name, price range across shops (Toman), category path, brand, key specs, cheapest offer."
+        "summary": "Full record of one product: name, price range (Toman), category, brand, key specs, cheapest offer."
       },
       {
         "name": "tb_sellers",
@@ -788,12 +788,12 @@
       {
         "name": "tb_stores",
         "title": "In-person stores",
-        "summary": "In-person (offline) shops that stock a product: address, opening hours, open now, shelf price and its age."
+        "summary": "In-person shops that stock a product: address, opening hours, open now, shelf price and its age."
       },
       {
         "name": "tb_presence",
         "title": "Shop presence",
-        "summary": "How widely a product is sold: online shops, in-person stores, installment shops, Torob-warranty shops, price window."
+        "summary": "How widely a product is sold: online shops, in-person stores, installment and warranty shops, price window."
       },
       {
         "name": "tb_variants",
@@ -808,7 +808,7 @@
       {
         "name": "tb_price_history",
         "title": "Price history events",
-        "summary": "Notable price moves of a product, newest first: drops, rises, lowest and highest point, last change."
+        "summary": "Notable price moves of a product, newest first, with the lowest and highest point."
       },
       {
         "name": "tb_similar",
@@ -818,7 +818,7 @@
       {
         "name": "tb_product_url",
         "title": "Product URL",
-        "summary": "Clean torob.com URL for a product id, '/p/<id>/...' path or any torob.com product link (no request is sent)."
+        "summary": "Clean torob.com URL for a product id, path or link (no request is sent)."
       },
       {
         "name": "tb_products_batch",
@@ -828,22 +828,22 @@
       {
         "name": "tb_search",
         "title": "Search products",
-        "summary": "Search Torob for products; each card has the cheapest shop price (Toman), shop count, image and URL."
+        "summary": "Search Torob for products; each card has the cheapest shop price (Toman) and the shop count."
       },
       {
         "name": "tb_suggest",
         "title": "Suggestions",
-        "summary": "Torob's own autocomplete: up to 8 search phrases for the typed text (also fixes Finglish and colloquial wording)."
+        "summary": "Torob's autocomplete: up to 8 search phrases for typed text (fixes Finglish and colloquial wording)."
       },
       {
         "name": "tb_filters",
         "title": "Search filters",
-        "summary": "Which filters exist for a query/category: category children, brands, price span, sort options, attributes."
+        "summary": "Which filters exist for a query/category: sub-categories, brands, price span, sort options, attributes."
       },
       {
         "name": "tb_category",
         "title": "Browse category",
-        "summary": "A category page: where it sits in the tree, its sub-categories, and its top products."
+        "summary": "A category page: its parents, sub-categories and top products."
       },
       {
         "name": "tb_brands",
@@ -853,7 +853,7 @@
       {
         "name": "tb_trends",
         "title": "Search trends",
-        "summary": "What people search on Torob right now, each with the category it lands in and one sample product."
+        "summary": "What people search on Torob right now, each with its category and one sample product."
       },
       {
         "name": "tb_offers",
@@ -863,7 +863,7 @@
       {
         "name": "tb_cities",
         "title": "Cities",
-        "summary": "City ids for the `city` filter of tb_search, tb_sellers and tb_stores (392 Tehran, 468 Mashhad, 240 Isfahan)."
+        "summary": "City ids for `city` arguments (392 Tehran, 468 Mashhad, 240 Isfahan)."
       },
       {
         "name": "tb_shop",
@@ -888,7 +888,7 @@
     "category": "shopping",
     "site": "https://basalam.com",
     "description": "Unofficial read-only Basalam marketplace: search products, cheapest offers, shops, reviews.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "basalam-mcp",
     "repository": "https://github.com/sepehr071/basalam-mcp",
     "registry_name": "io.github.sepehr071/basalam-mcp",
@@ -947,7 +947,7 @@
     "category": "shopping",
     "site": "https://emalls.ir",
     "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "emalls-ir-mcp",
     "repository": "https://github.com/sepehr071/emalls-ir-mcp",
     "registry_name": "io.github.sepehr071/emalls-ir-mcp",
@@ -1021,7 +1021,7 @@
     "category": "shopping",
     "site": "https://www.mobile.ir",
     "description": "Read-only Mobile.ir: phone specs, shop prices and history, used phones, numbered SIM cards.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "mobile-ir-mcp",
     "repository": "https://github.com/sepehr071/mobile-ir-mcp",
     "registry_name": "io.github.sepehr071/mobile-ir-mcp",
@@ -1130,7 +1130,7 @@
     "category": "shopping",
     "site": "https://www.zoomit.ir",
     "description": "Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price history, comparisons.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "zoomit-mcp",
     "repository": "https://github.com/sepehr071/zoomit-mcp",
     "registry_name": "io.github.sepehr071/zoomit-mcp",
@@ -1174,7 +1174,7 @@
       {
         "name": "zm_prices",
         "title": "Get sellers and price history",
-        "summary": "List a product's seller offers (cheapest first, Toman, with the shop's own listing title and link) and its price history."
+        "summary": "List a product's seller offers (cheapest first, Toman, with listing title and link) and its price history."
       },
       {
         "name": "zm_compare",
@@ -1214,7 +1214,7 @@
     "category": "beauty",
     "site": "https://www.khanoumi.com",
     "description": "Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "pypi": "khanoumi-mcp",
     "repository": "https://github.com/sepehr071/khanoumi-mcp",
     "registry_name": "io.github.sepehr071/khanoumi-mcp",
@@ -1233,7 +1233,7 @@
       {
         "name": "kh_search",
         "title": "Search products",
-        "summary": "Search products by keyword: price, discount and stock of each match. Also returns the best-matching"
+        "summary": "Search products by keyword: price, discount and stock of each match, plus matching category ids and brand slugs."
       },
       {
         "name": "kh_find_cheapest",
@@ -1298,7 +1298,7 @@
     "category": "beauty",
     "site": "https://asalbanooshop.com",
     "description": "Unofficial read-only Asal Banoo: search cosmetics and skin care, compare prices, sizes, deals.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "asalbanoo-mcp",
     "repository": "https://github.com/sepehr071/asalbanoo-mcp",
     "registry_name": "io.github.sepehr071/asalbanoo-mcp",
@@ -1367,7 +1367,7 @@
       {
         "name": "ab_product",
         "title": "Product details",
-        "summary": "Get one product: price/discount (Toman), stock (exact count when low), every size/color variant with its own"
+        "summary": "Get one product: price, stock, every size/color variant with its own price and stock, facts, images."
       },
       {
         "name": "ab_reviews",
@@ -1382,7 +1382,7 @@
     "category": "fashion",
     "site": "https://shopino.app",
     "description": "Unofficial read-only Shopino: search fashion across Iranian shops, compare prices, sizes, stock.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "shopino-mcp",
     "repository": "https://github.com/sepehr071/shopino-mcp",
     "registry_name": "io.github.sepehr071/shopino-mcp",
@@ -1426,7 +1426,7 @@
       {
         "name": "sh_brands",
         "title": "Brands",
-        "summary": "Without shop_id: featured official brand shops (browse one with sh_browse(shop_id=...)). With shop_id:"
+        "summary": "Without shop_id: featured official brand shops. With shop_id: that watch shop's brands, with ids for"
       },
       {
         "name": "sh_deals",
@@ -1451,7 +1451,7 @@
       {
         "name": "sh_product",
         "title": "Product details",
-        "summary": "Get one product's full record: price, every color / size variant with its own price and stock, size"
+        "summary": "Get one product's full record: price, every color / size variant with price and stock, size guide,"
       },
       {
         "name": "sh_similar",
@@ -1476,7 +1476,7 @@
     "category": "fashion",
     "site": "https://www.banimode.com",
     "description": "Unofficial read-only Banimode: search fashion, compare prices, sizes, stock and flash deals.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "banimode-mcp",
     "repository": "https://github.com/sepehr071/banimode-mcp",
     "registry_name": "io.github.sepehr071/banimode-mcp",
@@ -1535,7 +1535,7 @@
     "category": "classifieds",
     "site": "https://divar.ir",
     "description": "Unofficial read-only Divar: search Iran's classified ads, cheapest and best-value ads, price checks.",
-    "version": "0.2.4",
+    "version": "0.3.0",
     "pypi": "divar-mcp",
     "repository": "https://github.com/sepehr071/divar-mcp",
     "registry_name": "io.github.sepehr071/divar-mcp",
@@ -1674,7 +1674,7 @@
       {
         "name": "dv_best_for_budget",
         "title": "Best ads for a budget",
-        "summary": "Within a budget: the best-value ads (furthest below their peers' median) and the most you can get (closest to the budget)."
+        "summary": "Within a budget: the best-value ads (furthest below their peers' median) and the ads closest to the budget."
       },
       {
         "name": "dv_find_deals",
@@ -1714,7 +1714,7 @@
     "category": "classifieds",
     "site": "https://www.sheypoor.com",
     "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "sheypoor-mcp",
     "repository": "https://github.com/sepehr071/sheypoor-mcp",
     "registry_name": "io.github.sepehr071/sheypoor-mcp",
@@ -1793,7 +1793,7 @@
     "category": "cars",
     "site": "https://bama.ir",
     "description": "Read-only Bama (bama.ir) Iran car marketplace: ad search, ad details, market prices, new-car prices.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "bama-ir-mcp",
     "repository": "https://github.com/sepehr071/bama-ir-mcp",
     "registry_name": "io.github.sepehr071/bama-ir-mcp",
@@ -1812,7 +1812,7 @@
       {
         "name": "ba_search",
         "title": "Search car ads",
-        "summary": "Search used and new car ads on Bama (bama.ir) with filters; returns up to 30 compact ads per page."
+        "summary": "Search used and new car ads on Bama (bama.ir) with filters; up to 30 compact ads per page."
       },
       {
         "name": "ba_ad",
@@ -1877,7 +1877,7 @@
     "category": "cars",
     "site": "https://karnameh.com",
     "description": "Read-only Karnameh (karnameh.com) Iran car data: used ads, new-car prices, specs, comparisons, blog.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "karnameh-mcp",
     "repository": "https://github.com/sepehr071/karnameh-mcp",
     "registry_name": "io.github.sepehr071/karnameh-mcp",
@@ -1911,7 +1911,7 @@
       {
         "name": "kn_articles",
         "title": "Car blog articles",
-        "summary": "Search or list articles of the Karnameh car magazine (karnameh.com/blog): news, reviews, maintenance, laws."
+        "summary": "Search or list articles of the Karnameh car magazine: news, reviews, maintenance, laws."
       },
       {
         "name": "kn_article",
@@ -1936,7 +1936,7 @@
       {
         "name": "kn_cars",
         "title": "Search used-car ads",
-        "summary": "Search Karnameh's used-car ads (karnameh.com/buy-used-cars) by brand, model, city, price, year and mileage."
+        "summary": "Search Karnameh's used-car ads by brand, model, city, price, year and mileage."
       },
       {
         "name": "kn_car",
@@ -1956,7 +1956,7 @@
       {
         "name": "kn_price_list",
         "title": "New-car market prices",
-        "summary": "List today's market prices of new (zero-km) cars from Karnameh's car-price pages (karnameh.com/car-price)."
+        "summary": "List today's market prices of new (zero-km) cars from Karnameh's car-price pages."
       },
       {
         "name": "kn_latest_prices",
@@ -1976,7 +1976,7 @@
     "category": "cars",
     "site": "https://www.hamrah-mechanic.com",
     "description": "Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "hamrah-mechanic-mcp",
     "repository": "https://github.com/sepehr071/hamrah-mechanic-mcp",
     "registry_name": "io.github.sepehr071/hamrah-mechanic-mcp",
@@ -2000,7 +2000,7 @@
       {
         "name": "hm_models",
         "title": "Car models of a brand",
-        "summary": "List the models of one brand with their slugs and trims (types)."
+        "summary": "List the models of one brand with their slugs."
       },
       {
         "name": "hm_prices",
@@ -2060,7 +2060,7 @@
     "category": "travel",
     "site": "https://www.otaghak.com",
     "description": "Unofficial read-only Otaghak: search Iranian villas, availability, exact stay prices, reviews.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "pypi": "otaghak-mcp",
     "repository": "https://github.com/sepehr071/otaghak-mcp",
     "registry_name": "io.github.sepehr071/otaghak-mcp",
@@ -2159,7 +2159,7 @@
     "category": "travel",
     "site": "https://www.jabama.com",
     "description": "Unofficial read-only Jabama: villas and stays with exact prices, group tours, events and theater.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "jabama-mcp",
     "repository": "https://github.com/sepehr071/jabama-mcp",
     "registry_name": "io.github.sepehr071/jabama-mcp",
@@ -2178,27 +2178,27 @@
       {
         "name": "jb_search_events",
         "title": "Search events",
-        "summary": "Search Jabama Events: concerts, shows, workshops, exhibitions and experiences (offroad, boats, riding, food tours) with prices in Toman."
+        "summary": "Search Jabama Events: concerts, shows, workshops, exhibitions and experiences, with prices in Toman."
       },
       {
         "name": "jb_event",
         "title": "Event details",
-        "summary": "One event or experience: what it is, exact address, rules, what to bring, price, refundability, sessions with seats left, reviews and the organizer."
+        "summary": "One event or experience: details, address, rules, price, sessions with seats left, reviews, organizer."
       },
       {
         "name": "jb_event_seats",
         "title": "Event seats",
-        "summary": "Live seat availability of one seated event session: free seats per section and row, with the section prices in Toman."
+        "summary": "Live seat availability of one seated event session: free seats per section and row, with section prices in Toman."
       },
       {
         "name": "jb_theaters",
         "title": "Theater plays",
-        "summary": "List theater plays on sale on Jabama Events (Tehran, via the partner Zirbana): venue, address, from-price in Toman, rating, writer, director and cast."
+        "summary": "List theater plays on sale on Jabama Events (Tehran): venue, address, from-price in Toman, rating, crew."
       },
       {
         "name": "jb_theater",
         "title": "Theater play",
-        "summary": "One theater play: venue, cast and crew, reviews, showtimes with live seats left; with showtime_id also the free seats by row and their prices."
+        "summary": "One theater play: venue, crew, reviews, showtimes with seats left; with showtime_id also free seats by row and prices."
       },
       {
         "name": "jb_event_filters",
@@ -2233,22 +2233,22 @@
       {
         "name": "jb_categories",
         "title": "Stay categories",
-        "summary": "List Jabama's themed stay categories (special pool, A-frame, luxury, cheap, jungle, sea view, pet friendly, last-minute deals, instant booking, ...)."
+        "summary": "List Jabama's themed stay categories (special pool, A-frame, luxury, cheap, sea view, pet friendly, ...)."
       },
       {
         "name": "jb_stay",
         "title": "Stay details",
-        "summary": "Get one listing: capacity, beds, rooms, check-in/out times, house rules, amenities (and what is missing), cancellation policy, host, review scores."
+        "summary": "Get one listing: capacity, rooms, times, house rules, amenities, cancellation policy, host, review scores."
       },
       {
         "name": "jb_stay_calendar",
         "title": "Stay calendar",
-        "summary": "Nightly availability and price of one listing for the next ~76 days, with weekend and holiday flags."
+        "summary": "Nightly availability and price of one listing for the next ~76 days, with day types."
       },
       {
         "name": "jb_price_quote",
         "title": "Price quote",
-        "summary": "Get the exact amount to pay for one listing, dates and guest count (Toman), with per-night lines and the cancellation windows."
+        "summary": "Get the exact amount to pay (Toman) for one listing, dates and guests, with per-night lines and cancellation windows."
       },
       {
         "name": "jb_similar_stays",
@@ -2263,7 +2263,7 @@
       {
         "name": "jb_host",
         "title": "Host profile",
-        "summary": "A host's listings (with ratings and a from-price per night) and guest reviews across all of them, newest first."
+        "summary": "A host's listings (rating, from-price per night) and guest reviews, newest first."
       },
       {
         "name": "jb_search_tours",
@@ -2273,7 +2273,7 @@
       {
         "name": "jb_tour",
         "title": "Tour details",
-        "summary": "One group tour: packages, every departure with free seats and the per-person price of each package, day plan, meals, what is included, cancellation rules, guide, operator and reviews."
+        "summary": "One group tour: packages, departures with free seats and per-person package prices, day plan, inclusions, cancellation, guide, reviews."
       },
       {
         "name": "jb_tour_places",
@@ -2288,7 +2288,7 @@
     "category": "travel",
     "site": "https://mrbilit.com",
     "description": "Unofficial read-only MrBilit: Iranian flights, trains, buses, taxis and hotels, seats and prices.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "mrbilit-mcp",
     "repository": "https://github.com/sepehr071/mrbilit-mcp",
     "registry_name": "io.github.sepehr071/mrbilit-mcp",
@@ -2422,7 +2422,7 @@
     "category": "travel",
     "site": "https://www.flytoday.ir",
     "description": "Unofficial read-only Flytoday: Iranian and international flights, hotels, villas, trains, buses.",
-    "version": "0.3.3",
+    "version": "0.4.0",
     "pypi": "flytoday-mcp",
     "repository": "https://github.com/sepehr071/flytoday-mcp",
     "registry_name": "io.github.sepehr071/flytoday-mcp",
@@ -2486,7 +2486,7 @@
       {
         "name": "ft_search_flights",
         "title": "Search flights",
-        "summary": "Search flights for a date: every flight with times, airline (airline_fa: Persian name), seats left, price and fare_source_code."
+        "summary": "Search flights for a date: times, airline, seats left, price and fare_source_code per flight."
       },
       {
         "name": "ft_flight_calendar",
@@ -2556,7 +2556,7 @@
     "category": "travel",
     "site": "https://www.alibaba.ir",
     "description": "Read-only Alibaba (alibaba.ir) Iran travel: trains, buses, flights, hotels, villas and tours.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "alibaba-ir-mcp",
     "repository": "https://github.com/sepehr071/alibaba-ir-mcp",
     "registry_name": "io.github.sepehr071/alibaba-ir-mcp",
@@ -2650,7 +2650,7 @@
     "category": "travel",
     "site": "https://www.eghamat24.com",
     "description": "Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "eghamat24-mcp",
     "repository": "https://github.com/sepehr071/eghamat24-mcp",
     "registry_name": "io.github.sepehr071/eghamat24-mcp",
@@ -2669,22 +2669,22 @@
       {
         "name": "eg_tours",
         "title": "Flight and hotel tours",
-        "summary": "Find flight-plus-hotel tour packages to a city, or the packages of one hotel with their flight times."
+        "summary": "Find flight-plus-hotel tour packages to a city, or the packages of one hotel with flight times."
       },
       {
         "name": "eg_tour_calendar",
         "title": "Tour price calendar",
-        "summary": "Show the cheapest flight-plus-hotel package price for each departure day, to pick the cheapest day to leave."
+        "summary": "Show the cheapest flight-plus-hotel package price per departure day."
       },
       {
         "name": "eg_attractions",
         "title": "Tourist attractions",
-        "summary": "List the sights, shrines, malls and other places of a city, or read the description of one."
+        "summary": "List the sights, shrines, malls and other places of a city, or read one."
       },
       {
         "name": "eg_photos",
         "title": "Hotel photos",
-        "summary": "List the photo URLs of a hotel: the main picture, the hotel gallery and the photos of each room type."
+        "summary": "List a hotel's photo URLs: main picture, gallery and each room type."
       },
       {
         "name": "eg_similar",
@@ -2694,42 +2694,42 @@
       {
         "name": "eg_specials",
         "title": "Special offers",
-        "summary": "List hotels on one of the site's offer pages: free cancellation, one-night offers or the latest discounts."
+        "summary": "List hotels on one of the site's offer pages: free cancellation, one-night offers or latest discounts."
       },
       {
         "name": "eg_cities",
         "title": "Iranian destinations",
-        "summary": "List the destinations Eghamat24 has hotels in, with how many hotels and stays each has."
+        "summary": "List the destinations Eghamat24 has hotels in, with hotel and stay counts."
       },
       {
         "name": "eg_search",
         "title": "Search hotels",
-        "summary": "Search hotels in a city for given dates, with the filters the site offers, and return cards with the lowest price."
+        "summary": "Search hotels in a city for given dates and filters; returns cards with the lowest price."
       },
       {
         "name": "eg_deals",
         "title": "Hotel deals",
-        "summary": "List the hotels of a city with the biggest discounts for the given dates, bookable ones only."
+        "summary": "List a city's bookable hotels with the biggest discounts for the dates."
       },
       {
         "name": "eg_hotel",
         "title": "Hotel details",
-        "summary": "Get one hotel's profile: address, stars, check-in times, description, facilities, rules, guest scores, extras and nearby places."
+        "summary": "Get one hotel's profile: address, stars, times, facilities, rules, guest scores, extras and nearby places."
       },
       {
         "name": "eg_rooms",
         "title": "Room prices",
-        "summary": "List a hotel's bookable rooms with the price for the stay, cheapest first."
+        "summary": "List a hotel's bookable rooms with the stay price, cheapest first."
       },
       {
         "name": "eg_price_calendar",
         "title": "Price calendar",
-        "summary": "Show the cheapest bookable room price for each night over a date range, to find the cheapest days to stay."
+        "summary": "Show the cheapest bookable room price per night over a date range."
       },
       {
         "name": "eg_reviews",
         "title": "Hotel reviews",
-        "summary": "Read guest reviews of a hotel, newest first, with the overall guest scores and who travelled."
+        "summary": "Read guest reviews of a hotel, newest first."
       },
       {
         "name": "eg_questions",
@@ -2744,7 +2744,7 @@
     "category": "maps",
     "site": "https://neshan.org",
     "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "neshan-mcp",
     "repository": "https://github.com/sepehr071/neshan-mcp",
     "registry_name": "io.github.sepehr071/neshan-mcp",
@@ -2823,7 +2823,7 @@
     "category": "maps",
     "site": "https://balad.ir",
     "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "balad-mcp",
     "repository": "https://github.com/sepehr071/balad-mcp",
     "registry_name": "io.github.sepehr071/balad-mcp",
@@ -2892,7 +2892,7 @@
     "category": "health",
     "site": "https://www.paziresh24.com",
     "description": "Unofficial read-only Paziresh24: find Iranian doctors, profiles, prices, reviews and free slots.",
-    "version": "0.4.3",
+    "version": "0.5.0",
     "pypi": "paziresh24-mcp",
     "repository": "https://github.com/sepehr071/paziresh24-mcp",
     "registry_name": "io.github.sepehr071/paziresh24-mcp",
@@ -2976,7 +2976,7 @@
     "category": "health",
     "site": "https://doctoreto.com",
     "description": "Unofficial read-only Doctoreto: Iranian doctors, visit fees, free appointment times, clinics, labs.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "pypi": "doctoreto-mcp",
     "repository": "https://github.com/sepehr071/doctoreto-mcp",
     "registry_name": "io.github.sepehr071/doctoreto-mcp",
@@ -3000,7 +3000,7 @@
       {
         "name": "dt_center",
         "title": "Center details",
-        "summary": "A center's page: address, coordinates, departments, services, accepted insurances, attributes, opening"
+        "summary": "A center's page: address, departments, services, insurances, hours, lab rules, bookable services with"
       },
       {
         "name": "dt_doctor",
@@ -3015,12 +3015,12 @@
       {
         "name": "dt_reviews",
         "title": "Reviews",
-        "summary": "Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, recommends, text"
+        "summary": "Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, text, date and reply."
       },
       {
         "name": "dt_health_articles",
         "title": "Health articles",
-        "summary": "Search Doctoreto's health magazine (about 5,000 articles) for background on a condition, test or treatment."
+        "summary": "Search Doctoreto's health magazine for background on a condition, test or treatment."
       },
       {
         "name": "dt_search_offers",
@@ -3030,7 +3030,7 @@
       {
         "name": "dt_offer",
         "title": "Clinic offer details",
-        "summary": "One clinic offer in full: price, discount, deposit, who performs it and where, description, terms,"
+        "summary": "One clinic offer in full: price, deposit, doctor, place, terms and bookable variants with `consultation_id`."
       },
       {
         "name": "dt_suggest",
@@ -3115,7 +3115,7 @@
     "category": "health",
     "site": "https://darukade.com",
     "description": "Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "darukade-mcp",
     "repository": "https://github.com/sepehr071/darukade-mcp",
     "registry_name": "io.github.sepehr071/darukade-mcp",
@@ -3134,7 +3134,7 @@
       {
         "name": "dr_search",
         "title": "Search products",
-        "summary": "Search Darukade's online pharmacy catalog (drugs-adjacent products, supplements, cosmetics, baby) with filters."
+        "summary": "Search Darukade's pharmacy catalog (supplements, cosmetics, baby) by words, category, brand, form, price or stock."
       },
       {
         "name": "dr_cheapest",
@@ -3184,7 +3184,7 @@
       {
         "name": "dr_articles",
         "title": "Health magazine articles",
-        "summary": "Search the Darukade health magazine (about 2,900 articles on illnesses, supplements, skin, drugs)."
+        "summary": "Search the Darukade health magazine (illnesses, supplements, skin, drugs)."
       },
       {
         "name": "dr_article",
@@ -3199,7 +3199,7 @@
     "category": "books",
     "site": "https://taaghche.com",
     "description": "Unofficial read-only Taaghche: search Persian ebooks and audiobooks, compare prices, read reviews.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "pypi": "taaghche-mcp",
     "repository": "https://github.com/sepehr071/taaghche-mcp",
     "registry_name": "io.github.sepehr071/taaghche-mcp",
@@ -3223,12 +3223,12 @@
       {
         "name": "tg_suggest",
         "title": "Search suggestions",
-        "summary": "Search-box typeahead: up to about 10 matching book titles with id and publisher. For prices use tg_search."
+        "summary": "Typeahead: up to 10 matching book titles with id. For prices use tg_search."
       },
       {
         "name": "tg_book",
         "title": "Book details",
-        "summary": "One book: price, discount, format, pages or duration, people, rating breakdown, categories, ISBN."
+        "summary": "One book: price, format, pages or duration, people, rating breakdown, categories, ISBN."
       },
       {
         "name": "tg_reviews",
@@ -3238,7 +3238,7 @@
       {
         "name": "tg_similar",
         "title": "Similar books",
-        "summary": "Related books as separate lists (similar works, same author, same publisher): price, format, rating."
+        "summary": "Related books in lists (similar works, same author, same publisher): price, format, rating."
       },
       {
         "name": "tg_browse",
@@ -3248,17 +3248,17 @@
       {
         "name": "tg_bestsellers",
         "title": "Bestsellers",
-        "summary": "Hottest books now (Taaghche's trending ranking; no sales numbers are public), overall or per category."
+        "summary": "Hottest books now (trending ranking, no sales numbers), overall or per category."
       },
       {
         "name": "tg_new_releases",
         "title": "New releases",
-        "summary": "Newest books (most recently added first), overall or per category. Next: tg_book."
+        "summary": "Newest books first, overall or per category."
       },
       {
         "name": "tg_free_books",
         "title": "Free books",
-        "summary": "Free books and audiobooks (price 0), most downloaded first by default. Next: tg_book."
+        "summary": "Free books and audiobooks (price 0), most downloaded first by default."
       },
       {
         "name": "tg_categories",
@@ -3283,7 +3283,7 @@
     "category": "books",
     "site": "https://fidibo.com",
     "description": "Unofficial read-only Fidibo: search Persian ebooks and audiobooks, compare prices, free books.",
-    "version": "0.3.3",
+    "version": "0.4.0",
     "pypi": "fidibo-mcp",
     "repository": "https://github.com/sepehr071/fidibo-mcp",
     "registry_name": "io.github.sepehr071/fidibo-mcp",
@@ -3332,7 +3332,7 @@
       {
         "name": "fd_book",
         "title": "Book details",
-        "summary": "One book's full record: price (Toman), format, pages or duration, size, people, rating and star"
+        "summary": "One book's full record: price (Toman), pages or duration, size, people, rating distribution, description"
       },
       {
         "name": "fd_reviews",
@@ -3362,7 +3362,7 @@
     "category": "books",
     "site": "https://www.30book.com",
     "description": "Unofficial read-only 30book: search Iranian printed books, compare editions and prices.",
-    "version": "0.3.3",
+    "version": "0.4.0",
     "pypi": "30book-mcp",
     "repository": "https://github.com/sepehr071/30book-mcp",
     "registry_name": "io.github.sepehr071/30book-mcp",
@@ -3381,12 +3381,12 @@
       {
         "name": "sb_search",
         "title": "Search books",
-        "summary": "Search books by title: price, final_price, discount_pct, in_stock, publisher, id."
+        "summary": "Search books by title."
       },
       {
         "name": "sb_browse",
         "title": "Browse a category, genre, nation, award or tag",
-        "summary": "Books of a category (bta-N-M or btf-N-M-K; bts-N sections are landing pages only), genre, nation, award list or tag."
+        "summary": "Books of a category (bta-N-M or btf-N-M-K), genre, nation, award list or tag."
       },
       {
         "name": "sb_publisher",
@@ -3421,27 +3421,27 @@
       {
         "name": "sb_find_person",
         "title": "Find an author or translator by name",
-        "summary": "Look up author / translator ids by name. Pass the id to sb_author or sb_search(author_id=...). The box matches"
+        "summary": "Look up author / translator ids by name."
       },
       {
         "name": "sb_book",
         "title": "Book details",
-        "summary": "One book: authors, translators, publisher, price, final_price, discount_pct, in_stock, ISBN, pages, cover, size,"
+        "summary": "One book: authors, translators, publisher, prices, stock, ISBN, details, categories (codes for sb_browse), rating, tags, description."
       },
       {
         "name": "sb_similar",
         "title": "Similar books and more by the author",
-        "summary": "Similar books, more by the author and (translations) by the translator, up to 20 each."
+        "summary": "Similar books, more by the author and by the translator, up to 20 each. Other editions: use sb_search."
       },
       {
         "name": "sb_reviews",
         "title": "Reader reviews of a book",
-        "summary": "Reader comments (author, date, stars, text cut to 400 chars unless full_text, likes) and the rating summary;"
+        "summary": "Reader comments and the rating summary; only the first comments on the page are available."
       },
       {
         "name": "sb_categories",
         "title": "Category sections and subjects",
-        "summary": "Category sections (کتاب عمومی, ...) or, for one section, its subjects (تاریخ, ...). Codes go to"
+        "summary": "Category sections or, for one section, its subjects. Codes go to sb_browse(kind='category')."
       },
       {
         "name": "sb_collections",
@@ -3456,7 +3456,7 @@
     "category": "books",
     "site": "https://www.iranketab.ir",
     "description": "Read-only Iranketab (iranketab.ir) books: search, translations compared, ratings, reviews, prices.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "iranketab-mcp",
     "repository": "https://github.com/sepehr071/iranketab-mcp",
     "registry_name": "io.github.sepehr071/iranketab-mcp",
@@ -3545,7 +3545,7 @@
     "category": "learning",
     "site": "https://maktabkhooneh.org",
     "description": "Unofficial read-only Maktabkhooneh: search Persian online courses, compare prices, find free ones.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "maktabkhooneh-mcp",
     "repository": "https://github.com/sepehr071/maktabkhooneh-mcp",
     "registry_name": "io.github.sepehr071/maktabkhooneh-mcp",
@@ -3574,7 +3574,7 @@
       {
         "name": "mkh_free_courses",
         "title": "Free courses",
-        "summary": "List the free courses (final_price 0, about 740 of them), optionally in one category: hours, rating, students."
+        "summary": "List the free courses (final_price 0, about 740), optionally in one category: hours, rating, students."
       },
       {
         "name": "mkh_cheapest",
@@ -3604,7 +3604,7 @@
       {
         "name": "mkh_categories",
         "title": "Course categories",
-        "summary": "Category tree (about 680 nodes in 11 top-level groups): slugs for mkh_browse, mkh_free_courses, mkh_cheapest, mkh_deals."
+        "summary": "Category tree (about 680 nodes, 11 top-level groups): slugs for the course listing tools."
       },
       {
         "name": "mkh_teacher",
@@ -3629,7 +3629,7 @@
     "category": "learning",
     "site": "https://faradars.org",
     "description": "Read-only Faradars (faradars.org) courses: search, prices, syllabus, reviews, instructors, magazine.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "faradars-mcp",
     "repository": "https://github.com/sepehr071/faradars-mcp",
     "registry_name": "io.github.sepehr071/faradars-mcp",
@@ -3733,7 +3733,7 @@
     "category": "jobs",
     "site": "https://jobinja.ir",
     "description": "Read-only Jobinja (jobinja.ir) job search, ad details, companies and top-50 scores for Iran.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "jobinja-mcp",
     "repository": "https://github.com/sepehr071/jobinja-mcp",
     "registry_name": "io.github.sepehr071/jobinja-mcp",
@@ -3752,22 +3752,22 @@
       {
         "name": "jj_search_jobs",
         "title": "Search jobs",
-        "summary": "Search Jobinja job ads by keyword, province, city, category, remote, contract type, experience, benefits and minimum salary."
+        "summary": "Search Jobinja job ads by keyword and filters (AND)."
       },
       {
         "name": "jj_job",
         "title": "Job details",
-        "summary": "Read one Jobinja job ad: title, company, salary, contract, experience, skills, degree, gender, military status and the full description."
+        "summary": "Read one Jobinja job ad: salary, skills, degree and the full description."
       },
       {
         "name": "jj_company",
         "title": "Company profile",
-        "summary": "Read a company's Jobinja profile: name, founding year, industry, size, website, open job count and its intro, culture and benefits text."
+        "summary": "Read a company's Jobinja profile: industry, size, website, open job count and intro/culture text."
       },
       {
         "name": "jj_company_jobs",
         "title": "Company open jobs",
-        "summary": "List a company's open job ads on Jobinja (or, with expired_page, its past ads, which show its hiring history)."
+        "summary": "List a company's open job ads (or past ads with expired_page)."
       },
       {
         "name": "jj_search_companies",
@@ -3777,27 +3777,27 @@
       {
         "name": "jj_top_companies",
         "title": "Top 50 companies",
-        "summary": "Jobinja's yearly list of the 50 best companies to work for, with each one's score out of 10 and its three sub-scores."
+        "summary": "Jobinja's top-50 companies with score out of 10 and three sub-scores."
       },
       {
         "name": "jj_market",
         "title": "Job market counts",
-        "summary": "Count the open Jobinja ads right now per job category, province, company industry and top skill (live site statistics)."
+        "summary": "Count open Jobinja ads now per category, province, industry and top skill."
       },
       {
         "name": "jj_skills",
         "title": "Skill demand",
-        "summary": "Find skills on Jobinja matching a word, with how many ads ever listed each (a demand signal)."
+        "summary": "Find skills matching a word, with how many ads ever listed each (demand signal)."
       },
       {
         "name": "jj_salary_stats",
         "title": "Salary statistics",
-        "summary": "Estimate monthly salaries (Toman) for a kind of job by reading the ad pages of the top search results."
+        "summary": "Estimate monthly salaries (Toman) from the ad pages of the top search results."
       },
       {
         "name": "jj_filters",
         "title": "Search filter values",
-        "summary": "List every value the Jobinja search accepts: provinces, job categories, industries, experience levels, salary steps, sort orders."
+        "summary": "List every value the search accepts: provinces, categories, industries, experience, salary steps, sort."
       }
     ]
   },
@@ -3807,7 +3807,7 @@
     "category": "jobs",
     "site": "https://jobvision.ir",
     "description": "Read-only Jobvision (jobvision.ir) Iran jobs: search ads, job and company details, advertised pay.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "jobvision-mcp",
     "repository": "https://github.com/sepehr071/jobvision-mcp",
     "registry_name": "io.github.sepehr071/jobvision-mcp",
@@ -3901,7 +3901,7 @@
     "category": "jobs",
     "site": "https://www.irantalent.com",
     "description": "Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "irantalent-mcp",
     "repository": "https://github.com/sepehr071/irantalent-mcp",
     "registry_name": "io.github.sepehr071/irantalent-mcp",
@@ -3920,7 +3920,7 @@
       {
         "name": "it_salary_reports",
         "title": "Salary reports",
-        "summary": "List IranTalent salary reports (salary.irantalent.com): one per job specialty and seniority level."
+        "summary": "List IranTalent salary reports: one per job specialty and seniority level (about 200)."
       },
       {
         "name": "it_salary",
@@ -3930,27 +3930,27 @@
       {
         "name": "it_search_jobs",
         "title": "Search jobs",
-        "summary": "Search IranTalent job ads (iran's professional job portal) by keyword and filters, newest first."
+        "summary": "Search IranTalent job ads by keyword and filters, newest first."
       },
       {
         "name": "it_job",
         "title": "Job details",
-        "summary": "Read one IranTalent job ad in full: description, requirements, salary, location, employer, view counts."
+        "summary": "Read one IranTalent job ad in full: description, requirements, salary, location, employer, views."
       },
       {
         "name": "it_companies",
         "title": "Find companies",
-        "summary": "List or search companies in IranTalent's employer directory (about 34,000), most open jobs first."
+        "summary": "List or search IranTalent's employer directory, most open jobs first."
       },
       {
         "name": "it_top_companies",
         "title": "Top rated companies",
-        "summary": "List IranTalent's 50 top companies by employee rating (the site's \"best companies\" list)."
+        "summary": "List IranTalent's 50 top companies by employee rating (1-5)."
       },
       {
         "name": "it_company",
         "title": "Company profile",
-        "summary": "Read a company profile: about text, industry, size, address, website, rating breakdown and newest open jobs."
+        "summary": "Read a company profile: about, industry, size, address, website, rating breakdown and newest open jobs."
       },
       {
         "name": "it_company_reviews",
@@ -3970,7 +3970,7 @@
       {
         "name": "it_similar_jobs",
         "title": "Similar jobs",
-        "summary": "Find open jobs similar to one ad: same job category (and city), newest first, without the ad itself."
+        "summary": "Find open jobs similar to one ad: same job category (and city), newest first."
       }
     ]
   },
@@ -3980,7 +3980,7 @@
     "category": "jobs",
     "site": "https://quera.org",
     "description": "Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "quera-mcp",
     "repository": "https://github.com/sepehr071/quera-mcp",
     "registry_name": "io.github.sepehr071/quera-mcp",
@@ -3999,17 +3999,17 @@
       {
         "name": "qr_jobs",
         "title": "Search Quera jobs",
-        "summary": "Search the open tech jobs on Quera Magnet (Iran's developer job board), 15 per page."
+        "summary": "Search open tech jobs on Quera Magnet, 15 per page."
       },
       {
         "name": "qr_job",
         "title": "Get a Quera job",
-        "summary": "Get one Quera job posting: description, requirements, benefits, skills, salary, deadline and related jobs."
+        "summary": "Get one Quera job posting in full: description, requirements, benefits, skills, salary, deadline."
       },
       {
         "name": "qr_job_filters",
         "title": "Quera job filter choices",
-        "summary": "List the filter values qr_jobs and qr_companies accept: cities, industries, company sizes, popular tech codes and companies."
+        "summary": "List the filter values qr_jobs and qr_companies accept: cities, industries, sizes, popular tech codes."
       },
       {
         "name": "qr_companies",
@@ -4019,22 +4019,22 @@
       {
         "name": "qr_company",
         "title": "Get a Quera company",
-        "summary": "Get a company's Quera profile (about, size, industry, tech stack, benefits, contacts) and its open jobs."
+        "summary": "Get a company's Quera profile (about, size, tech stack, benefits, contacts) and its open jobs."
       },
       {
         "name": "qr_contests",
         "title": "Quera contests",
-        "summary": "List Quera programming contests: with no filter, those running or upcoming now plus the latest finished ones."
+        "summary": "List Quera programming contests: running or upcoming plus the latest finished ones."
       },
       {
         "name": "qr_problems",
         "title": "Search Quera problems",
-        "summary": "Search Quera's public problemset (about 2,000 programming problems), 25 per page."
+        "summary": "Search Quera's public problemset (about 2,000 problems), 25 per page."
       },
       {
         "name": "qr_problem",
         "title": "Get a Quera problem",
-        "summary": "Get one Quera problem: statement (Markdown with LaTeX), limits, difficulty, tags, solve stats and languages."
+        "summary": "Get one Quera problem: statement (Markdown with LaTeX), difficulty, tags, solve stats, languages."
       },
       {
         "name": "qr_courses",
@@ -4044,7 +4044,7 @@
       {
         "name": "qr_salaries",
         "title": "Quera job salaries",
-        "summary": "Summarize the salaries employers published in open Quera jobs, grouped by seniority level (Toman per month)."
+        "summary": "Summarize salaries published in open Quera jobs, grouped by seniority level (Toman per month)."
       },
       {
         "name": "qr_problem_filters",
@@ -4054,17 +4054,17 @@
       {
         "name": "qr_event",
         "title": "Get a Quera event",
-        "summary": "Get a Quera event or competition page (CodeCup, hackathon, contest series): schedule, prizes, price, sub-events."
+        "summary": "Get a Quera event page (CodeCup, hackathon, contest series): schedule, prizes, price, sub-events."
       },
       {
         "name": "qr_bootcamps",
         "title": "Quera bootcamps",
-        "summary": "List Quera's intensive paid bootcamps open for registration with price, dates and seats, or get one in full."
+        "summary": "List Quera's paid bootcamps open for registration with price, dates and seats, or get one in full."
       },
       {
         "name": "qr_blog",
         "title": "Quera blog",
-        "summary": "Search or read the Quera blog (quera.org/blog): Persian programming articles, career and tech news."
+        "summary": "Search or read the Quera blog: Persian programming articles, career and tech news."
       }
     ]
   },
@@ -4074,7 +4074,7 @@
     "category": "freelance",
     "site": "https://ponisha.ir",
     "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "ponisha-mcp",
     "repository": "https://github.com/sepehr071/ponisha-mcp",
     "registry_name": "io.github.sepehr071/ponisha-mcp",
@@ -4093,7 +4093,7 @@
       {
         "name": "pn_search_projects",
         "title": "Search projects",
-        "summary": "Search Ponisha projects (Iran's freelance marketplace) by text, skills, category, status and budget."
+        "summary": "Search Ponisha projects by text, skills, category, status and budget."
       },
       {
         "name": "pn_project",
@@ -4103,7 +4103,7 @@
       {
         "name": "pn_bids",
         "title": "Project bids",
-        "summary": "List the offers freelancers made on a Ponisha project: price, days, pitch and each bidder's track record."
+        "summary": "List the offers on a Ponisha project: price (Toman), days, pitch and each bidder's track record."
       },
       {
         "name": "pn_search_freelancers",
@@ -4118,7 +4118,7 @@
       {
         "name": "pn_skills",
         "title": "Find skills",
-        "summary": "Find Ponisha skills (about 700 tags) by name to use in the skills filters of other tools."
+        "summary": "Find Ponisha skills (about 700 tags) by name for the skills filters of other tools."
       },
       {
         "name": "pn_categories",
@@ -4143,22 +4143,22 @@
       {
         "name": "pn_services",
         "title": "Service packages",
-        "summary": "Browse Ponisha's ready-made service packages (fixed-price offers such as logo design or WordPress themes)."
+        "summary": "Browse Ponisha's ready-made fixed-price service packages (logo design, WordPress themes, ...)."
       },
       {
         "name": "pn_service",
         "title": "Service package details",
-        "summary": "Get one Ponisha service package: price, delivery time, what is included, requirements and paid add-ons."
+        "summary": "Get one Ponisha service package: price (Toman), delivery time, inclusions, requirements and add-ons."
       },
       {
         "name": "pn_user_projects",
         "title": "User projects",
-        "summary": "List the projects a Ponisha user is attached to: an employer's own projects or a freelancer's finished work."
+        "summary": "List the projects a Ponisha user is attached to: an employer's own or a freelancer's finished work."
       },
       {
         "name": "pn_trend",
         "title": "Skill trend",
-        "summary": "Show how demand and budgets for one skill changed over time on Ponisha, from the newest to the oldest projects."
+        "summary": "Show how demand and budgets for one skill changed over time on Ponisha, newest to oldest."
       }
     ]
   },
@@ -4168,7 +4168,7 @@
     "category": "freelance",
     "site": "https://www.karlancer.com",
     "description": "Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "karlancer-mcp",
     "repository": "https://github.com/sepehr071/karlancer-mcp",
     "registry_name": "io.github.sepehr071/karlancer-mcp",
@@ -4187,7 +4187,7 @@
       {
         "name": "kl_projects",
         "title": "Search projects",
-        "summary": "Search open freelance projects on Karlancer (karlancer.com) by keyword, skill, category and budget."
+        "summary": "Search open freelance projects on Karlancer by keyword, skill, category and budget."
       },
       {
         "name": "kl_project",
@@ -4202,7 +4202,7 @@
       {
         "name": "kl_categories",
         "title": "List categories",
-        "summary": "List Karlancer's top-level categories with the ids kl_projects takes as `category_id`, and the provinces."
+        "summary": "List Karlancer's top-level categories with ids for `category_id`, and the provinces for kl_freelancers."
       },
       {
         "name": "kl_freelancers",
@@ -4232,7 +4232,7 @@
       {
         "name": "kl_worksamples",
         "title": "Search portfolio items",
-        "summary": "Search the portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio."
+        "summary": "Search portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio."
       },
       {
         "name": "kl_worksample",
@@ -4262,7 +4262,7 @@
     "category": "software",
     "site": "https://cafebazaar.ir",
     "description": "Unofficial read-only Cafe Bazaar and Myket: search apps, compare versions and ratings, top lists.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "iran-apps-mcp",
     "repository": "https://github.com/sepehr071/iran-apps-mcp",
     "registry_name": "io.github.sepehr071/iran-apps-mcp",
@@ -4316,7 +4316,7 @@
     "category": "software",
     "site": "https://soft98.ir",
     "description": "Unofficial read-only metadata search of Soft98, P30Download, Downloadly and VGDL. Links only.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "iran-downloads-mcp",
     "repository": "https://github.com/sepehr071/iran-downloads-mcp",
     "registry_name": "io.github.sepehr071/iran-downloads-mcp",
@@ -4360,7 +4360,7 @@
     "category": "cloud",
     "site": "https://www.arvancloud.ir",
     "description": "Read-only status, incidents and prices of Iranian clouds: Arvan, Hamravesh, Chabokan, Liara, more.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "iran-cloud-status-mcp",
     "repository": "https://github.com/sepehr071/iran-cloud-status-mcp",
     "registry_name": "io.github.sepehr071/iran-cloud-status-mcp",
@@ -4379,17 +4379,17 @@
       {
         "name": "cs_status",
         "title": "Cloud status now",
-        "summary": "Show the live status of every Iranian cloud provider this server reads (ArvanCloud, Hamravesh, Chabokan, ParsPack, Mihan WebHost) in one call."
+        "summary": "Show the live status of every covered Iranian cloud provider in one call."
       },
       {
         "name": "cs_providers",
         "title": "Providers and coverage",
-        "summary": "List the providers this server covers, what each one publishes, and which are not covered."
+        "summary": "List the providers covered, what each publishes, and which are not covered."
       },
       {
         "name": "cs_components",
         "title": "Components of a provider",
-        "summary": "List one provider's status components (services, regions, clusters, servers) with their current status."
+        "summary": "List one provider's status components (services, regions, clusters, servers) with current status."
       },
       {
         "name": "cs_regions",
@@ -4434,7 +4434,7 @@
     "category": "prices",
     "site": "https://www.tgju.org",
     "description": "Unofficial read-only TGJU: live Iranian gold, coin, currency and crypto prices with daily history.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "tgju-mcp",
     "repository": "https://github.com/sepehr071/tgju-mcp",
     "registry_name": "io.github.sepehr071/tgju-mcp",
@@ -4473,7 +4473,7 @@
       {
         "name": "tj_market_summary",
         "title": "Key rates summary",
-        "summary": "Key Iranian market rates in one call: dollar, euro, dirham, pound, lira, gold gram and ounce, coins, silver, Brent, Bitcoin, Ethereum, Tether."
+        "summary": "Key Iranian market rates in one call: dollar, euro, gold, coins, ounce, Brent, Bitcoin, Tether."
       },
       {
         "name": "tj_price_history",
@@ -4488,7 +4488,7 @@
     "category": "prices",
     "site": "https://nobitex.ir",
     "description": "Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, trades, candles.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "pypi": "iran-crypto-mcp",
     "repository": "https://github.com/sepehr071/iran-crypto-mcp",
     "registry_name": "io.github.sepehr071/iran-crypto-mcp",
@@ -4512,7 +4512,7 @@
       {
         "name": "ic_list_markets",
         "title": "List Markets",
-        "summary": "List the coins an exchange trades against Toman (IRT) or USDT."
+        "summary": "List the coins an exchange trades against Toman (IRT) or USDT, to check a symbol."
       },
       {
         "name": "ic_compare_price",
@@ -4572,7 +4572,7 @@
     "category": "prices",
     "site": "https://milli.gold",
     "description": "Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quotes, news and help.",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "pypi": "milligold-mcp",
     "repository": "https://github.com/sepehr071/milligold-mcp",
     "registry_name": "io.github.sepehr071/milligold-mcp",
@@ -4636,7 +4636,7 @@
     "category": "prices",
     "site": "https://milli.gold",
     "description": "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "pypi": "iran-gold-mcp",
     "repository": "https://github.com/sepehr071/iran-gold-mcp",
     "registry_name": "io.github.sepehr071/iran-gold-mcp",
@@ -4675,7 +4675,7 @@
     "category": "stocks",
     "site": "https://tsetmc.com",
     "description": "Unofficial read-only Tehran Stock Exchange (TSETMC): quotes, movers, order book, history, indices.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "pypi": "tsetmc-mcp",
     "repository": "https://github.com/sepehr071/tsetmc-mcp",
     "registry_name": "io.github.sepehr071/tsetmc-mcp",
@@ -4739,7 +4739,7 @@
     "category": "stocks",
     "site": "https://codal.ir",
     "description": "Read-only codal.ir: search disclosures of Iranian listed companies, read letters and statements.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "codal-mcp",
     "repository": "https://github.com/sepehr071/codal-mcp",
     "registry_name": "io.github.sepehr071/codal-mcp",
@@ -4788,7 +4788,7 @@
     "category": "stocks",
     "site": "https://www.ifb.ir",
     "description": "Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "ifb-mcp",
     "repository": "https://github.com/sepehr071/ifb-mcp",
     "registry_name": "io.github.sepehr071/ifb-mcp",
@@ -4892,7 +4892,7 @@
     "category": "stocks",
     "site": "https://fipiran.ir",
     "description": "Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "fipiran-mcp",
     "repository": "https://github.com/sepehr071/fipiran-mcp",
     "registry_name": "io.github.sepehr071/fipiran-mcp",
@@ -4971,7 +4971,7 @@
     "category": "stocks",
     "site": "https://www.ime.co.ir",
     "description": "Read-only Iran Mercantile Exchange (ime.co.ir): physical trades, supply, prices, market totals.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "ime-mcp",
     "repository": "https://github.com/sepehr071/ime-mcp",
     "registry_name": "io.github.sepehr071/ime-mcp",
@@ -5065,7 +5065,7 @@
     "category": "economy",
     "site": "https://www.cbi.ir",
     "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "cbi-mcp",
     "repository": "https://github.com/sepehr071/cbi-mcp",
     "registry_name": "io.github.sepehr071/cbi-mcp",
@@ -5144,7 +5144,7 @@
     "category": "economy",
     "site": "https://amar.org.ir",
     "description": "Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "amar-mcp",
     "repository": "https://github.com/sepehr071/amar-mcp",
     "registry_name": "io.github.sepehr071/amar-mcp",
@@ -5228,7 +5228,7 @@
     "category": "news",
     "site": "https://www.mehrnews.com",
     "description": "Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3, more.",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "pypi": "iran-news-mcp",
     "repository": "https://github.com/sepehr071/iran-news-mcp",
     "registry_name": "io.github.sepehr071/iran-news-mcp",
@@ -5262,7 +5262,7 @@
       {
         "name": "nw_search",
         "title": "Search news across sources",
-        "summary": "Search recent headlines of several sources for a keyword (client-side over their current feeds, newest first)."
+        "summary": "Search recent headlines of several sources for a keyword (only stories currently in the feeds, not an archive)."
       },
       {
         "name": "nw_latest_all",
@@ -5282,7 +5282,7 @@
     "category": "sports",
     "site": "https://www.varzesh3.com",
     "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "varzesh3-mcp",
     "repository": "https://github.com/sepehr071/varzesh3-mcp",
     "registry_name": "io.github.sepehr071/varzesh3-mcp",
@@ -5301,12 +5301,12 @@
       {
         "name": "v3_scores",
         "title": "Scores of a day",
-        "summary": "Get the live scores, results and fixtures of one day across leagues, as the Varzesh3 live score page lists them."
+        "summary": "Get the live scores, results and fixtures of one day across leagues."
       },
       {
         "name": "v3_match",
         "title": "Match detail",
-        "summary": "Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video and next matches."
+        "summary": "Get one match: score, status, goals, cards, penalties, substitutions, lineups, referee, stadium, summary video."
       },
       {
         "name": "v3_league",
@@ -5316,7 +5316,7 @@
       {
         "name": "v3_standings",
         "title": "League table",
-        "summary": "Get the table of a football league (rank, played, won, drawn, lost, goals, points, recent form), group tables or a cup bracket."
+        "summary": "Get a league table (rank, played, won, drawn, lost, goals, points, form), group tables or a cup bracket."
       },
       {
         "name": "v3_league_matches",
@@ -5336,7 +5336,7 @@
       {
         "name": "v3_team_matches",
         "title": "Team matches",
-        "summary": "Get a football team's latest results or its upcoming matches across all competitions."
+        "summary": "Get a football team's latest results or upcoming matches across all competitions."
       },
       {
         "name": "v3_news",
@@ -5346,7 +5346,7 @@
       {
         "name": "v3_article",
         "title": "News story",
-        "summary": "Read one news story: title, publish time, full text (plain text, up to 6000 characters), tags and the match it is about."
+        "summary": "Read one news story: title, publish time, full text (up to 6000 characters), tags and the match it is about."
       },
       {
         "name": "v3_videos",
@@ -5396,7 +5396,7 @@
     "category": "entertainment",
     "site": "https://gamefa.com",
     "description": "Read-only Gamefa (gamefa.com) Persian game and film site: news, scored reviews, profiles, releases.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "gamefa-mcp",
     "repository": "https://github.com/sepehr071/gamefa-mcp",
     "registry_name": "io.github.sepehr071/gamefa-mcp",
@@ -5430,7 +5430,7 @@
       {
         "name": "gf_reviews",
         "title": "Game reviews with scores",
-        "summary": "List Gamefa's game reviews (نقد و بررسی) newest first, each with the editors' score out of 10, label, pros and cons."
+        "summary": "List Gamefa's game reviews newest first, each with the editors' score out of 10, label, pros and cons."
       },
       {
         "name": "gf_popular",
@@ -5485,7 +5485,7 @@
     "category": "video",
     "site": "https://www.filimo.com",
     "description": "Read-only Filimo and Namava catalogs: search, title details, episodes, new, genres, where to watch.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "pypi": "iran-vod-mcp",
     "repository": "https://github.com/sepehr071/iran-vod-mcp",
     "registry_name": "io.github.sepehr071/iran-vod-mcp",
@@ -5574,7 +5574,7 @@
     "category": "calendar",
     "site": "https://www.time.ir",
     "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pypi": "time-ir-mcp",
     "repository": "https://github.com/sepehr071/time-ir-mcp",
     "registry_name": "io.github.sepehr071/time-ir-mcp",
@@ -5663,7 +5663,7 @@
     "category": "quakes",
     "site": "https://irsc.ut.ac.ir",
     "description": "Unofficial read-only Iran earthquakes: latest, search, strongest, detail, stats (USGS, EMSC, IRSC).",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "iran-quake-mcp",
     "repository": "https://github.com/sepehr071/iran-quake-mcp",
     "registry_name": "io.github.sepehr071/iran-quake-mcp",
@@ -5712,7 +5712,7 @@
     "category": "law",
     "site": "https://qavanin.ir",
     "description": "Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full text and status.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "qavanin-mcp",
     "repository": "https://github.com/sepehr071/qavanin-mcp",
     "registry_name": "io.github.sepehr071/qavanin-mcp",
@@ -5731,12 +5731,12 @@
       {
         "name": "qv_law",
         "title": "Read a law's text",
-        "summary": "Read the full text of a law, regulation, court vote or opinion as sections (articles, notes, headings)."
+        "summary": "Read the text of a law, regulation, court vote or opinion as sections (articles, notes, headings)."
       },
       {
         "name": "qv_law_info",
         "title": "Law metadata",
-        "summary": "Metadata of a law: type, approving body, approval, notification and gazette dates and numbers, last status,"
+        "summary": "Metadata of a law: type, approver, approval, notification and gazette data, status, executing bodies."
       },
       {
         "name": "qv_amendments",
@@ -5751,12 +5751,12 @@
       {
         "name": "qv_related",
         "title": "Related regulations, votes and opinions",
-        "summary": "Documents related to a law: other laws, and regulations, court votes and legal opinions that cite or"
+        "summary": "Documents related to a law: other laws, and regulations, votes and opinions that cite it (newest first)."
       },
       {
         "name": "qv_search",
         "title": "Search laws and regulations",
-        "summary": "Search the Iranian law and regulation database (qavanin.ir, 168,000 documents) and list matching titles."
+        "summary": "Search the Iranian law and regulation database (qavanin.ir) and list matching titles."
       },
       {
         "name": "qv_lookup",
@@ -5771,7 +5771,7 @@
     "category": "law",
     "site": "https://rrk.ir",
     "description": "Read-only Official Gazette of Iran (rrk.ir): search laws and rulings, read their text.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "rrk-mcp",
     "repository": "https://github.com/sepehr071/rrk-mcp",
     "registry_name": "io.github.sepehr071/rrk-mcp",
@@ -5820,7 +5820,7 @@
     "category": "tax",
     "site": "https://tax.gov.ir",
     "description": "Unofficial read-only Iranian tax: goods IDs and VAT, activity codes, property values, tax laws.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "pypi": "iran-tax-mcp",
     "repository": "https://github.com/sepehr071/iran-tax-mcp",
     "registry_name": "io.github.sepehr071/iran-tax-mcp",
@@ -5874,7 +5874,7 @@
     "category": "business",
     "site": "https://www.payping.ir",
     "description": "PayPing merchant account for agents: balance, sales, invoices; create invoices and payment links.",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "pypi": "payping-mcp",
     "repository": "https://github.com/sepehr071/payping-mcp",
     "registry_name": "io.github.sepehr071/payping-mcp",
@@ -5909,97 +5909,97 @@
       {
         "name": "payping_get_sales_summary",
         "title": "PayPing: sales summary",
-        "summary": "Sales totals for a period: total amount (Toman), transaction count and daily averages."
+        "summary": "Sales totals for a period (default last 30 days): amount in Toman, count, daily averages."
       },
       {
         "name": "payping_list_transactions",
         "title": "PayPing: list transactions",
-        "summary": "List payments (newest first) with amount (Toman), payer, description, isPaid and payment code, plus the"
+        "summary": "List payments, newest first, with total count. Use payping_get_payment for one payment's detail."
       },
       {
         "name": "payping_get_payment",
         "title": "PayPing: payment detail",
-        "summary": "One payment by payment code: amount, dates, payer, card, fees, refund state, paymentStatus plus"
+        "summary": "One payment by code: amount, payer, fees, refund state, paymentStatus and status_text. Use to check a payment succeeded."
       },
       {
         "name": "payping_list_withdrawals",
         "title": "PayPing: list withdrawals",
-        "summary": "List settlements (withdrawals to your bank account): date, amount (Toman), code and whether it was paid"
+        "summary": "List settlements (withdrawals to your bank) with total count."
       },
       {
         "name": "payping_get_withdrawal",
         "title": "PayPing: withdrawal detail",
-        "summary": "Detail of one settlement by code: amount (Toman), request and payout dates, IBAN, bank tracking number."
+        "summary": "One settlement by code: amount, dates, IBAN, bank tracking number."
       },
       {
         "name": "payping_list_customers",
         "title": "PayPing: list customers",
-        "summary": "List saved customers (code, name, phone, email, business name) with the total count."
+        "summary": "List saved customers with total count."
       },
       {
         "name": "payping_get_customer",
         "title": "PayPing: customer detail",
-        "summary": "One customer by code: name, contact details, address, national id, memo."
+        "summary": "One customer by code."
       },
       {
         "name": "payping_list_products",
         "title": "PayPing: list products",
-        "summary": "List products (PayPing \"financial items\"): code, title, price (Toman), stock, active, has a payment link."
+        "summary": "List products (PayPing \"financial items\") with total count."
       },
       {
         "name": "payping_get_product",
         "title": "PayPing: product detail",
-        "summary": "One product by code: title, description, price (Toman), stock, tax, image, category."
+        "summary": "One product by code."
       },
       {
         "name": "payping_list_coupons",
         "title": "PayPing: list coupons",
-        "summary": "List discount coupons: name, type (0 = percent, 1 = Toman), amount, code, active, products it applies to."
+        "summary": "List discount coupons (type 0 = percent, 1 = Toman) with total count."
       },
       {
         "name": "payping_get_coupon",
         "title": "PayPing: coupon detail",
-        "summary": "One coupon by code: amount, expiry, max uses, number of buyers and their total spend."
+        "summary": "One coupon by code: expiry, max uses, buyers and their spend."
       },
       {
         "name": "payping_list_invoices",
         "title": "PayPing: list invoices",
-        "summary": "List invoices: code, number, title, status (0 draft, 1 awaiting payment, 2 paid, 3 overdue, 4 cancelled),"
+        "summary": "List invoices (status 0 draft, 1 awaiting payment, 2 paid, 3 overdue, 4 cancelled) with total count."
       },
       {
         "name": "payping_get_invoice",
         "title": "PayPing: invoice detail",
-        "summary": "One invoice by code with its items, customer, status and payment code, plus `url`, the public page where"
+        "summary": "One invoice by code with items, customer, status and `url` (public pay page)."
       },
       {
         "name": "payping_create_customer",
         "title": "PayPing: create customer",
-        "summary": "Save a new customer in the PayPing account and return it with its `code` (needed for invoices)."
+        "summary": "Save a new customer; returns its `code` (needed for invoices). Confirm details with the user first."
       },
       {
         "name": "payping_create_product",
         "title": "PayPing: create product",
-        "summary": "Create a product (financial item) and return its `code`. Then payping_create_payment_link makes a public"
+        "summary": "Create a product; returns its `code`. Then payping_create_payment_link makes its public page. Confirm title and price with the user first."
       },
       {
         "name": "payping_create_payment_link",
         "title": "PayPing: create payment link",
-        "summary": "Make a permanent public payment page for a product; returns its `url` (https://ppng.ir/d/...)."
+        "summary": "Make a permanent public payment page for a product; returns `url`. Confirm with the user first."
       },
       {
         "name": "payping_create_coupon",
         "title": "PayPing: create coupon",
-        "summary": "Create an active discount coupon and return its `code`. Creates real data: confirm with the user first."
+        "summary": "Create an active discount coupon; returns its `code`. Confirm with the user first."
       },
       {
         "name": "payping_create_invoice",
         "title": "PayPing: create invoice",
-        "summary": "Create an invoice for a saved customer; returns `code`, `payCode` and `url` (public pay page). Not sent:"
+        "summary": "Create an invoice for a saved customer; returns `code`, `payCode`, `url` (pay page). Not sent: use payping_send_invoice"
       },
       {
         "name": "payping_send_invoice",
         "title": "PayPing: send invoice",
-        "summary": "Send an invoice to its customer by SMS/email from PayPing. Messages a real person: confirm with the user"
+        "summary": "Send an invoice to its customer by SMS/email. Confirm with the user first."
       }
     ]
   },
@@ -6009,7 +6009,7 @@
     "category": "messaging",
     "site": "https://bale.ai",
     "description": "Private, local Bale bot for agents: read, search and answer messages, ask and wait, files.",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "pypi": "bale-mcp",
     "repository": "https://github.com/sepehr071/bale-mcp",
     "registry_name": "io.github.sepehr071/bale-mcp",
@@ -6092,12 +6092,12 @@
       {
         "name": "bot_list_chats",
         "title": "Bot: list chats",
-        "summary": "List the chats this bot has talked in, newest first, with unread count and last message. Use to find chat ids."
+        "summary": "List the chats this bot has talked in, newest first, with unread count and last message."
       },
       {
         "name": "bot_read_chat",
         "title": "Bot: read chat",
-        "summary": "Show a chat's recent messages in both directions, oldest first, and mark the chat read."
+        "summary": "Show a chat's recent messages in both directions, oldest first, and mark the chat read (local store; Bale keeps no history)."
       },
       {
         "name": "bot_search_messages",

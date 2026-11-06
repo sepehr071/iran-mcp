@@ -11,9 +11,9 @@ The tools below come from the `iran-cloud-status-mcp` MCP server. If they are no
 
 ## Tools
 
-- `cs_status`: Show the live status of every Iranian cloud provider this server reads (ArvanCloud, Hamravesh, Chabokan, ParsPack, Mihan WebHost) in one call.
-- `cs_providers`: List the providers this server covers, what each one publishes, and which are not covered.
-- `cs_components`: List one provider's status components (services, regions, clusters, servers) with their current status.
+- `cs_status`: Show the live status of every covered Iranian cloud provider in one call.
+- `cs_providers`: List the providers covered, what each publishes, and which are not covered.
+- `cs_components`: List one provider's status components (services, regions, clusters, servers) with current status.
 - `cs_regions`: Summarise status per region or group: component count, worst status and what is not operational.
 - `cs_incidents`: List recent incidents (outages, degradations, announcements) of the Iranian cloud providers, newest first, with their latest update.
 - `cs_incident`: Show one incident with its full update timeline, affected components and the status each was set to.

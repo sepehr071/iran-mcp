@@ -20,7 +20,7 @@ The tools below come from the `flytoday-mcp` MCP server. If they are not availab
 - `ft_activities`: Tours, tickets and experiences in a destination that are on sale in the date range, with from-prices.
 - `ft_activity`: One activity: description, highlights, options with adult prices, and the cheapest days in the range.
 - `ft_find_airport`: Find the IATA codes the flight tools need, for domestic and international places.
-- `ft_search_flights`: Search flights for a date: every flight with times, airline (airline_fa: Persian name), seats left, price and fare_source_code.
+- `ft_search_flights`: Search flights for a date: times, airline, seats left, price and fare_source_code per flight.
 - `ft_flight_calendar`: Cheapest one-adult fare per departure day around a date, in one cheap call (no search needed).
 - `ft_flight_details`: Refund and change rules, confirmed baggage per segment and (international) entry notes of one fare.
 - `ft_find_hotel_place`: Find the place ids the hotel and stay tools need. Which id goes where:

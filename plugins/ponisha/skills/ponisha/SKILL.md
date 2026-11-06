@@ -11,20 +11,20 @@ The tools below come from the `ponisha-mcp` MCP server. If they are not availabl
 
 ## Tools
 
-- `pn_search_projects`: Search Ponisha projects (Iran's freelance marketplace) by text, skills, category, status and budget.
+- `pn_search_projects`: Search Ponisha projects by text, skills, category, status and budget.
 - `pn_project`: Get one Ponisha project: full description, budget, skills, deadline and the employer's track record.
-- `pn_bids`: List the offers freelancers made on a Ponisha project: price, days, pitch and each bidder's track record.
+- `pn_bids`: List the offers on a Ponisha project: price (Toman), days, pitch and each bidder's track record.
 - `pn_search_freelancers`: Search Ponisha freelancers by text, skills, category, level and portfolio, ranked by score.
 - `pn_profile`: Get a public Ponisha profile (freelancer or employer): level, skills, statistics, rating and activity.
-- `pn_skills`: Find Ponisha skills (about 700 tags) by name to use in the skills filters of other tools.
+- `pn_skills`: Find Ponisha skills (about 700 tags) by name for the skills filters of other tools.
 - `pn_categories`: List Ponisha's top-level project categories, or the sub-categories of one.
 - `pn_market`: Summarize demand and supply for one skill on Ponisha: open projects, budgets, competition, related skills.
 - `pn_reviews`: Read the reviews employers wrote about a Ponisha user, or recent reviews for a whole skill.
 - `pn_portfolios`: Search Ponisha portfolio items (about 500k work samples), or list one user's portfolio.
-- `pn_services`: Browse Ponisha's ready-made service packages (fixed-price offers such as logo design or WordPress themes).
-- `pn_service`: Get one Ponisha service package: price, delivery time, what is included, requirements and paid add-ons.
-- `pn_user_projects`: List the projects a Ponisha user is attached to: an employer's own projects or a freelancer's finished work.
-- `pn_trend`: Show how demand and budgets for one skill changed over time on Ponisha, from the newest to the oldest projects.
+- `pn_services`: Browse Ponisha's ready-made fixed-price service packages (logo design, WordPress themes, ...).
+- `pn_service`: Get one Ponisha service package: price (Toman), delivery time, inclusions, requirements and add-ons.
+- `pn_user_projects`: List the projects a Ponisha user is attached to: an employer's own or a freelancer's finished work.
+- `pn_trend`: Show how demand and budgets for one skill changed over time on Ponisha, newest to oldest.
 
 ## Rules
 

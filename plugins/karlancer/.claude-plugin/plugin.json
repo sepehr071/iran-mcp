@@ -1,7 +1,7 @@
 {
   "name": "karlancer",
   "displayName": "Karlancer Freelance",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Karlancer (karlancer.com) freelance projects, freelancers and services in Iran.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "karlancer": {
       "command": "uvx",
       "args": [
-        "karlancer-mcp@0.1.1"
+        "karlancer-mcp@0.2.0"
       ]
     }
   }

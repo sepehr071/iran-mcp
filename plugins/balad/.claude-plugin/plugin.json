@@ -1,7 +1,7 @@
 {
   "name": "balad",
   "displayName": "Balad Maps",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "balad": {
       "command": "uvx",
       "args": [
-        "balad-mcp@0.1.0"
+        "balad-mcp@0.2.0"
       ]
     }
   }

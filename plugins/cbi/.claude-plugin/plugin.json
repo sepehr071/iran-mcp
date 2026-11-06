@@ -1,7 +1,7 @@
 {
   "name": "cbi",
   "displayName": "Central Bank of Iran",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "cbi": {
       "command": "uvx",
       "args": [
-        "cbi-mcp@0.1.0"
+        "cbi-mcp@0.2.0"
       ]
     }
   }

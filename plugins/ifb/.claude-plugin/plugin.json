@@ -1,7 +1,7 @@
 {
   "name": "ifb",
   "displayName": "Iran Fara Bourse",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Iran Fara Bourse (ifb.ir): bond, sukuk and treasury yields, IPOs, notices, market stats.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "ifb": {
       "command": "uvx",
       "args": [
-        "ifb-mcp@0.1.1"
+        "ifb-mcp@0.2.0"
       ]
     }
   }

@@ -15,7 +15,7 @@ The tools below come from the `tgju-mcp` MCP server. If they are not available, 
 - `tj_list_categories`: Browse TGJU's market tree: folders (with ids) and symbols.
 - `tj_category_table`: Live price table of one TGJU group: price, change, day high/low/open per symbol.
 - `tj_get_prices`: Live price, day change, high and low for one or more TGJU symbols.
-- `tj_market_summary`: Key Iranian market rates in one call: dollar, euro, dirham, pound, lira, gold gram and ounce, coins, silver, Brent, Bitcoin, Ethereum, Tether.
+- `tj_market_summary`: Key Iranian market rates in one call: dollar, euro, gold, coins, ounce, Brent, Bitcoin, Tether.
 - `tj_price_history`: Daily history (open, low, high, close, change) of a TGJU symbol, for charts and trend questions.
 
 ## Rules

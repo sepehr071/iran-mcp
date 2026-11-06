@@ -11,7 +11,7 @@ The tools below come from the `bama-ir-mcp` MCP server. If they are not availabl
 
 ## Tools
 
-- `ba_search`: Search used and new car ads on Bama (bama.ir) with filters; returns up to 30 compact ads per page.
+- `ba_search`: Search used and new car ads on Bama (bama.ir) with filters; up to 30 compact ads per page.
 - `ba_ad`: Get one Bama ad (car, motorcycle or truck) in full: price, specs, condition, seller, description and photos.
 - `ba_market_stats`: Price statistics (min, quartiles, median, max, per year) for a car model from live Bama ads.
 - `ba_dealers`: List car dealers (showrooms) with ads for a model or city on Bama, with address, rating and how many ads match.

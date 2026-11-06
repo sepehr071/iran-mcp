@@ -11,17 +11,17 @@ The tools below come from the `irantalent-mcp` MCP server. If they are not avail
 
 ## Tools
 
-- `it_salary_reports`: List IranTalent salary reports (salary.irantalent.com): one per job specialty and seniority level.
+- `it_salary_reports`: List IranTalent salary reports: one per job specialty and seniority level (about 200).
 - `it_salary`: Read the salary figures of one IranTalent salary report, or of every seniority level of one specialty.
-- `it_search_jobs`: Search IranTalent job ads (iran's professional job portal) by keyword and filters, newest first.
-- `it_job`: Read one IranTalent job ad in full: description, requirements, salary, location, employer, view counts.
-- `it_companies`: List or search companies in IranTalent's employer directory (about 34,000), most open jobs first.
-- `it_top_companies`: List IranTalent's 50 top companies by employee rating (the site's "best companies" list).
-- `it_company`: Read a company profile: about text, industry, size, address, website, rating breakdown and newest open jobs.
+- `it_search_jobs`: Search IranTalent job ads by keyword and filters, newest first.
+- `it_job`: Read one IranTalent job ad in full: description, requirements, salary, location, employer, views.
+- `it_companies`: List or search IranTalent's employer directory, most open jobs first.
+- `it_top_companies`: List IranTalent's 50 top companies by employee rating (1-5).
+- `it_company`: Read a company profile: about, industry, size, address, website, rating breakdown and newest open jobs.
 - `it_company_reviews`: Read anonymous employee reviews of a company on IranTalent: ratings, pros, cons, reviewer's job title.
 - `it_lookups`: List the valid filter values (slug, English and Persian name) for it_search_jobs.
 - `it_job_market`: Count IranTalent's open jobs by category, industry, seniority, employment type, location or hiring company.
-- `it_similar_jobs`: Find open jobs similar to one ad: same job category (and city), newest first, without the ad itself.
+- `it_similar_jobs`: Find open jobs similar to one ad: same job category (and city), newest first.
 
 ## Rules
 

@@ -12,13 +12,13 @@ The tools below come from the `doctoreto-mcp` MCP server. If they are not availa
 ## Tools
 
 - `dt_search_centers`: Find hospitals, clinics, infirmaries, laboratories, imaging centers and pharmacies with filters.
-- `dt_center`: A center's page: address, coordinates, departments, services, accepted insurances, attributes, opening
+- `dt_center`: A center's page: address, departments, services, insurances, hours, lab rules, bookable services with
 - `dt_doctor`: A doctor's profile with every bookable service, its price in Toman and its next free time.
 - `dt_free_slots`: Free appointment times of one service (office visit, phone/video call, clinic offer, lab admission).
-- `dt_reviews`: Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, recommends, text
-- `dt_health_articles`: Search Doctoreto's health magazine (about 5,000 articles) for background on a condition, test or treatment.
+- `dt_reviews`: Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, text, date and reply.
+- `dt_health_articles`: Search Doctoreto's health magazine for background on a condition, test or treatment.
 - `dt_search_offers`: Search clinic offers: fixed-price procedures and packages (ultrasound, laser, dental, check-ups).
-- `dt_offer`: One clinic offer in full: price, discount, deposit, who performs it and where, description, terms,
+- `dt_offer`: One clinic offer in full: price, deposit, doctor, place, terms and bookable variants with `consultation_id`.
 - `dt_suggest`: Search-box suggestions: doctors (hash id), speciality slugs, service tags and centers for a free phrase.
 - `dt_search_doctors`: Search doctors by city, speciality, neighborhood, service tag, name, gender, insurance and visit type.
 - `dt_specialities`: List specialities with the slug dt_search_doctors needs; `total` counts all matches.

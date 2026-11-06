@@ -11,16 +11,16 @@ The tools below come from the `karlancer-mcp` MCP server. If they are not availa
 
 ## Tools
 
-- `kl_projects`: Search open freelance projects on Karlancer (karlancer.com) by keyword, skill, category and budget.
+- `kl_projects`: Search open freelance projects on Karlancer by keyword, skill, category and budget.
 - `kl_project`: Get one Karlancer project in full: brief, budget, duration, hire deadline, skills, category path, city.
 - `kl_skills`: Look up Karlancer skill ids by name, with how many freelancer profiles list each skill.
-- `kl_categories`: List Karlancer's top-level categories with the ids kl_projects takes as `category_id`, and the provinces.
+- `kl_categories`: List Karlancer's top-level categories with ids for `category_id`, and the provinces for kl_freelancers.
 - `kl_freelancers`: Search Karlancer freelancers by keyword, skill and province, with rating and skills.
 - `kl_top_freelancers`: List the freelancers Karlancer features on its home page as top rated, with rating and skills.
 - `kl_freelancer`: Get a Karlancer freelancer's public profile: bio, rating, success rate, skills, experience and client reviews.
 - `kl_services`: Search Karlancer services (ready-made gigs freelancers sell at a fixed price) by keyword, skill and price.
 - `kl_service`: Get one Karlancer service in full: description, price, delivery time, requirements, FAQ, skills and seller stats.
-- `kl_worksamples`: Search the portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio.
+- `kl_worksamples`: Search portfolio items (work samples) freelancers show on Karlancer, or list one freelancer's portfolio.
 - `kl_worksample`: Get one Karlancer portfolio item in full: description, skills, price range, duration, owner and similar items.
 - `kl_similar_projects`: List the projects Karlancer suggests as similar to one project, with budget and duration.
 - `kl_market_rate`: Estimate what a skill pays on Karlancer: budget spread of recent projects, service prices and supply.

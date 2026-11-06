@@ -1,7 +1,7 @@
 {
   "name": "irantalent",
   "displayName": "IranTalent Jobs",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only IranTalent (irantalent.com) job portal: search jobs, ad details, companies, reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "irantalent": {
       "command": "uvx",
       "args": [
-        "irantalent-mcp@0.1.1"
+        "irantalent-mcp@0.2.0"
       ]
     }
   }

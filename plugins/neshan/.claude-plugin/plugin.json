@@ -1,7 +1,7 @@
 {
   "name": "neshan",
   "displayName": "Neshan Maps",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "neshan": {
       "command": "uvx",
       "args": [
-        "neshan-mcp@0.1.0"
+        "neshan-mcp@0.2.0"
       ]
     }
   }

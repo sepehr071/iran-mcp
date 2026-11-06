@@ -16,12 +16,12 @@ The tools below come from the `shopino-mcp` MCP server. If they are not availabl
 - `sh_browse`: List products of a category, shop, tag or curated listing, with sort, price range and filters.
 - `sh_filters`: List the filter values sh_search / sh_browse accept: size systems and sizes, sorts, courier cities,
 - `sh_categories`: List the category tree with ids, URL paths and levels, plus total product and shop counts.
-- `sh_brands`: Without shop_id: featured official brand shops (browse one with sh_browse(shop_id=...)). With shop_id:
+- `sh_brands`: Without shop_id: featured official brand shops. With shop_id: that watch shop's brands, with ids for
 - `sh_deals`: List today's home-page deals (flash sale with end time, best sellers, themed rows), biggest discount
 - `sh_campaign`: Open a campaign or landing page: its product rows (with prices) and tabs.
 - `sh_blog_search`: Search the style blog (guides and model galleries), newest first; no query = latest posts.
 - `sh_blog_post`: Read one blog post as plain text, with its category id for sh_browse (after sh_blog_search).
-- `sh_product`: Get one product's full record: price, every color / size variant with its own price and stock, size
+- `sh_product`: Get one product's full record: price, every color / size variant with price and stock, size guide,
 - `sh_similar`: Find products like this one at other shops (itself left out).
 - `sh_shops`: Find shops by name, category group, gender or courier city, with rating, surveys, followers and product count.
 - `sh_shop`: Get a shop's profile: ratings, buyer survey %, followers, product count, main categories, courier city,

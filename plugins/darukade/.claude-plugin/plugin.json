@@ -1,7 +1,7 @@
 {
   "name": "darukade",
   "displayName": "Darukade Pharmacy",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage, reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "darukade": {
       "command": "uvx",
       "args": [
-        "darukade-mcp@0.1.1"
+        "darukade-mcp@0.2.0"
       ]
     }
   }

@@ -16,7 +16,7 @@ The tools below come from the `zoomit-mcp` MCP server. If they are not available
 - `zm_list`: List one category's products with the site's filters: brand, price, score, specs, stock, sort.
 - `zm_filters`: Show what zm_list can filter by in a category: price range, brand slugs, spec filters with values, buying guides.
 - `zm_product`: Get one product's full spec table, user score, Zoomit's pros and cons and its price range in Toman.
-- `zm_prices`: List a product's seller offers (cheapest first, Toman, with the shop's own listing title and link) and its price history.
+- `zm_prices`: List a product's seller offers (cheapest first, Toman, with listing title and link) and its price history.
 - `zm_compare`: Compare 2-4 products: price, scores and a spec table where each row lists the values in the order of `products`.
 - `zm_similar`: Suggest alternatives to a product: the ones people compare it with, others of its brand, or in its price range.
 - `zm_articles`: Search Zoomit's news and review articles (title, lead, date, link).

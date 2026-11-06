@@ -1,7 +1,7 @@
 {
   "name": "time-ir",
   "displayName": "Time.ir Calendar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "time-ir": {
       "command": "uvx",
       "args": [
-        "time-ir-mcp@0.1.0"
+        "time-ir-mcp@0.2.0"
       ]
     }
   }

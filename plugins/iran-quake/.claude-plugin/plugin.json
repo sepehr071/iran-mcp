@@ -1,7 +1,7 @@
 {
   "name": "iran-quake",
   "displayName": "Iran Earthquakes",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Unofficial read-only Iran earthquakes: latest, search, strongest, detail, stats (USGS, EMSC, IRSC).",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "iran-quake": {
       "command": "uvx",
       "args": [
-        "iran-quake-mcp@0.1.2"
+        "iran-quake-mcp@0.2.0"
       ]
     }
   }

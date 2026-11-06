@@ -1,7 +1,7 @@
 {
   "name": "varzesh3",
   "displayName": "Varzesh3 Sports",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "varzesh3": {
       "command": "uvx",
       "args": [
-        "varzesh3-mcp@0.1.1"
+        "varzesh3-mcp@0.2.0"
       ]
     }
   }

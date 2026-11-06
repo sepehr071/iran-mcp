@@ -1,7 +1,7 @@
 {
   "name": "fipiran",
   "displayName": "Fipiran Funds",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only Fipiran (fipiran.ir) data on Iranian mutual funds and ETFs: NAV, returns, size, managers.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "fipiran": {
       "command": "uvx",
       "args": [
-        "fipiran-mcp@0.1.0"
+        "fipiran-mcp@0.2.0"
       ]
     }
   }

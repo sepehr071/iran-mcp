@@ -14,7 +14,7 @@ The tools below come from the `iran-news-mcp` MCP server. If they are not availa
 - `nw_article`: Fetch one article page and return its full body text, split into parts for long stories.
 - `nw_list_sources`: List the news sources with their group and category slugs; call this first to know valid `source` and `category` values.
 - `nw_latest`: Return the newest headlines of one news source, optionally of one category.
-- `nw_search`: Search recent headlines of several sources for a keyword (client-side over their current feeds, newest first).
+- `nw_search`: Search recent headlines of several sources for a keyword (only stories currently in the feeds, not an archive).
 - `nw_latest_all`: Return the newest headlines from every source (or the chosen ones), merged and sorted by time.
 - `nw_tech_news`: Return the newest technology news (phones, laptops, AI, gadgets, apps, crypto, cars, security, games) with long summaries.
 

@@ -1,7 +1,7 @@
 {
   "name": "quera",
   "displayName": "Quera",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, courses and blog.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "quera": {
       "command": "uvx",
       "args": [
-        "quera-mcp@0.1.1"
+        "quera-mcp@0.2.0"
       ]
     }
   }

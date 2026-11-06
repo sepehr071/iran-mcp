@@ -12,7 +12,7 @@ The tools below come from the `iran-crypto-mcp` MCP server. If they are not avai
 ## Tools
 
 - `ic_list_exchanges`: List the supported Iranian crypto exchanges, their native price unit and what each can answer.
-- `ic_list_markets`: List the coins an exchange trades against Toman (IRT) or USDT.
+- `ic_list_markets`: List the coins an exchange trades against Toman (IRT) or USDT, to check a symbol.
 - `ic_compare_price`: Compare one coin's price on every supported exchange in one call, cheapest first, with the spread.
 - `ic_get_ticker`: Get the live price, best bid and ask, 24h range, change and volume of one coin on one exchange.
 - `ic_get_orderbook`: Get the top bids and asks of one coin's order book on one exchange, with the spread.

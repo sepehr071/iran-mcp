@@ -1,7 +1,7 @@
 {
   "name": "eghamat24",
   "displayName": "Eghamat24 Hotels",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, reviews, facilities.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "eghamat24": {
       "command": "uvx",
       "args": [
-        "eghamat24-mcp@0.1.1"
+        "eghamat24-mcp@0.2.0"
       ]
     }
   }

@@ -19,8 +19,8 @@ The tools below come from the `bale-mcp` MCP server. If they are not available, 
 - `bot_edit_message`: Replace the text of a message the bot sent earlier. Changes a real message; confirm with the user first.
 - `bot_delete_message`: Delete a message the bot may delete (its own, or as admin). Irreversible; confirm with the user first.
 - `bot_get_new_messages`: Get messages people sent the bot since the last check, from all chats, oldest first, and mark them read.
-- `bot_list_chats`: List the chats this bot has talked in, newest first, with unread count and last message. Use to find chat ids.
-- `bot_read_chat`: Show a chat's recent messages in both directions, oldest first, and mark the chat read.
+- `bot_list_chats`: List the chats this bot has talked in, newest first, with unread count and last message.
+- `bot_read_chat`: Show a chat's recent messages in both directions, oldest first, and mark the chat read (local store; Bale keeps no history).
 - `bot_search_messages`: Search stored messages by text, newest first. Persian/Arabic yeh, kaf, digits and ZWNJ match each other.
 - `bot_wait_for_reply`: Wait until someone writes in a chat or presses a button, then return the new messages (marked read).
 - `bot_download_file`: Download a file someone sent the bot (max 20 MB) and return its local path. Never overwrites (-1, -2, ... suffix).
