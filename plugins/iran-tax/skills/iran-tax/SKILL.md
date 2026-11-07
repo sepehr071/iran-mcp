@@ -25,3 +25,9 @@ The tools below come from the `iran-tax-mcp` MCP server. If they are not availab
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `IRAN_TAX_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - The first goods-ID search for a phrase takes 15 to 30 s; repeats are cached. The tax sites often refuse foreign connections; outside Iran the user needs IRAN_TAX_MCP_PROXY. Sites: tax.gov.ir, stuffid.tax.gov.ir (goods IDs), regulation.tax.gov.ir (laws and circulars).
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

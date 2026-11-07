@@ -26,27 +26,27 @@ Unofficial read-only Snappfood & SnappMarket: search food and groceries, compare
 - `market_categories`: List SnappMarket product categories and sub-categories with their ids.
 - `market_product`: Get one product's details and price in one store.
 - `market_party_deals`: List current SnappMarket "market party" flash deals near the point, biggest discount first.
-- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5. No paging.
+- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5.
 
 ## Okala (`okala-mcp`, 16 tools)
 
 Unofficial read-only Okala: grocery stores that deliver to you, compare prices across stores.
 
-- `ok_login`: Log in to the user's Okala account, unlocking real text search in ok_search. Optional.
-- `ok_login_verify`: Finish a login started with ok_login with the SMS code. Saves the login on this machine.
+- `ok_login`: Log in to the user's Okala account, unlocking real text search in ok_search.
+- `ok_login_verify`: Finish a login started with ok_login with the SMS code.
 - `ok_account`: Whether the server is logged in to Okala (phone masked); guest = category-only ok_search.
 - `ok_logout`: Delete the saved Okala login on this machine; the server continues as a guest.
 - `ok_categories`: Category tree (id, slug, Persian name, children) of everything sold near a point, or in one store.
-- `ok_search`: Find products by text near a point (or in one store with store_id), best matches first, then
-- `ok_compare`: Which open nearby store sells the same product cheapest: a category and/or brand, grouped by product id,
-- `ok_store_products`: A whole category of one store, sorted and optionally filtered by name, prices in Toman. `total` counts
-- `ok_product`: One product in one store: price and discount (Toman), stock, max per order, brand, category,
-- `ok_brands`: Brand ids for ok_compare (`brand_id`) and slugs. Only featured brands are listed; any other is looked
+- `ok_search`: Find products by text near a point (or in one store with store_id), best matches first, then cheapest (Toman).
+- `ok_compare`: Which open nearby store sells the same product cheapest: a category and/or brand, grouped by product id, each store's price cheapest first; products sold by most stores come first.
+- `ok_store_products`: A whole category of one store, sorted and optionally filtered by name, prices in Toman.
+- `ok_product`: One product in one store: price and discount (Toman), stock, max per order, brand, category, images and description.
+- `ok_brands`: Brand ids for ok_compare (`brand_id`) and slugs.
 - `ok_deals`: Deal rows running now, with end time (UTC) and top products (Toman).
-- `ok_offer`: Every product of one deal row (from ok_deals), Toman. Without store_id: all open stores near the point,
+- `ok_offer`: Every product of one deal row (from ok_deals), Toman.
 - `ok_locate`: Turn an address into coordinates (lat, lon) for every other tool, plus the street address of the best hit.
-- `ok_stores`: Okala stores that deliver to a point, in the site's order: id, type, rating, distance, earliest
-- `ok_store`: One store as seen from the delivery point: whether it delivers there now, minimum order (Toman),
+- `ok_stores`: Okala stores that deliver to a point, in the site's order: id, type, rating, distance, earliest slot and per-order fees (service, packaging, delivery; Toman).
+- `ok_store`: One store as seen from the delivery point: whether it delivers there now, minimum order (Toman), rating, distance, location, earliest slot and open delivery slots of the next days (Tehran time).
 - `ok_store_reviews`: Read customers' reviews of a store: 1-5 stars, comment, date and the reasons they ticked.
 
 ## Tapsi Food (`tapsifood-mcp`, 11 tools)
@@ -144,7 +144,7 @@ Unofficial read-only Baneh: search appliances, TVs, electronics, find the cheape
 - `bn_find_cheapest`: Find the cheapest products whose title contains every word of the query, one list sorted by price (Toman).
 - `bn_browse`: List products of a category and/or brand, optionally in a price range, sorted by price or rating.
 - `bn_categories`: List shop categories with slug and product count, biggest first.
-- `bn_brands`: List brands (about 150, e.g. LG, Samsung, Bosch, Xiaomi) with slug and product count, biggest first.
+- `bn_brands`: List brands (about 150, e.g.
 - `bn_product`: Get one product: price (Toman), stock, rating, brand, categories, spec attributes, highlights, description, images.
 - `bn_reviews`: Get buyer reviews of one product, newest first: rating 1-5, author, date, text.
 
@@ -155,7 +155,7 @@ Unofficial read-only Torob: compare Iranian shop prices, price history, deal che
 - `tb_cheapest`: Cheapest trustworthy offer for a product named in words: searches, then looks at every shop's offer.
 - `tb_compare`: Side-by-side comparison of 2-5 products: only the specs that differ, the price window, and which is cheapest.
 - `tb_best_value`: Ranked product picks that fit a budget (Toman), for "best phone under 30 million".
-- `tb_deal_check`: Is this a good price? Score 0-100 from the product's price history and today's competing offers.
+- `tb_deal_check`: Is this a good price?
 - `tb_basket`: Cheapest shop for a whole shopping list: best single shop that sells everything, and the split-cart total.
 - `tb_product`: Full record of one product: name, price range (Toman), category, brand, key specs, cheapest offer.
 - `tb_sellers`: Every online shop offer for a product, cheapest first, with trust, warranty, installment and delivery info.
@@ -245,6 +245,24 @@ Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price h
 - `zm_guides`: List Zoomit's buying guides ("best phones under...", "best gaming phones") of a category with their article links.
 - `zm_rank`: Rank a category's popular products by one numeric spec (battery, weight, RAM, brightness) or by value for money.
 
+## Snapp! Shop (`snappshop-mcp`, 13 tools)
+
+Read-only Snapp! Shop marketplace: search, categories, seller offers in Toman, reviews.
+
+- `ss_search`: Search Snapp!
+- `ss_suggest`: Complete a search phrase the way the site's search box does, most searched first.
+- `ss_categories`: List Snapp!
+- `ss_category`: List the products of one Snapp!
+- `ss_product`: Get one product: specs, rating, and every seller's price, stock and delivery.
+- `ss_reviews`: Read buyers' reviews of a product: score, title, text, pros and cons, helpful votes and date.
+- `ss_similar`: Find alternatives to a product that Snapp!
+- `ss_seller`: List the products one seller (فروشنده) offers on Snapp!
+- `ss_filters`: Show the filters Snapp!
+- `ss_brand`: List the products of one brand page on Snapp!
+- `ss_collection`: List every product of one promotion collection (flash sale, carousel, 'see all' list) from ss_promotions.
+- `ss_promotions`: Show what Snapp!
+- `ss_compare`: Compare 2-4 products side by side: price, rating, seller count and the specs that differ.
+
 ## Khanoumi (`khanoumi-mcp`, 12 tools)
 
 Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.
@@ -252,13 +270,13 @@ Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, s
 - `kh_search`: Search products by keyword: price, discount and stock of each match, plus matching category ids and brand slugs.
 - `kh_find_cheapest`: Find the cheapest in-stock products for a keyword, one flat list by payable price (Toman).
 - `kh_browse`: List products of a category, brand(s) or campaign tag with sorting, price range and filters.
-- `kh_filters`: List the filters of a category, brand, tag or search: sub-categories, brands, colors and attribute facets
+- `kh_filters`: List the filters of a category, brand, tag or search: sub-categories, brands, colors and attribute facets (skin type, ingredients, ...) with ids and counts, plus price range and stock counts.
 - `kh_categories`: List Khanoumi's category tree with ids, URL paths and product counts.
 - `kh_brands`: Find brands by name (about 3,200) with their slugs, for the `brands` of kh_browse / kh_filters.
-- `kh_deals`: List today's home-page deals (daily pink box "جعبه صورتی" and other rows), biggest discount first,
-- `kh_store_info`: Get Khanoumi's order rules from the official FAQ: packaging cost, shipping fees and times, returns,
+- `kh_deals`: List today's home-page deals (daily pink box "جعبه صورتی" and other rows), biggest discount first, plus the public discount code of the pop-up campaign.
+- `kh_store_info`: Get Khanoumi's order rules from the official FAQ: packaging cost, shipping fees and times, returns, payment and refunds, authenticity guarantee, pink-box rules.
 - `kh_blog_search`: Search the Khanoumi magazine (مجله خانومی): buying guides, care routines, ingredient explainers, with links.
-- `kh_product`: Get one product's full record: price and discount (Toman), every shade / size / seller variant with its
+- `kh_product`: Get one product's full record: price and discount (Toman), every shade / size / seller variant with its own price, stock and max quantity, rating, brand, categories, attributes and description.
 - `kh_reviews`: Read customer comments on a product, newest first, with a verified-buyer flag and photos.
 - `kh_similar`: List alternatives to a product (about 20) or the products the shop pairs with it, with prices and stock.
 
@@ -286,17 +304,17 @@ Unofficial read-only Shopino: search fashion across Iranian shops, compare price
 - `sh_search`: Search products across all shops by keyword: price to pay, discount, stock, selling shop.
 - `sh_find_cheapest`: Find the cheapest in-stock products for a keyword across all shops, one flat list sorted by price to pay.
 - `sh_browse`: List products of a category, shop, tag or curated listing, with sort, price range and filters.
-- `sh_filters`: List the filter values sh_search / sh_browse accept: size systems and sizes, sorts, courier cities,
+- `sh_filters`: List the filter values sh_search / sh_browse accept: size systems and sizes, sorts, courier cities, and (with category_id) sub-categories.
 - `sh_categories`: List the category tree with ids, URL paths and levels, plus total product and shop counts.
-- `sh_brands`: Without shop_id: featured official brand shops. With shop_id: that watch shop's brands, with ids for
-- `sh_deals`: List today's home-page deals (flash sale with end time, best sellers, themed rows), biggest discount
+- `sh_brands`: Without shop_id: featured official brand shops.
+- `sh_deals`: List today's home-page deals (flash sale with end time, best sellers, themed rows), biggest discount first, plus running campaigns and shop discount codes.
 - `sh_campaign`: Open a campaign or landing page: its product rows (with prices) and tabs.
 - `sh_blog_search`: Search the style blog (guides and model galleries), newest first; no query = latest posts.
 - `sh_blog_post`: Read one blog post as plain text, with its category id for sh_browse (after sh_blog_search).
-- `sh_product`: Get one product's full record: price, every color / size variant with price and stock, size guide,
+- `sh_product`: Get one product's full record: price, every color / size variant with price and stock, size guide, description, tags, the selling shop with trust signals, and the shop-site link.
 - `sh_similar`: Find products like this one at other shops (itself left out).
 - `sh_shops`: Find shops by name, category group, gender or courier city, with rating, surveys, followers and product count.
-- `sh_shop`: Get a shop's profile: ratings, buyer survey %, followers, product count, main categories, courier city,
+- `sh_shop`: Get a shop's profile: ratings, buyer survey %, followers, product count, main categories, courier city, contacts and website.
 
 ## Banimode (`banimode-mcp`, 7 tools)
 
@@ -320,9 +338,9 @@ Unofficial read-only Divar: search Iran's classified ads, cheapest and best-valu
 - `dv_suggest`: What Divar's search box would suggest for some text, and which categories the text belongs to.
 - `dv_parse_query`: Turn a plain Persian request into dv_search arguments: city, neighbourhoods, price bounds, category and leftover words.
 - `dv_market`: Asking-price statistics of a search: min, p10, p25, median, p75, p90, max, mean; split by district and by day.
-- `dv_appraise`: Is an ad's price (or a price you have in mind) high or low compared with similar ads? Percentile, verdict, confidence.
+- `dv_appraise`: Is an ad's price (or a price you have in mind) high or low compared with similar ads?
 - `dv_status`: Is Divar reachable and how fast: version, a live latency check, caches and local watch state.
-- `dv_cities`: City ids for a name (1,177 cities; Tehran is 1, Mashhad 3). Returns id, name, URL slug, province id and centre.
+- `dv_cities`: City ids for a name (1,177 cities; Tehran is 1, Mashhad 3).
 - `dv_districts`: Neighbourhoods (محله) of one city with ids, centre point and the main streets inside (Tehran has about 450).
 - `dv_neighbours`: Neighbourhoods adjacent to a district, to widen a neighbourhood search to the surrounding area.
 - `dv_locate`: The city, neighbourhood and street address of a GPS point.
@@ -337,7 +355,7 @@ Unofficial read-only Divar: search Iran's classified ads, cheapest and best-valu
 - `dv_similar`: Ads similar to one ad: same brand/model (or category) and neighbourhood, widening step by step until enough are found.
 - `dv_search`: Search Divar ads in one or more cities by category, text and filters; compact cards, prices in Toman.
 - `dv_count`: How many active ads match a search, in one cheap call (capped: 10,000 means '10,000 or more').
-- `dv_cheapest`: The cheapest ads of a search, cheapest first. Skips negotiable ads, placeholder or absurd prices and far-below-median outliers.
+- `dv_cheapest`: The cheapest ads of a search, cheapest first.
 - `dv_best_for_budget`: Within a budget: the best-value ads (furthest below their peers' median) and the ads closest to the budget.
 - `dv_find_deals`: Ads priced well below the median of the same search, without a budget: scored deals, with bait and junk prices removed.
 - `dv_new_since`: Ads published after a moment, newest first: poll this to watch a search (a new flat, a cheap car) without repeats.
@@ -420,16 +438,16 @@ Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, 
 
 Unofficial read-only Otaghak: search Iranian villas, availability, exact stay prices, reviews.
 
-- `ot_help`: Read Otaghak's help center: the FAQ, or the guest terms (booking and cancellation rules,
-- `ot_travel_guide`: Get the site's travel guide for a destination: guide text, the destination's FAQ (best season,
-- `ot_room_calendar`: Get a room's calendar day by day: nightly price after and before discount (Toman), free or booked,
-- `ot_price_quote`: Get the amount to pay (Toman) for a room, dates and guests: nights_total (the room page's
+- `ot_help`: Read Otaghak's help center: the FAQ, or the guest terms (booking and cancellation rules, the five cancellation policies, refunds, wallet, check-in rules), host rules or quality policy.
+- `ot_travel_guide`: Get the site's travel guide for a destination: guide text, the destination's FAQ (best season, sights, prices), related search pages (city themes such as beach, cottage, apartment with listing counts) and matching blog articles (restaurants, sights, souvenirs).
+- `ot_room_calendar`: Get a room's calendar day by day: nightly price after and before discount (Toman), free or booked, instant booking, min and max nights when arriving that day, weekend, public holiday, late checkout.
+- `ot_price_quote`: Get the amount to pay (Toman) for a room, dates and guests: nights_total (the room page's payable amount for the base guests), the extra-guest charge, optional late checkout, and the total.
 - `ot_holidays`: List Iranian public holidays (Fridays included) in a date range, with Jalali dates and weekdays.
-- `ot_late_checkout`: Check whether a room offers late checkout, for how many hours and at what price (Toman, a unit
-- `ot_room`: Get one room: description, capacity, rooms and beds, amenities, house rules, check-in/out times,
-- `ot_reviews`: Get a room's rating (0-5), star histogram, six category scores, percent of guests who recommend it,
-- `ot_similar_rooms`: Get 4-5 alternatives to a room (same city and type), as the room page shows them (or, while that list is
-- `ot_host`: Check a host: response time, response and acceptance rates, member since, active rooms
+- `ot_late_checkout`: Check whether a room offers late checkout, for how many hours and at what price (Toman, a unit not confirmed on the site), and with check_out whether it can be booked on that departure day (offered rooms are often closed for it on a given day).
+- `ot_room`: Get one room: description, capacity, rooms and beds, amenities, house rules, check-in/out times, cancellation policy, host, nearby places, approximate location, photos and nightly price.
+- `ot_reviews`: Get a room's rating (0-5), star histogram, six category scores, percent of guests who recommend it, and written reviews, newest first (with host replies).
+- `ot_similar_rooms`: Get 4-5 alternatives to a room (same city and type), as the room page shows them (or, while that list is empty upstream, a search of the room's city and type up to 1.5x its price; `note` says so).
+- `ot_host`: Check a host: response time, response and acceptance rates, member since, active rooms (undated starting prices) and the newest guest reviews across all their rooms.
 - `ot_find_place`: Turn a place name into the city / province slugs that ot_search_rooms needs, or a room code into its room.
 - `ot_search_rooms`: Search Otaghak stays (villas, cottages, apartments, eco-lodges) in a city, province or collection.
 - `ot_search_filters`: List the search filters of a city, province or collection (or the whole site) with the codes ot_search_rooms takes.
@@ -505,12 +523,12 @@ Unofficial read-only Flytoday: Iranian and international flights, hotels, villas
 - `ft_search_flights`: Search flights for a date: times, airline, seats left, price and fare_source_code per flight.
 - `ft_flight_calendar`: Cheapest one-adult fare per departure day around a date, in one cheap call (no search needed).
 - `ft_flight_details`: Refund and change rules, confirmed baggage per segment and (international) entry notes of one fare.
-- `ft_find_hotel_place`: Find the place ids the hotel and stay tools need. Which id goes where:
+- `ft_find_hotel_place`: Find the place ids the hotel and stay tools need.
 - `ft_search_hotels`: Priced hotels of a city (Iran) or region (abroad) for dates, one row per hotel with its cheapest room offer.
-- `ft_hotel`: One hotel for dates: every room and meal-plan offer with whole-stay price, rooms left and cancellation terms,
-- `ft_hotel_reviews`: Guest reviews of a hotel: score (1-10), text, pros, cons, trip type and nights. Mostly Persian text.
+- `ft_hotel`: One hotel for dates: every room and meal-plan offer with whole-stay price, rooms left and cancellation terms, the room details (size, beds, features) and the hotel basics (address, stars, score, facilities, check-in time).
+- `ft_hotel_reviews`: Guest reviews of a hotel: score (1-10), text, pros, cons, trip type and nights.
 - `ft_search_stays`: Villas, apartments and other private stays in Iran for dates, cheapest first.
-- `ft_stay`: One villa / apartment: details (capacity, rooms, facilities, rules, host), the per-night price calendar with
+- `ft_stay`: One villa / apartment: details (capacity, rooms, facilities, rules, host), the per-night price calendar with blocked days, and the review summary with the latest reviews.
 - `ft_find_station`: Train station codes (`station_code`) for a city name, or the 8 most popular stations when query is empty.
 - `ft_search_trains`: Trains between two stations on a date: one row per train class (wagon) with price per adult and seats left.
 - `ft_train_calendar`: Cheapest train price per day for the next ~16 days, with sold-out days flagged.
@@ -606,7 +624,7 @@ Unofficial read-only Paziresh24: find Iranian doctors, profiles, prices, reviews
 Unofficial read-only Doctoreto: Iranian doctors, visit fees, free appointment times, clinics, labs.
 
 - `dt_search_centers`: Find hospitals, clinics, infirmaries, laboratories, imaging centers and pharmacies with filters.
-- `dt_center`: A center's page: address, departments, services, insurances, hours, lab rules, bookable services with
+- `dt_center`: A center's page: address, departments, services, insurances, hours, lab rules, bookable services with `consultation_id` (for dt_free_slots) and its doctors (hash ids, earliest free slot).
 - `dt_doctor`: A doctor's profile with every bookable service, its price in Toman and its next free time.
 - `dt_free_slots`: Free appointment times of one service (office visit, phone/video call, clinic offer, lab admission).
 - `dt_reviews`: Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, text, date and reply.
@@ -650,9 +668,9 @@ Read-only Darukade (darukade.com) pharmacy: products, prices, ingredients, usage
 Unofficial read-only Taaghche: search Persian ebooks and audiobooks, compare prices, read reviews.
 
 - `tg_search`: Search ebooks and audiobooks by title, author or topic: price, discount, rating, format.
-- `tg_suggest`: Typeahead: up to 10 matching book titles with id. For prices use tg_search.
+- `tg_suggest`: Typeahead: up to 10 matching book titles with id.
 - `tg_book`: One book: price, format, pages or duration, people, rating breakdown, categories, ISBN.
-- `tg_reviews`: Reader reviews, most liked first: rating, text, likes, reply count. Page with offset.
+- `tg_reviews`: Reader reviews, most liked first: rating, text, likes, reply count.
 - `tg_similar`: Related books in lists (similar works, same author, same publisher): price, format, rating.
 - `tg_browse`: List books of a category (or the whole catalog), 16 per page, by sort, format and price ceiling.
 - `tg_bestsellers`: Hottest books now (trending ranking, no sales numbers), overall or per category.
@@ -672,7 +690,7 @@ Unofficial read-only Fidibo: search Persian ebooks and audiobooks, compare price
 - `fd_new`: Newest books and audiobooks, per kind and category (Toman).
 - `fd_free`: Free ebooks and audiobooks (price 0), per kind and category.
 - `fd_categories`: List category and sub-category slugs (with Persian titles) of one top level.
-- `fd_book`: One book's full record: price (Toman), pages or duration, size, people, rating distribution, description
+- `fd_book`: One book's full record: price (Toman), pages or duration, size, people, rating distribution, description (cut at 1500 chars unless full_text), printed price, categories.
 - `fd_reviews`: Reader reviews of a book: text (cut at 400 chars unless full_text), 1-5 stars, date, likes, replies, total count.
 - `fd_similar`: Books like this one: bestsellers of its category, the book itself left out (Toman).
 - `fd_author`: An author's, translator's or narrator's profile and books (Toman).
@@ -684,17 +702,17 @@ Unofficial read-only 30book: search Iranian printed books, compare editions and 
 
 - `sb_search`: Search books by title.
 - `sb_browse`: Books of a category (bta-N-M or btf-N-M-K), genre, nation, award list or tag.
-- `sb_publisher`: One publisher's books plus a short about text. Try sort='bestselling' or 'cheapest'.
+- `sb_publisher`: One publisher's books plus a short about text.
 - `sb_author`: Books by one author or translator (default newest first).
 - `sb_bestsellers`: Site-wide best sellers (10 pages).
 - `sb_new_releases`: Newest books (10 pages).
-- `sb_deals`: Best sellers (or one subject) by biggest discount. Some publishers inflate list prices: compare final_price.
-- `sb_find_publisher`: Look up publisher ids by name. Pass the id to sb_search(publisher_id=...) or sb_publisher.
+- `sb_deals`: Best sellers (or one subject) by biggest discount.
+- `sb_find_publisher`: Look up publisher ids by name.
 - `sb_find_person`: Look up author / translator ids by name.
 - `sb_book`: One book: authors, translators, publisher, prices, stock, ISBN, details, categories (codes for sb_browse), rating, tags, description.
-- `sb_similar`: Similar books, more by the author and by the translator, up to 20 each. Other editions: use sb_search.
+- `sb_similar`: Similar books, more by the author and by the translator, up to 20 each.
 - `sb_reviews`: Reader comments and the rating summary; only the first comments on the page are available.
-- `sb_categories`: Category sections or, for one section, its subjects. Codes go to sb_browse(kind='category').
+- `sb_categories`: Category sections or, for one section, its subjects.
 - `sb_collections`: Home-page genres, nations, award lists and tags; ids go to sb_browse(kind=...).
 
 ## Iranketab Books (`iranketab-mcp`, 13 tools)
@@ -821,6 +839,48 @@ Read-only Quera (quera.org): Iranian tech jobs, companies, contests, problems, c
 - `qr_event`: Get a Quera event page (CodeCup, hackathon, contest series): schedule, prizes, price, sub-events.
 - `qr_bootcamps`: List Quera's paid bootcamps open for registration with price, dates and seats, or get one in full.
 - `qr_blog`: Search or read the Quera blog: Persian programming articles, career and tech news.
+
+## Iran Jobs (IranTalent + Jobinja + Jobvision) (`iran-jobs-mcp`, 37 tools)
+
+Read-only Iran jobs: IranTalent, Jobinja, Jobvision side by side. Ads, companies, reviews, pay.
+
+- `job_irantalent_salary_reports`: List IranTalent salary reports (salary.irantalent.com): one per job specialty and seniority level.
+- `job_irantalent_salary`: Read the salary figures of one IranTalent salary report, or of every seniority level of one specialty.
+- `job_irantalent_search_jobs`: Search IranTalent job ads by keyword and filters, newest first.
+- `job_irantalent_job`: Read one IranTalent job ad in full: description, requirements, salary, location, employer, view counts.
+- `job_irantalent_company`: Read a company profile: about text, industry, size, address, website, rating breakdown and newest open jobs.
+- `job_irantalent_company_reviews`: Read anonymous employee reviews of a company on IranTalent: ratings, pros, cons, reviewer's job title.
+- `job_irantalent_lookups`: List the valid filter values (slug, English and Persian name) for job_irantalent_search_jobs.
+- `job_irantalent_job_market`: Count IranTalent's open jobs by category, industry, seniority, employment type, location or hiring company.
+- `job_irantalent_similar_jobs`: Find open jobs similar to one ad: same job category (and city), newest first, without the ad itself.
+- `job_jobinja_search_jobs`: Search Jobinja job ads by keyword, province, city, category, remote, contract type, experience, benefits and minimum salary.
+- `job_jobinja_job`: Read one Jobinja job ad: title, company, salary, contract, experience, skills, degree, gender, military status and the full description.
+- `job_jobinja_company`: Read a company's Jobinja profile: name, founding year, industry, size, website, open job count and its intro, culture and benefits text.
+- `job_jobinja_company_jobs`: List a company's open job ads on Jobinja (or, with expired_page, its past ads, which show its hiring history).
+- `job_jobinja_search_companies`: Find companies on Jobinja by name, or browse one industry (8 per page).
+- `job_jobinja_market`: Count the open Jobinja ads right now per job category, province, company industry and top skill (live site statistics).
+- `job_jobinja_skills`: Find skills on Jobinja matching a word, with how many ads ever listed each (a demand signal).
+- `job_jobinja_salary_stats`: Estimate monthly salaries (Toman) for a kind of job by reading the ad pages of the top search results.
+- `job_jobinja_filters`: List every value the Jobinja search accepts: provinces, job categories, industries, experience levels, salary steps, sort orders.
+- `job_jobvision_careers`: Rank the ~100 job titles in Jobvision's career guide by satisfaction, median salary or open ads.
+- `job_jobvision_career`: Get Jobvision's career-guide profile of one job title: salary distribution, demand, duties, skills, path.
+- `job_jobvision_companies`: Find companies on Jobvision by name or filters, best rated first (the site's company ranking).
+- `job_jobvision_interviews`: Get what candidates report about interviewing at a company: scores, difficulty, process and questions.
+- `job_jobvision_search`: Search Jobvision job ads (استخدام) with filters and return one page of compact job cards.
+- `job_jobvision_job`: Get the full text and requirements of one Jobvision job ad.
+- `job_jobvision_similar_jobs`: List job ads Jobvision considers similar to one ad.
+- `job_jobvision_company`: Get an employer's profile and its currently open job ads.
+- `job_jobvision_pay_stats`: Estimate pay for a role from the salaries open Jobvision ads advertise (million Toman per month).
+- `job_jobvision_suggest`: Autocomplete job titles the way Jobvision's search box does, most used first.
+- `job_jobvision_locations`: Find the province, city or Tehran area names and slugs that job_jobvision_search's city filter accepts.
+- `job_jobvision_options`: List the values of one Jobvision filter: ids and slugs with Persian and English names.
+- `job_jobvision_market`: Count open Jobvision ads per category, province, work type, seniority, experience, pay band or age.
+- `job_jobvision_government_news`: List Jobvision's recruitment announcements for a public-sector group (banks, ministries, oil and gas...).
+- `job_search`: Search job ads on IranTalent, Jobinja and Jobvision at once, one block of results per site.
+- `job_companies`: Find a company by name on IranTalent, Jobinja and Jobvision at once, one block per site.
+- `job_top_companies`: List each site's best-rated employers side by side: IranTalent top 50, Jobinja top 50, Jobvision top ranked.
+- `job_market`: Count open job ads per job category on IranTalent, Jobinja and Jobvision, one block per site.
+- `job_salary`: Compare monthly pay for a role from three sources: IranTalent's salary survey and the pay in Jobinja and Jobvision ads.
 
 ## Ponisha Freelance (`ponisha-mcp`, 14 tools)
 
@@ -1023,6 +1083,33 @@ Read-only Iran Mercantile Exchange (ime.co.ir): physical trades, supply, prices,
 - `ime_certificates`: Continuous commodity deposit certificates (گواهی سپرده پیوسته): gold bar, gold coin, silver, copper, steel and more.
 - `ime_board`: Market-view board (cdn.ime.co.ir) with the best bid and ask: use it to see where a fund or certificate trades now.
 
+## Iran Brokers Market Data (`iran-brokers-mcp`, 22 tools)
+
+Read-only Iran broker data from Mofid and Agah: stocks, funds, options, bonds, gold, education.
+
+- `br_screener`: Filter, sort and compare all stocks or funds on any column, like Agah's screener pages (900 stocks, 330 ETFs, 475 funds).
+- `br_stocks`: Rank all listed stocks (about 750) by today's change, traded value, money flow, buyer power, queue or past returns.
+- `br_stock_events`: List a stock's cash dividend history, capital increases, recent exchange notices and major shareholders.
+- `br_technical`: Show Agah's technical-indicator summary (moving averages and oscillators vote, RSI, MACD and others) for a stock or industry.
+- `br_mofid_funds`: List the 19 investment funds managed under the Mofid brand with type, risk level, dividend policy and asset mix.
+- `br_bonds`: List exchange-traded bonds, sukuk and treasury bills with maturity, coupon, price and yield to maturity.
+- `br_news`: Return the newest market news items: exchange notices, Codal letters, Telegram channel posts or Mofid research reports.
+- `br_announcements`: Search Codal filings (financial statements, board notices, AGM invitations, monthly activity) by company, report type and date.
+- `br_scores`: Return Bourse View's valuation scores: theoretical vs market price, a Buy/Neutral/Sell technical rating and a fundamental score out of 10.
+- `br_quotes`: Return live price rows for 1 to 30 symbols at once: last and closing price, change, volume, limits, bid and ask, returns.
+- `br_market_top`: Return one of the market's live top-N lists (most traded, buy queues, best return, lowest P/E, net individual buying, ...).
+- `br_search`: Find the id of a stock, fund, option or index by name or symbol, in Mofid and Agah.
+- `br_stock`: Show one stock (or, on Mofid, an ETF) in detail: price, ratios, returns, real vs legal flows, from Mofid and Agah.
+- `br_history`: Return price history of a stock: Mofid OHLC candles (1 minute to weekly) or Agah daily rows with buy and sell flows.
+- `br_market`: Show today's market snapshot: indices, traded value, money flow and buy/sell queues, from Mofid and Agah.
+- `br_industries`: Rank the bourse industries by value, return, market cap, P/E or money flow, from Mofid and Agah.
+- `br_index`: Show a market index (Mofid: market cap, free float, ratios, intraday move, members) and its daily history.
+- `br_etfs`: List exchange-traded funds with price, NAV and the gap between them (bubble), traded value and returns.
+- `br_learn`: Search the Mofid learning blog and Agah Pedia for bourse, fund, option and gold explainers, or read one article.
+- `br_fund`: Show an investment fund from Agah: type, NAV, returns, asset mix and holdings, a daily history, or a side-by-side comparison.
+- `br_options`: List stock-option contracts (about 1,600) with strike, expiry, moneyness, open interest and flows, or show one contract.
+- `br_rates`: Return free-market prices of currencies, crypto, coins, 18k gold, the global ounce, oil and metals, or one code's daily history.
+
 ## Central Bank of Iran (`cbi-mcp`, 11 tools)
 
 Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.
@@ -1187,6 +1274,42 @@ Unofficial read-only Iranian tax: goods IDs and VAT, activity codes, property va
 - `tx_property_value`: Return the official property transaction value (ارزش معاملاتی املاک) per square metre at a map point.
 - `tx_faq_search`: Search the tax administration's official FAQ (پرسش های متداول) and return matching questions with links.
 
+## Iran Insurance (BimeBazar + Azki) (`iran-insurance-mcp`, 18 tools)
+
+Read-only Iran insurance: BimeBazar and Azki side by side. Quotes, ratings, travel prices, guides.
+
+- `ins_azki_company`: Read what Azki publishes about an insurance company: profile facts, FAQ, claim help, or one product page.
+- `ins_azki_blog`: Read posts from the Azki insurance blog (azki.com/blog, Persian), newest first, 10 per page.
+- `ins_azki_products`: List the insurance products Azki sells through its generic product engine (30 types such as life, elevator, fire).
+- `ins_azki_car_value`: Estimate a car's market value the way Azki does before pricing body insurance.
+- `ins_azki_body_options`: List the optional covers and no-claim discount steps one company offers for car body insurance.
+- `ins_insurer_reviews`: Read BimeBazar customer reviews of insurers: four 1-5 ratings and the text, newest first.
+- `ins_claim_centers`: Find insurers' damage-claim branches with address, phone numbers and map position, filtered by insurer, place and claim type.
+- `ins_glossary`: Look up short explanations of insurance and car-card terms (VIN, chassis number, liability cover and more).
+- `ins_quote_third_party`: Get live third-party (شخص ثالث) car insurance prices from every insurer BimeBazar sells, cheapest first.
+- `ins_quote_motorcycle`: Get live motorcycle third-party insurance prices from every insurer, cheapest first.
+- `ins_quote_car_body`: Get live car body (بدنه) insurance prices from every insurer, cheapest first.
+- `ins_quote_fire`: Get live home fire insurance (آتش‌سوزی) prices from every insurer, cheapest first.
+- `ins_quote_health`: Get live supplementary health (تکمیلی درمان) insurance prices for one person, several people or a family.
+- `ins_insurers`: List insurers with each marketplace's own ratings, side by side (BimeBazar and Azki).
+- `ins_vehicles`: Find brand and model identifiers in BimeBazar's and Azki's vehicle catalogs, side by side.
+- `ins_places`: Look up provinces and cities with each marketplace's own identifiers, side by side.
+- `ins_quote_travel`: Get live travel insurance prices from BimeBazar and Azki for the same trip, cheapest first per provider.
+- `ins_content`: Read what BimeBazar and Azki publish about one insurance line: short explanation, guide steps and FAQ.
+
+## Rasmio Company Registry (`rasmio-mcp`, 8 tools)
+
+Read-only Rasmio (rasmio.com): Iranian companies, board members, gazette ads, products, brands.
+
+- `rs_company`: Registry profile of one Iranian company: basics, board and CEO, shareholders, licenses, capital history, ads.
+- `rs_ad`: Full text of one official gazette (روزنامه رسمی) ad: board changes, capital changes, founding, liquidation.
+- `rs_person`: Companies one person manages, sits on the board of or audits, with role dates and their latest gazette ads.
+- `rs_product`: One registered product: full specs (HS/ISIC codes, brand, maker, country), category and comparable suppliers.
+- `rs_ip`: Registration details of an Iranian trademark, patent or industrial design: numbers, date, owner, description.
+- `rs_search_companies`: Search Iranian companies by name or activity with filters; returns national ids for rs_company.
+- `rs_search`: Search people (board members, managers), products, registered brands or patents and industrial designs.
+- `rs_options`: List the ids and names the search filters take: legal forms, licenses, product categories, brand classes.
+
 ## PayPing (`payping-mcp`, 21 tools)
 
 PayPing merchant account for agents: balance, sales, invoices; create invoices and payment links.
@@ -1194,8 +1317,8 @@ PayPing merchant account for agents: balance, sales, invoices; create invoices a
 - `payping_get_profile`: Show the PayPing account behind PAYPING_TOKEN: username, name, email, phone and verification flags.
 - `payping_get_balance`: Current PayPing wallet balance in Toman (money received and not yet withdrawn).
 - `payping_get_sales_summary`: Sales totals for a period (default last 30 days): amount in Toman, count, daily averages.
-- `payping_list_transactions`: List payments, newest first, with total count. Use payping_get_payment for one payment's detail.
-- `payping_get_payment`: One payment by code: amount, payer, fees, refund state, paymentStatus and status_text. Use to check a payment succeeded.
+- `payping_list_transactions`: List payments, newest first, with total count.
+- `payping_get_payment`: One payment by code: amount, payer, fees, refund state, paymentStatus and status_text.
 - `payping_list_withdrawals`: List settlements (withdrawals to your bank) with total count.
 - `payping_get_withdrawal`: One settlement by code: amount, dates, IBAN, bank tracking number.
 - `payping_list_customers`: List saved customers with total count.
@@ -1206,12 +1329,12 @@ PayPing merchant account for agents: balance, sales, invoices; create invoices a
 - `payping_get_coupon`: One coupon by code: expiry, max uses, buyers and their spend.
 - `payping_list_invoices`: List invoices (status 0 draft, 1 awaiting payment, 2 paid, 3 overdue, 4 cancelled) with total count.
 - `payping_get_invoice`: One invoice by code with items, customer, status and `url` (public pay page).
-- `payping_create_customer`: Save a new customer; returns its `code` (needed for invoices). Confirm details with the user first.
-- `payping_create_product`: Create a product; returns its `code`. Then payping_create_payment_link makes its public page. Confirm title and price with the user first.
-- `payping_create_payment_link`: Make a permanent public payment page for a product; returns `url`. Confirm with the user first.
-- `payping_create_coupon`: Create an active discount coupon; returns its `code`. Confirm with the user first.
-- `payping_create_invoice`: Create an invoice for a saved customer; returns `code`, `payCode`, `url` (pay page). Not sent: use payping_send_invoice
-- `payping_send_invoice`: Send an invoice to its customer by SMS/email. Confirm with the user first.
+- `payping_create_customer`: Save a new customer; returns its `code` (needed for invoices).
+- `payping_create_product`: Create a product; returns its `code`.
+- `payping_create_payment_link`: Make a permanent public payment page for a product; returns `url`.
+- `payping_create_coupon`: Create an active discount coupon; returns its `code`.
+- `payping_create_invoice`: Create an invoice for a saved customer; returns `code`, `payCode`, `url` (pay page).
+- `payping_send_invoice`: Send an invoice to its customer by SMS/email.
 
 ## Bale Bot (`bale-mcp`, 13 tools)
 
@@ -1220,16 +1343,16 @@ Private, local Bale bot for agents: read, search and answer messages, ask and wa
 - `bot_get_me`: Check BALE_BOT_TOKEN and show the bot's id, username and name.
 - `bot_get_chat`: Get a chat's type, title or name, username and description.
 - `bot_get_webhook_info`: Show whether a webhook is set (url empty = the reading tools work), pending updates and the last error.
-- `bot_send_message`: Send a real text message from the bot. Confirm recipient and text with the user first.
-- `bot_send_file`: Send a real photo, document, video, audio or voice file from the bot. Confirm recipient and file with the user first.
-- `bot_edit_message`: Replace the text of a message the bot sent earlier. Changes a real message; confirm with the user first.
-- `bot_delete_message`: Delete a message the bot may delete (its own, or as admin). Irreversible; confirm with the user first.
+- `bot_send_message`: Send a real text message from the bot.
+- `bot_send_file`: Send a real photo, document, video, audio or voice file from the bot.
+- `bot_edit_message`: Replace the text of a message the bot sent earlier.
+- `bot_delete_message`: Delete a message the bot may delete (its own, or as admin).
 - `bot_get_new_messages`: Get messages people sent the bot since the last check, from all chats, oldest first, and mark them read.
 - `bot_list_chats`: List the chats this bot has talked in, newest first, with unread count and last message.
 - `bot_read_chat`: Show a chat's recent messages in both directions, oldest first, and mark the chat read (local store; Bale keeps no history).
-- `bot_search_messages`: Search stored messages by text, newest first. Persian/Arabic yeh, kaf, digits and ZWNJ match each other.
+- `bot_search_messages`: Search stored messages by text, newest first.
 - `bot_wait_for_reply`: Wait until someone writes in a chat or presses a button, then return the new messages (marked read).
-- `bot_download_file`: Download a file someone sent the bot (max 20 MB) and return its local path. Never overwrites (-1, -2, ... suffix).
+- `bot_download_file`: Download a file someone sent the bot (max 20 MB) and return its local path.
 
 ## Pasavard (`pasavard-mcp`, 4 tools)
 

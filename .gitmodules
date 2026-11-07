@@ -214,3 +214,18 @@
 [submodule "servers/iran-vod-mcp"]
 	path = servers/iran-vod-mcp
 	url = https://github.com/sepehr071/iran-vod-mcp
+[submodule "servers/iran-brokers-mcp"]
+	path = servers/iran-brokers-mcp
+	url = https://github.com/sepehr071/iran-brokers-mcp
+[submodule "servers/iran-insurance-mcp"]
+	path = servers/iran-insurance-mcp
+	url = https://github.com/sepehr071/iran-insurance-mcp
+[submodule "servers/iran-jobs-mcp"]
+	path = servers/iran-jobs-mcp
+	url = https://github.com/sepehr071/iran-jobs-mcp
+[submodule "servers/rasmio-mcp"]
+	path = servers/rasmio-mcp
+	url = https://github.com/sepehr071/rasmio-mcp
+[submodule "servers/snappshop-mcp"]
+	path = servers/snappshop-mcp
+	url = https://github.com/sepehr071/snappshop-mcp

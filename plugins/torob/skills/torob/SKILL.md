@@ -14,7 +14,7 @@ The tools below come from the `torob-mcp` MCP server. If they are not available,
 - `tb_cheapest`: Cheapest trustworthy offer for a product named in words: searches, then looks at every shop's offer.
 - `tb_compare`: Side-by-side comparison of 2-5 products: only the specs that differ, the price window, and which is cheapest.
 - `tb_best_value`: Ranked product picks that fit a budget (Toman), for "best phone under 30 million".
-- `tb_deal_check`: Is this a good price? Score 0-100 from the product's price history and today's competing offers.
+- `tb_deal_check`: Is this a good price?
 - `tb_basket`: Cheapest shop for a whole shopping list: best single shop that sells everything, and the split-cart total.
 - `tb_product`: Full record of one product: name, price range (Toman), category, brand, key specs, cheapest offer.
 - `tb_sellers`: Every online shop offer for a product, cheapest first, with trust, warranty, installment and delivery info.
@@ -45,3 +45,9 @@ The tools below come from the `torob-mcp` MCP server. If they are not available,
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `TOROB_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Torob blocks bursts of calls from one IP (HTTP 490), so calls are spaced 2 s apart. Ask for a few products at a time and do not repeat a search the user did not ask for.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

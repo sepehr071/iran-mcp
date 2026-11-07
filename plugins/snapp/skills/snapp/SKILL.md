@@ -31,7 +31,7 @@ The tools below come from the `snapp-mcp` MCP server. If they are not available,
 - `market_categories`: List SnappMarket product categories and sub-categories with their ids.
 - `market_product`: Get one product's details and price in one store.
 - `market_party_deals`: List current SnappMarket "market party" flash deals near the point, biggest discount first.
-- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5. No paging.
+- `market_reviews`: Read a store's 30 most relevant customer comments, rating 0-5.
 
 ## Rules
 
@@ -40,3 +40,9 @@ The tools below come from the `snapp-mcp` MCP server. If they are not available,
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `SNAPP_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Sites: Snappfood (food delivery), SnappMarket (groceries).
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

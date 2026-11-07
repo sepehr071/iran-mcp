@@ -12,9 +12,9 @@ The tools below come from the `taaghche-mcp` MCP server. If they are not availab
 ## Tools
 
 - `tg_search`: Search ebooks and audiobooks by title, author or topic: price, discount, rating, format.
-- `tg_suggest`: Typeahead: up to 10 matching book titles with id. For prices use tg_search.
+- `tg_suggest`: Typeahead: up to 10 matching book titles with id.
 - `tg_book`: One book: price, format, pages or duration, people, rating breakdown, categories, ISBN.
-- `tg_reviews`: Reader reviews, most liked first: rating, text, likes, reply count. Page with offset.
+- `tg_reviews`: Reader reviews, most liked first: rating, text, likes, reply count.
 - `tg_similar`: Related books in lists (similar works, same author, same publisher): price, format, rating.
 - `tg_browse`: List books of a category (or the whole catalog), 16 per page, by sort, format and price ceiling.
 - `tg_bestsellers`: Hottest books now (trending ranking, no sales numbers), overall or per category.
@@ -30,3 +30,9 @@ The tools below come from the `taaghche-mcp` MCP server. If they are not availab
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `TAAGHCHE_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

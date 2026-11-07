@@ -14,13 +14,13 @@ The tools below come from the `khanoumi-mcp` MCP server. If they are not availab
 - `kh_search`: Search products by keyword: price, discount and stock of each match, plus matching category ids and brand slugs.
 - `kh_find_cheapest`: Find the cheapest in-stock products for a keyword, one flat list by payable price (Toman).
 - `kh_browse`: List products of a category, brand(s) or campaign tag with sorting, price range and filters.
-- `kh_filters`: List the filters of a category, brand, tag or search: sub-categories, brands, colors and attribute facets
+- `kh_filters`: List the filters of a category, brand, tag or search: sub-categories, brands, colors and attribute facets (skin type, ingredients, ...) with ids and counts, plus price range and stock counts.
 - `kh_categories`: List Khanoumi's category tree with ids, URL paths and product counts.
 - `kh_brands`: Find brands by name (about 3,200) with their slugs, for the `brands` of kh_browse / kh_filters.
-- `kh_deals`: List today's home-page deals (daily pink box "جعبه صورتی" and other rows), biggest discount first,
-- `kh_store_info`: Get Khanoumi's order rules from the official FAQ: packaging cost, shipping fees and times, returns,
+- `kh_deals`: List today's home-page deals (daily pink box "جعبه صورتی" and other rows), biggest discount first, plus the public discount code of the pop-up campaign.
+- `kh_store_info`: Get Khanoumi's order rules from the official FAQ: packaging cost, shipping fees and times, returns, payment and refunds, authenticity guarantee, pink-box rules.
 - `kh_blog_search`: Search the Khanoumi magazine (مجله خانومی): buying guides, care routines, ingredient explainers, with links.
-- `kh_product`: Get one product's full record: price and discount (Toman), every shade / size / seller variant with its
+- `kh_product`: Get one product's full record: price and discount (Toman), every shade / size / seller variant with its own price, stock and max quantity, rating, brand, categories, attributes and description.
 - `kh_reviews`: Read customer comments on a product, newest first, with a verified-buyer flag and photos.
 - `kh_similar`: List alternatives to a product (about 20) or the products the shop pairs with it, with prices and stock.
 
@@ -30,3 +30,9 @@ The tools below come from the `khanoumi-mcp` MCP server. If they are not availab
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `KHANOUMI_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

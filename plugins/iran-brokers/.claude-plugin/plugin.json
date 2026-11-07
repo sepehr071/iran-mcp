@@ -1,0 +1,27 @@
+{
+  "name": "iran-brokers",
+  "displayName": "Iran Brokers Market Data",
+  "version": "0.2.0",
+  "description": "Read-only Iran broker data from Mofid and Agah: stocks, funds, options, bonds, gold, education.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-brokers-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "stocks",
+    "emofid.com"
+  ],
+  "mcpServers": {
+    "iran-brokers": {
+      "command": "uvx",
+      "args": [
+        "iran-brokers-mcp@0.2.0"
+      ]
+    }
+  }
+}

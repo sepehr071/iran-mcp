@@ -1,6 +1,6 @@
 {
   "name": "iran-all",
-  "description": "All 69 read-only Iranian site servers in one install.",
+  "description": "All 74 Iranian site servers that need no setup, in one install.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -20,6 +20,7 @@
     "emalls-ir",
     "mobile-ir",
     "zoomit",
+    "snappshop",
     "khanoumi",
     "asalbanoo",
     "shopino",
@@ -51,6 +52,7 @@
     "jobvision",
     "irantalent",
     "quera",
+    "iran-jobs",
     "ponisha",
     "karlancer",
     "iran-apps",
@@ -65,6 +67,7 @@
     "ifb",
     "fipiran",
     "ime",
+    "iran-brokers",
     "cbi",
     "amar",
     "iran-news",
@@ -76,6 +79,8 @@
     "qavanin",
     "rrk",
     "iran-tax",
+    "iran-insurance",
+    "rasmio",
     "pasavard"
   ]
 }

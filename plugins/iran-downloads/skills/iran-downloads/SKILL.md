@@ -23,3 +23,9 @@ The tools below come from the `iran-downloads-mcp` MCP server. If they are not a
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `IRAN_DOWNLOADS_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Metadata only: it returns the item page URL on the source site and never a download link. Say that the user must check each item's licence on that page. Sites: Soft98, P30Download, Downloadly, VGDL.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

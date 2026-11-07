@@ -1,6 +1,6 @@
 {
   "name": "iran-shopping",
-  "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Emalls Price Comparison, Mobile.ir Phones, Zoomit Products, Pasavard.",
+  "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Emalls Price Comparison, Mobile.ir Phones, Zoomit Products, Snapp! Shop, Pasavard.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -17,6 +17,7 @@
     "emalls-ir",
     "mobile-ir",
     "zoomit",
+    "snappshop",
     "pasavard"
   ]
 }

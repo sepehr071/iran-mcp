@@ -17,7 +17,7 @@ The tools below come from the `fidibo-mcp` MCP server. If they are not available
 - `fd_new`: Newest books and audiobooks, per kind and category (Toman).
 - `fd_free`: Free ebooks and audiobooks (price 0), per kind and category.
 - `fd_categories`: List category and sub-category slugs (with Persian titles) of one top level.
-- `fd_book`: One book's full record: price (Toman), pages or duration, size, people, rating distribution, description
+- `fd_book`: One book's full record: price (Toman), pages or duration, size, people, rating distribution, description (cut at 1500 chars unless full_text), printed price, categories.
 - `fd_reviews`: Reader reviews of a book: text (cut at 400 chars unless full_text), 1-5 stars, date, likes, replies, total count.
 - `fd_similar`: Books like this one: bestsellers of its category, the book itself left out (Toman).
 - `fd_author`: An author's, translator's or narrator's profile and books (Toman).
@@ -29,3 +29,9 @@ The tools below come from the `fidibo-mcp` MCP server. If they are not available
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `FIDIBO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

@@ -1,10 +1,24 @@
 # Changelog
 
-## Unreleased
+## v2.4 (2026-11-07)
+
+6 new servers: insurance, company records, broker market data, film and series, Snapp! Shop and three job sites in one.
+Every existing server keeps its tool names.
 
 ### Added
 
+- **[snappshop-mcp](https://github.com/sepehr071/snappshop-mcp)**, 13 tools: Snapp! Shop marketplace: search, categories, every seller's offer in Toman, reviews, flash sales. Iranian connections only.
+- **[iran-jobs-mcp](https://github.com/sepehr071/iran-jobs-mcp)**, 37 tools: IranTalent, Jobinja and Jobvision side by side: job ads, companies, reviews, interview reports, pay.
+- **[iran-brokers-mcp](https://github.com/sepehr071/iran-brokers-mcp)**, 22 tools: Mofid and Agah broker data: stocks, ETFs and funds, options, bonds and sukuk, gold and coin, screeners, Codal news. Rial.
+- **[iran-insurance-mcp](https://github.com/sepehr071/iran-insurance-mcp)**, 18 tools: BimeBazar and Azki: insurers and ratings, travel, third-party, car body, motorcycle, fire and health quotes.
+- **[rasmio-mcp](https://github.com/sepehr071/rasmio-mcp)**, 8 tools: Rasmio company registry: companies, board members, gazette ads, products, brands, trademarks and patents. Rial.
 - **[iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp)**, 13 tools: Filimo and Namava films and series: search, where to watch, title details, episodes, new releases, collections, plans.
+
+### Changed
+
+- Every server is updated to its latest release.
+- Each skill ends with a Maintainer section crediting its maintainer, with the author banner.
+- The plugin `iran-jobs` is now the iran-jobs-mcp server. The jobs bundle is renamed `iran-jobs-bundle`.
 
 ## v2.3 (2026-11-01)
 

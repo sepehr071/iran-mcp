@@ -14,17 +14,17 @@ The tools below come from the `shopino-mcp` MCP server. If they are not availabl
 - `sh_search`: Search products across all shops by keyword: price to pay, discount, stock, selling shop.
 - `sh_find_cheapest`: Find the cheapest in-stock products for a keyword across all shops, one flat list sorted by price to pay.
 - `sh_browse`: List products of a category, shop, tag or curated listing, with sort, price range and filters.
-- `sh_filters`: List the filter values sh_search / sh_browse accept: size systems and sizes, sorts, courier cities,
+- `sh_filters`: List the filter values sh_search / sh_browse accept: size systems and sizes, sorts, courier cities, and (with category_id) sub-categories.
 - `sh_categories`: List the category tree with ids, URL paths and levels, plus total product and shop counts.
-- `sh_brands`: Without shop_id: featured official brand shops. With shop_id: that watch shop's brands, with ids for
-- `sh_deals`: List today's home-page deals (flash sale with end time, best sellers, themed rows), biggest discount
+- `sh_brands`: Without shop_id: featured official brand shops.
+- `sh_deals`: List today's home-page deals (flash sale with end time, best sellers, themed rows), biggest discount first, plus running campaigns and shop discount codes.
 - `sh_campaign`: Open a campaign or landing page: its product rows (with prices) and tabs.
 - `sh_blog_search`: Search the style blog (guides and model galleries), newest first; no query = latest posts.
 - `sh_blog_post`: Read one blog post as plain text, with its category id for sh_browse (after sh_blog_search).
-- `sh_product`: Get one product's full record: price, every color / size variant with price and stock, size guide,
+- `sh_product`: Get one product's full record: price, every color / size variant with price and stock, size guide, description, tags, the selling shop with trust signals, and the shop-site link.
 - `sh_similar`: Find products like this one at other shops (itself left out).
 - `sh_shops`: Find shops by name, category group, gender or courier city, with rating, surveys, followers and product count.
-- `sh_shop`: Get a shop's profile: ratings, buyer survey %, followers, product count, main categories, courier city,
+- `sh_shop`: Get a shop's profile: ratings, buyer survey %, followers, product count, main categories, courier city, contacts and website.
 
 ## Rules
 
@@ -32,3 +32,9 @@ The tools below come from the `shopino-mcp` MCP server. If they are not availabl
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `SHOPINO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

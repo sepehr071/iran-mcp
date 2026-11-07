@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 72 MCP servers for Iranian websites, 896 tools in
+Guide for AI agents using or working on **iran-mcp**: 77 MCP servers for Iranian websites, 994 tools in
 total. 68 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
@@ -11,6 +11,7 @@ sign-in).
 | User wants to... | Server | Start with |
 |---|---|---|
 | Buy electronics, appliances, almost anything | `digikala-mcp` | `dk_find_cheapest`, `dk_best_for_budget`, then `dk_product`, `dk_price_history` |
+| Snapp! Shop products, every seller's offer, flash sales | `snappshop-mcp` | `ss_search`, then `ss_product`, `ss_reviews`; `ss_promotions` |
 | Every Iranian shop's price for one product, price history, whether now is a good time to buy | `torob-mcp` | `tb_cheapest`, `tb_sellers`, `tb_deal_check` |
 | A product's offers across Iranian shops on Emalls, with price history | `emalls-ir-mcp` | `em_search`, `em_offers`, `em_price_history` |
 | Phone specs, shop prices, used phones, SIM numbers; phone, laptop or GPU specs and prices | `mobile-ir-mcp`, `zoomit-mcp` | `mi_search`, `mi_phone`, `mi_shop_prices`; `zm_search`, `zm_product`, `zm_prices` |
@@ -43,6 +44,7 @@ sign-in).
 | Persian online courses, free courses | `maktabkhooneh-mcp` | `mkh_search`, `mkh_free_courses`, `mkh_cheapest`, `mkh_course` |
 | Faradars courses, learning paths, instructors | `faradars-mcp` | `fr_search_courses`, `fr_course`, `fr_learning_paths` |
 | Jobs in Iran, employers, advertised salaries, tech jobs and contests | `jobinja-mcp`, `jobvision-mcp`, `irantalent-mcp`, `quera-mcp` | `jj_search_jobs`, `jv_search`, `it_search_jobs`, `qr_jobs`; `jj_salary_stats`, `jv_pay_stats`, `it_salary` |
+| Jobs, employers and pay on IranTalent, Jobinja and Jobvision in one call | `iran-jobs-mcp` | `job_search`, `job_companies`, `job_top_companies`, `job_salary` |
 | Freelance projects, freelancers, market rates | `ponisha-mcp`, `karlancer-mcp` | `pn_search_projects`, `pn_market`; `kl_projects`, `kl_market_rate` |
 | Android apps on Cafe Bazaar and Myket | `iran-apps-mcp` | `ap_search`, `ap_compare`, `ap_top` |
 | Find software or a game on Soft98, P30Download, Downloadly and VGDL (metadata and item page only, no download links) | `iran-downloads-mcp` | `dl_search`, `dl_latest`, `dl_item` |
@@ -55,6 +57,7 @@ sign-in).
 | The live 18k gold price on Milli.gold, Wallgold, Melligold, Daric and Taline side by side, the cheapest place to buy | `iran-gold-mcp` | `gold_prices`, then `gold_milli_history` |
 | Tehran Stock Exchange and Fara Bourse quotes, top movers, order book, indices, real versus legal trading | `tsetmc-mcp` | `ts_search_symbols`, then `ts_get_quote`, `ts_market_movers`, `ts_indices` |
 | A listed company's filings: financial statements, EPS, monthly activity reports | `codal-mcp` | `cd_search_letters`, then `cd_letter` |
+| Stocks, ETFs, options, bonds, gold and screeners through brokers Mofid and Agah | `iran-brokers-mcp` | `br_search`, then `br_stock`, `br_history`; `br_market`, `br_screener` |
 | Bond, sukuk and treasury-bill yields, IPOs, Fara Bourse announcements | `ifb-mcp` | `ifb_yields`, `ifb_yield_curve`, `ifb_ipos` |
 | Mutual funds and ETFs: NAV, returns, size | `fipiran-mcp` | `fp_search_funds`, `fp_fund`, `fp_compare` |
 | Iran Mercantile Exchange trades, supply offers, commodity prices | `ime-mcp` | `ime_trades`, `ime_supply`, `ime_price_history` |
@@ -68,6 +71,8 @@ sign-in).
 | Recent or strong earthquakes in Iran (IRSC, USGS, EMSC) | `iran-quake-mcp` | `eq_latest`, `eq_significant`, `eq_detail` |
 | An Iranian law, regulation or court vote, one article, its amendments | `qavanin-mcp` | `qv_search`, then `qv_law`, `qv_amendments` |
 | A law, regulation or ruling in the Official Gazette (rrk.ir) | `rrk-mcp` | `rk_search_laws`, `rk_latest_laws`, then `rk_law_text` |
+| Insurance quotes and insurer ratings on BimeBazar and Azki | `iran-insurance-mcp` | `ins_insurers`, `ins_quote_third_party`, `ins_quote_car_body`, `ins_quote_travel` |
+| A company's registration, board members, gazette ads, brands | `rasmio-mcp` | `rs_search_companies`, then `rs_company`; `rs_person`, `rs_ad` |
 | E-invoice goods ID and VAT rate, activity code, property value, a tax law or circular | `iran-tax-mcp` | `tx_goods_search`, `tx_activity_codes`, `tx_regulations_search` |
 | Merchant payments (user's own PayPing account) | `payping-mcp` | `payping_get_balance`, `payping_get_sales_summary` |
 | User's own Bale bot | `bale-mcp` | `bot_get_new_messages`, `bot_send_message` |
@@ -101,11 +106,11 @@ claude plugin install iran-all --marketplace sepehr071/iran-mcp     # all read-o
 ```
 
 Bundles: `iran-all`, `iran-food`, `iran-shopping`, `iran-beauty`, `iran-fashion`, `iran-classifieds`, `iran-cars`,
-`iran-travel`, `iran-maps`, `iran-health`, `iran-books`, `iran-learning`, `iran-jobs`, `iran-freelance`, `iran-software`,
+`iran-travel`, `iran-maps`, `iran-health`, `iran-books`, `iran-learning`, `iran-jobs-bundle`, `iran-freelance`, `iran-software`,
 `iran-prices`, `iran-stocks`, `iran-economy`, `iran-law`.
 Skills only, for any agent: `npx skills add sepehr071/iran-mcp`.
 
-The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 72.
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 77.
 Requires [uv](https://docs.astral.sh/uv/) (`pasavard-mcp` and `swapwallet-mcp` don't). Add only the servers the task needs: each one adds 3 to 31 tools.
 
 ## Rules every server follows
@@ -155,7 +160,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the 72 / 896 counts written in both READMEs.
+  READMEs and the table above. Update the 77 / 994 counts written in both READMEs.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card
