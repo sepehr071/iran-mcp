@@ -32,6 +32,7 @@
 - [mrbilit-mcp](https://github.com/sepehr071/mrbilit-mcp): MrBilit flights, trains, buses, taxis, hotels
 - [flytoday-mcp](https://github.com/sepehr071/flytoday-mcp): Flytoday flights, trains, buses, hotels, villas, CIP, eSIM, visas
 - [jabama-mcp](https://github.com/sepehr071/jabama-mcp): Jabama stays, tours, events (jabama.com, jabama.tours, jabama.events)
+- [shab-mcp](https://github.com/mohamadreza-rezaei/shab-mcp-server): Shab stays, read-only search and availability
 - [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp): Otaghak villas and cottages
 - [paziresh24-mcp](https://github.com/sepehr071/paziresh24-mcp): Paziresh24 doctors and appointments
 - [doctoreto-mcp](https://github.com/sepehr071/doctoreto-mcp): Doctoreto doctors, clinics, labs
