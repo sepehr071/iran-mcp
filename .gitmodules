@@ -229,3 +229,6 @@
 [submodule "servers/snappshop-mcp"]
 	path = servers/snappshop-mcp
 	url = https://github.com/sepehr071/snappshop-mcp
+[submodule "servers/shab-mcp"]
+	path = servers/shab-mcp
+	url = https://github.com/mohamadreza-rezaei/shab-mcp.git

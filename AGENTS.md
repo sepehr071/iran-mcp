@@ -28,7 +28,7 @@ sign-in).
 | Groceries delivered to an address (SnappMarket, Okala) | `snapp-mcp`, `okala-mcp` | `market_find_cheapest`; `ok_locate`, `ok_stores`, `ok_compare` |
 | Flights, trains, buses, taxis | `mrbilit-mcp`, `flytoday-mcp` | `mb_search_flights`, `mb_flight_price_calendar`; `ft_search_flights` |
 | Hotels | `mrbilit-mcp`, `flytoday-mcp` | `mb_search_hotels`; `ft_search_hotels` |
-| Villas, cottages, short stays | `jabama-mcp`, `otaghak-mcp` | `jb_search_stays`, `jb_price_quote`; `ot_search_rooms`, `ot_price_quote` |
+| Villas, cottages, short stays | `jabama-mcp`, `otaghak-mcp`, `shab-mcp` | `jb_search_stays`, `jb_price_quote`; `ot_search_rooms`, `ot_price_quote`; `sh_search_accommodations`, `sh_check_availability` |
 | Tours, events, theater tickets (jabama.tours, jabama.events) | `jabama-mcp` | `jb_search_tours`, `jb_search_events` |
 | CIP, eSIM, visas, activities abroad | `flytoday-mcp` | `ft_cip`, `ft_esim_plans`, `ft_visa`, `ft_activities` |
 | Flights, trains, buses, hotels, villas and tours on Alibaba | `alibaba-ir-mcp` | `al_flights_cheapest`, `al_trains_cheapest`, `al_buses_cheapest`, `al_hotels` |

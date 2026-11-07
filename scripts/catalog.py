@@ -76,6 +76,7 @@ NOTES = {
     "iran-quake-mcp": "Sites: IRSC (Iranian Seismological Center), USGS, EMSC.",
     "snapp-mcp": "Sites: Snappfood (food delivery), SnappMarket (groceries).",
     "jabama-mcp": "Sites: jabama.com (stays), jabama.tours (group tours), jabama.events (events and theater).",
+    "shab-mcp": "Read-only discovery for shab.ir stays. Hand the user listing_url to finish booking on the site; nothing here logs in, books or pays.",
     "iran-apps-mcp": "Sites: Cafe Bazaar, Myket.",
     "tsetmc-mcp": "Prices here are Rial (divide by 10 for Toman), not Toman. tsetmc.com serves mostly Iranian lines: "
     "outside Iran the user needs TSETMC_MCP_PROXY. The market trades Saturday to Wednesday mornings; after the close "
@@ -150,6 +151,7 @@ SERVERS = {
     "hamrah-mechanic-mcp": ("cars", "https://www.hamrah-mechanic.com"),
     "otaghak-mcp": ("travel", "https://www.otaghak.com"),
     "jabama-mcp": ("travel", "https://www.jabama.com"),
+    "shab-mcp": ("travel", "https://www.shab.ir"),
     "mrbilit-mcp": ("travel", "https://mrbilit.com"),
     "flytoday-mcp": ("travel", "https://www.flytoday.ir"),
     "alibaba-ir-mcp": ("travel", "https://www.alibaba.ir"),
