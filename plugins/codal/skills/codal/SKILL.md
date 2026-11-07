@@ -24,3 +24,9 @@ The tools below come from the `codal-mcp` MCP server. If they are not available,
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `CODAL_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Report amounts are as published, usually million Rial (see `unit_note`), not Toman. codal.ir blocks an IP for up to an hour after a burst: make few, targeted calls, and stop when a tool says it is rate limiting. It often answers only Iranian connections; outside Iran the user needs CODAL_MCP_PROXY.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

@@ -23,12 +23,12 @@ The tools below come from the `flytoday-mcp` MCP server. If they are not availab
 - `ft_search_flights`: Search flights for a date: times, airline, seats left, price and fare_source_code per flight.
 - `ft_flight_calendar`: Cheapest one-adult fare per departure day around a date, in one cheap call (no search needed).
 - `ft_flight_details`: Refund and change rules, confirmed baggage per segment and (international) entry notes of one fare.
-- `ft_find_hotel_place`: Find the place ids the hotel and stay tools need. Which id goes where:
+- `ft_find_hotel_place`: Find the place ids the hotel and stay tools need.
 - `ft_search_hotels`: Priced hotels of a city (Iran) or region (abroad) for dates, one row per hotel with its cheapest room offer.
-- `ft_hotel`: One hotel for dates: every room and meal-plan offer with whole-stay price, rooms left and cancellation terms,
-- `ft_hotel_reviews`: Guest reviews of a hotel: score (1-10), text, pros, cons, trip type and nights. Mostly Persian text.
+- `ft_hotel`: One hotel for dates: every room and meal-plan offer with whole-stay price, rooms left and cancellation terms, the room details (size, beds, features) and the hotel basics (address, stars, score, facilities, check-in time).
+- `ft_hotel_reviews`: Guest reviews of a hotel: score (1-10), text, pros, cons, trip type and nights.
 - `ft_search_stays`: Villas, apartments and other private stays in Iran for dates, cheapest first.
-- `ft_stay`: One villa / apartment: details (capacity, rooms, facilities, rules, host), the per-night price calendar with
+- `ft_stay`: One villa / apartment: details (capacity, rooms, facilities, rules, host), the per-night price calendar with blocked days, and the review summary with the latest reviews.
 - `ft_find_station`: Train station codes (`station_code`) for a city name, or the 8 most popular stations when query is empty.
 - `ft_search_trains`: Trains between two stations on a date: one row per train class (wagon) with price per adult and seats left.
 - `ft_train_calendar`: Cheapest train price per day for the next ~16 days, with sold-out days flagged.
@@ -41,3 +41,9 @@ The tools below come from the `flytoday-mcp` MCP server. If they are not availab
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `FLYTODAY_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Searches are rate-limited per IP. Do not repeat a search the user did not ask for.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

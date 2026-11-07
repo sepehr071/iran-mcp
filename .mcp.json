@@ -72,6 +72,12 @@
         "zoomit-mcp@0.2.0"
       ]
     },
+    "snappshop": {
+      "command": "uvx",
+      "args": [
+        "snappshop-mcp@0.2.0"
+      ]
+    },
     "khanoumi": {
       "command": "uvx",
       "args": [
@@ -258,6 +264,12 @@
         "quera-mcp@0.2.0"
       ]
     },
+    "iran-jobs": {
+      "command": "uvx",
+      "args": [
+        "iran-jobs-mcp@0.2.0"
+      ]
+    },
     "ponisha": {
       "command": "uvx",
       "args": [
@@ -342,6 +354,12 @@
         "ime-mcp@0.2.0"
       ]
     },
+    "iran-brokers": {
+      "command": "uvx",
+      "args": [
+        "iran-brokers-mcp@0.2.0"
+      ]
+    },
     "cbi": {
       "command": "uvx",
       "args": [
@@ -406,6 +424,18 @@
       "command": "uvx",
       "args": [
         "iran-tax-mcp@0.2.0"
+      ]
+    },
+    "iran-insurance": {
+      "command": "uvx",
+      "args": [
+        "iran-insurance-mcp@0.2.0"
+      ]
+    },
+    "rasmio": {
+      "command": "uvx",
+      "args": [
+        "rasmio-mcp@0.2.0"
       ]
     },
     "payping": {

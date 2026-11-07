@@ -15,7 +15,7 @@ The tools below come from the `baneh-mcp` MCP server. If they are not available,
 - `bn_find_cheapest`: Find the cheapest products whose title contains every word of the query, one list sorted by price (Toman).
 - `bn_browse`: List products of a category and/or brand, optionally in a price range, sorted by price or rating.
 - `bn_categories`: List shop categories with slug and product count, biggest first.
-- `bn_brands`: List brands (about 150, e.g. LG, Samsung, Bosch, Xiaomi) with slug and product count, biggest first.
+- `bn_brands`: List brands (about 150, e.g.
 - `bn_product`: Get one product: price (Toman), stock, rating, brand, categories, spec attributes, highlights, description, images.
 - `bn_reviews`: Get buyer reviews of one product, newest first: rating 1-5, author, date, text.
 
@@ -26,3 +26,9 @@ The tools below come from the `baneh-mcp` MCP server. If they are not available,
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `BANEH_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Some prices are unusually low or high: they are the shop's own data, not a bug. Searches default to in-stock items only.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

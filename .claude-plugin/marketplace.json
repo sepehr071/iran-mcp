@@ -80,6 +80,12 @@
       "category": "shopping"
     },
     {
+      "name": "snappshop",
+      "source": "./plugins/snappshop",
+      "description": "Read-only Snapp! Shop marketplace: search, categories, seller offers in Toman, reviews.",
+      "category": "shopping"
+    },
+    {
       "name": "khanoumi",
       "source": "./plugins/khanoumi",
       "description": "Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.",
@@ -266,6 +272,12 @@
       "category": "jobs"
     },
     {
+      "name": "iran-jobs",
+      "source": "./plugins/iran-jobs",
+      "description": "Read-only Iran jobs: IranTalent, Jobinja, Jobvision side by side. Ads, companies, reviews, pay.",
+      "category": "jobs"
+    },
+    {
       "name": "ponisha",
       "source": "./plugins/ponisha",
       "description": "Read-only Ponisha (ponisha.ir) freelance market: projects, bids, freelancers, skill demand.",
@@ -350,6 +362,12 @@
       "category": "stocks"
     },
     {
+      "name": "iran-brokers",
+      "source": "./plugins/iran-brokers",
+      "description": "Read-only Iran broker data from Mofid and Agah: stocks, funds, options, bonds, gold, education.",
+      "category": "stocks"
+    },
+    {
       "name": "cbi",
       "source": "./plugins/cbi",
       "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
@@ -416,6 +434,18 @@
       "category": "tax"
     },
     {
+      "name": "iran-insurance",
+      "source": "./plugins/iran-insurance",
+      "description": "Read-only Iran insurance: BimeBazar and Azki side by side. Quotes, ratings, travel prices, guides.",
+      "category": "insurance"
+    },
+    {
+      "name": "rasmio",
+      "source": "./plugins/rasmio",
+      "description": "Read-only Rasmio (rasmio.com): Iranian companies, board members, gazette ads, products, brands.",
+      "category": "companies"
+    },
+    {
       "name": "payping",
       "source": "./plugins/payping",
       "description": "PayPing merchant account for agents: balance, sales, invoices; create invoices and payment links.",
@@ -442,7 +472,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 69 read-only Iranian site servers in one install.",
+      "description": "All 74 Iranian site servers that need no setup, in one install.",
       "category": "bundle"
     },
     {
@@ -454,7 +484,7 @@
     {
       "name": "iran-shopping",
       "source": "./plugins/iran-shopping",
-      "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Emalls Price Comparison, Mobile.ir Phones, Zoomit Products, Pasavard.",
+      "description": "Everything for electronics, appliances or other goods in Iran: Digikala, Technolife, MasterKala, Baneh, Torob, Basalam, Emalls Price Comparison, Mobile.ir Phones, Zoomit Products, Snapp! Shop, Pasavard.",
       "category": "bundle"
     },
     {
@@ -512,9 +542,9 @@
       "category": "bundle"
     },
     {
-      "name": "iran-jobs",
-      "source": "./plugins/iran-jobs",
-      "description": "Everything for job ads, employers or salaries in Iran: Jobinja Jobs, Jobvision Jobs, IranTalent Jobs, Quera.",
+      "name": "iran-jobs-bundle",
+      "source": "./plugins/iran-jobs-bundle",
+      "description": "Everything for job ads, employers or salaries in Iran: Jobinja Jobs, Jobvision Jobs, IranTalent Jobs, Quera, Iran Jobs (IranTalent + Jobinja + Jobvision).",
       "category": "bundle"
     },
     {
@@ -538,7 +568,7 @@
     {
       "name": "iran-stocks",
       "source": "./plugins/iran-stocks",
-      "description": "Everything for stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran: TSETMC Tehran Stock Exchange, Codal (کدال) Disclosures, Iran Fara Bourse, Fipiran Funds, Iran Mercantile Exchange.",
+      "description": "Everything for stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran: TSETMC Tehran Stock Exchange, Codal (کدال) Disclosures, Iran Fara Bourse, Fipiran Funds, Iran Mercantile Exchange, Iran Brokers Market Data.",
       "category": "bundle"
     },
     {

@@ -18,6 +18,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MARKETPLACE = "iran-mcp"
 OWNER = {"name": "Sepehr Radmard", "email": "sepehrr80@gmail.com", "url": "https://github.com/sepehr071"}
 HOME = "https://github.com/sepehr071/iran-mcp"
+LINKEDIN = "https://www.linkedin.com/in/sepehr-radmard"
+# absolute: a skill is read outside this repo
+BANNER = "https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png"
 
 # category -> what a user wants when they need it; used in skill and bundle descriptions, so for read-only
 # categories write a noun phrase that reads after both "wants ..." and "Everything for ..."
@@ -48,6 +51,8 @@ USE = {
     "quakes": "recent or past earthquake data",
     "law": "laws, regulations, court votes, legal opinions or Official Gazette texts",
     "tax": "e-invoice goods IDs, VAT rates, activity codes, property values or tax laws and circulars",
+    "insurance": "insurance quotes, insurer ratings or how an insurance line works",
+    "companies": "registered companies, their board members, gazette ads, products or brands",
     "business": "to manage their own PayPing merchant account",
     "messaging": "to run their own Bale messenger bot",
     "crypto": "to check or use their own SwapWallet crypto wallet",
@@ -110,6 +115,13 @@ NOTES = {
     "JOBINJA_MCP_PROXY.",
     "darukade-mcp": "Product text is the shop's, not medical advice: tell the user to ask a doctor or pharmacist.",
     "iran-cloud-status-mcp": "Sites: ArvanCloud, Hamravesh, Chabokan, Liara.",
+    "iran-brokers-mcp": "Prices are Rial (divide by 10 for Toman), not Toman. Sites: Mofid (emofid.com), Agah (agah.com).",
+    "iran-insurance-mcp": "BimeBazar allows about 25 to 30 calls a minute per IP; a travel comparison uses about five. "
+    "Do not loop. Sites: BimeBazar, Azki.",
+    "iran-jobs-mcp": "Sites: IranTalent, Jobinja, Jobvision. Jobinja answers only Iranian connections; outside Iran the "
+    "user needs IRAN_JOBS_MCP_PROXY.",
+    "rasmio-mcp": "Money is Rial, not Toman. Dates are Jalali.",
+    "snappshop-mcp": "Snapp! Shop answers only Iranian connections (HTTP 403 elsewhere).",
 }
 
 # name -> (category, site url); order here is the order everywhere else
@@ -126,6 +138,7 @@ SERVERS = {
     "emalls-ir-mcp": ("shopping", "https://emalls.ir"),
     "mobile-ir-mcp": ("shopping", "https://www.mobile.ir"),
     "zoomit-mcp": ("shopping", "https://www.zoomit.ir"),
+    "snappshop-mcp": ("shopping", "https://snappshop.ir"),
     "khanoumi-mcp": ("beauty", "https://www.khanoumi.com"),
     "asalbanoo-mcp": ("beauty", "https://asalbanooshop.com"),
     "shopino-mcp": ("fashion", "https://shopino.app"),
@@ -157,6 +170,7 @@ SERVERS = {
     "jobvision-mcp": ("jobs", "https://jobvision.ir"),
     "irantalent-mcp": ("jobs", "https://www.irantalent.com"),
     "quera-mcp": ("jobs", "https://quera.org"),
+    "iran-jobs-mcp": ("jobs", "https://www.irantalent.com"),
     "ponisha-mcp": ("freelance", "https://ponisha.ir"),
     "karlancer-mcp": ("freelance", "https://www.karlancer.com"),
     "iran-apps-mcp": ("software", "https://cafebazaar.ir"),
@@ -171,6 +185,7 @@ SERVERS = {
     "ifb-mcp": ("stocks", "https://www.ifb.ir"),
     "fipiran-mcp": ("stocks", "https://fipiran.ir"),
     "ime-mcp": ("stocks", "https://www.ime.co.ir"),
+    "iran-brokers-mcp": ("stocks", "https://www.emofid.com"),
     "cbi-mcp": ("economy", "https://www.cbi.ir"),
     "amar-mcp": ("economy", "https://amar.org.ir"),
     "iran-news-mcp": ("news", "https://www.mehrnews.com"),
@@ -182,6 +197,8 @@ SERVERS = {
     "qavanin-mcp": ("law", "https://qavanin.ir"),
     "rrk-mcp": ("law", "https://rrk.ir"),
     "iran-tax-mcp": ("tax", "https://tax.gov.ir"),
+    "iran-insurance-mcp": ("insurance", "https://bimebazar.com"),
+    "rasmio-mcp": ("companies", "https://rasmio.com"),
     "payping-mcp": ("business", "https://www.payping.ir"),
     "bale-mcp": ("messaging", "https://bale.ai"),
 }
@@ -204,8 +221,15 @@ def tools(src: pathlib.Path) -> list[dict]:
                 continue
             for dec in node.decorator_list:
                 if isinstance(dec, ast.Call) and getattr(dec.func, "id", None) == "tool" and dec.args:
-                    doc = (ast.get_docstring(node) or "").strip().split("\n")[0]
-                    out.append({"name": node.name, "title": ast.literal_eval(dec.args[0]), "summary": doc})
+                    # first sentence of the first paragraph: a wrapped first line no longer cuts mid-sentence
+                    para = " ".join((ast.get_docstring(node) or "").strip().split("\n\n")[0].split())
+                    doc = re.split(r"(?<=[.?!])\s+(?=[A-Z`(])", para, maxsplit=1)[0]
+                    kw = {k.arg: k.value for k in dec.keywords}
+                    # @tool("Title", read_only=False) marks a tool that changes something (login, cart, booking, ...)
+                    read_only = ast.literal_eval(kw["read_only"]) if "read_only" in kw else True
+                    out.append(
+                        {"name": node.name, "title": ast.literal_eval(dec.args[0]), "summary": doc, "read_only": read_only}
+                    )
     return out
 
 
@@ -240,7 +264,7 @@ def main() -> None:
                 "repository": meta["repository"]["url"],
                 "registry_name": meta["name"],
                 "run": f"uvx {pkg['identifier']}",
-                "read_only": not any(e["isRequired"] for e in env),
+                "read_only": not any(e["isRequired"] for e in env) and all(t["read_only"] for t in found),
                 "env": env,
                 "tool_count": len(found),
                 "tools": found,
@@ -273,12 +297,13 @@ def main() -> None:
             for t in info["tools"]:
                 # the description's first sentence, like a package tool's first docstring line
                 summary = re.split(r"(?<=\.)\s+", t["description"].strip(), maxsplit=1)[0]
-                found.append({"name": t["name"], "title": t.get("title") or t["name"], "summary": summary})
+                read_only = bool(t.get("annotations", {}).get("readOnlyHint"))
+                found.append(
+                    {"name": t["name"], "title": t.get("title") or t["name"], "summary": summary, "read_only": read_only}
+                )
             auth = "oauth" if login.get("required") else "none"
             # like a package server with no required token: no sign-in, and no tool that changes anything
-            read_only = not login.get("required") and all(
-                t.get("annotations", {}).get("readOnlyHint") for t in info["tools"]
-            )
+            read_only = not login.get("required") and all(t["read_only"] for t in found)
         catalog.append(
             {
                 "name": name,
@@ -346,7 +371,7 @@ def skill(s: dict, key: str, entry: dict) -> str:
         "",
     ]
     if rules:
-        return "\n".join(lines) + "\n## " + rules + "\n"
+        return "\n".join(lines) + "\n## " + rules + "\n" + maintainer(s)
     lines += ["## Rules", ""]
     if s["read_only"]:
         lines += [
@@ -355,7 +380,9 @@ def skill(s: dict, key: str, entry: dict) -> str:
             "- Keep request rates low. These are undocumented site APIs that can change or rate-limit.",
         ]
     else:
-        access = ", ".join(f"`{e['name']}`" for e in s["env"] if e["isRequired"]) or "OAuth sign-in"
+        access = ", ".join(f"`{e['name']}`" for e in s["env"] if e["isRequired"]) or (
+            "OAuth sign-in" if s.get("auth") == "oauth" else "a login from the chat with its `*_login` tool"
+        )
         lines.append(
             f"- This server acts on the user's own account ({access}). Confirm with the user before any call "
             "that creates, sends, edits or deletes something."
@@ -365,7 +392,20 @@ def skill(s: dict, key: str, entry: dict) -> str:
             lines.append(f"- On timeouts or HTTP 403 outside Iran, set `{e['name']}` to an HTTP proxy with an Iranian IP.")
     if s["name"] in NOTES:
         lines.append(f"- {NOTES[s['name']]}")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines) + "\n" + maintainer(s)
+
+
+def maintainer(s: dict) -> str:
+    """Credit and banner for servers we maintain; a server another team ships keeps its own credits."""
+    if not s["repository"].startswith(OWNER["url"] + "/"):
+        return ""
+    return (
+        "\n## Maintainer\n\n"
+        f'<a href="{LINKEDIN}"><img src="{BANNER}" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" '
+        'width="100%"></a>\n\n'
+        f"Built and maintained by **{OWNER['name']}** (سپهر رادمرد): [LinkedIn]({LINKEDIN}) · "
+        f"[GitHub]({OWNER['url']}). More servers for Iranian websites: [iran-mcp]({HOME}).\n"
+    )
 
 
 def install(s: dict, key: str, entry: dict) -> str:
@@ -463,13 +503,18 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
         (out / key / "skills" / key / "SKILL.md").write_text(skill(s, key, mcp[key]), encoding="utf-8")
 
     # bundles carry no version: Claude Code then versions them by commit, so a changed list reaches users
-    sites = [s for s in catalog if s["read_only"]]
-    bundles = {"iran-all": (f"All {len(sites)} read-only Iranian site servers in one install.", sites)}
+    # bundles hold servers that work with no setup: no required token and no OAuth (a login from the chat is optional)
+    sites = [s for s in catalog if not any(e["isRequired"] for e in s["env"]) and s.get("auth", "none") == "none"]
+    bundles = {"iran-all": (f"All {len(sites)} Iranian site servers that need no setup, in one install.", sites)}
     for cat in dict.fromkeys(s["category"] for s in sites):
         members = [s for s in sites if s["category"] == cat]
         if len(members) > 1:
             names = ", ".join(s["title"] for s in members)
-            bundles[f"iran-{cat}"] = (f"Everything for {USE[cat]} in Iran: {names}.", members)
+            name = f"iran-{cat}"
+            # a server plugin keeps its package name (iran-jobs-mcp -> iran-jobs), so the bundle steps aside
+            if any(s["name"] == f"{name}-mcp" for s in catalog):
+                name += "-bundle"
+            bundles[name] = (f"Everything for {USE[cat]} in Iran: {names}.", members)
     for name, (description, members) in bundles.items():
         deps = [s["name"].removesuffix("-mcp") for s in members]
         write(name, {"name": name, "description": description, "author": OWNER, "homepage": HOME, "dependencies": deps}, "bundle")

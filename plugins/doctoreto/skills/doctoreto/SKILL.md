@@ -12,7 +12,7 @@ The tools below come from the `doctoreto-mcp` MCP server. If they are not availa
 ## Tools
 
 - `dt_search_centers`: Find hospitals, clinics, infirmaries, laboratories, imaging centers and pharmacies with filters.
-- `dt_center`: A center's page: address, departments, services, insurances, hours, lab rules, bookable services with
+- `dt_center`: A center's page: address, departments, services, insurances, hours, lab rules, bookable services with `consultation_id` (for dt_free_slots) and its doctors (hash ids, earliest free slot).
 - `dt_doctor`: A doctor's profile with every bookable service, its price in Toman and its next free time.
 - `dt_free_slots`: Free appointment times of one service (office visit, phone/video call, clinic offer, lab admission).
 - `dt_reviews`: Patient reviews (doctors and centers newest first, offers oldest first): stars 1-5, text, date and reply.
@@ -32,3 +32,9 @@ The tools below come from the `doctoreto-mcp` MCP server. If they are not availa
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `DOCTORETO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

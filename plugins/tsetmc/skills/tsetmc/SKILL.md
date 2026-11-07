@@ -27,3 +27,9 @@ The tools below come from the `tsetmc-mcp` MCP server. If they are not available
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `TSETMC_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Prices here are Rial (divide by 10 for Toman), not Toman. tsetmc.com serves mostly Iranian lines: outside Iran the user needs TSETMC_MCP_PROXY. The market trades Saturday to Wednesday mornings; after the close the order book is empty. Sites: tsetmc.com (Tehran Stock Exchange and Iran Fara Bourse).
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).
