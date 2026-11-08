@@ -309,7 +309,7 @@
     "iran-crypto": {
       "command": "uvx",
       "args": [
-        "iran-crypto-mcp@0.4.0"
+        "iran-crypto-mcp@0.5.0"
       ]
     },
     "milligold": {
@@ -321,7 +321,7 @@
     "iran-gold": {
       "command": "uvx",
       "args": [
-        "iran-gold-mcp@0.3.0"
+        "iran-gold-mcp@0.4.1"
       ]
     },
     "tsetmc": {

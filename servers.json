@@ -5495,7 +5495,7 @@
     "category": "prices",
     "site": "https://nobitex.ir",
     "description": "Unofficial read-only Iranian crypto exchanges: prices in Toman, order books, trades, candles.",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "pypi": "iran-crypto-mcp",
     "repository": "https://github.com/sepehr071/iran-crypto-mcp",
     "registry_name": "io.github.sepehr071/iran-crypto-mcp",
@@ -5662,8 +5662,8 @@
     "title": "Iran Gold Prices",
     "category": "prices",
     "site": "https://milli.gold",
-    "description": "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.",
-    "version": "0.3.0",
+    "description": "Read-only 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline, Talano.",
+    "version": "0.4.1",
     "pypi": "iran-gold-mcp",
     "repository": "https://github.com/sepehr071/iran-gold-mcp",
     "registry_name": "io.github.sepehr071/iran-gold-mcp",
@@ -5682,7 +5682,7 @@
       {
         "name": "gold_prices",
         "title": "Live gold prices on Iranian platforms",
-        "summary": "Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric and Taline, in Toman per gram.",
+        "summary": "Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric, Taline and Talano, in Toman per gram.",
         "read_only": true
       },
       {

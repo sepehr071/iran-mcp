@@ -1,17 +1,17 @@
 ---
 name: iran-gold
-description: "Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline. Use when the user asks about Iran Gold Prices (milli.gold) or wants live gold, coin, currency or crypto prices in Iran."
+description: "Read-only 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline, Talano. Use when the user asks about Iran Gold Prices (milli.gold) or wants live gold, coin, currency or crypto prices in Iran."
 ---
 
 # Iran Gold Prices
 
-Read-only live 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline.
+Read-only 18k gold prices on Iranian sites: Milli.gold, Wallgold, Melligold, Daric, Taline, Talano.
 
 The tools below come from the `iran-gold-mcp` MCP server. If they are not available, install it with `claude mcp add iran-gold -- uvx iran-gold-mcp`, or add `"iran-gold": {"command": "uvx", "args": ["iran-gold-mcp"]}` to the client's MCP servers config. It needs [uv](https://docs.astral.sh/uv/). Restart the session after installing.
 
 ## Tools
 
-- `gold_prices`: Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric and Taline, in Toman per gram.
+- `gold_prices`: Compare the live 18k melted-gold price on Milli.gold, Wallgold, Melligold, Daric, Taline and Talano, in Toman per gram.
 - `gold_milli_history`: Get the Milli.gold 18k gold price series for a day, week or month, with high, low and change.
 - `gold_milli_stats`: Get Milli.gold's headline numbers: users, trades, gold traded, gold held and branches.
 
