@@ -1,7 +1,7 @@
 {
   "name": "amar",
   "displayName": "Statistical Centre of Iran",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Statistical Centre of Iran (amar.org.ir): CPI inflation, unemployment, census, any table.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "amar": {
       "command": "uvx",
       "args": [
-        "amar-mcp@0.2.0"
+        "amar-mcp@0.2.1"
       ]
     }
   }

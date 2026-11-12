@@ -14,7 +14,7 @@ The tools below come from the `digikala-mcp` MCP server. If they are not availab
 - `dk_search`: Search products by name: price (Toman), discount, seller, rating, 20 per page.
 - `dk_find_cheapest`: Find the cheapest in-stock products that really match a query, sorted by price (Toman).
 - `dk_best_for_budget`: Rank the best-rated in-stock products within a budget (Toman) by a rating weighted by its count.
-- `dk_suggest`: Autocomplete a vague or misspelled query into keywords, categories and brands.
+- `dk_suggest`: Autocomplete a vague or misspelled query into keywords and categories.
 - `dk_filters`: List the filters of a category or a search: attributes, colors, sellers, price range (Toman), brands.
 - `dk_categories`: Find category codes for dk_category_products and main-category ids for dk_best_sellers.
 - `dk_category_products`: List one category's products with sort and filters (price in Toman), strict order.

@@ -21,13 +21,13 @@
     "digikala": {
       "command": "uvx",
       "args": [
-        "digikala-mcp@0.6.0"
+        "digikala-mcp@0.6.1"
       ]
     },
     "technolife": {
       "command": "uvx",
       "args": [
-        "technolife-mcp@0.5.0"
+        "technolife-mcp@0.5.1"
       ]
     },
     "masterkala": {
@@ -45,7 +45,7 @@
     "torob": {
       "command": "uvx",
       "args": [
-        "torob-mcp@0.2.0"
+        "torob-mcp@0.2.1"
       ]
     },
     "basalam": {
@@ -333,7 +333,7 @@
     "codal": {
       "command": "uvx",
       "args": [
-        "codal-mcp@0.2.0"
+        "codal-mcp@0.2.1"
       ]
     },
     "ifb": {
@@ -369,7 +369,7 @@
     "amar": {
       "command": "uvx",
       "args": [
-        "amar-mcp@0.2.0"
+        "amar-mcp@0.2.1"
       ]
     },
     "iran-news": {
@@ -411,7 +411,7 @@
     "qavanin": {
       "command": "uvx",
       "args": [
-        "qavanin-mcp@0.2.0"
+        "qavanin-mcp@0.2.1"
       ]
     },
     "rrk": {
