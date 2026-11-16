@@ -491,6 +491,10 @@ If this saves you some tab-hopping, a star on the repo helps other people find i
 
 Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites. If this repo saves you some tab-hopping, a star helps other people find it.
 
+## Support
+
+These servers are free and maintained in spare time. If they help you, you can support the work with a donation on [PayPing](https://ppng.ir/mcpfarsi). Starring the repo, reporting broken servers and sharing it also help.
+
 ## License
 
 [MIT](LICENSE). Each package server is MIT licensed in its own repo. Site names, logos and trademarks belong to their owners and are shown only to identify each site.
