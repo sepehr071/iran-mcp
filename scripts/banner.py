@@ -2,6 +2,8 @@
 
 Also assets/release-<RELEASE>.svg and assets/release-<RELEASE>.fa.svg, the README's "What's new" banner (edit RELEASE and HIGHLIGHTS).
 
+Also assets/donate.svg and assets/donate.fa.svg, the README's Support banner linking to PayPing.
+
 Counts come from servers.json, so run scripts/catalog.py first:  python scripts/banner.py
 
 Also writes assets/social.svg (1280x640) for GitHub's social preview, which needs a PNG:
@@ -235,6 +237,48 @@ def frame(fa: bool, h: int, desc: str, body: str) -> str:
 """
 
 
+DONATE_H = 240
+
+
+def donate(fa: bool, catalog: list, h: int = DONATE_H) -> str:
+    """The README's Support banner: one glass strip with a heart, a line of text and a PayPing button."""
+    servers = len(catalog)
+    if fa:
+        heart_x, tx, bx, font, anchor = W - 130, W - 200, 80, PERSIAN, "start"
+        title, subtitle, button = "حمایت از iran-mcp", f"{str(servers).translate(FA_DIGITS)} سرور رایگان، ساخته و نگهداری{ZWNJ}شده در وقت آزاد", f"← حمایت در پی{ZWNJ}پینگ"
+        desc = f"حمایت از iran-mcp در پی{ZWNJ}پینگ: ppng.ir/mcpfarsi"
+    else:
+        heart_x, tx, bx, font, anchor = 130, 200, W - 380, LATIN, "start"
+        title, subtitle, button = "Support iran-mcp", f"{servers} free servers, built and kept running in spare time.", "Donate on PayPing →"
+        desc = "Support iran-mcp with a donation on PayPing: ppng.ir/mcpfarsi"
+    dir_ = "rtl" if fa else "ltr"
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-labelledby="t d">
+  <title id="t">iran-mcp</title>
+  <desc id="d">{desc}</desc>
+  {DEFS}
+  <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff5c8f"/><stop offset="1" stop-color="#ff9a3d"/>
+  </linearGradient>
+
+  <rect width="{W}" height="{h}" rx="28" fill="url(#bg)"/>
+  <clipPath id="frame"><rect width="{W}" height="{h}" rx="28"/></clipPath>
+  <g clip-path="url(#frame)"><use href="#blobs" filter="url(#soft)" opacity="0.85"/></g>
+
+  {glass("card", 40, 30, W - 80, h - 60, 36)}
+
+  <circle cx="{heart_x}" cy="{h / 2}" r="48" fill="url(#btn)" filter="url(#iconlift)"/>
+  <path transform="translate({heart_x} {h / 2 - 2}) scale(1.5)" d="M0 14 C-4 10 -14 4 -14 -4 C-14 -10 -9 -14 -5 -14 C-2 -14 0 -12 0 -9 C0 -12 2 -14 5 -14 C9 -14 14 -10 14 -4 C14 4 4 10 0 14Z" fill="#fff"/>
+
+  <text x="{tx}" y="{h / 2 - 8}" text-anchor="{anchor}" direction="{dir_}" font-family="{font}" font-size="46" font-weight="800" fill="url(#ink)" letter-spacing="{0 if fa else -1}">{title}</text>
+  <text x="{tx}" y="{h / 2 + 36}" text-anchor="{anchor}" direction="{dir_}" font-family="{font}" font-size="21" font-weight="600" fill="#fff" fill-opacity="0.85">{subtitle}</text>
+
+  <rect x="{bx}" y="{h / 2 - 34}" width="300" height="68" rx="34" fill="url(#btn)" filter="url(#lift)"/>
+  <rect x="{bx}" y="{h / 2 - 34}" width="300" height="34" rx="17" fill="url(#gloss)"/>
+  <text x="{bx + 150}" y="{h / 2 + 8}" text-anchor="middle" direction="{dir_}" font-family="{font}" font-size="24" font-weight="800" fill="#fff">{button}</text>
+</svg>
+"""
+
+
 def embed_fonts(svg: str) -> str:
     """GitHub shows SVGs as <img>, which can't load fonts, so subset Vazirmatn to the banner's text and inline it."""
     text = "".join(html.unescape(t) for t in re.findall(r"<text[^>]*>([^<]*)</text>", svg))
@@ -262,7 +306,8 @@ def main() -> None:
                               ("social.svg", banner, False, 640),
                               # versioned names: a new URL per release, so GitHub's image cache can't show the old one
                               (f"release-{RELEASE}.svg", release, False, H),
-                              (f"release-{RELEASE}.fa.svg", release, True, H)):
+                              (f"release-{RELEASE}.fa.svg", release, True, H),
+                              ("donate.svg", donate, False, DONATE_H), ("donate.fa.svg", donate, True, DONATE_H)):
         svg = embed_fonts(draw(fa, catalog, h))
         (ROOT / "assets" / name).write_text(svg, encoding="utf-8", newline="\n")
     print(f"banners written: {servers} servers, {tools} tools")

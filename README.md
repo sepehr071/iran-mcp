@@ -493,6 +493,8 @@ Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [
 
 ## Support
 
+<a href="https://ppng.ir/mcpfarsi"><img src="assets/donate.svg" alt="Support iran-mcp: donate on PayPing" width="100%"></a>
+
 These servers are free and maintained in spare time. If they help you, you can support the work with a donation on [PayPing](https://ppng.ir/mcpfarsi). Starring the repo, reporting broken servers and sharing it also help.
 
 ## License
