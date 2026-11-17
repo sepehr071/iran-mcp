@@ -499,4 +499,4 @@ These servers are free and maintained in spare time. If they help you, you can s
 
 ## License
 
-[MIT](LICENSE). Each package server is MIT licensed in its own repo. Site names, logos and trademarks belong to their owners and are shown only to identify each site.
+This catalog: [MIT](LICENSE). Each server is free for personal and non-commercial use under the PolyForm Noncommercial License 1.0.0 (see the LICENSE in its repo; versions released before the change stay MIT). Commercial use needs a license: contact Sepehr Radmard on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or [GitHub](https://github.com/sepehr071). Site names, logos and trademarks belong to their owners and are shown only to identify each site.

@@ -493,7 +493,7 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
                 "author": OWNER,
                 "homepage": HOME,
                 "repository": s["repository"],
-                "license": "MIT",
+                "license": "PolyForm-Noncommercial-1.0.0",
                 "keywords": ["iran", s["category"], urlparse(s["site"]).netloc.removeprefix("www.")],
                 "mcpServers": {key: server},
             },
