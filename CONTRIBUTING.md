@@ -37,7 +37,7 @@ in [PLUGINS.md](PLUGINS.md).
   the site. A server that writes to the user's own account (like `payping-mcp`, `bale-mcp`) needs that account's
   token as a required env var, and its skill tells the agent to confirm before every write.
 - **Prices in Toman.** Convert Rial before returning it.
-- **Python package on PyPI**, run with `uvx <name>-mcp`, MIT licence.
+- **Python package on PyPI**, run with `uvx <name>-mcp`, PolyForm Noncommercial 1.0.0 licence (see [LICENSE](LICENSE)).
 - **Tools** use the `@tool("Title")` decorator from the server's `registry.py`, with a short prefix
   (`dk_`, `ey_`, ...). The first docstring line is the one-line summary `catalog.py` puts in `TOOLS.md` and the skill,
   so make it stand alone. Mark tools with `read_only_hint` when they are read-only.

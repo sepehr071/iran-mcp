@@ -15,7 +15,7 @@ Install them as Claude Code plugins with skills, or as Agent Skills for Codex, C
 [![Tools](https://img.shields.io/badge/tools-994-f4b54a)](TOOLS.md)
 [![Claude Code plugins](https://img.shields.io/badge/Claude_Code-plugin_marketplace-d97757)](#quick-start)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071-7c3aed)](https://registry.modelcontextprotocol.io/?q=sepehr071)
-[![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
+[![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-c2410c)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/sepehr071/iran-mcp?style=social)](https://github.com/sepehr071/iran-mcp)
 
 Web catalog (in Persian): [mcpfarsi.ir](https://mcpfarsi.ir/), the Persian MCP marketplace.
@@ -499,4 +499,10 @@ These servers are free and maintained in spare time. If they help you, you can s
 
 ## License
 
-This catalog: [MIT](LICENSE). Each server is free for personal and non-commercial use under the PolyForm Noncommercial License 1.0.0 (see the LICENSE in its repo; versions released before the change stay MIT). Commercial use needs a license: contact Sepehr Radmard on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or [GitHub](https://github.com/sepehr071). Site names, logos and trademarks belong to their owners and are shown only to identify each site.
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/license-banner.png" alt="استفادهٔ شخصی و غیرتجاری رایگان است؛ برای استفادهٔ تجاری با سپهر رادمرد تماس بگیرید. Free for personal and non-commercial use; commercial use needs a license." width="100%"></a>
+
+**استفادهٔ شخصی و غیرتجاری رایگان است.** این فهرست و همهٔ سرورهایش مجوز [PolyForm Noncommercial 1.0.0](LICENSE) دارند. استفاده در شرکت، محصول پولی یا پروژهٔ مشتری به مجوز تجاری نیاز دارد؛ از راه [لینکدین](https://www.linkedin.com/in/sepehr-radmard) یا [گیت&zwnj;هاب](https://github.com/sepehr071) با سپهر رادمرد تماس بگیرید. نسخه&zwnj;هایی که پیش از ۲۶ آبان ۱۴۰۵ منتشر شده&zwnj;اند با مجوز MIT می&zwnj;مانند.
+
+Free for personal and non-commercial use: this catalog and every server in it are under the [PolyForm Noncommercial License 1.0.0](LICENSE). Using them in a company, a paid product or a client project needs a commercial license: contact Sepehr Radmard on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or [GitHub](https://github.com/sepehr071). Versions released before 2026-11-17 stay MIT.
+
+Site names, logos and trademarks belong to their owners and are shown only to identify each site.

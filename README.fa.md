@@ -446,6 +446,12 @@ claude plugin validate .
 
 ## مجوز
 
-مجوز خود این فهرست [MIT](LICENSE) است. استفادهٔ شخصی و غیرتجاری از سرورها رایگان است و مجوزشان PolyForm Noncommercial 1.0.0 است (متن کامل در LICENSE هر مخزن؛ نسخه&zwnj;های پیش از این تغییر MIT می&zwnj;مانند). برای استفادهٔ تجاری از راه [لینکدین](https://www.linkedin.com/in/sepehr-radmard) یا [گیت&zwnj;هاب](https://github.com/sepehr071) با سپهر رادمرد تماس بگیرید. نام‌ها، لوگوها و نشان‌های تجاری سایت‌ها متعلق به صاحبانشان است و فقط برای معرفی هر سایت آمده‌اند.
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/license-banner.png" alt="استفادهٔ شخصی و غیرتجاری رایگان است؛ برای استفادهٔ تجاری با سپهر رادمرد تماس بگیرید. Free for personal and non-commercial use; commercial use needs a license." width="100%"></a>
+
+**استفادهٔ شخصی و غیرتجاری رایگان است.** این فهرست و همهٔ سرورهایش مجوز [PolyForm Noncommercial 1.0.0](LICENSE) دارند. استفاده در شرکت، محصول پولی یا پروژهٔ مشتری به مجوز تجاری نیاز دارد؛ از راه [لینکدین](https://www.linkedin.com/in/sepehr-radmard) یا [گیت&zwnj;هاب](https://github.com/sepehr071) با سپهر رادمرد تماس بگیرید. نسخه&zwnj;هایی که پیش از ۲۶ آبان ۱۴۰۵ منتشر شده&zwnj;اند با مجوز MIT می&zwnj;مانند.
+
+Free for personal and non-commercial use: this catalog and every server in it are under the [PolyForm Noncommercial License 1.0.0](LICENSE). Using them in a company, a paid product or a client project needs a commercial license: contact Sepehr Radmard on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or [GitHub](https://github.com/sepehr071). Versions released before 2026-11-17 stay MIT.
+
+نام‌ها، لوگوها و نشان‌های تجاری سایت‌ها متعلق به صاحبانشان است و فقط برای معرفی هر سایت آمده‌اند.
 
 </div>
