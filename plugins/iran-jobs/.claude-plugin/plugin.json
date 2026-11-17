@@ -1,7 +1,7 @@
 {
   "name": "iran-jobs",
   "displayName": "Iran Jobs (IranTalent + Jobinja + Jobvision)",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Iran jobs: IranTalent, Jobinja, Jobvision side by side. Ads, companies, reviews, pay.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/iran-jobs-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "jobs",
@@ -20,7 +20,7 @@
     "iran-jobs": {
       "command": "uvx",
       "args": [
-        "iran-jobs-mcp@0.2.0"
+        "iran-jobs-mcp@0.2.1"
       ]
     }
   }

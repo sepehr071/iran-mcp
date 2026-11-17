@@ -1,7 +1,7 @@
 {
   "name": "maktabkhooneh",
   "displayName": "Maktabkhooneh",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unofficial read-only Maktabkhooneh: search Persian online courses, compare prices, find free ones.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/maktabkhooneh-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "learning",
@@ -20,7 +20,7 @@
     "maktabkhooneh": {
       "command": "uvx",
       "args": [
-        "maktabkhooneh-mcp@0.2.0"
+        "maktabkhooneh-mcp@0.2.1"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "emalls-ir",
   "displayName": "Emalls Price Comparison",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Emalls (emalls.ir) price comparison: products, shop offers, price history, shops.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/emalls-ir-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "shopping",
@@ -20,7 +20,7 @@
     "emalls-ir": {
       "command": "uvx",
       "args": [
-        "emalls-ir-mcp@0.2.0"
+        "emalls-ir-mcp@0.2.1"
       ]
     }
   }

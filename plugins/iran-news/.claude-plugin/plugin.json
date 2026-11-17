@@ -1,7 +1,7 @@
 {
   "name": "iran-news",
   "displayName": "Iran News RSS",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3, more.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/iran-news-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "news",
@@ -20,7 +20,7 @@
     "iran-news": {
       "command": "uvx",
       "args": [
-        "iran-news-mcp@0.3.0"
+        "iran-news-mcp@0.3.1"
       ]
     }
   }

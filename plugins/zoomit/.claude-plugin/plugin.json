@@ -1,7 +1,7 @@
 {
   "name": "zoomit",
   "displayName": "Zoomit Products",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Zoomit (zoobin) product database: specs, shop prices in Toman, price history, comparisons.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/zoomit-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "shopping",
@@ -20,7 +20,7 @@
     "zoomit": {
       "command": "uvx",
       "args": [
-        "zoomit-mcp@0.2.0"
+        "zoomit-mcp@0.2.1"
       ]
     }
   }

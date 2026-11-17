@@ -1,7 +1,7 @@
 {
   "name": "qavanin",
   "displayName": "Qavanin",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Unofficial read-only qavanin.ir: search Iranian laws and regulations, read full text and status.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/qavanin-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "law",
@@ -20,7 +20,7 @@
     "qavanin": {
       "command": "uvx",
       "args": [
-        "qavanin-mcp@0.2.1"
+        "qavanin-mcp@0.2.2"
       ]
     }
   }

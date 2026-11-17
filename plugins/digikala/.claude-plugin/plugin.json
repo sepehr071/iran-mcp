@@ -1,7 +1,7 @@
 {
   "name": "digikala",
   "displayName": "Digikala",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Unofficial read-only Digikala: search products, compare sellers, price history, reviews, deals.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/digikala-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "shopping",
@@ -20,7 +20,7 @@
     "digikala": {
       "command": "uvx",
       "args": [
-        "digikala-mcp@0.6.1"
+        "digikala-mcp@0.6.2"
       ]
     }
   }

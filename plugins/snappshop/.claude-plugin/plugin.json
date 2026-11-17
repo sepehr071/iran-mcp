@@ -1,7 +1,7 @@
 {
   "name": "snappshop",
   "displayName": "Snapp! Shop",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Snapp! Shop marketplace: search, categories, seller offers in Toman, reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/snappshop-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "shopping",
@@ -20,7 +20,7 @@
     "snappshop": {
       "command": "uvx",
       "args": [
-        "snappshop-mcp@0.2.0"
+        "snappshop-mcp@0.2.1"
       ]
     }
   }

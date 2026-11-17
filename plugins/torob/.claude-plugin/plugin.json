@@ -1,7 +1,7 @@
 {
   "name": "torob",
   "displayName": "Torob",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Unofficial read-only Torob: compare Iranian shop prices, price history, deal checks and baskets.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/torob-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "shopping",
@@ -20,7 +20,7 @@
     "torob": {
       "command": "uvx",
       "args": [
-        "torob-mcp@0.2.1"
+        "torob-mcp@0.2.2"
       ]
     }
   }

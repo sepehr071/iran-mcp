@@ -1,7 +1,7 @@
 {
   "name": "tapsifood",
   "displayName": "Tapsi Food",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unofficial read-only Tapsi Food: search dishes and restaurants, menus, reviews, flash deals.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/tapsifood-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "food",
@@ -20,7 +20,7 @@
     "tapsifood": {
       "command": "uvx",
       "args": [
-        "tapsifood-mcp@0.2.0"
+        "tapsifood-mcp@0.2.1"
       ]
     }
   }

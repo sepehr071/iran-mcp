@@ -1,7 +1,7 @@
 {
   "name": "khanoumi",
   "displayName": "Khanoumi",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Unofficial read-only Khanoumi: search cosmetics and skin care, compare prices, shades, reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/khanoumi-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "beauty",
@@ -20,7 +20,7 @@
     "khanoumi": {
       "command": "uvx",
       "args": [
-        "khanoumi-mcp@0.4.0"
+        "khanoumi-mcp@0.4.1"
       ]
     }
   }

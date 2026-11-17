@@ -1,7 +1,7 @@
 {
   "name": "milligold",
   "displayName": "Milli.gold Prices",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Unofficial read-only Milli.gold: live 18k gold price, history, fees, trade quotes, news and help.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/milligold-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "prices",
@@ -20,7 +20,7 @@
     "milligold": {
       "command": "uvx",
       "args": [
-        "milligold-mcp@0.3.0"
+        "milligold-mcp@0.3.1"
       ]
     }
   }

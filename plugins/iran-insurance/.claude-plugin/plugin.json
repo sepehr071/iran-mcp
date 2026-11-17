@@ -1,7 +1,7 @@
 {
   "name": "iran-insurance",
   "displayName": "Iran Insurance (BimeBazar + Azki)",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Read-only Iran insurance: BimeBazar and Azki side by side. Quotes, ratings, travel prices, guides.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/iran-insurance-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "insurance",
@@ -20,7 +20,7 @@
     "iran-insurance": {
       "command": "uvx",
       "args": [
-        "iran-insurance-mcp@0.2.0"
+        "iran-insurance-mcp@0.2.1"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "taaghche",
   "displayName": "Taaghche",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Unofficial read-only Taaghche: search Persian ebooks and audiobooks, compare prices, read reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/taaghche-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "books",
@@ -20,7 +20,7 @@
     "taaghche": {
       "command": "uvx",
       "args": [
-        "taaghche-mcp@0.4.0"
+        "taaghche-mcp@0.4.1"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "flytoday",
   "displayName": "Flytoday",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Unofficial read-only Flytoday: Iranian and international flights, hotels, villas, trains, buses.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/flytoday-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "travel",
@@ -20,7 +20,7 @@
     "flytoday": {
       "command": "uvx",
       "args": [
-        "flytoday-mcp@0.4.0"
+        "flytoday-mcp@0.4.1"
       ]
     }
   }

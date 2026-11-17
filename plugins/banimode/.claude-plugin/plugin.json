@@ -1,7 +1,7 @@
 {
   "name": "banimode",
   "displayName": "Banimode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unofficial read-only Banimode: search fashion, compare prices, sizes, stock and flash deals.",
   "author": {
     "name": "Sepehr Radmard",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "repository": "https://github.com/sepehr071/banimode-mcp",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "iran",
     "fashion",
@@ -20,7 +20,7 @@
     "banimode": {
       "command": "uvx",
       "args": [
-        "banimode-mcp@0.2.0"
+        "banimode-mcp@0.2.1"
       ]
     }
   }
