@@ -3,55 +3,55 @@
     "snapp": {
       "command": "uvx",
       "args": [
-        "snapp-mcp@0.4.1"
+        "snapp-mcp@0.4.2"
       ]
     },
     "okala": {
       "command": "uvx",
       "args": [
-        "okala-mcp@0.4.1"
+        "okala-mcp@0.4.2"
       ]
     },
     "tapsifood": {
       "command": "uvx",
       "args": [
-        "tapsifood-mcp@0.2.1"
+        "tapsifood-mcp@0.2.2"
       ]
     },
     "digikala": {
       "command": "uvx",
       "args": [
-        "digikala-mcp@0.6.2"
+        "digikala-mcp@0.6.3"
       ]
     },
     "technolife": {
       "command": "uvx",
       "args": [
-        "technolife-mcp@0.5.2"
+        "technolife-mcp@0.5.3"
       ]
     },
     "masterkala": {
       "command": "uvx",
       "args": [
-        "masterkala-mcp@0.5.1"
+        "masterkala-mcp@0.5.2"
       ]
     },
     "baneh": {
       "command": "uvx",
       "args": [
-        "baneh-mcp@0.2.1"
+        "baneh-mcp@0.2.2"
       ]
     },
     "torob": {
       "command": "uvx",
       "args": [
-        "torob-mcp@0.2.2"
+        "torob-mcp@0.2.3"
       ]
     },
     "basalam": {
       "command": "uvx",
       "args": [
-        "basalam-mcp@0.2.1"
+        "basalam-mcp@0.2.2"
       ]
     },
     "emalls-ir": {
@@ -63,55 +63,55 @@
     "mobile-ir": {
       "command": "uvx",
       "args": [
-        "mobile-ir-mcp@0.2.1"
+        "mobile-ir-mcp@0.2.2"
       ]
     },
     "zoomit": {
       "command": "uvx",
       "args": [
-        "zoomit-mcp@0.2.1"
+        "zoomit-mcp@0.2.2"
       ]
     },
     "snappshop": {
       "command": "uvx",
       "args": [
-        "snappshop-mcp@0.2.1"
+        "snappshop-mcp@0.2.2"
       ]
     },
     "khanoumi": {
       "command": "uvx",
       "args": [
-        "khanoumi-mcp@0.4.1"
+        "khanoumi-mcp@0.4.2"
       ]
     },
     "asalbanoo": {
       "command": "uvx",
       "args": [
-        "asalbanoo-mcp@0.5.1"
+        "asalbanoo-mcp@0.5.2"
       ]
     },
     "shopino": {
       "command": "uvx",
       "args": [
-        "shopino-mcp@0.5.1"
+        "shopino-mcp@0.5.2"
       ]
     },
     "banimode": {
       "command": "uvx",
       "args": [
-        "banimode-mcp@0.2.1"
+        "banimode-mcp@0.2.2"
       ]
     },
     "divar": {
       "command": "uvx",
       "args": [
-        "divar-mcp@0.3.1"
+        "divar-mcp@0.3.2"
       ]
     },
     "sheypoor": {
       "command": "uvx",
       "args": [
-        "sheypoor-mcp@0.2.1"
+        "sheypoor-mcp@0.2.2"
       ]
     },
     "bama-ir": {
@@ -135,25 +135,25 @@
     "otaghak": {
       "command": "uvx",
       "args": [
-        "otaghak-mcp@0.4.1"
+        "otaghak-mcp@0.4.2"
       ]
     },
     "jabama": {
       "command": "uvx",
       "args": [
-        "jabama-mcp@0.5.1"
+        "jabama-mcp@0.5.2"
       ]
     },
     "mrbilit": {
       "command": "uvx",
       "args": [
-        "mrbilit-mcp@0.5.1"
+        "mrbilit-mcp@0.5.2"
       ]
     },
     "flytoday": {
       "command": "uvx",
       "args": [
-        "flytoday-mcp@0.4.1"
+        "flytoday-mcp@0.4.2"
       ]
     },
     "alibaba-ir": {
@@ -171,25 +171,25 @@
     "neshan": {
       "command": "uvx",
       "args": [
-        "neshan-mcp@0.2.1"
+        "neshan-mcp@0.2.2"
       ]
     },
     "balad": {
       "command": "uvx",
       "args": [
-        "balad-mcp@0.2.1"
+        "balad-mcp@0.2.2"
       ]
     },
     "paziresh24": {
       "command": "uvx",
       "args": [
-        "paziresh24-mcp@0.5.1"
+        "paziresh24-mcp@0.5.2"
       ]
     },
     "doctoreto": {
       "command": "uvx",
       "args": [
-        "doctoreto-mcp@0.5.1"
+        "doctoreto-mcp@0.5.2"
       ]
     },
     "exiryab": {
@@ -207,37 +207,37 @@
     "taaghche": {
       "command": "uvx",
       "args": [
-        "taaghche-mcp@0.4.1"
+        "taaghche-mcp@0.4.2"
       ]
     },
     "fidibo": {
       "command": "uvx",
       "args": [
-        "fidibo-mcp@0.4.1"
+        "fidibo-mcp@0.4.2"
       ]
     },
     "30book": {
       "command": "uvx",
       "args": [
-        "30book-mcp@0.4.1"
+        "30book-mcp@0.4.2"
       ]
     },
     "iranketab": {
       "command": "uvx",
       "args": [
-        "iranketab-mcp@0.2.1"
+        "iranketab-mcp@0.2.2"
       ]
     },
     "maktabkhooneh": {
       "command": "uvx",
       "args": [
-        "maktabkhooneh-mcp@0.2.1"
+        "maktabkhooneh-mcp@0.2.2"
       ]
     },
     "faradars": {
       "command": "uvx",
       "args": [
-        "faradars-mcp@0.2.1"
+        "faradars-mcp@0.2.2"
       ]
     },
     "jobinja": {
@@ -279,19 +279,19 @@
     "karlancer": {
       "command": "uvx",
       "args": [
-        "karlancer-mcp@0.2.1"
+        "karlancer-mcp@0.2.2"
       ]
     },
     "iran-apps": {
       "command": "uvx",
       "args": [
-        "iran-apps-mcp@0.2.1"
+        "iran-apps-mcp@0.2.2"
       ]
     },
     "iran-downloads": {
       "command": "uvx",
       "args": [
-        "iran-downloads-mcp@0.2.1"
+        "iran-downloads-mcp@0.2.2"
       ]
     },
     "iran-cloud-status": {
@@ -303,19 +303,19 @@
     "tgju": {
       "command": "uvx",
       "args": [
-        "tgju-mcp@0.2.1"
+        "tgju-mcp@0.2.2"
       ]
     },
     "iran-crypto": {
       "command": "uvx",
       "args": [
-        "iran-crypto-mcp@0.5.1"
+        "iran-crypto-mcp@0.5.2"
       ]
     },
     "milligold": {
       "command": "uvx",
       "args": [
-        "milligold-mcp@0.3.1"
+        "milligold-mcp@0.3.2"
       ]
     },
     "iran-gold": {
@@ -327,13 +327,13 @@
     "tsetmc": {
       "command": "uvx",
       "args": [
-        "tsetmc-mcp@0.2.1"
+        "tsetmc-mcp@0.2.2"
       ]
     },
     "codal": {
       "command": "uvx",
       "args": [
-        "codal-mcp@0.2.2"
+        "codal-mcp@0.2.3"
       ]
     },
     "ifb": {
@@ -351,13 +351,13 @@
     "ime": {
       "command": "uvx",
       "args": [
-        "ime-mcp@0.2.1"
+        "ime-mcp@0.2.2"
       ]
     },
     "iran-brokers": {
       "command": "uvx",
       "args": [
-        "iran-brokers-mcp@0.2.1"
+        "iran-brokers-mcp@0.2.2"
       ]
     },
     "cbi": {
@@ -369,19 +369,19 @@
     "amar": {
       "command": "uvx",
       "args": [
-        "amar-mcp@0.2.2"
+        "amar-mcp@0.2.3"
       ]
     },
     "iran-news": {
       "command": "uvx",
       "args": [
-        "iran-news-mcp@0.3.1"
+        "iran-news-mcp@0.3.2"
       ]
     },
     "varzesh3": {
       "command": "uvx",
       "args": [
-        "varzesh3-mcp@0.2.1"
+        "varzesh3-mcp@0.2.2"
       ]
     },
     "gamefa": {
@@ -399,19 +399,19 @@
     "time-ir": {
       "command": "uvx",
       "args": [
-        "time-ir-mcp@0.2.1"
+        "time-ir-mcp@0.2.2"
       ]
     },
     "iran-quake": {
       "command": "uvx",
       "args": [
-        "iran-quake-mcp@0.2.1"
+        "iran-quake-mcp@0.2.2"
       ]
     },
     "qavanin": {
       "command": "uvx",
       "args": [
-        "qavanin-mcp@0.2.2"
+        "qavanin-mcp@0.2.3"
       ]
     },
     "rrk": {
@@ -423,7 +423,7 @@
     "iran-tax": {
       "command": "uvx",
       "args": [
-        "iran-tax-mcp@0.2.1"
+        "iran-tax-mcp@0.2.2"
       ]
     },
     "iran-insurance": {
@@ -441,7 +441,7 @@
     "payping": {
       "command": "uvx",
       "args": [
-        "payping-mcp@0.3.1"
+        "payping-mcp@0.3.2"
       ],
       "env": {
         "PAYPING_TOKEN": "${PAYPING_TOKEN:-}"
@@ -450,7 +450,7 @@
     "bale": {
       "command": "uvx",
       "args": [
-        "bale-mcp@0.3.1"
+        "bale-mcp@0.3.2"
       ],
       "env": {
         "BALE_BOT_TOKEN": "${BALE_BOT_TOKEN:-}"

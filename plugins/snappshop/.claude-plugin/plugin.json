@@ -1,7 +1,7 @@
 {
   "name": "snappshop",
   "displayName": "Snapp! Shop",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Read-only Snapp! Shop marketplace: search, categories, seller offers in Toman, reviews.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "snappshop": {
       "command": "uvx",
       "args": [
-        "snappshop-mcp@0.2.1"
+        "snappshop-mcp@0.2.2"
       ]
     }
   }

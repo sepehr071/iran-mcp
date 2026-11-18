@@ -1,7 +1,7 @@
 {
   "name": "sheypoor",
   "displayName": "Sheypoor Classifieds",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
   "author": {
     "name": "Sepehr Radmard",
@@ -20,7 +20,7 @@
     "sheypoor": {
       "command": "uvx",
       "args": [
-        "sheypoor-mcp@0.2.1"
+        "sheypoor-mcp@0.2.2"
       ]
     }
   }
