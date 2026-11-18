@@ -1,0 +1,27 @@
+{
+  "name": "digistyle",
+  "displayName": "Digistyle Fashion",
+  "version": "0.1.1",
+  "description": "Read-only Digistyle (digistyle.com) fashion store: search, filters, product details, brands, deals.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/digistyle-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "fashion",
+    "digistyle.com"
+  ],
+  "mcpServers": {
+    "digistyle": {
+      "command": "uvx",
+      "args": [
+        "digistyle-mcp@0.1.1"
+      ]
+    }
+  }
+}

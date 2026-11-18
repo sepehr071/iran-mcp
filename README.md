@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="iran-mcp: 77 MCP servers and 994 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, insurance, company registry, economy, news, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
+<img src="assets/banner.svg" alt="iran-mcp: 96 MCP servers and 1150 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, insurance, company registry, economy, news, video, radio, cinema, weather, dictionary, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
 
 **English** · [فارسی](README.fa.md)
 
 # Iran MCP servers: iran-mcp
 
 **Give your AI agent the Iranian web.**<br>
-68 unofficial, open-source Persian-web MCP servers for Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Alibaba, Neshan, Balad, Paziresh24, Taaghche, Jobinja, Bama, the Tehran stock exchange, Codal, the Central Bank, Iranian crypto exchanges, the tax administration, qavanin.ir laws and more, plus official ones from ExirYab, Pasavard and SwapWallet.<br>
+93 unofficial, open-source Persian-web MCP servers for Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Alibaba, Neshan, Balad, Paziresh24, Taaghche, Jobinja, Bama, Aparat, Raja, SnappTrip, Kilid, Persian Wikipedia, the Tehran stock exchange, Codal, the Central Bank, Iranian crypto exchanges, the tax administration, qavanin.ir laws and more, plus official ones from ExirYab, Pasavard and SwapWallet.<br>
 Search, compare prices in Toman, find free slots and today's deals from Claude, Cursor, GitHub Copilot in VS Code or any MCP client.<br>
 Install them as Claude Code plugins with skills, or as Agent Skills for Codex, Cursor, Antigravity and Grok Build.
 
-[![Servers](https://img.shields.io/badge/servers-77-3fd6c9)](#the-servers)
-[![Tools](https://img.shields.io/badge/tools-994-f4b54a)](TOOLS.md)
+[![Servers](https://img.shields.io/badge/servers-96-3fd6c9)](#the-servers)
+[![Tools](https://img.shields.io/badge/tools-1150-f4b54a)](TOOLS.md)
 [![Claude Code plugins](https://img.shields.io/badge/Claude_Code-plugin_marketplace-d97757)](#quick-start)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071-7c3aed)](https://registry.modelcontextprotocol.io/?q=sepehr071)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-c2410c)](LICENSE)
@@ -20,13 +20,35 @@ Install them as Claude Code plugins with skills, or as Agent Skills for Codex, C
 
 Web catalog (in Persian): [mcpfarsi.ir](https://mcpfarsi.ir/), the Persian MCP marketplace.
 
-[What's new](#whats-new-in-v23) · [Quick start](#quick-start) · [The servers](#the-servers) · [For AI agents](#for-ai-agents) · [All tools](TOOLS.md) · [FAQ](#faq)
+[What's new](#whats-new-in-v25) · [Quick start](#quick-start) · [The servers](#the-servers) · [For AI agents](#for-ai-agents) · [All tools](TOOLS.md) · [FAQ](#faq)
 
 </div>
 
 ---
 
-## What's new in v2.4
+## What's new in v2.5
+
+<img src="assets/release-v2.5.svg" alt="iran-mcp v2.5: 19 new servers, 5 new categories, 156 new tools, same tool names" width="100%">
+
+- **19 new servers**, all read-only and without sign-in: 96 servers and 1150 tools in total.
+- **Video, radio and TV (new category):** [aparat-mcp](https://github.com/sepehr071/aparat-mcp) and [namasha-mcp](https://github.com/sepehr071/namasha-mcp) (video platforms),
+  [telewebion-mcp](https://github.com/sepehr071/telewebion-mcp) (TV channels and schedules) and [iranseda-mcp](https://github.com/sepehr071/iranseda-mcp) (radio, audiobooks, Quran).
+- **Cinema and events (new category):** [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) (showtimes and ticket prices, box office) and
+  [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) (theatre and concert tickets).
+- **Travel, roads and weather (new category):** [snapptrip-mcp](https://github.com/sepehr071/snapptrip-mcp) (hotels and flights), [raja-mcp](https://github.com/sepehr071/raja-mcp) (trains),
+  [iran-bus-mcp](https://github.com/sepehr071/iran-bus-mcp) (bus tickets), [iran-roads-mcp](https://github.com/sepehr071/iran-roads-mcp) (road closures and status) and [iran-weather-mcp](https://github.com/sepehr071/iran-weather-mcp) (forecasts and warnings).
+- **Homes, cars and fashion:** [kilid-mcp](https://github.com/sepehr071/kilid-mcp) (real estate and price per square metre), [khodro45-mcp](https://github.com/sepehr071/khodro45-mcp)
+  (used cars with inspection reports) and [digistyle-mcp](https://github.com/sepehr071/digistyle-mcp) (fashion store).
+- **Dictionary, encyclopedia and community (new categories):** [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) (Abadis and Vajehyab),
+  [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp), [virgool-mcp](https://github.com/sepehr071/virgool-mcp) (Persian blogs) and [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) (parenting forum),
+  plus [digiato-mcp](https://github.com/sepehr071/digiato-mcp) tech news.
+- **5 new bundles:** `iran-media`, `iran-events`, `iran-reference`, `iran-community` and `iran-news-bundle`.
+- **Every server updated** to its latest release. Tool names of the existing servers are unchanged.
+
+Full list: [CHANGELOG.md](CHANGELOG.md).
+
+<details>
+<summary><b>What's new in v2.4</b></summary>
 
 <img src="assets/release-v2.4.svg" alt="iran-mcp v2.4: 6 new servers, 3 new categories, 111 new tools, same tool names" width="100%">
 
@@ -42,6 +64,7 @@ Web catalog (in Persian): [mcpfarsi.ir](https://mcpfarsi.ir/), the Persian MCP m
 - Tool names of the existing servers are unchanged.
 
 Full list: [CHANGELOG.md](CHANGELOG.md).
+</details>
 
 <details>
 <summary><b>What's new in v2.3</b></summary>
@@ -216,7 +239,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 `swapwallet-mcp` is added by URL, and each client takes a URL in its own shape (Windsurf uses `serverUrl`, Claude
 Desktop takes it under Settings → Connectors): see [its setup for each client](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**All 77 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
+**All 96 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
 registers every server; approve the ones you want.
 
 ```bash
@@ -225,7 +248,21 @@ cd iran-mcp && claude
 ```
 
 > [!TIP]
-> 994 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
+> 1150 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
+
+## Use them from the web: mcpfarsi.ir
+
+<p align="center"><a href="https://mcpfarsi.ir/"><b>mcpfarsi.ir</b></a>: the Persian marketplace of MCP servers and Agent Skills for Iranian services</p>
+
+Don't want to install anything? [**mcpfarsi.ir**](https://mcpfarsi.ir/) lists these servers and many more in Persian,
+with search and filters. Each entry says whether it uses an unofficial API, needs an Iranian IP or has side effects.
+Its hosted MCP router connects them to Claude, ChatGPT or Cursor: add one URL to your AI app once, sign in with OAuth,
+then pick servers in the dashboard. The router gives your agent two tools, `search_tools` and `call_tool`, so its
+context stays small however many servers you turn on.
+
+> [!TIP]
+> Running servers locally with `uvx` (above) and using mcpfarsi.ir work side by side. Use the site to find a
+> server, or to give an agent many Iranian services without adding each one by hand.
 
 ## The servers
 
@@ -241,6 +278,7 @@ cd iran-mcp && claude
 | [basalam-mcp](https://github.com/sepehr071/basalam-mcp) | [Basalam](https://basalam.com) (marketplace) | 7 | [![PyPI](https://img.shields.io/pypi/v/basalam-mcp?label=&color=2fe0cf)](https://pypi.org/project/basalam-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/basalam-mcp?label=&color=ffc23d)](https://github.com/sepehr071/basalam-mcp/commits/main) | Goods from thousands of small shops: price, shipping and discount filters, cheapest offers, shop ratings, reviews |
 | [shopino-mcp](https://github.com/sepehr071/shopino-mcp) | [Shopino](https://shopino.app) | 14 | [![PyPI](https://img.shields.io/pypi/v/shopino-mcp?label=&color=2fe0cf)](https://pypi.org/project/shopino-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/shopino-mcp?label=&color=ffc23d)](https://github.com/sepehr071/shopino-mcp/commits/main) | Fashion from thousands of shops: prices, sizes, stock, shop ratings |
 | [banimode-mcp](https://github.com/sepehr071/banimode-mcp) | [Banimode](https://www.banimode.com) | 7 | [![PyPI](https://img.shields.io/pypi/v/banimode-mcp?label=&color=2fe0cf)](https://pypi.org/project/banimode-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/banimode-mcp?label=&color=ffc23d)](https://github.com/sepehr071/banimode-mcp/commits/main) | Fashion: prices, sizes, stock, brands, deals, reviews |
+| [digistyle-mcp](https://github.com/sepehr071/digistyle-mcp) | [Digistyle](https://www.digistyle.com) | 6 | [![PyPI](https://img.shields.io/pypi/v/digistyle-mcp?label=&color=2fe0cf)](https://pypi.org/project/digistyle-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/digistyle-mcp?label=&color=ffc23d)](https://github.com/sepehr071/digistyle-mcp/commits/main) | Fashion: search with filters, product details, brands, deals |
 | [pasavard-mcp](https://github.com/ashkancapella/pasavard-mcp) | [Pasavard](https://pasavard.ir) (official, hosted) | 4 | [![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fashkancapella%2Fpasavard-mcp%2Fmain%2Fserver.json&query=%24.version&label=&color=2fe0cf)](https://github.com/ashkancapella/pasavard-mcp/blob/main/server.json) | [![Last commit](https://img.shields.io/github/last-commit/ashkancapella/pasavard-mcp?label=&color=ffc23d)](https://github.com/ashkancapella/pasavard-mcp/commits/main) | Digikala and Snappshop prices tracked hourly: best picks per budget against each product's 30-day low, with affiliate and cashback links |
 | [emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp) | [Emalls](https://emalls.ir) (price comparison) | 10 | [![PyPI](https://img.shields.io/pypi/v/emalls-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/emalls-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/emalls-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/emalls-ir-mcp/commits/main) | Products across Iranian shops, every shop's offer, price history, shops |
 | [mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp) | [Mobile.ir](https://www.mobile.ir) | 17 | [![PyPI](https://img.shields.io/pypi/v/mobile-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/mobile-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/mobile-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/mobile-ir-mcp/commits/main) | Phone specs, shop prices, price history, used phones, SIM numbers |
@@ -253,6 +291,7 @@ cd iran-mcp && claude
 |---|---|---:|:---:|:---:|---|
 | [divar-mcp](https://github.com/sepehr071/divar-mcp) | [Divar](https://divar.ir) | 31 | [![PyPI](https://img.shields.io/pypi/v/divar-mcp?label=&color=2fe0cf)](https://pypi.org/project/divar-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/divar-mcp?label=&color=ffc23d)](https://github.com/sepehr071/divar-mcp/commits/main) | Homes, cars, phones and more in any city: cheapest and best-value ads, fair-price check, market stats, new-ad alerts |
 | [sheypoor-mcp](https://github.com/sepehr071/sheypoor-mcp) | [Sheypoor](https://www.sheypoor.com) | 11 | [![PyPI](https://img.shields.io/pypi/v/sheypoor-mcp?label=&color=2fe0cf)](https://pypi.org/project/sheypoor-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/sheypoor-mcp?label=&color=ffc23d)](https://github.com/sepehr071/sheypoor-mcp/commits/main) | Ads in any city, ad details, price summaries for cars and homes, shops |
+| [kilid-mcp](https://github.com/sepehr071/kilid-mcp) | [Kilid](https://kilid.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/kilid-mcp?label=&color=2fe0cf)](https://pypi.org/project/kilid-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/kilid-mcp?label=&color=ffc23d)](https://github.com/sepehr071/kilid-mcp/commits/main) | Homes for sale and rent, districts, price per square metre, agencies |
 
 ### 🚗 Cars
 
@@ -261,6 +300,7 @@ cd iran-mcp && claude
 | [bama-ir-mcp](https://github.com/sepehr071/bama-ir-mcp) | [Bama](https://bama.ir) | 12 | [![PyPI](https://img.shields.io/pypi/v/bama-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/bama-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/bama-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/bama-ir-mcp/commits/main) | Car ads, market prices, new-car price lists, dealers, specs |
 | [karnameh-mcp](https://github.com/sepehr071/karnameh-mcp) | [Karnameh](https://karnameh.com) | 15 | [![PyPI](https://img.shields.io/pypi/v/karnameh-mcp?label=&color=2fe0cf)](https://pypi.org/project/karnameh-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/karnameh-mcp?label=&color=ffc23d)](https://github.com/sepehr071/karnameh-mcp/commits/main) | Used-car ads, specs and comparisons, new-car market prices and price history |
 | [hamrah-mechanic-mcp](https://github.com/sepehr071/hamrah-mechanic-mcp) | [Hamrah Mechanic](https://www.hamrah-mechanic.com) | 12 | [![PyPI](https://img.shields.io/pypi/v/hamrah-mechanic-mcp?label=&color=2fe0cf)](https://pypi.org/project/hamrah-mechanic-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/hamrah-mechanic-mcp?label=&color=ffc23d)](https://github.com/sepehr071/hamrah-mechanic-mcp/commits/main) | Daily car prices, price estimates, used cars for sale, inspection fees |
+| [khodro45-mcp](https://github.com/sepehr071/khodro45-mcp) | [Khodro45](https://khodro45.com) | 10 | [![PyPI](https://img.shields.io/pypi/v/khodro45-mcp?label=&color=2fe0cf)](https://pypi.org/project/khodro45-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/khodro45-mcp?label=&color=ffc23d)](https://github.com/sepehr071/khodro45-mcp/commits/main) | Used cars with inspection reports, price estimate, deals, new-car prices |
 
 ### 💄 Beauty
 
@@ -287,13 +327,18 @@ cd iran-mcp && claude
 | [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp) | [Otaghak](https://www.otaghak.com) | 15 | [![PyPI](https://img.shields.io/pypi/v/otaghak-mcp?label=&color=2fe0cf)](https://pypi.org/project/otaghak-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/otaghak-mcp?label=&color=ffc23d)](https://github.com/sepehr071/otaghak-mcp/commits/main) | Villas and cottages: availability, exact stay price, reviews, hosts |
 | [alibaba-ir-mcp](https://github.com/sepehr071/alibaba-ir-mcp) | [Alibaba](https://www.alibaba.ir) | 14 | [![PyPI](https://img.shields.io/pypi/v/alibaba-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/alibaba-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/alibaba-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/alibaba-ir-mcp/commits/main) | Cheapest domestic and international flights, trains, buses, hotels, villas and tours |
 | [eghamat24-mcp](https://github.com/sepehr071/eghamat24-mcp) | [Eghamat24](https://www.eghamat24.com) | 14 | [![PyPI](https://img.shields.io/pypi/v/eghamat24-mcp?label=&color=2fe0cf)](https://pypi.org/project/eghamat24-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/eghamat24-mcp?label=&color=ffc23d)](https://github.com/sepehr071/eghamat24-mcp/commits/main) | Hotels: room prices for your dates, price calendar, deals, reviews, tours |
+| [snapptrip-mcp](https://github.com/sepehr071/snapptrip-mcp) | [SnappTrip](https://www.snapptrip.com) | 10 | [![PyPI](https://img.shields.io/pypi/v/snapptrip-mcp?label=&color=2fe0cf)](https://pypi.org/project/snapptrip-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/snapptrip-mcp?label=&color=ffc23d)](https://github.com/sepehr071/snapptrip-mcp/commits/main) | Hotels: search, rooms, price calendar, reviews; domestic flights and fares |
+| [raja-mcp](https://github.com/sepehr071/raja-mcp) | [Raja](https://www.raja.ir) | 5 | [![PyPI](https://img.shields.io/pypi/v/raja-mcp?label=&color=2fe0cf)](https://pypi.org/project/raja-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/raja-mcp?label=&color=ffc23d)](https://github.com/sepehr071/raja-mcp/commits/main) | Trains: stations, search with prices and free seats, stops and timetables, announcements |
+| [iran-bus-mcp](https://github.com/sepehr071/iran-bus-mcp) | [Safar724](https://safar724.com) | 5 | [![PyPI](https://img.shields.io/pypi/v/iran-bus-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-bus-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-bus-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-bus-mcp/commits/main) | Bus trips with Toman prices and free seats, the cheapest ticket, terminals |
 
-### 🗺️ Maps
+### 🗺️ Maps, roads and weather
 
 | Server | Site | Tools | Version | Updated | What your agent can do |
 |---|---|---:|:---:|:---:|---|
 | [neshan-mcp](https://github.com/sepehr071/neshan-mcp) | [Neshan](https://neshan.org) | 11 | [![PyPI](https://img.shields.io/pypi/v/neshan-mcp?label=&color=2fe0cf)](https://pypi.org/project/neshan-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/neshan-mcp?label=&color=ffc23d)](https://github.com/sepehr071/neshan-mcp/commits/main) | Place search, reviews, nearby places, reverse geocoding, air quality, car, bike, walking and transit directions, traffic-zone checks |
 | [balad-mcp](https://github.com/sepehr071/balad-mcp) | [Balad](https://balad.ir) | 9 | [![PyPI](https://img.shields.io/pypi/v/balad-mcp?label=&color=2fe0cf)](https://pypi.org/project/balad-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/balad-mcp?label=&color=ffc23d)](https://github.com/sepehr071/balad-mcp/commits/main) | Places and addresses, nearby and nearest by driving time, places along a route, hours, reviews, driving directions with live traffic |
+| [iran-roads-mcp](https://github.com/sepehr071/iran-roads-mcp) | [141.ir](https://141.ir) | 8 | [![PyPI](https://img.shields.io/pypi/v/iran-roads-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-roads-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-roads-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-roads-mcp/commits/main) | Road bulletins, closures, traffic restrictions, road works, road weather, main routes |
+| [iran-weather-mcp](https://github.com/sepehr071/iran-weather-mcp) | [IRIMO](https://www.irimo.ir) | 9 | [![PyPI](https://img.shields.io/pypi/v/iran-weather-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-weather-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-weather-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-weather-mcp/commits/main) | City forecasts, live observations, weather warnings, road and airport weather, bulletins |
 
 ### 🩺 Health
 
@@ -356,6 +401,7 @@ cd iran-mcp && claude
 | [milligold-mcp](https://github.com/sepehr071/milligold-mcp) | [Milli.gold](https://milli.gold) | 8 | [![PyPI](https://img.shields.io/pypi/v/milligold-mcp?label=&color=2fe0cf)](https://pypi.org/project/milligold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/milligold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/milligold-mcp/commits/main) | Live 18k gold price per gram, history, fees and trade cost quotes, latest news and help articles, platform statistics |
 | [iran-gold-mcp](https://github.com/sepehr071/iran-gold-mcp) | [Milli.gold](https://milli.gold), [Wallgold](https://wallgold.ir), [Melligold](https://melligold.com), [Daric](https://daric.gold), [Taline](https://taline.ir) | 3 | [![PyPI](https://img.shields.io/pypi/v/iran-gold-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-gold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-gold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-gold-mcp/commits/main) | Compare the live 18k gold buy and sell price per gram on 5 platforms in Toman, cheapest to buy and best to sell, Milli.gold history |
 | [iran-news-mcp](https://github.com/sepehr071/iran-news-mcp) | [Mehr](https://www.mehrnews.com), [Khabaronline](https://www.khabaronline.ir), [Hamshahri](https://www.hamshahrionline.ir), [Tabnak](https://www.tabnak.ir), [Entekhab](https://www.entekhab.ir), [Asriran](https://www.asriran.com), [Zoomit](https://www.zoomit.ir), [Digiato](https://digiato.com), [Varzesh3](https://www.varzesh3.com), [Khabarvarzeshi](https://www.khabarvarzeshi.com) | 6 | [![PyPI](https://img.shields.io/pypi/v/iran-news-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-news-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-news-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-news-mcp/commits/main) | Latest headlines by source and category, keyword search, full article text |
+| [digiato-mcp](https://github.com/sepehr071/digiato-mcp) | [Digiato](https://digiato.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/digiato-mcp?label=&color=2fe0cf)](https://pypi.org/project/digiato-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/digiato-mcp?label=&color=ffc23d)](https://github.com/sepehr071/digiato-mcp/commits/main) | Tech news: latest, by category or tag, search, reviews, full articles |
 | [iran-quake-mcp](https://github.com/sepehr071/iran-quake-mcp) | [IRSC](https://irsc.ut.ac.ir), [USGS](https://earthquake.usgs.gov), [EMSC](https://www.emsc-csem.org) | 5 | [![PyPI](https://img.shields.io/pypi/v/iran-quake-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-quake-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-quake-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-quake-mcp/commits/main) | Latest and strongest earthquakes in Iran, history search, event detail, activity stats |
 | [qavanin-mcp](https://github.com/sepehr071/qavanin-mcp) | [qavanin.ir](https://qavanin.ir) | 7 | [![PyPI](https://img.shields.io/pypi/v/qavanin-mcp?label=&color=2fe0cf)](https://pypi.org/project/qavanin-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/qavanin-mcp?label=&color=ffc23d)](https://github.com/sepehr071/qavanin-mcp/commits/main) | 168,000 laws, regulations and court votes: search, full text, one article, amendments, related documents |
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [tax.gov.ir](https://tax.gov.ir), [stuffid.tax.gov.ir](https://stuffid.tax.gov.ir), [regulation.tax.gov.ir](https://regulation.tax.gov.ir) | 6 | [![PyPI](https://img.shields.io/pypi/v/iran-tax-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-tax-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-tax-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-tax-mcp/commits/main) | E-invoice goods/service IDs with VAT rate, activity codes, property transaction values, tax laws and circulars, official FAQ |
@@ -367,6 +413,26 @@ cd iran-mcp && claude
 | [time-ir-mcp](https://github.com/sepehr071/time-ir-mcp) | [Time.ir](https://www.time.ir) | 13 | [![PyPI](https://img.shields.io/pypi/v/time-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/time-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/time-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/time-ir-mcp/commits/main) | Jalali, Gregorian and Hijri dates, holidays and long weekends, events, prayer times, qibla |
 | [rrk-mcp](https://github.com/sepehr071/rrk-mcp) | [Official Gazette](https://rrk.ir) (rrk.ir) | 5 | [![PyPI](https://img.shields.io/pypi/v/rrk-mcp?label=&color=2fe0cf)](https://pypi.org/project/rrk-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/rrk-mcp?label=&color=ffc23d)](https://github.com/sepehr071/rrk-mcp/commits/main) | Laws, regulations and rulings published in the Official Gazette: search, latest, full text |
 | [iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp) | [ArvanCloud](https://www.arvancloud.ir), [Hamravesh](https://hamravesh.com), [Chabokan](https://chabokan.net), [Liara](https://liara.ir) | 10 | [![PyPI](https://img.shields.io/pypi/v/iran-cloud-status-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-cloud-status-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-cloud-status-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-cloud-status-mcp/commits/main) | Live status, incidents, planned maintenance, reliability, public prices compared |
+
+### 🎬 Video, radio and events
+
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [aparat-mcp](https://github.com/sepehr071/aparat-mcp) | [Aparat](https://www.aparat.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/aparat-mcp?label=&color=2fe0cf)](https://pypi.org/project/aparat-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/aparat-mcp?label=&color=ffc23d)](https://github.com/sepehr071/aparat-mcp/commits/main) | Video search, video details and comments, related videos, channels, categories, trending |
+| [namasha-mcp](https://github.com/sepehr071/namasha-mcp) | [Namasha](https://www.namasha.com) | 9 | [![PyPI](https://img.shields.io/pypi/v/namasha-mcp?label=&color=2fe0cf)](https://pypi.org/project/namasha-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/namasha-mcp?label=&color=ffc23d)](https://github.com/sepehr071/namasha-mcp/commits/main) | Video search, video details and comments, channels, featured videos, categories |
+| [telewebion-mcp](https://github.com/sepehr071/telewebion-mcp) | [Telewebion](https://telewebion.ir) | 7 | [![PyPI](https://img.shields.io/pypi/v/telewebion-mcp?label=&color=2fe0cf)](https://pypi.org/project/telewebion-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/telewebion-mcp?label=&color=ffc23d)](https://github.com/sepehr071/telewebion-mcp/commits/main) | IRIB TV channels, schedules, what's on now, programs, episodes, live sports |
+| [iranseda-mcp](https://github.com/sepehr071/iranseda-mcp) | [Iranseda](https://www.iranseda.ir) | 9 | [![PyPI](https://img.shields.io/pypi/v/iranseda-mcp?label=&color=2fe0cf)](https://pypi.org/project/iranseda-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iranseda-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iranseda-mcp/commits/main) | IRIB radio channels, live streams and schedules, programs, audiobooks, music, Quran |
+| [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) | [Cinematicket](https://cinematicket.org) | 10 | [![PyPI](https://img.shields.io/pypi/v/cinematicket-mcp?label=&color=2fe0cf)](https://pypi.org/project/cinematicket-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/cinematicket-mcp?label=&color=ffc23d)](https://github.com/sepehr071/cinematicket-mcp/commits/main) | Films now showing, cinemas, showtimes and ticket prices, upcoming films, theatre, box office |
+| [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) | [Tiwall](https://www.tiwall.com) | 9 | [![PyPI](https://img.shields.io/pypi/v/tiwall-mcp?label=&color=2fe0cf)](https://pypi.org/project/tiwall-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tiwall-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tiwall-mcp/commits/main) | Theatre, concerts and events: search, sessions and prices, venues, reviews |
+
+### 📖 Dictionary, encyclopedia and community
+
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) | [Abadis](https://abadis.ir), [Vajehyab](https://vajehyab.com) | 7 | [![PyPI](https://img.shields.io/pypi/v/iran-dictionary-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-dictionary-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-dictionary-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-dictionary-mcp/commits/main) | Word meanings, synonyms, English and Persian translation, Persian names |
+| [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp) | [Persian Wikipedia](https://fa.wikipedia.org) | 9 | [![PyPI](https://img.shields.io/pypi/v/persian-wikipedia-mcp?label=&color=2fe0cf)](https://pypi.org/project/persian-wikipedia-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/persian-wikipedia-mcp?label=&color=ffc23d)](https://github.com/sepehr071/persian-wikipedia-mcp/commits/main) | Article search, summaries, full text and sections, infoboxes, trending, nearby places |
+| [virgool-mcp](https://github.com/sepehr071/virgool-mcp) | [Virgool](https://virgool.io) | 11 | [![PyPI](https://img.shields.io/pypi/v/virgool-mcp?label=&color=2fe0cf)](https://pypi.org/project/virgool-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/virgool-mcp?label=&color=ffc23d)](https://github.com/sepehr071/virgool-mcp/commits/main) | Persian blog posts, comments, authors, topics, tags, publications |
+| [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) | [Ninisite](https://www.ninisite.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/ninisite-mcp?label=&color=2fe0cf)](https://pypi.org/project/ninisite-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ninisite-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ninisite-mcp/commits/main) | Parenting forum topics, hot threads, articles, pregnancy week by week |
 
 ### 💳 Your own accounts (need a token or sign-in)
 
@@ -386,7 +452,7 @@ This repo is built to be read by agents as much as by people:
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Which server to pick for which task, conventions, safety rules, how to work in this repo |
 | [`servers.json`](servers.json) | Machine-readable catalog: package or URL, version, category, env vars and every tool of each server |
-| [`TOOLS.md`](TOOLS.md) | All 994 tools grouped by server, one line each |
+| [`TOOLS.md`](TOOLS.md) | All 1150 tools grouped by server, one line each |
 | [`llms.txt`](llms.txt) | Short index for LLMs ([llmstxt.org](https://llmstxt.org)) |
 | [`.mcp.json`](.mcp.json) | Ready-to-use config for every server |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | The `iran-mcp` plugin marketplace: one plugin per server plus bundles |

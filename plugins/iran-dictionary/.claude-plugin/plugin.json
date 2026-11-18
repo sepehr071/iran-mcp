@@ -1,0 +1,27 @@
+{
+  "name": "iran-dictionary",
+  "displayName": "Iran Dictionary (Abadis + Vajehyab)",
+  "version": "0.1.2",
+  "description": "Read-only Persian dictionaries: Abadis and Vajehyab. Meanings, synonyms, translation, names.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-dictionary-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "reference",
+    "abadis.ir"
+  ],
+  "mcpServers": {
+    "iran-dictionary": {
+      "command": "uvx",
+      "args": [
+        "iran-dictionary-mcp@0.1.2"
+      ]
+    }
+  }
+}

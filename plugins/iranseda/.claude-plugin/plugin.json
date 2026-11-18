@@ -1,0 +1,27 @@
+{
+  "name": "iranseda",
+  "displayName": "Iranseda Radio Archive",
+  "version": "0.1.1",
+  "description": "Read-only Iranseda (IRIB audio): radio channels, live streams, schedules, audiobooks, music, Quran.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iranseda-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "media",
+    "iranseda.ir"
+  ],
+  "mcpServers": {
+    "iranseda": {
+      "command": "uvx",
+      "args": [
+        "iranseda-mcp@0.1.1"
+      ]
+    }
+  }
+}

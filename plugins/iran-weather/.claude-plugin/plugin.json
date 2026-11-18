@@ -1,0 +1,27 @@
+{
+  "name": "iran-weather",
+  "displayName": "Iran Weather",
+  "version": "0.1.1",
+  "description": "Read-only Iran Meteorological Org (irimo.ir): city forecasts, observations, warnings.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-weather-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "weather",
+    "irimo.ir"
+  ],
+  "mcpServers": {
+    "iran-weather": {
+      "command": "uvx",
+      "args": [
+        "iran-weather-mcp@0.1.1"
+      ]
+    }
+  }
+}

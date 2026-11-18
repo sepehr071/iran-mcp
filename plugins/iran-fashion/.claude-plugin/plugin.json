@@ -1,6 +1,6 @@
 {
   "name": "iran-fashion",
-  "description": "Everything for clothes, shoes or bags in Iran: Shopino, Banimode.",
+  "description": "Everything for clothes, shoes or bags in Iran: Shopino, Banimode, Digistyle Fashion.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -9,6 +9,7 @@
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "dependencies": [
     "shopino",
-    "banimode"
+    "banimode",
+    "digistyle"
   ]
 }

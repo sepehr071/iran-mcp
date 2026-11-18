@@ -32,7 +32,7 @@ GROUPS = [
     ("Travel &amp; maps", "سفر و نقشه", {"travel", "maps"}, "#6aa0ff"),
     ("Doctors &amp; clinics", "پزشک و درمان", {"health"}, "#7ee08a"),
     # the banner fits 3 rows of 2 tiles, so public-data categories share one tile
-    ("Jobs, news &amp; data", "کار، خبر و داده", {"books", "learning", "jobs", "freelance", "software", "cloud", "prices", "stocks", "economy", "news", "sports", "entertainment", "video", "calendar", "quakes", "law", "tax", "insurance", "companies"}, "#ffc23d"),
+    ("Jobs, news &amp; data", "کار، خبر و داده", {"books", "learning", "jobs", "freelance", "software", "cloud", "prices", "stocks", "economy", "news", "sports", "entertainment", "video", "calendar", "quakes", "law", "tax", "insurance", "companies", "media", "events", "weather", "reference", "community"}, "#ffc23d"),
     ("Your own accounts", f"حساب{ZWNJ}های شخصی", {"business", "messaging", "crypto"}, "#b88cff"),
 ]
 
@@ -154,11 +154,11 @@ def banner(fa: bool, catalog: list, h: int = H) -> str:
 
 # Release banner: version and the changelog's headline numbers, updated by hand each release.
 # (figure, Persian figure, English line, Persian line, colour)
-RELEASE = "v2.4"
+RELEASE = "v2.5"
 HIGHLIGHTS = [
-    ("+6", "+۶", "new servers", "سرور تازه", "#2fe0cf"),
-    ("3", "۳", "new categories", "دستهٔ تازه", "#ffc23d"),
-    ("+111", "+۱۱۱", "new tools", "ابزار تازه", "#ff5c8f"),
+    ("+19", "+۱۹", "new servers", "سرور تازه", "#2fe0cf"),
+    ("5", "۵", "new categories", "دستهٔ تازه", "#ffc23d"),
+    ("+156", "+۱۵۶", "new tools", "ابزار تازه", "#ff5c8f"),
     ("Same", "همان", "tool names", "نام ابزارها", "#7c3aed"),
 ]
 
@@ -168,14 +168,14 @@ def release(fa: bool, catalog: list, h: int = H) -> str:
     card_x, panel_x = (650, 40) if fa else (40, 670)
     if fa:
         anchor, tx, font = "end", card_x + 590 - 44, PERSIAN
-        title, subtitle, changes = "۶ سرور تازه", f"بیمه، کارگزاری، فیلم و شرکت{ZWNJ}ها", "همهٔ تغییرها: CHANGELOG.md"
+        title, subtitle, changes = "۱۹ سرور تازه", "ویدیو، رادیو، سینما، قطار و هوا", "همهٔ تغییرها: CHANGELOG.md"
         stats = [(f"{servers} سرور".translate(FA_DIGITS), "#2fe0cf", 140),
                  (f"{tools} ابزار".translate(FA_DIGITS), "#ffc23d", 140),
                  ("فقط خواندنی", "#ff5c8f", 170)]
         desc = f"iran-mcp {RELEASE}: " + "، ".join(f"{n} {fa_line}" for _, n, _, fa_line, _ in HIGHLIGHTS)
     else:
         anchor, tx, font = "start", card_x + 44, LATIN
-        title, subtitle, changes = "6 new servers.", "Insurance, brokers, film, firms.", "Full changelog: CHANGELOG.md"
+        title, subtitle, changes = "19 new servers.", "Video, radio, trains, weather.", "Full changelog: CHANGELOG.md"
         stats = [(f"{servers} servers", "#2fe0cf", 150), (f"{tools} tools", "#ffc23d", 140),
                  ("Read-only", "#ff5c8f", 150)]
         desc = f"iran-mcp {RELEASE}: " + ", ".join(f"{n} {en_line}" for n, _, en_line, _, _ in HIGHLIGHTS)
@@ -300,6 +300,13 @@ def embed_fonts(svg: str) -> str:
 
 
 def main() -> None:
+    import brotli
+    import fontTools
+
+    # other versions re-encode every embedded font, so the banners churn: match .github/workflows/sync.yml
+    if (fontTools.version, brotli.__version__) != ("4.66.1", "1.2.0"):
+        raise SystemExit("banner.py needs fonttools==4.66.1 and brotli==1.2.0 (as in sync.yml), "
+                         f"found {fontTools.version} and {brotli.__version__}")
     catalog = json.loads((ROOT / "servers.json").read_text(encoding="utf-8"))
     servers, tools = len(catalog), sum(s["tool_count"] for s in catalog)
     for name, draw, fa, h in (("banner.svg", banner, False, H), ("banner.fa.svg", banner, True, H),

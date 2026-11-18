@@ -1,0 +1,14 @@
+{
+  "name": "iran-events",
+  "description": "Everything for cinema showtimes or theatre, concert and event tickets in Iran: Cinematicket Tickets, Tiwall Events.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "cinematicket",
+    "tiwall"
+  ]
+}

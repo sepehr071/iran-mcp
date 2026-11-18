@@ -110,6 +110,12 @@
       "category": "fashion"
     },
     {
+      "name": "digistyle",
+      "source": "./plugins/digistyle",
+      "description": "Read-only Digistyle (digistyle.com) fashion store: search, filters, product details, brands, deals.",
+      "category": "fashion"
+    },
+    {
       "name": "divar",
       "source": "./plugins/divar",
       "description": "Unofficial read-only Divar: search Iran's classified ads, cheapest and best-value ads, price checks.",
@@ -119,6 +125,12 @@
       "name": "sheypoor",
       "source": "./plugins/sheypoor",
       "description": "Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price summaries.",
+      "category": "classifieds"
+    },
+    {
+      "name": "kilid",
+      "source": "./plugins/kilid",
+      "description": "Read-only Kilid (kilid.com) Iranian real estate: listings, districts, price per m2, agencies.",
       "category": "classifieds"
     },
     {
@@ -137,6 +149,12 @@
       "name": "hamrah-mechanic",
       "source": "./plugins/hamrah-mechanic",
       "description": "Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, inspection fees.",
+      "category": "cars"
+    },
+    {
+      "name": "khodro45",
+      "source": "./plugins/khodro45",
+      "description": "Read-only Khodro45 (khodro45.com) Iran used cars: listings, inspection reports, price estimate.",
       "category": "cars"
     },
     {
@@ -176,6 +194,24 @@
       "category": "travel"
     },
     {
+      "name": "snapptrip",
+      "source": "./plugins/snapptrip",
+      "description": "Read-only SnappTrip: Iranian hotel search, rooms, reviews, calendar prices and domestic flights.",
+      "category": "travel"
+    },
+    {
+      "name": "raja",
+      "source": "./plugins/raja",
+      "description": "Read-only Raja (raja.ir) Iranian trains: stations, search with prices and seats, timetables, news.",
+      "category": "travel"
+    },
+    {
+      "name": "iran-bus",
+      "source": "./plugins/iran-bus",
+      "description": "Read-only Iranian bus tickets (Safar724): trips, Toman prices, free seats, cheapest ticket.",
+      "category": "travel"
+    },
+    {
       "name": "neshan",
       "source": "./plugins/neshan",
       "description": "Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.",
@@ -185,6 +221,12 @@
       "name": "balad",
       "source": "./plugins/balad",
       "description": "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes.",
+      "category": "maps"
+    },
+    {
+      "name": "iran-roads",
+      "source": "./plugins/iran-roads",
+      "description": "Read-only Iran road status (141.ir): bulletins, closures, restrictions, road works, weather.",
       "category": "maps"
     },
     {
@@ -386,6 +428,12 @@
       "category": "news"
     },
     {
+      "name": "digiato",
+      "source": "./plugins/digiato",
+      "description": "Read-only Digiato tech news: latest, by category, search, full articles, reviews and tags.",
+      "category": "news"
+    },
+    {
       "name": "varzesh3",
       "source": "./plugins/varzesh3",
       "description": "Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.",
@@ -404,6 +452,42 @@
       "category": "video"
     },
     {
+      "name": "aparat",
+      "source": "./plugins/aparat",
+      "description": "Read-only Aparat (aparat.com) Iranian video platform: search, videos, channels, trending, comments.",
+      "category": "media"
+    },
+    {
+      "name": "namasha",
+      "source": "./plugins/namasha",
+      "description": "Read-only Namasha (namasha.com) Iranian video platform: search, videos, channels, categories.",
+      "category": "media"
+    },
+    {
+      "name": "telewebion",
+      "source": "./plugins/telewebion",
+      "description": "Read-only Telewebion (telewebion.ir) IRIB TV: channels, what aired, programs, episodes, live sports.",
+      "category": "media"
+    },
+    {
+      "name": "iranseda",
+      "source": "./plugins/iranseda",
+      "description": "Read-only Iranseda (IRIB audio): radio channels, live streams, schedules, audiobooks, music, Quran.",
+      "category": "media"
+    },
+    {
+      "name": "cinematicket",
+      "source": "./plugins/cinematicket",
+      "description": "Read-only Cinematicket (cinematicket.org): cinemas, films, showtimes, prices, theatre, box office.",
+      "category": "events"
+    },
+    {
+      "name": "tiwall",
+      "source": "./plugins/tiwall",
+      "description": "Read-only Tiwall (tiwall.com) Iranian event tickets: theatre, concerts, venues, sessions, prices.",
+      "category": "events"
+    },
+    {
       "name": "time-ir",
       "source": "./plugins/time-ir",
       "description": "Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.",
@@ -414,6 +498,12 @@
       "source": "./plugins/iran-quake",
       "description": "Unofficial read-only Iran earthquakes: latest, search, strongest, detail, stats (USGS, EMSC, IRSC).",
       "category": "quakes"
+    },
+    {
+      "name": "iran-weather",
+      "source": "./plugins/iran-weather",
+      "description": "Read-only Iran Meteorological Org (irimo.ir): city forecasts, observations, warnings.",
+      "category": "weather"
     },
     {
       "name": "qavanin",
@@ -446,6 +536,30 @@
       "category": "companies"
     },
     {
+      "name": "iran-dictionary",
+      "source": "./plugins/iran-dictionary",
+      "description": "Read-only Persian dictionaries: Abadis and Vajehyab. Meanings, synonyms, translation, names.",
+      "category": "reference"
+    },
+    {
+      "name": "persian-wikipedia",
+      "source": "./plugins/persian-wikipedia",
+      "description": "Read-only Persian Wikipedia (fa.wikipedia.org): search, summaries, article text, nearby places.",
+      "category": "reference"
+    },
+    {
+      "name": "virgool",
+      "source": "./plugins/virgool",
+      "description": "Read-only Virgool (virgool.ir) Persian blog platform: search, posts, authors, topics, publications.",
+      "category": "community"
+    },
+    {
+      "name": "ninisite",
+      "source": "./plugins/ninisite",
+      "description": "Read-only Ninisite (ninisite.com) parenting forum topics, articles and pregnancy weeks.",
+      "category": "community"
+    },
+    {
       "name": "payping",
       "source": "./plugins/payping",
       "description": "PayPing merchant account for agents: balance, sales, invoices; create invoices and payment links.",
@@ -472,7 +586,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 74 Iranian site servers that need no setup, in one install.",
+      "description": "All 93 Iranian site servers that need no setup, in one install.",
       "category": "bundle"
     },
     {
@@ -496,31 +610,31 @@
     {
       "name": "iran-fashion",
       "source": "./plugins/iran-fashion",
-      "description": "Everything for clothes, shoes or bags in Iran: Shopino, Banimode.",
+      "description": "Everything for clothes, shoes or bags in Iran: Shopino, Banimode, Digistyle Fashion.",
       "category": "bundle"
     },
     {
       "name": "iran-classifieds",
       "source": "./plugins/iran-classifieds",
-      "description": "Everything for classified ads for homes, cars, phones and more in Iran: Divar, Sheypoor Classifieds.",
+      "description": "Everything for classified ads for homes, cars, phones and more in Iran: Divar, Sheypoor Classifieds, Kilid Real Estate.",
       "category": "bundle"
     },
     {
       "name": "iran-cars",
       "source": "./plugins/iran-cars",
-      "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars.",
+      "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars, Khodro45 Used Cars.",
       "category": "bundle"
     },
     {
       "name": "iran-travel",
       "source": "./plugins/iran-travel",
-      "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday, Alibaba Travel, Eghamat24 Hotels.",
+      "description": "Everything for flights, trains, buses, hotels, villas or tours in Iran: Otaghak, Jabama, MrBilit, Flytoday, Alibaba Travel, Eghamat24 Hotels, SnappTrip Hotels and Flights, Raja Train Tickets, Iran Bus Tickets.",
       "category": "bundle"
     },
     {
       "name": "iran-maps",
       "source": "./plugins/iran-maps",
-      "description": "Everything for places, addresses, routes or travel times on a map in Iran: Neshan Maps, Balad Maps.",
+      "description": "Everything for places, addresses, routes, travel times or road closures in Iran: Neshan Maps, Balad Maps, Iran Roads.",
       "category": "bundle"
     },
     {
@@ -578,9 +692,39 @@
       "category": "bundle"
     },
     {
+      "name": "iran-news-bundle",
+      "source": "./plugins/iran-news-bundle",
+      "description": "Everything for news headlines or full news articles in Iran: Iran News RSS, Digiato Tech News.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-media",
+      "source": "./plugins/iran-media",
+      "description": "Everything for online videos, TV channels and schedules or radio and audio archives in Iran: Aparat Videos, Namasha Videos, Telewebion TV, Iranseda Radio Archive.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-events",
+      "source": "./plugins/iran-events",
+      "description": "Everything for cinema showtimes or theatre, concert and event tickets in Iran: Cinematicket Tickets, Tiwall Events.",
+      "category": "bundle"
+    },
+    {
       "name": "iran-law",
       "source": "./plugins/iran-law",
       "description": "Everything for laws, regulations, court votes, legal opinions or Official Gazette texts in Iran: Qavanin, Official Gazette of Iran.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-reference",
+      "source": "./plugins/iran-reference",
+      "description": "Everything for Persian word meanings, synonyms, translations or encyclopedia articles in Iran: Iran Dictionary (Abadis + Vajehyab), Persian Wikipedia.",
+      "category": "bundle"
+    },
+    {
+      "name": "iran-community",
+      "source": "./plugins/iran-community",
+      "description": "Everything for Persian blog posts, forum topics or parenting articles in Iran: Virgool Blog, Ninisite Parenting.",
       "category": "bundle"
     }
   ]

@@ -1,7 +1,7 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 77 MCP servers for Iranian websites, 994 tools in
-total. 68 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
+Guide for AI agents using or working on **iran-mcp**: 96 MCP servers for Iranian websites, 1150 tools in
+total. 94 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
 sign-in).
@@ -18,11 +18,14 @@ sign-in).
 | The best buy in a price range on Digikala or Snappshop, or whether today's price is good | `pasavard-mcp` | `best_lists`, then `best_list`; `search_products` |
 | Find a flat, used car or phone in ads, or check if an ad's price is fair | `divar-mcp` | `dv_search`, `dv_cheapest`, `dv_best_for_budget`, `dv_appraise` |
 | Ads on Sheypoor, or the price range of a car or home there | `sheypoor-mcp` | `sp_search`, `sp_ad`, `sp_price_summary` |
+| Homes for sale or rent on Kilid, price per square metre by district, agencies | `kilid-mcp` | `kl_cities`, `kl_search_listings`, `kl_price_stats`, `kl_neighborhood_prices` |
 | A used or new car's price, car ads, car specs, inspection fees | `bama-ir-mcp`, `karnameh-mcp`, `hamrah-mechanic-mcp` | `ba_search`, `ba_new_prices`; `kn_latest_prices`, `kn_price_history`; `hm_prices`, `hm_price_estimate` |
+| A used car with an inspection report, or a car's price estimate (Khodro45) | `khodro45-mcp` | `k45_cars`, `k45_inspection`, `k45_price_estimate`, `k45_new_car_prices` |
 | Compare a phone or laptop across sellers, with installments | `technolife-mcp` | `tl_find_cheapest`, `tl_product`, `tl_compare` |
 | Gadgets and accessories | `masterkala-mcp` | `mk_find_cheapest`, `mk_product` |
 | Home appliances, TVs, tools | `baneh-mcp` | `bn_find_cheapest`, `bn_product` |
 | Clothes, shoes, bags | `shopino-mcp`, `banimode-mcp` | `sh_find_cheapest`, `sh_product`; `bm_search`, `bm_deals` |
+| Digistyle fashion: search with filters, brands, deals | `digistyle-mcp` | `ds_search`, `ds_filters`, then `ds_product`; `ds_deals` |
 | Cosmetics, skin and hair care, perfume | `khanoumi-mcp`, `asalbanoo-mcp` | `kh_find_cheapest`, `ab_find_cheapest` |
 | Cheapest food delivered to an address (Snappfood) | `snapp-mcp` | `find_location`, then `food_find_cheapest`, `food_party_deals` |
 | Groceries delivered to an address (SnappMarket, Okala) | `snapp-mcp`, `okala-mcp` | `market_find_cheapest`; `ok_locate`, `ok_stores`, `ok_compare` |
@@ -33,7 +36,12 @@ sign-in).
 | CIP, eSIM, visas, activities abroad | `flytoday-mcp` | `ft_cip`, `ft_esim_plans`, `ft_visa`, `ft_activities` |
 | Flights, trains, buses, hotels, villas and tours on Alibaba | `alibaba-ir-mcp` | `al_flights_cheapest`, `al_trains_cheapest`, `al_buses_cheapest`, `al_hotels` |
 | Hotel room prices for given dates, hotel deals | `eghamat24-mcp` | `eg_search`, `eg_rooms`, `eg_price_calendar`, `eg_deals` |
+| Hotels and domestic flights on SnappTrip, hotel price calendar | `snapptrip-mcp` | `st_hotel_search`, `st_hotel_rooms`, `st_hotel_calendar`; `st_flight_search` |
+| Train tickets on Raja: prices, free seats, stops | `raja-mcp` | `rj_stations`, then `rj_search_trains`, `rj_train_stops` |
+| Bus tickets (Safar724): trips, free seats, the cheapest ticket | `iran-bus-mcp` | `bus_cities`, then `bus_cheapest`, `bus_search` |
 | A place or address, places nearby, directions and travel time, air quality | `neshan-mcp`, `balad-mcp` | `ns_search`, `ns_route`, `ns_transit_route`; `bl_search`, `bl_nearby`, `bl_route` |
+| Road closures, traffic restrictions, road works and road weather (141.ir) | `iran-roads-mcp` | `rd_bulletin`, `rd_closures`, `rd_restrictions`, `rd_weather` |
+| Weather forecast, live observations, weather warnings (IRIMO) | `iran-weather-mcp` | `wx_cities`, then `wx_weather`; `wx_warnings`, `wx_observations` |
 | A doctor with a free appointment | `paziresh24-mcp`, `doctoreto-mcp` | `pz_search_doctors`, `pz_first_available`; `dt_search_doctors`, `dt_free_slots` |
 | A doctor by name, or a doctor's clinic address, phone, hours and map | `exiryab-mcp` | `ey_search_doctors`; `ey_cities`, `ey_specialties` for exact names |
 | Clinics, labs, medical offers | `doctoreto-mcp` | `dt_search_centers`, `dt_search_offers` |
@@ -64,9 +72,15 @@ sign-in).
 | Official exchange rates, inflation, policy rates | `cbi-mcp` | `cb_exchange_rates`, `cb_rate_history`, `cb_inflation` |
 | Official statistics: CPI inflation, unemployment, population, GDP | `amar-mcp` | `am_inflation`, `am_labour_force`, `am_population`, `am_gdp` |
 | Latest Iranian news (Mehr, Khabaronline, Hamshahri, Tabnak, Entekhab, Asriran, Zoomit, Digiato, Varzesh3, Khabarvarzeshi), a topic in the news, a full article | `iran-news-mcp` | `nw_latest_all`, `nw_search`, then `nw_article` |
+| Digiato tech news, reviews, a full article | `digiato-mcp` | `dgt_latest`, `dgt_search`, then `dgt_article`; `dgt_reviews` |
 | Live scores, league tables, fixtures, transfers | `varzesh3-mcp` | `v3_scores`, `v3_standings`, `v3_league_matches` |
 | Game and film news, reviews and release dates | `gamefa-mcp` | `gf_latest_articles`, `gf_reviews`, `gf_upcoming_games` |
 | A film or series on Filimo or Namava: where to watch, details, episodes, new releases | `iran-vod-mcp` | `vod_search`, `vod_where`, then `vod_title`, `vod_episodes` |
+| Videos and channels on Aparat or Namasha | `aparat-mcp`, `namasha-mcp` | `apr_search`, `apr_video`, `apr_trending`; `nm_search`, `nm_video` |
+| What's on IRIB TV now, channel schedules, programs, live sports (Telewebion) | `telewebion-mcp` | `tv_live_now`, `tv_channel_schedule`, `tv_search`, `tv_live_events` |
+| Radio channels, live streams, audiobooks, music and Quran (Iranseda) | `iranseda-mcp` | `sd_live_now`, `sd_schedule`; `sd_library_search` |
+| Films now showing, cinema showtimes and ticket prices, box office | `cinematicket-mcp` | `ct_now_showing`, `ct_showtimes`, `ct_box_office` |
+| Theatre, concert and event tickets on Tiwall | `tiwall-mcp` | `tw_events`, `tw_search`, then `tw_sessions` |
 | Today's Jalali, Gregorian and Hijri date, date conversion, holidays, prayer times | `time-ir-mcp` | `ti_today`, `ti_convert_date`, `ti_holidays`, `ti_prayer_times` |
 | Recent or strong earthquakes in Iran (IRSC, USGS, EMSC) | `iran-quake-mcp` | `eq_latest`, `eq_significant`, `eq_detail` |
 | An Iranian law, regulation or court vote, one article, its amendments | `qavanin-mcp` | `qv_search`, then `qv_law`, `qv_amendments` |
@@ -74,6 +88,10 @@ sign-in).
 | Insurance quotes and insurer ratings on BimeBazar and Azki | `iran-insurance-mcp` | `ins_insurers`, `ins_quote_third_party`, `ins_quote_car_body`, `ins_quote_travel` |
 | A company's registration, board members, gazette ads, brands | `rasmio-mcp` | `rs_search_companies`, then `rs_company`; `rs_person`, `rs_ad` |
 | E-invoice goods ID and VAT rate, activity code, property value, a tax law or circular | `iran-tax-mcp` | `tx_goods_search`, `tx_activity_codes`, `tx_regulations_search` |
+| A Persian word's meaning, synonyms or translation, a name's meaning (Abadis, Vajehyab) | `iran-dictionary-mcp` | `dic_lookup`, `dic_synonyms`, `dic_translate`, `dic_abadis_names` |
+| A Persian Wikipedia article, summary, infobox, places nearby | `persian-wikipedia-mcp` | `wiki_search`, then `wiki_summary`, `wiki_article`; `wiki_nearby` |
+| Persian blog posts and authors on Virgool | `virgool-mcp` | `vg_search`, `vg_post`, `vg_feed`, `vg_topic_posts` |
+| Parenting forum topics, articles, pregnancy week by week (Ninisite) | `ninisite-mcp` | `nn_hot_topics`, `nn_topic`, `nn_articles`, `nn_pregnancy_week` |
 | Merchant payments (user's own PayPing account) | `payping-mcp` | `payping_get_balance`, `payping_get_sales_summary` |
 | User's own Bale bot | `bale-mcp` | `bot_get_new_messages`, `bot_send_message` |
 | User's own crypto wallet: balances, history, swaps, withdrawals | `swapwallet-mcp` | `get_total_balance`, `get_transactions`; `request_swap`, then `get_action_request` |
@@ -107,10 +125,11 @@ claude plugin install iran-all --marketplace sepehr071/iran-mcp     # all read-o
 
 Bundles: `iran-all`, `iran-food`, `iran-shopping`, `iran-beauty`, `iran-fashion`, `iran-classifieds`, `iran-cars`,
 `iran-travel`, `iran-maps`, `iran-health`, `iran-books`, `iran-learning`, `iran-jobs-bundle`, `iran-freelance`, `iran-software`,
-`iran-prices`, `iran-stocks`, `iran-economy`, `iran-law`.
+`iran-prices`, `iran-stocks`, `iran-economy`, `iran-news-bundle`, `iran-media`, `iran-events`, `iran-law`,
+`iran-reference`, `iran-community`.
 Skills only, for any agent: `npx skills add sepehr071/iran-mcp`.
 
-The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 77.
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 96.
 Requires [uv](https://docs.astral.sh/uv/) (`pasavard-mcp` and `swapwallet-mcp` don't). Add only the servers the task needs: each one adds 3 to 31 tools.
 
 ## Rules every server follows
@@ -153,14 +172,20 @@ assets/               banners (generated)
 README.md / README.fa.md   English (default) and Persian docs; keep both in sync
 ```
 
-- Update servers: `git submodule update --init --remote && python scripts/catalog.py && python scripts/banner.py`,
-  then commit the new pins and generated files.
+- Update servers: `git submodule update --init --remote`, then run both scripts with the font versions the nightly
+  sync pins (`banner.py` refuses others, since they re-encode every banner font):
+  `uv run --no-project -p 3.12 --with fonttools==4.66.1 --with brotli==1.2.0 python scripts/catalog.py`, the same
+  for `scripts/banner.py`. Then commit the new pins and generated files. The nightly `sync.yml` does all this.
+- Before running `catalog.py` locally, check `git submodule status`: a `+` checkout older than the recorded pin (after
+  a pull) makes it downgrade versions in `.mcp.json` and the plugins. Run `git submodule update --init` first.
+- On Windows with `core.autocrlf=true`, the scripts' LF output makes `git status` list every generated file as
+  modified. `git diff --stat` shows the real changes; the rest clears on `git add`.
 - Never edit `servers.json`, `TOOLS.md`, `.mcp.json`, `plugins/`, `.claude-plugin/` or the banners by hand.
   Skill text comes from `skill()`, `USE` and `NOTES` in `scripts/catalog.py`, except the rules of a server whose repo
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the 77 / 994 counts written in both READMEs.
+  READMEs and the table above. Update the server count (96) written in the docs; `catalog.py` updates the tool counts.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card

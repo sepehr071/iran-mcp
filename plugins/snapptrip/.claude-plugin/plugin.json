@@ -1,0 +1,27 @@
+{
+  "name": "snapptrip",
+  "displayName": "SnappTrip Hotels and Flights",
+  "version": "0.1.2",
+  "description": "Read-only SnappTrip: Iranian hotel search, rooms, reviews, calendar prices and domestic flights.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/snapptrip-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "travel",
+    "snapptrip.com"
+  ],
+  "mcpServers": {
+    "snapptrip": {
+      "command": "uvx",
+      "args": [
+        "snapptrip-mcp@0.1.2"
+      ]
+    }
+  }
+}

@@ -229,3 +229,60 @@
 [submodule "servers/snappshop-mcp"]
 	path = servers/snappshop-mcp
 	url = https://github.com/sepehr071/snappshop-mcp
+[submodule "servers/aparat-mcp"]
+	path = servers/aparat-mcp
+	url = https://github.com/sepehr071/aparat-mcp
+[submodule "servers/telewebion-mcp"]
+	path = servers/telewebion-mcp
+	url = https://github.com/sepehr071/telewebion-mcp
+[submodule "servers/cinematicket-mcp"]
+	path = servers/cinematicket-mcp
+	url = https://github.com/sepehr071/cinematicket-mcp
+[submodule "servers/tiwall-mcp"]
+	path = servers/tiwall-mcp
+	url = https://github.com/sepehr071/tiwall-mcp
+[submodule "servers/snapptrip-mcp"]
+	path = servers/snapptrip-mcp
+	url = https://github.com/sepehr071/snapptrip-mcp
+[submodule "servers/iran-dictionary-mcp"]
+	path = servers/iran-dictionary-mcp
+	url = https://github.com/sepehr071/iran-dictionary-mcp
+[submodule "servers/kilid-mcp"]
+	path = servers/kilid-mcp
+	url = https://github.com/sepehr071/kilid-mcp
+[submodule "servers/iran-roads-mcp"]
+	path = servers/iran-roads-mcp
+	url = https://github.com/sepehr071/iran-roads-mcp
+[submodule "servers/iran-bus-mcp"]
+	path = servers/iran-bus-mcp
+	url = https://github.com/sepehr071/iran-bus-mcp
+[submodule "servers/raja-mcp"]
+	path = servers/raja-mcp
+	url = https://github.com/sepehr071/raja-mcp
+[submodule "servers/digiato-mcp"]
+	path = servers/digiato-mcp
+	url = https://github.com/sepehr071/digiato-mcp
+[submodule "servers/namasha-mcp"]
+	path = servers/namasha-mcp
+	url = https://github.com/sepehr071/namasha-mcp
+[submodule "servers/iran-weather-mcp"]
+	path = servers/iran-weather-mcp
+	url = https://github.com/sepehr071/iran-weather-mcp
+[submodule "servers/iranseda-mcp"]
+	path = servers/iranseda-mcp
+	url = https://github.com/sepehr071/iranseda-mcp
+[submodule "servers/khodro45-mcp"]
+	path = servers/khodro45-mcp
+	url = https://github.com/sepehr071/khodro45-mcp
+[submodule "servers/ninisite-mcp"]
+	path = servers/ninisite-mcp
+	url = https://github.com/sepehr071/ninisite-mcp
+[submodule "servers/persian-wikipedia-mcp"]
+	path = servers/persian-wikipedia-mcp
+	url = https://github.com/sepehr071/persian-wikipedia-mcp
+[submodule "servers/virgool-mcp"]
+	path = servers/virgool-mcp
+	url = https://github.com/sepehr071/virgool-mcp
+[submodule "servers/digistyle-mcp"]
+	path = servers/digistyle-mcp
+	url = https://github.com/sepehr071/digistyle-mcp

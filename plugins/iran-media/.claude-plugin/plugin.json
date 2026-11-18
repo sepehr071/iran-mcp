@@ -1,0 +1,16 @@
+{
+  "name": "iran-media",
+  "description": "Everything for online videos, TV channels and schedules or radio and audio archives in Iran: Aparat Videos, Namasha Videos, Telewebion TV, Iranseda Radio Archive.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "aparat",
+    "namasha",
+    "telewebion",
+    "iranseda"
+  ]
+}

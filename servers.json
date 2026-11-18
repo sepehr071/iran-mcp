@@ -1860,6 +1860,66 @@
     ]
   },
   {
+    "name": "digistyle-mcp",
+    "title": "Digistyle Fashion",
+    "category": "fashion",
+    "site": "https://www.digistyle.com",
+    "description": "Read-only Digistyle (digistyle.com) fashion store: search, filters, product details, brands, deals.",
+    "version": "0.1.1",
+    "pypi": "digistyle-mcp",
+    "repository": "https://github.com/sepehr071/digistyle-mcp",
+    "registry_name": "io.github.sepehr071/digistyle-mcp",
+    "run": "uvx digistyle-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "DIGISTYLE_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Digistyle requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 6,
+    "tools": [
+      {
+        "name": "ds_search",
+        "title": "Search products",
+        "summary": "Search Digistyle fashion products with filters for category, brand, size, color and price (Toman).",
+        "read_only": true
+      },
+      {
+        "name": "ds_product",
+        "title": "Product details",
+        "summary": "Get a Digistyle product: price, discount, every size and color with stock, seller, specs, rating, comments.",
+        "read_only": true
+      },
+      {
+        "name": "ds_categories",
+        "title": "Categories",
+        "summary": "List Digistyle categories (from the site menu) with the code to pass to ds_search, ds_filters and ds_deals.",
+        "read_only": true
+      },
+      {
+        "name": "ds_brands",
+        "title": "Brands",
+        "summary": "List Digistyle brands with their code (for ds_search's brand argument); search by name.",
+        "read_only": true
+      },
+      {
+        "name": "ds_filters",
+        "title": "Category filters",
+        "summary": "Show what a Digistyle category can be filtered by: sizes, colors, top brands, price range, other attributes.",
+        "read_only": true
+      },
+      {
+        "name": "ds_deals",
+        "title": "Discounted products",
+        "summary": "Find discounted Digistyle products, biggest discount first, from a category, brand or campaign.",
+        "read_only": true
+      }
+    ]
+  },
+  {
     "name": "divar-mcp",
     "title": "Divar",
     "category": "classifieds",
@@ -2155,6 +2215,78 @@
         "name": "sp_area_prices",
         "title": "Prices per neighbourhood",
         "summary": "Compare asking prices between neighbourhoods of a city: median price, price per square metre, rent and deposit.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "kilid-mcp",
+    "title": "Kilid Real Estate",
+    "category": "classifieds",
+    "site": "https://kilid.com",
+    "description": "Read-only Kilid (kilid.com) Iranian real estate: listings, districts, price per m2, agencies.",
+    "version": "0.1.2",
+    "pypi": "kilid-mcp",
+    "repository": "https://github.com/sepehr071/kilid-mcp",
+    "registry_name": "io.github.sepehr071/kilid-mcp",
+    "run": "uvx kilid-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "KILID_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Kilid requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 8,
+    "tools": [
+      {
+        "name": "kl_cities",
+        "title": "Cities",
+        "summary": "Find the city id and slug Kilid uses for a city (needed by kl_search_listings and kl_districts).",
+        "read_only": true
+      },
+      {
+        "name": "kl_districts",
+        "title": "Districts",
+        "summary": "List the districts or neighborhoods of a city with the ids kl_search_listings takes as region_ids.",
+        "read_only": true
+      },
+      {
+        "name": "kl_search_listings",
+        "title": "Search listings",
+        "summary": "Search Kilid sale and rental listings with price, area, room and place filters.",
+        "read_only": true
+      },
+      {
+        "name": "kl_listing",
+        "title": "Listing detail",
+        "summary": "Get one Kilid listing: price, area, rooms, floor, facilities, description, location point and agency.",
+        "read_only": true
+      },
+      {
+        "name": "kl_price_stats",
+        "title": "House price statistics",
+        "summary": "Get median price per m2 for a city or area from Kilid's market report, with sub-areas and a 12-month trend.",
+        "read_only": true
+      },
+      {
+        "name": "kl_neighborhood_prices",
+        "title": "Neighborhood prices",
+        "summary": "Rank a city's neighborhoods by median price per m2 (Toman), from Kilid's neighborhood guide.",
+        "read_only": true
+      },
+      {
+        "name": "kl_agencies",
+        "title": "Find agencies",
+        "summary": "Search real-estate agencies registered on Kilid by name; open one with kl_agency.",
+        "read_only": true
+      },
+      {
+        "name": "kl_agency",
+        "title": "Agency detail",
+        "summary": "Get a Kilid real-estate agency: address, district, location point, active listings and agent count.",
         "read_only": true
       }
     ]
@@ -2461,6 +2593,90 @@
         "name": "hm_articles",
         "title": "Magazine articles",
         "summary": "Search the Hamrah Mechanic magazine (3,000+ Persian articles) or read one article.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "khodro45-mcp",
+    "title": "Khodro45 Used Cars",
+    "category": "cars",
+    "site": "https://khodro45.com",
+    "description": "Read-only Khodro45 (khodro45.com) Iran used cars: listings, inspection reports, price estimate.",
+    "version": "0.1.1",
+    "pypi": "khodro45-mcp",
+    "repository": "https://github.com/sepehr071/khodro45-mcp",
+    "registry_name": "io.github.sepehr071/khodro45-mcp",
+    "run": "uvx khodro45-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "KHODRO45_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Khodro45 requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "k45_brands",
+        "title": "Used-car brands",
+        "summary": "List the car brands Khodro45 knows, optionally filtered by name.",
+        "read_only": true
+      },
+      {
+        "name": "k45_models",
+        "title": "Car models of a brand",
+        "summary": "List the models of one brand, e.g.",
+        "read_only": true
+      },
+      {
+        "name": "k45_trims",
+        "title": "Trims and years of a model",
+        "summary": "List the trims (types) of a model and the model years each one was built.",
+        "read_only": true
+      },
+      {
+        "name": "k45_price_estimate",
+        "title": "Used-car price estimate",
+        "summary": "Estimate the used-car price of a trim and year, the same public estimate khodro45.com/carprice shows.",
+        "read_only": true
+      },
+      {
+        "name": "k45_cities",
+        "title": "Cities with listings",
+        "summary": "List the cities where Khodro45 sells cars, optionally filtered by name.",
+        "read_only": true
+      },
+      {
+        "name": "k45_cars",
+        "title": "Search used cars for sale",
+        "summary": "Search the used cars listed for sale on Khodro45 (inspected by the company).",
+        "read_only": true
+      },
+      {
+        "name": "k45_car",
+        "title": "Used-car listing details",
+        "summary": "Get one used-car listing in full: price, specs, ownership and document facts, photos.",
+        "read_only": true
+      },
+      {
+        "name": "k45_inspection",
+        "title": "Used-car inspection report",
+        "summary": "Get the public Khodro45 expert inspection report of a listing: section scores and every found defect.",
+        "read_only": true
+      },
+      {
+        "name": "k45_deals",
+        "title": "Recent used-car deals",
+        "summary": "List used cars Khodro45 really sold lately (the public deals hall), newest first, with the sale price.",
+        "read_only": true
+      },
+      {
+        "name": "k45_new_car_prices",
+        "title": "New-car market prices",
+        "summary": "Get today's zero-km car prices (market, factory, dealer) of a brand, or the market price indexes.",
         "read_only": true
       }
     ]
@@ -3258,6 +3474,198 @@
     ]
   },
   {
+    "name": "snapptrip-mcp",
+    "title": "SnappTrip Hotels and Flights",
+    "category": "travel",
+    "site": "https://www.snapptrip.com",
+    "description": "Read-only SnappTrip: Iranian hotel search, rooms, reviews, calendar prices and domestic flights.",
+    "version": "0.1.2",
+    "pypi": "snapptrip-mcp",
+    "repository": "https://github.com/sepehr071/snapptrip-mcp",
+    "registry_name": "io.github.sepehr071/snapptrip-mcp",
+    "run": "uvx snapptrip-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "SNAPPTRIP_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the SnappTrip requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "st_flight_airports",
+        "title": "Flight airports",
+        "summary": "List the cities SnappTrip offers flights from, with IATA codes and airports.",
+        "read_only": true
+      },
+      {
+        "name": "st_flight_search",
+        "title": "Flight search",
+        "summary": "Search one-way domestic economy flights for a date, cheapest first.",
+        "read_only": true
+      },
+      {
+        "name": "st_flight_prices",
+        "title": "Flight price calendar",
+        "summary": "Show the lowest one-way price per day for the next weeks and the cheapest days.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_places",
+        "title": "Hotel places",
+        "summary": "Find a SnappTrip hotel city or a hotel by name.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_search",
+        "title": "Hotel search",
+        "summary": "Search hotels in a city for dates with star, price and facility filters.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_filters",
+        "title": "Hotel filters",
+        "summary": "List the filters a city offers for dates: facilities (ids), categories, accommodation types, price range, stars.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_detail",
+        "title": "Hotel detail",
+        "summary": "Get a hotel's description, location, facilities, policies, photos and guest rating breakdown.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_rooms",
+        "title": "Hotel rooms",
+        "summary": "List the rooms of a hotel with prices for the dates.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_calendar",
+        "title": "Hotel price calendar",
+        "summary": "Show a room's per-night price and rooms left for each day, with the cheapest bookable nights.",
+        "read_only": true
+      },
+      {
+        "name": "st_hotel_reviews",
+        "title": "Hotel reviews",
+        "summary": "Read guest reviews of a hotel, newest first, with pros, cons and the room stayed in.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "raja-mcp",
+    "title": "Raja Train Tickets",
+    "category": "travel",
+    "site": "https://www.raja.ir",
+    "description": "Read-only Raja (raja.ir) Iranian trains: stations, search with prices and seats, timetables, news.",
+    "version": "0.1.2",
+    "pypi": "raja-mcp",
+    "repository": "https://github.com/sepehr071/raja-mcp",
+    "registry_name": "io.github.sepehr071/raja-mcp",
+    "run": "uvx raja-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "RAJA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Raja requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 5,
+    "tools": [
+      {
+        "name": "rj_stations",
+        "title": "Raja stations",
+        "summary": "Find Raja railway stations and their codes by Persian or English name.",
+        "read_only": true
+      },
+      {
+        "name": "rj_search_trains",
+        "title": "Search trains",
+        "summary": "Search one-way trains between two stations on a date, with prices in Toman and free seats.",
+        "read_only": true
+      },
+      {
+        "name": "rj_train_stops",
+        "title": "Train stops",
+        "summary": "List every stop of a train with its time, from a row's `ref` of rj_search_trains.",
+        "read_only": true
+      },
+      {
+        "name": "rj_announcements",
+        "title": "Raja notices",
+        "summary": "Read the notices Raja shows at the top of its site: presale dates, refund rules, boarding rules.",
+        "read_only": true
+      },
+      {
+        "name": "rj_news",
+        "title": "Raja news",
+        "summary": "List the latest Raja company news (title, Jalali date, id) or read one story's text by id.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "iran-bus-mcp",
+    "title": "Iran Bus Tickets",
+    "category": "travel",
+    "site": "https://safar724.com",
+    "description": "Read-only Iranian bus tickets (Safar724): trips, Toman prices, free seats, cheapest ticket.",
+    "version": "0.1.2",
+    "pypi": "iran-bus-mcp",
+    "repository": "https://github.com/sepehr071/iran-bus-mcp",
+    "registry_name": "io.github.sepehr071/iran-bus-mcp",
+    "run": "uvx iran-bus-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_BUS_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the bus-site requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 5,
+    "tools": [
+      {
+        "name": "bus_cities",
+        "title": "Find bus cities",
+        "summary": "Look up cities (name, code, province) that tickets can be bought for; use it to spell a city exactly.",
+        "read_only": true
+      },
+      {
+        "name": "bus_search",
+        "title": "Search bus trips",
+        "summary": "List bus trips between two cities on one day: time, company, bus type, price in Toman, free seats, terminals.",
+        "read_only": true
+      },
+      {
+        "name": "bus_cheapest",
+        "title": "Cheapest bus tickets",
+        "summary": "Cheapest bus trips between two cities on one day, merged across providers and sorted by price in Toman.",
+        "read_only": true
+      },
+      {
+        "name": "bus_terminals",
+        "title": "Bus terminals on a route",
+        "summary": "List the departure and arrival terminals that have trips on a route and the companies running them.",
+        "read_only": true
+      },
+      {
+        "name": "bus_trip",
+        "title": "Bus trip seats and refund rules",
+        "summary": "Seat map summary and refund penalties of one trip: free seat numbers, seats taken by men or women.",
+        "read_only": true
+      }
+    ]
+  },
+  {
     "name": "neshan-mcp",
     "title": "Neshan Maps",
     "category": "maps",
@@ -3421,6 +3829,78 @@
         "name": "bl_categories",
         "title": "Place categories",
         "summary": "List Balad's place categories with the slug bl_nearby takes, grouped (food, health, shopping, services...).",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "iran-roads-mcp",
+    "title": "Iran Roads",
+    "category": "maps",
+    "site": "https://141.ir",
+    "description": "Read-only Iran road status (141.ir): bulletins, closures, restrictions, road works, weather.",
+    "version": "0.1.2",
+    "pypi": "iran-roads-mcp",
+    "repository": "https://github.com/sepehr071/iran-roads-mcp",
+    "registry_name": "io.github.sepehr071/iran-roads-mcp",
+    "run": "uvx iran-roads-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_ROADS_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the 141.ir requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 8,
+    "tools": [
+      {
+        "name": "rd_provinces",
+        "title": "Provinces",
+        "summary": "List the 31 provinces with the ids the other tools accept (and the province centre point).",
+        "read_only": true
+      },
+      {
+        "name": "rd_bulletin",
+        "title": "Road status bulletin",
+        "summary": "Latest official road weather and traffic status bulletin (northern axes, other axes) of the Road Maintenance Organization.",
+        "read_only": true
+      },
+      {
+        "name": "rd_closures",
+        "title": "Closed roads",
+        "summary": "List current road closures (blockades) with cause, direction, alternative route text and coordinates.",
+        "read_only": true
+      },
+      {
+        "name": "rd_restrictions",
+        "title": "Traffic restrictions",
+        "summary": "List traffic restrictions announced by the traffic police (limited vehicle types or hours, road still open).",
+        "read_only": true
+      },
+      {
+        "name": "rd_workshops",
+        "title": "Road works",
+        "summary": "List road works (workshops) with work type, whether traffic can pass, period and alternative route.",
+        "read_only": true
+      },
+      {
+        "name": "rd_weather",
+        "title": "Road weather warnings",
+        "summary": "Current weather warnings for roads: hazard, affected provinces by day, and validity dates.",
+        "read_only": true
+      },
+      {
+        "name": "rd_main_routes",
+        "title": "Main routes",
+        "summary": "List the 22 main intercity axes the 141 app tracks (Tehran-North, Tehran-Mashhad...) with endpoints.",
+        "read_only": true
+      },
+      {
+        "name": "rd_traffic_map",
+        "title": "Province traffic map",
+        "summary": "Get the URL of the province's traffic status map image (updated by 141; the image shows live congestion).",
         "read_only": true
       }
     ]
@@ -6546,6 +7026,78 @@
     ]
   },
   {
+    "name": "digiato-mcp",
+    "title": "Digiato Tech News",
+    "category": "news",
+    "site": "https://digiato.com",
+    "description": "Read-only Digiato tech news: latest, by category, search, full articles, reviews and tags.",
+    "version": "0.1.1",
+    "pypi": "digiato-mcp",
+    "repository": "https://github.com/sepehr071/digiato-mcp",
+    "registry_name": "io.github.sepehr071/digiato-mcp",
+    "run": "uvx digiato-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "DIGIATO_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Digiato requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 8,
+    "tools": [
+      {
+        "name": "dgt_latest",
+        "title": "Latest news",
+        "summary": "Latest Digiato articles (news, reviews, guides), newest first.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_categories",
+        "title": "Categories",
+        "summary": "List Digiato categories with article counts and parent, e.g. tech > mobile, artificial-intelligence, security.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_category",
+        "title": "News by category",
+        "summary": "Newest articles of one category (children included), e.g. mobile, artificial-intelligence, car-news, security.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_search",
+        "title": "Search articles",
+        "summary": "Search Digiato articles by words in the title and text, best matches first.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_reviews",
+        "title": "Reviews",
+        "summary": "Newest Digiato product reviews (نقد و بررسی), optionally of one device type.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_tags",
+        "title": "Tags",
+        "summary": "Find Digiato tags (companies, products, topics) with article counts, most used first.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_tag",
+        "title": "News by tag",
+        "summary": "Newest articles carrying one tag, e.g. apple, samsung, google, mobile.",
+        "read_only": true
+      },
+      {
+        "name": "dgt_article",
+        "title": "Read article",
+        "summary": "Read one Digiato article as plain text with title, author, summary, date, categories, tags and cover.",
+        "read_only": true
+      }
+    ]
+  },
+  {
     "name": "varzesh3-mcp",
     "title": "Varzesh3 Sports",
     "category": "sports",
@@ -6882,6 +7434,462 @@
     ]
   },
   {
+    "name": "aparat-mcp",
+    "title": "Aparat Videos",
+    "category": "media",
+    "site": "https://www.aparat.com",
+    "description": "Read-only Aparat (aparat.com) Iranian video platform: search, videos, channels, trending, comments.",
+    "version": "0.1.2",
+    "pypi": "aparat-mcp",
+    "repository": "https://github.com/sepehr071/aparat-mcp",
+    "registry_name": "io.github.sepehr071/aparat-mcp",
+    "run": "uvx aparat-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "APARAT_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Aparat requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 8,
+    "tools": [
+      {
+        "name": "apr_search",
+        "title": "Search Aparat",
+        "summary": "Search Aparat videos and channels by text.",
+        "read_only": true
+      },
+      {
+        "name": "apr_video",
+        "title": "Aparat video details",
+        "summary": "Get one Aparat video: title, description, views, likes, duration, tags, category, channel, publish date.",
+        "read_only": true
+      },
+      {
+        "name": "apr_comments",
+        "title": "Aparat video comments",
+        "summary": "Read the top comments under an Aparat video (10 per page, most liked first as the site orders them).",
+        "read_only": true
+      },
+      {
+        "name": "apr_related",
+        "title": "Related Aparat videos",
+        "summary": "List videos Aparat recommends next to a video (about 10).",
+        "read_only": true
+      },
+      {
+        "name": "apr_channel",
+        "title": "Aparat channel",
+        "summary": "Get an Aparat channel: name, followers, video count, total views, description, start date.",
+        "read_only": true
+      },
+      {
+        "name": "apr_channel_videos",
+        "title": "Aparat channel videos",
+        "summary": "List a channel's videos, newest first or most viewed (10 per page).",
+        "read_only": true
+      },
+      {
+        "name": "apr_categories",
+        "title": "Aparat trending categories",
+        "summary": "List the category names Aparat's trending tabs use.",
+        "read_only": true
+      },
+      {
+        "name": "apr_trending",
+        "title": "Trending Aparat videos",
+        "summary": "List trending Aparat videos, overall or in one category (up to 40).",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "namasha-mcp",
+    "title": "Namasha Videos",
+    "category": "media",
+    "site": "https://www.namasha.com",
+    "description": "Read-only Namasha (namasha.com) Iranian video platform: search, videos, channels, categories.",
+    "version": "0.1.1",
+    "pypi": "namasha-mcp",
+    "repository": "https://github.com/sepehr071/namasha-mcp",
+    "registry_name": "io.github.sepehr071/namasha-mcp",
+    "run": "uvx namasha-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "NAMASHA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Namasha requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "nm_search",
+        "title": "Search Namasha",
+        "summary": "Search Namasha videos by text.",
+        "read_only": true
+      },
+      {
+        "name": "nm_video",
+        "title": "Namasha video details",
+        "summary": "Get one Namasha video: title, description, views, likes, comment count, duration, upload date, tags, channel.",
+        "read_only": true
+      },
+      {
+        "name": "nm_related",
+        "title": "Namasha related videos",
+        "summary": "List the videos Namasha suggests next to a video (page 1 about 12, later pages 20 each).",
+        "read_only": true
+      },
+      {
+        "name": "nm_comments",
+        "title": "Namasha comments",
+        "summary": "List the public comments of a video (text, author, age, likes; replies follow their parent).",
+        "read_only": true
+      },
+      {
+        "name": "nm_channel",
+        "title": "Namasha channel",
+        "summary": "Get a Namasha channel: name, verified flag, description, creation date, links.",
+        "read_only": true
+      },
+      {
+        "name": "nm_channel_videos",
+        "title": "Namasha channel videos",
+        "summary": "List a channel's videos, newest first (60 per page).",
+        "read_only": true
+      },
+      {
+        "name": "nm_featured",
+        "title": "Namasha featured videos",
+        "summary": "List the videos on Namasha's home page: editors' picks or the special row.",
+        "read_only": true
+      },
+      {
+        "name": "nm_categories",
+        "title": "Namasha categories",
+        "summary": "List Namasha's video categories with the slug nm_category_videos takes.",
+        "read_only": true
+      },
+      {
+        "name": "nm_category_videos",
+        "title": "Namasha category videos",
+        "summary": "List the newest videos of a category (60 per page).",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "telewebion-mcp",
+    "title": "Telewebion TV",
+    "category": "media",
+    "site": "https://telewebion.ir",
+    "description": "Read-only Telewebion (telewebion.ir) IRIB TV: channels, what aired, programs, episodes, live sports.",
+    "version": "0.1.2",
+    "pypi": "telewebion-mcp",
+    "repository": "https://github.com/sepehr071/telewebion-mcp",
+    "registry_name": "io.github.sepehr071/telewebion-mcp",
+    "run": "uvx telewebion-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "TELEWEBION_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Telewebion requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 7,
+    "tools": [
+      {
+        "name": "tv_channels",
+        "title": "Telewebion channels",
+        "summary": "List Telewebion live channels (TV, provincial, radio) with the id the other tools take.",
+        "read_only": true
+      },
+      {
+        "name": "tv_channel_schedule",
+        "title": "Telewebion channel schedule",
+        "summary": "What aired on a channel on a day, oldest first, with start/end (Tehran time) and episode page URLs.",
+        "read_only": true
+      },
+      {
+        "name": "tv_live_now",
+        "title": "Telewebion live now",
+        "summary": "Show the most recent program on each channel of a group (national TV by default), with live page URLs.",
+        "read_only": true
+      },
+      {
+        "name": "tv_search",
+        "title": "Telewebion search",
+        "summary": "Search programs (TV shows) and movies/series by title, with their page URLs.",
+        "read_only": true
+      },
+      {
+        "name": "tv_program",
+        "title": "Telewebion program",
+        "summary": "Show a program's summary and its episodes, newest first, with episode page URLs.",
+        "read_only": true
+      },
+      {
+        "name": "tv_episode",
+        "title": "Telewebion episode",
+        "summary": "Show one episode: title, program, channel, air time (Tehran), duration, quality variants and page URL.",
+        "read_only": true
+      },
+      {
+        "name": "tv_live_events",
+        "title": "Telewebion live sports",
+        "summary": "List sports broadcasts (football, volleyball, ...) scheduled or live on Telewebion that day, with page URLs.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "iranseda-mcp",
+    "title": "Iranseda Radio Archive",
+    "category": "media",
+    "site": "https://www.iranseda.ir",
+    "description": "Read-only Iranseda (IRIB audio): radio channels, live streams, schedules, audiobooks, music, Quran.",
+    "version": "0.1.1",
+    "pypi": "iranseda-mcp",
+    "repository": "https://github.com/sepehr071/iranseda-mcp",
+    "registry_name": "io.github.sepehr071/iranseda-mcp",
+    "run": "uvx iranseda-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRANSEDA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Iranseda requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "sd_library_search",
+        "title": "Search audio library",
+        "summary": "Search Iranseda's audiobooks, music, kids, speeches, nava and Quran recitations.",
+        "read_only": true
+      },
+      {
+        "name": "sd_library_item",
+        "title": "Library item and tracks",
+        "summary": "Get an audiobook, song, speech, nava or recitation's details and its tracks.",
+        "read_only": true
+      },
+      {
+        "name": "sd_library_file",
+        "title": "Library track file links",
+        "summary": "Get the mp3 and mp4 download links and sizes of one library track.",
+        "read_only": true
+      },
+      {
+        "name": "sd_channels",
+        "title": "List radio channels",
+        "summary": "List IRIB radio channels with the program playing now.",
+        "read_only": true
+      },
+      {
+        "name": "sd_live_now",
+        "title": "Live stream and now/next",
+        "summary": "Get a radio channel's public live stream URL and what is on now and next.",
+        "read_only": true
+      },
+      {
+        "name": "sd_schedule",
+        "title": "Channel schedule for a day",
+        "summary": "List a radio channel's programs for one day, with episode ids.",
+        "read_only": true
+      },
+      {
+        "name": "sd_search_programs",
+        "title": "Search radio programs",
+        "summary": "Find programs of one radio channel by name (the site has no global search).",
+        "read_only": true
+      },
+      {
+        "name": "sd_program",
+        "title": "Program details and episodes",
+        "summary": "Get a radio program's description, broadcast time and its latest episodes.",
+        "read_only": true
+      },
+      {
+        "name": "sd_episode",
+        "title": "Episode and audio files",
+        "summary": "Get one episode's date, description and the audio file URL of each part.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "cinematicket-mcp",
+    "title": "Cinematicket Tickets",
+    "category": "events",
+    "site": "https://cinematicket.org",
+    "description": "Read-only Cinematicket (cinematicket.org): cinemas, films, showtimes, prices, theatre, box office.",
+    "version": "0.1.2",
+    "pypi": "cinematicket-mcp",
+    "repository": "https://github.com/sepehr071/cinematicket-mcp",
+    "registry_name": "io.github.sepehr071/cinematicket-mcp",
+    "run": "uvx cinematicket-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "CINEMATICKET_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Cinematicket requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 10,
+    "tools": [
+      {
+        "name": "ct_cities",
+        "title": "Cities",
+        "summary": "List the cities Cinematicket sells tickets in, with the city ids other tools take.",
+        "read_only": true
+      },
+      {
+        "name": "ct_now_showing",
+        "title": "Now showing",
+        "summary": "Films and shows on sale now, grouped by category, nationwide (the site's home feed).",
+        "read_only": true
+      },
+      {
+        "name": "ct_film",
+        "title": "Film detail",
+        "summary": "Cast, director, genre, rating, duration, summary and sales of one film or show, plus how widely it is screened.",
+        "read_only": true
+      },
+      {
+        "name": "ct_cinemas",
+        "title": "Cinemas by city",
+        "summary": "Cinemas and venues in a city, most popular first, with rating, address, facilities and coordinates.",
+        "read_only": true
+      },
+      {
+        "name": "ct_cinema",
+        "title": "Cinema detail",
+        "summary": "One cinema's info (address, phone, halls, rules) and its full program for a day: films, halls, times, prices (Toman).",
+        "read_only": true
+      },
+      {
+        "name": "ct_showtimes",
+        "title": "Showtimes",
+        "summary": "Where and when a film or show plays: cinemas, halls, times and ticket prices (Toman) for one day.",
+        "read_only": true
+      },
+      {
+        "name": "ct_upcoming",
+        "title": "Upcoming films",
+        "summary": "Films announced as coming soon, with release dates (the site's next-programs page; it is often empty).",
+        "read_only": true
+      },
+      {
+        "name": "ct_events",
+        "title": "Theatre and concerts",
+        "summary": "List theatre plays, concerts or films with sessions on sale, with rating and director.",
+        "read_only": true
+      },
+      {
+        "name": "ct_box_office",
+        "title": "Box office",
+        "summary": "Top-grossing films by total ticket sales (Toman), with audience figures, cinemas and weeks on screen.",
+        "read_only": true
+      },
+      {
+        "name": "ct_search",
+        "title": "Search",
+        "summary": "Search films, shows and cinemas by name; returns ids for ct_film, ct_showtimes and ct_cinema.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "tiwall-mcp",
+    "title": "Tiwall Events",
+    "category": "events",
+    "site": "https://www.tiwall.com",
+    "description": "Read-only Tiwall (tiwall.com) Iranian event tickets: theatre, concerts, venues, sessions, prices.",
+    "version": "0.1.2",
+    "pypi": "tiwall-mcp",
+    "repository": "https://github.com/sepehr071/tiwall-mcp",
+    "registry_name": "io.github.sepehr071/tiwall-mcp",
+    "run": "uvx tiwall-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "TIWALL_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Tiwall requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "tw_categories",
+        "title": "Event categories and cities",
+        "summary": "List Tiwall's event categories, sort orders and main cities with the ids tw_events needs.",
+        "read_only": true
+      },
+      {
+        "name": "tw_events",
+        "title": "Browse events",
+        "summary": "List current Tiwall events filtered by category, city, venue, date and sort order.",
+        "read_only": true
+      },
+      {
+        "name": "tw_popular",
+        "title": "Popular events",
+        "summary": "List the best-selling, best-rated or newest Tiwall events, optionally per category or city.",
+        "read_only": true
+      },
+      {
+        "name": "tw_search",
+        "title": "Search events",
+        "summary": "Search Tiwall events by title, artist or venue words.",
+        "read_only": true
+      },
+      {
+        "name": "tw_event",
+        "title": "Event detail",
+        "summary": "Get one event: venue and address, dates, time, duration, price, cast and crew, summary, tags, rating, sale status.",
+        "read_only": true
+      },
+      {
+        "name": "tw_sessions",
+        "title": "Event sessions",
+        "summary": "List the show times (sessions) of an event with date, time, seat status and ticket price in Toman.",
+        "read_only": true
+      },
+      {
+        "name": "tw_venues",
+        "title": "Venues and cities",
+        "summary": "Search Tiwall venues and cities by name and get their ids, addresses, coordinates and ratings.",
+        "read_only": true
+      },
+      {
+        "name": "tw_venue",
+        "title": "Venue and its events",
+        "summary": "Get a venue page (address, phones, social links, followers) and its current events.",
+        "read_only": true
+      },
+      {
+        "name": "tw_reviews",
+        "title": "Event reviews",
+        "summary": "Read the public rating breakdown and audience posts of an event (newest page only).",
+        "read_only": true
+      }
+    ]
+  },
+  {
     "name": "time-ir-mcp",
     "title": "Time.ir Calendar",
     "category": "calendar",
@@ -7033,6 +8041,84 @@
         "name": "eq_stats",
         "title": "Earthquake statistics",
         "summary": "Count earthquakes in Iran over a window: by magnitude band, by place, plus the strongest event.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "iran-weather-mcp",
+    "title": "Iran Weather",
+    "category": "weather",
+    "site": "https://www.irimo.ir",
+    "description": "Read-only Iran Meteorological Org (irimo.ir): city forecasts, observations, warnings.",
+    "version": "0.1.1",
+    "pypi": "iran-weather-mcp",
+    "repository": "https://github.com/sepehr071/iran-weather-mcp",
+    "registry_name": "io.github.sepehr071/iran-weather-mcp",
+    "run": "uvx iran-weather-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_WEATHER_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "HTTP proxy URL for irimo.ir, which answers only Iranian IPs (set an Iranian proxy when running abroad); system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "wx_cities",
+        "title": "Main cities forecast",
+        "summary": "Today's forecast (condition, max and min temperature) for the main cities (about 35), with the ids wx_weather accepts.",
+        "read_only": true
+      },
+      {
+        "name": "wx_weather",
+        "title": "Weather at a city",
+        "summary": "Current observation and 3-day forecast for one city or weather station.",
+        "read_only": true
+      },
+      {
+        "name": "wx_province",
+        "title": "Province stations now",
+        "summary": "Latest observations of every weather station in the province of a city.",
+        "read_only": true
+      },
+      {
+        "name": "wx_observations",
+        "title": "Country observations",
+        "summary": "Current temperature, humidity and wind at the ~37 stations on the national map of irimo.ir.",
+        "read_only": true
+      },
+      {
+        "name": "wx_warnings",
+        "title": "Weather warnings",
+        "summary": "Latest official warnings of the Iran Meteorological Organization, newest first.",
+        "read_only": true
+      },
+      {
+        "name": "wx_road",
+        "title": "Road weather",
+        "summary": "Current weather of every city along a main road, from the road-weather service of irimo.ir.",
+        "read_only": true
+      },
+      {
+        "name": "wx_airports",
+        "title": "Airport forecasts",
+        "summary": "Aviation forecasts (TAF) of about 29 Iranian airports with their flight category (vfr, mvfr, ifr, lifr).",
+        "read_only": true
+      },
+      {
+        "name": "wx_bulletins",
+        "title": "Forecast bulletins",
+        "summary": "Link to the latest official forecast bulletin (PDF): 5-day, weekly, seasonal, Tehran province or Tehran air quality.",
+        "read_only": true
+      },
+      {
+        "name": "wx_warning",
+        "title": "Warning detail",
+        "summary": "Full text of one warning: system description, start and end time, hazard, affected area, impact, advice.",
         "read_only": true
       }
     ]
@@ -7417,6 +8503,312 @@
         "name": "rs_options",
         "title": "Filter values and categories",
         "summary": "List the ids and names the search filters take: legal forms, licenses, product categories, brand classes.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "iran-dictionary-mcp",
+    "title": "Iran Dictionary (Abadis + Vajehyab)",
+    "category": "reference",
+    "site": "https://abadis.ir",
+    "description": "Read-only Persian dictionaries: Abadis and Vajehyab. Meanings, synonyms, translation, names.",
+    "version": "0.1.2",
+    "pypi": "iran-dictionary-mcp",
+    "repository": "https://github.com/sepehr071/iran-dictionary-mcp",
+    "registry_name": "io.github.sepehr071/iran-dictionary-mcp",
+    "run": "uvx iran-dictionary-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "IRAN_DICTIONARY_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Abadis and Vajehyab requests; system proxy settings are ignored."
+      }
+    ],
+    "tool_count": 7,
+    "tools": [
+      {
+        "name": "dic_abadis_names",
+        "title": "Abadis: Persian first names",
+        "summary": "Search Abadis's Persian first-name list by name, gender, origin, theme or first letter.",
+        "read_only": true
+      },
+      {
+        "name": "dic_lookup",
+        "title": "Look up a word",
+        "summary": "Look a word up in the Persian dictionaries of Abadis and Vajehyab, one block per site.",
+        "read_only": true
+      },
+      {
+        "name": "dic_synonyms",
+        "title": "Synonyms and antonyms",
+        "summary": "Find synonyms, antonyms and pure-Persian equivalents (برابر پارسی) of a Persian word, one block per site.",
+        "read_only": true
+      },
+      {
+        "name": "dic_translate",
+        "title": "Translate a word",
+        "summary": "Translate a single word or short phrase between Persian and English, Arabic or Turkish, one block per site.",
+        "read_only": true
+      },
+      {
+        "name": "dic_suggest",
+        "title": "Autocomplete words",
+        "summary": "Complete the start of a word into dictionary headwords, one list per site; use it to find the exact spelling.",
+        "read_only": true
+      },
+      {
+        "name": "dic_vajehyab_search",
+        "title": "Vajehyab: search entries",
+        "summary": "Search Vajehyab's dictionaries with a scope: exact entries, entries naming it a synonym or antonym, rhymes, sound-alikes.",
+        "read_only": true
+      },
+      {
+        "name": "dic_vajehyab_entry",
+        "title": "Vajehyab: full entry",
+        "summary": "Read one whole Vajehyab entry (for example the full Dehkhoda text with its poetry), cut at `max_chars`.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "persian-wikipedia-mcp",
+    "title": "Persian Wikipedia",
+    "category": "reference",
+    "site": "https://fa.wikipedia.org",
+    "description": "Read-only Persian Wikipedia (fa.wikipedia.org): search, summaries, article text, nearby places.",
+    "version": "0.1.0",
+    "pypi": "persian-wikipedia-mcp",
+    "repository": "https://github.com/sepehr071/persian-wikipedia-mcp",
+    "registry_name": "io.github.sepehr071/persian-wikipedia-mcp",
+    "run": "uvx persian-wikipedia-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "PERSIAN_WIKIPEDIA_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Wikipedia requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 9,
+    "tools": [
+      {
+        "name": "wiki_search",
+        "title": "Search articles",
+        "summary": "Search Persian Wikipedia articles by words; returns titles with a short snippet and the total hit count.",
+        "read_only": true
+      },
+      {
+        "name": "wiki_summary",
+        "title": "Article summary",
+        "summary": "Get the lead summary of an article: one-line description, intro paragraph, image, coordinates and URL.",
+        "read_only": true
+      },
+      {
+        "name": "wiki_article",
+        "title": "Article text",
+        "summary": "Read an article as plain text with '== heading ==' lines, optionally one section, cut to max_chars.",
+        "read_only": true
+      },
+      {
+        "name": "wiki_sections",
+        "title": "Article sections",
+        "summary": "List an article's section headings with their level and number (the table of contents).",
+        "read_only": true
+      },
+      {
+        "name": "wiki_languages",
+        "title": "Other languages",
+        "summary": "Get the titles of the same article in other Wikipedia languages (e.g. the English title).",
+        "read_only": true
+      },
+      {
+        "name": "wiki_infobox",
+        "title": "Article infobox",
+        "summary": "Get an article's infobox facts (birth date, population, director...) and its visible categories.",
+        "read_only": true
+      },
+      {
+        "name": "wiki_random",
+        "title": "Random article",
+        "summary": "Get a random Persian Wikipedia article with its summary.",
+        "read_only": true
+      },
+      {
+        "name": "wiki_trending",
+        "title": "Trending articles",
+        "summary": "Get the most-read articles of a day and the picture of the day (fa has no 'on this day' or featured article).",
+        "read_only": true
+      },
+      {
+        "name": "wiki_nearby",
+        "title": "Articles near a place",
+        "summary": "Find articles about places near a latitude/longitude, nearest first, with distance in metres.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "virgool-mcp",
+    "title": "Virgool Blog",
+    "category": "community",
+    "site": "https://virgool.io",
+    "description": "Read-only Virgool (virgool.ir) Persian blog platform: search, posts, authors, topics, publications.",
+    "version": "0.1.0",
+    "pypi": "virgool-mcp",
+    "repository": "https://github.com/sepehr071/virgool-mcp",
+    "registry_name": "io.github.sepehr071/virgool-mcp",
+    "run": "uvx virgool-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "VIRGOOL_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Virgool requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 11,
+    "tools": [
+      {
+        "name": "vg_search",
+        "title": "Search Virgool",
+        "summary": "Search Virgool posts, authors, publications or tags.",
+        "read_only": true
+      },
+      {
+        "name": "vg_post",
+        "title": "Read a post",
+        "summary": "Read one Virgool post: title, author, topics, tags, counts and the full story text (images are skipped).",
+        "read_only": true
+      },
+      {
+        "name": "vg_comments",
+        "title": "Post comments",
+        "summary": "List the public top-level comments of a post, or the replies of one comment (`replies` counts them).",
+        "read_only": true
+      },
+      {
+        "name": "vg_user",
+        "title": "Author profile",
+        "summary": "Get an author's public profile (bio, followers, post count, links) and the publications they belong to.",
+        "read_only": true
+      },
+      {
+        "name": "vg_user_posts",
+        "title": "Author posts",
+        "summary": "List an author's published posts, newest first.",
+        "read_only": true
+      },
+      {
+        "name": "vg_feed",
+        "title": "Popular and latest posts",
+        "summary": "List Virgool's front-page posts: editors' picks or the newest posts.",
+        "read_only": true
+      },
+      {
+        "name": "vg_topics",
+        "title": "Topics",
+        "summary": "List all Virgool topics (broad categories) with follower counts. vg_topic_posts takes `name` or `fa_name`.",
+        "read_only": true
+      },
+      {
+        "name": "vg_topic_posts",
+        "title": "Topic posts",
+        "summary": "List the latest posts of a topic (category) such as book, economy or psychology.",
+        "read_only": true
+      },
+      {
+        "name": "vg_tag_posts",
+        "title": "Tag posts",
+        "summary": "List the latest posts carrying a tag.",
+        "read_only": true
+      },
+      {
+        "name": "vg_publications",
+        "title": "Publications",
+        "summary": "Search or list Virgool publications (group blogs). vg_publication_posts reads one by its `name`.",
+        "read_only": true
+      },
+      {
+        "name": "vg_publication_posts",
+        "title": "Publication posts",
+        "summary": "List the latest posts of a publication, newest first.",
+        "read_only": true
+      }
+    ]
+  },
+  {
+    "name": "ninisite-mcp",
+    "title": "Ninisite Parenting",
+    "category": "community",
+    "site": "https://www.ninisite.com",
+    "description": "Read-only Ninisite (ninisite.com) parenting forum topics, articles and pregnancy weeks.",
+    "version": "0.1.0",
+    "pypi": "ninisite-mcp",
+    "repository": "https://github.com/sepehr071/ninisite-mcp",
+    "registry_name": "io.github.sepehr071/ninisite-mcp",
+    "run": "uvx ninisite-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "NINISITE_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Ninisite requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 8,
+    "tools": [
+      {
+        "name": "nn_forums",
+        "title": "Forums and categories",
+        "summary": "List every forum category and its forums (id and name) on ninisite.com/discussion.",
+        "read_only": true
+      },
+      {
+        "name": "nn_forum_topics",
+        "title": "Forum topics",
+        "summary": "List the topics of one forum, most recently active first; pinned admin topics come first on page 1.",
+        "read_only": true
+      },
+      {
+        "name": "nn_hot_topics",
+        "title": "Hot and updated topics",
+        "summary": "List the site-wide hottest or recently updated forum topics.",
+        "read_only": true
+      },
+      {
+        "name": "nn_topic",
+        "title": "Topic with replies",
+        "summary": "Read a forum topic: the opening post plus one page of replies (about 15 posts per page).",
+        "read_only": true
+      },
+      {
+        "name": "nn_article_categories",
+        "title": "Article categories",
+        "summary": "List magazine article categories (ids for nn_articles); pass a top-level id to see its sub-categories.",
+        "read_only": true
+      },
+      {
+        "name": "nn_articles",
+        "title": "Articles list",
+        "summary": "List magazine articles, newest first, for all categories or one category.",
+        "read_only": true
+      },
+      {
+        "name": "nn_article",
+        "title": "Read article",
+        "summary": "Read one magazine article: title, date, tags, text and counts.",
+        "read_only": true
+      },
+      {
+        "name": "nn_pregnancy_week",
+        "title": "Pregnancy week",
+        "summary": "Read the week-by-week pregnancy guide for one week: symptoms, nutrition, fetus size, care, checklist.",
         "read_only": true
       }
     ]
