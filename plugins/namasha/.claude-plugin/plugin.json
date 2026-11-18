@@ -1,0 +1,27 @@
+{
+  "name": "namasha",
+  "displayName": "Namasha Videos",
+  "version": "0.1.1",
+  "description": "Read-only Namasha (namasha.com) Iranian video platform: search, videos, channels, categories.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/namasha-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "media",
+    "namasha.com"
+  ],
+  "mcpServers": {
+    "namasha": {
+      "command": "uvx",
+      "args": [
+        "namasha-mcp@0.1.1"
+      ]
+    }
+  }
+}

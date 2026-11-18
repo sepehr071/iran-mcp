@@ -1,0 +1,27 @@
+{
+  "name": "persian-wikipedia",
+  "displayName": "Persian Wikipedia",
+  "version": "0.1.0",
+  "description": "Read-only Persian Wikipedia (fa.wikipedia.org): search, summaries, article text, nearby places.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/persian-wikipedia-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "reference",
+    "fa.wikipedia.org"
+  ],
+  "mcpServers": {
+    "persian-wikipedia": {
+      "command": "uvx",
+      "args": [
+        "persian-wikipedia-mcp@0.1.0"
+      ]
+    }
+  }
+}

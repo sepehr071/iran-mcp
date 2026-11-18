@@ -1,0 +1,27 @@
+{
+  "name": "khodro45",
+  "displayName": "Khodro45 Used Cars",
+  "version": "0.1.1",
+  "description": "Read-only Khodro45 (khodro45.com) Iran used cars: listings, inspection reports, price estimate.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/khodro45-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "cars",
+    "khodro45.com"
+  ],
+  "mcpServers": {
+    "khodro45": {
+      "command": "uvx",
+      "args": [
+        "khodro45-mcp@0.1.1"
+      ]
+    }
+  }
+}

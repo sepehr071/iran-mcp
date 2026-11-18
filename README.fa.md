@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.fa.svg" alt="iran-mcp: ۷۷ سرور MCP و ۹۹۴ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، بیمه، ثبت شرکت‌ها، اقتصاد، خبر، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
+<img src="assets/banner.fa.svg" alt="iran-mcp: ۹۶ سرور MCP و ۱۱۵۰ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، بیمه، ثبت شرکت‌ها، اقتصاد، خبر، ویدیو، رادیو، سینما، هواشناسی، فرهنگ لغت، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
 
 [English](README.md) · **فارسی**
 
@@ -12,7 +12,7 @@
 
 <p align="center">
 <b>وب ایران را به ایجنت هوش مصنوعی‌تان بدهید.</b><br>
-۶۸ سرور MCP متن‌باز و غیررسمی برای ایران و سایت‌های فارسی: دیجی‌کالا، ترب، دیوار، اسنپ‌فود، جاباما، مستربلیط، علی‌بابا، نشان، بلد، پذیرش۲۴، طاقچه، جابینجا، باما، بورس تهران، کدال، بانک مرکزی، صرافی رمزارز ایرانی، سازمان امور مالیاتی، سامانهٔ قوانین و بقیه، به‌اضافهٔ سرورهای رسمی اکسیریاب، پس‌آورد و سواپ‌ولت.<br>
+۹۳ سرور MCP متن‌باز و غیررسمی برای ایران و سایت‌های فارسی: دیجی‌کالا، ترب، دیوار، اسنپ‌فود، جاباما، مستربلیط، علی‌بابا، نشان، بلد، پذیرش۲۴، طاقچه، جابینجا، باما، آپارات، رجا، اسنپ‌تریپ، کلید، ویکی‌پدیای فارسی، بورس تهران، کدال، بانک مرکزی، صرافی رمزارز ایرانی، سازمان امور مالیاتی، سامانهٔ قوانین و بقیه، به‌اضافهٔ سرورهای رسمی اکسیریاب، پس‌آورد و سواپ‌ولت.<br>
 جست‌وجو، مقایسهٔ قیمت به تومان، پیدا کردن نوبت خالی و تخفیف‌های امروز، از داخل Claude، Cursor، GitHub Copilot در VS Code یا هر کلاینت MCP.<br>
 به‌صورت پلاگین Claude Code همراه با اسکیل نصب کنید، یا به‌صورت Agent Skills برای Codex، Cursor، Antigravity و Grok Build.
 </p>
@@ -20,12 +20,28 @@
 <p align="center">نسخهٔ وب این فهرست، در بازارچهٔ MCP فارسی: <a href="https://mcpfarsi.ir/">mcpfarsi.ir</a></p>
 
 <p align="center">
-<a href="#تازه‌های-نسخهٔ-۲۳">تازه‌ها</a> · <a href="#سرورها">سرورها</a> · <a href="#شروع-سریع">شروع سریع</a> · <a href="#برای-ایجنت‌ها">برای ایجنت‌ها</a> · <a href="TOOLS.md">همهٔ ابزارها</a> · <a href="#پرسش‌های-رایج">پرسش‌های رایج</a>
+<a href="#تازه‌های-نسخهٔ-۲۵">تازه‌ها</a> · <a href="#سرورها">سرورها</a> · <a href="#شروع-سریع">شروع سریع</a> · <a href="#برای-ایجنت‌ها">برای ایجنت‌ها</a> · <a href="TOOLS.md">همهٔ ابزارها</a> · <a href="#پرسش‌های-رایج">پرسش‌های رایج</a>
 </p>
 
 ---
 
-## تازه‌های نسخهٔ ۲٫۴
+## تازه‌های نسخهٔ ۲٫۵
+
+<img src="assets/release-v2.5.fa.svg" alt="iran-mcp نسخهٔ ۲٫۵: ۱۹ سرور تازه، ۵ دستهٔ تازه، ۱۵۶ ابزار تازه، همان نام ابزارها" width="100%">
+
+- **۱۹ سرور تازه**، همه فقط‌خواندنی و بی‌نیاز از ورود به حساب: در مجموع ۹۶ سرور و ۱۱۵۰ ابزار.
+- **ویدیو، رادیو و تلویزیون (دستهٔ تازه):** [aparat-mcp](https://github.com/sepehr071/aparat-mcp) و [namasha-mcp](https://github.com/sepehr071/namasha-mcp) (ویدیو)، [telewebion-mcp](https://github.com/sepehr071/telewebion-mcp) (شبکه‌های تلویزیون و جدول پخش) و [iranseda-mcp](https://github.com/sepehr071/iranseda-mcp) (رادیو، کتاب صوتی، قرآن).
+- **سینما و رویداد (دستهٔ تازه):** [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) (سانس، قیمت بلیت و فروش گیشه) و [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) (بلیت تئاتر و کنسرت).
+- **سفر، جاده و هوا (دستهٔ تازه):** [snapptrip-mcp](https://github.com/sepehr071/snapptrip-mcp) (هتل و پرواز)، [raja-mcp](https://github.com/sepehr071/raja-mcp) (قطار)، [iran-bus-mcp](https://github.com/sepehr071/iran-bus-mcp) (بلیت اتوبوس)، [iran-roads-mcp](https://github.com/sepehr071/iran-roads-mcp) (وضعیت و انسداد جاده‌ها) و [iran-weather-mcp](https://github.com/sepehr071/iran-weather-mcp) (پیش‌بینی و هشدار هواشناسی).
+- **خانه، خودرو و پوشاک:** [kilid-mcp](https://github.com/sepehr071/kilid-mcp) (املاک و قیمت هر متر)، [khodro45-mcp](https://github.com/sepehr071/khodro45-mcp) (خودروی کارکرده با گزارش کارشناسی) و [digistyle-mcp](https://github.com/sepehr071/digistyle-mcp) (فروشگاه پوشاک).
+- **فرهنگ لغت، دانشنامه و انجمن‌ها (دسته‌های تازه):** [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) (آبادیس و واژه‌یاب)، [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp)، [virgool-mcp](https://github.com/sepehr071/virgool-mcp) (وبلاگ فارسی) و [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) (انجمن والدین)، به‌اضافهٔ خبرهای فناوری [digiato-mcp](https://github.com/sepehr071/digiato-mcp).
+- **۵ بستهٔ تازه:** `iran-media`، `iran-events`، `iran-reference`، `iran-community` و `iran-news-bundle`.
+- **همهٔ سرورها** به آخرین نسخه رسیدند. نام ابزارهای سرورهای قبلی تغییری نکرده است.
+
+فهرست کامل: [CHANGELOG.md](CHANGELOG.md) (انگلیسی).
+
+<details>
+<summary><b>تازه‌های نسخهٔ ۲٫۴</b></summary>
 
 <img src="assets/release-v2.4.fa.svg" alt="iran-mcp نسخهٔ ۲٫۴: ۶ سرور تازه، ۳ دستهٔ تازه، ۱۱۱ ابزار تازه، همان نام ابزارها" width="100%">
 
@@ -39,6 +55,7 @@
 - نام ابزارهای سرورهای قبلی تغییری نکرده است.
 
 فهرست کامل: [CHANGELOG.md](CHANGELOG.md) (انگلیسی).
+</details>
 
 <details>
 <summary><b>تازه‌های نسخهٔ ۲٫۳</b></summary>
@@ -176,7 +193,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 
 `swapwallet-mcp` با آدرسش اضافه می‌شود و هر کلاینت آدرس را به شکل خودش می‌گیرد (Windsurf با `serverUrl`، و Claude Desktop از Settings ← Connectors): [راه‌اندازی آن در هر کلاینت](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**هر ۷۷ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
+**هر ۹۶ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
 
 </div>
 
@@ -188,7 +205,21 @@ cd iran-mcp && claude
 <div dir="rtl">
 
 > [!TIP]
-> ۹۹۴ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
+> ۱۱۵۰ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
+
+## از وب استفاده کنید: mcpfarsi.ir
+
+<p align="center"><a href="https://mcpfarsi.ir/"><b>mcpfarsi.ir</b></a>: بازارچهٔ فارسی سرورهای MCP و مهارت‌های Agent Skills برای سرویس‌های ایرانی</p>
+
+نمی‌خواهید چیزی نصب کنید؟ [**mcpfarsi.ir**](https://mcpfarsi.ir/) این سرورها و سرورهای دیگر را به فارسی، با جست‌وجو و
+فیلتر فهرست کرده است. برای هر کدام نوشته که API غیررسمی دارد یا نه، IP ایران لازم دارد یا نه و اثر جانبی دارد یا نه.
+روتر MCP میزبانی‌شدهٔ آن، سرورها را به Claude، ChatGPT یا Cursor وصل می‌کند: یک نشانی را یک بار به برنامهٔ
+هوش مصنوعی‌تان اضافه کنید، با OAuth وارد شوید و سرورها را در داشبورد انتخاب کنید. ایجنت فقط دو ابزار می‌بیند،
+`search_tools` و `call_tool`، پس هر چند سرور هم که روشن کنید، کانتکستش کوچک می‌ماند.
+
+> [!TIP]
+> اجرای سرورها روی سیستم خودتان با `uvx` و استفاده از mcpfarsi.ir کنار هم کار می‌کنند. از سایت برای پیدا کردن
+> سرور استفاده کنید، یا برای اینکه ایجنت بدون افزودن تک‌تک سرورها به سرویس‌های ایرانی زیادی دسترسی داشته باشد.
 
 ## سرورها
 
@@ -204,6 +235,7 @@ cd iran-mcp && claude
 | [basalam-mcp](https://github.com/sepehr071/basalam-mcp) | [باسلام](https://basalam.com) (بازار غرفه‌ها) | ۷ | [![PyPI](https://img.shields.io/pypi/v/basalam-mcp?label=&color=2fe0cf)](https://pypi.org/project/basalam-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/basalam-mcp?label=&color=ffc23d)](https://github.com/sepehr071/basalam-mcp/commits/main) | کالای هزاران غرفهٔ کوچک: فیلتر قیمت، ارسال و تخفیف، ارزان‌ترین پیشنهاد، امتیاز غرفه، نظرها |
 | [shopino-mcp](https://github.com/sepehr071/shopino-mcp) | [شاپینو](https://shopino.app) | ۱۴ | [![PyPI](https://img.shields.io/pypi/v/shopino-mcp?label=&color=2fe0cf)](https://pypi.org/project/shopino-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/shopino-mcp?label=&color=ffc23d)](https://github.com/sepehr071/shopino-mcp/commits/main) | پوشاک از هزاران فروشگاه: قیمت، سایز، موجودی، امتیاز فروشگاه |
 | [banimode-mcp](https://github.com/sepehr071/banimode-mcp) | [بانی‌مد](https://www.banimode.com) | ۷ | [![PyPI](https://img.shields.io/pypi/v/banimode-mcp?label=&color=2fe0cf)](https://pypi.org/project/banimode-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/banimode-mcp?label=&color=ffc23d)](https://github.com/sepehr071/banimode-mcp/commits/main) | پوشاک: قیمت، سایز، موجودی، برندها، تخفیف‌ها، نظرها |
+| [digistyle-mcp](https://github.com/sepehr071/digistyle-mcp) | [دیجی‌استایل](https://www.digistyle.com) | ۶ | [![PyPI](https://img.shields.io/pypi/v/digistyle-mcp?label=&color=2fe0cf)](https://pypi.org/project/digistyle-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/digistyle-mcp?label=&color=ffc23d)](https://github.com/sepehr071/digistyle-mcp/commits/main) | پوشاک: جست‌وجو با فیلتر، جزئیات کالا، برندها، تخفیف‌ها |
 | [pasavard-mcp](https://github.com/ashkancapella/pasavard-mcp) | [پس‌آورد](https://pasavard.ir) (رسمی، میزبانی‌شده) | ۴ | [![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fashkancapella%2Fpasavard-mcp%2Fmain%2Fserver.json&query=%24.version&label=&color=2fe0cf)](https://github.com/ashkancapella/pasavard-mcp/blob/main/server.json) | [![Last commit](https://img.shields.io/github/last-commit/ashkancapella/pasavard-mcp?label=&color=ffc23d)](https://github.com/ashkancapella/pasavard-mcp/commits/main) | قیمت ساعتی دیجی‌کالا و اسنپ‌شاپ: بهترین‌ها در هر بازهٔ قیمت نسبت به کمترین قیمت ۳۰ روز اخیر هر کالا، با لینک همکاری در فروش و کش‌بک |
 | [emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp) | [ایمالز](https://emalls.ir) (مقایسهٔ قیمت) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/emalls-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/emalls-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/emalls-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/emalls-ir-mcp/commits/main) | کالا در فروشگاه‌های ایرانی، پیشنهاد هر فروشگاه، تاریخچهٔ قیمت، فروشگاه‌ها |
 | [mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp) | [موبایل‌دات‌آی‌آر](https://www.mobile.ir) | ۱۷ | [![PyPI](https://img.shields.io/pypi/v/mobile-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/mobile-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/mobile-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/mobile-ir-mcp/commits/main) | مشخصات گوشی، قیمت فروشگاه‌ها، تاریخچهٔ قیمت، گوشی دست‌دوم، سیم‌کارت |
@@ -216,6 +248,7 @@ cd iran-mcp && claude
 |---|---|---:|:---:|:---:|---|
 | [divar-mcp](https://github.com/sepehr071/divar-mcp) | [دیوار](https://divar.ir) | ۳۱ | [![PyPI](https://img.shields.io/pypi/v/divar-mcp?label=&color=2fe0cf)](https://pypi.org/project/divar-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/divar-mcp?label=&color=ffc23d)](https://github.com/sepehr071/divar-mcp/commits/main) | خانه، خودرو، موبایل و بقیه در هر شهر: ارزان‌ترین و به‌صرفه‌ترین آگهی‌ها، سنجش منصفانه بودن قیمت، آمار بازار، هشدار آگهی تازه |
 | [sheypoor-mcp](https://github.com/sepehr071/sheypoor-mcp) | [شیپور](https://www.sheypoor.com) | ۱۱ | [![PyPI](https://img.shields.io/pypi/v/sheypoor-mcp?label=&color=2fe0cf)](https://pypi.org/project/sheypoor-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/sheypoor-mcp?label=&color=ffc23d)](https://github.com/sepehr071/sheypoor-mcp/commits/main) | آگهی‌ها در هر شهر، جزئیات آگهی، خلاصهٔ قیمت خودرو و ملک، فروشگاه‌ها |
+| [kilid-mcp](https://github.com/sepehr071/kilid-mcp) | [کلید](https://kilid.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/kilid-mcp?label=&color=2fe0cf)](https://pypi.org/project/kilid-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/kilid-mcp?label=&color=ffc23d)](https://github.com/sepehr071/kilid-mcp/commits/main) | خرید و اجارهٔ خانه، محله‌ها، قیمت هر متر، مشاوران املاک |
 
 ### 🚗 خودرو
 
@@ -224,6 +257,7 @@ cd iran-mcp && claude
 | [bama-ir-mcp](https://github.com/sepehr071/bama-ir-mcp) | [باما](https://bama.ir) | ۱۲ | [![PyPI](https://img.shields.io/pypi/v/bama-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/bama-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/bama-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/bama-ir-mcp/commits/main) | آگهی خودرو، قیمت بازار، فهرست قیمت خودروی صفر، نمایشگاه‌ها، مشخصات فنی |
 | [karnameh-mcp](https://github.com/sepehr071/karnameh-mcp) | [کارنامه](https://karnameh.com) | ۱۵ | [![PyPI](https://img.shields.io/pypi/v/karnameh-mcp?label=&color=2fe0cf)](https://pypi.org/project/karnameh-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/karnameh-mcp?label=&color=ffc23d)](https://github.com/sepehr071/karnameh-mcp/commits/main) | آگهی خودروی کارکرده، مشخصات و مقایسه، قیمت روز بازار و تاریخچهٔ آن |
 | [hamrah-mechanic-mcp](https://github.com/sepehr071/hamrah-mechanic-mcp) | [همراه مکانیک](https://www.hamrah-mechanic.com) | ۱۲ | [![PyPI](https://img.shields.io/pypi/v/hamrah-mechanic-mcp?label=&color=2fe0cf)](https://pypi.org/project/hamrah-mechanic-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/hamrah-mechanic-mcp?label=&color=ffc23d)](https://github.com/sepehr071/hamrah-mechanic-mcp/commits/main) | قیمت روز خودرو، تخمین قیمت، خودروی کارکردهٔ فروشی، هزینهٔ کارشناسی |
+| [khodro45-mcp](https://github.com/sepehr071/khodro45-mcp) | [خودرو۴۵](https://khodro45.com) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/khodro45-mcp?label=&color=2fe0cf)](https://pypi.org/project/khodro45-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/khodro45-mcp?label=&color=ffc23d)](https://github.com/sepehr071/khodro45-mcp/commits/main) | خودروی کارکرده با گزارش کارشناسی، تخمین قیمت، پیشنهادها، قیمت خودروی صفر |
 
 ### 💄 آرایشی و بهداشتی
 
@@ -250,13 +284,18 @@ cd iran-mcp && claude
 | [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp) | [اتاقک](https://www.otaghak.com) | ۱۵ | [![PyPI](https://img.shields.io/pypi/v/otaghak-mcp?label=&color=2fe0cf)](https://pypi.org/project/otaghak-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/otaghak-mcp?label=&color=ffc23d)](https://github.com/sepehr071/otaghak-mcp/commits/main) | ویلا و کلبه: موجودی، قیمت دقیق اقامت، نظرها، میزبان‌ها |
 | [alibaba-ir-mcp](https://github.com/sepehr071/alibaba-ir-mcp) | [علی‌بابا](https://www.alibaba.ir) | ۱۴ | [![PyPI](https://img.shields.io/pypi/v/alibaba-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/alibaba-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/alibaba-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/alibaba-ir-mcp/commits/main) | ارزان‌ترین پرواز داخلی و خارجی، قطار، اتوبوس، هتل، ویلا و تور |
 | [eghamat24-mcp](https://github.com/sepehr071/eghamat24-mcp) | [اقامت۲۴](https://www.eghamat24.com) | ۱۴ | [![PyPI](https://img.shields.io/pypi/v/eghamat24-mcp?label=&color=2fe0cf)](https://pypi.org/project/eghamat24-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/eghamat24-mcp?label=&color=ffc23d)](https://github.com/sepehr071/eghamat24-mcp/commits/main) | هتل: قیمت اتاق برای تاریخ سفر، تقویم قیمت، تخفیف‌ها، نظرها، تور |
+| [snapptrip-mcp](https://github.com/sepehr071/snapptrip-mcp) | [اسنپ‌تریپ](https://www.snapptrip.com) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/snapptrip-mcp?label=&color=2fe0cf)](https://pypi.org/project/snapptrip-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/snapptrip-mcp?label=&color=ffc23d)](https://github.com/sepehr071/snapptrip-mcp/commits/main) | هتل: جست‌وجو، اتاق‌ها، تقویم قیمت، نظرها؛ پرواز داخلی و قیمت‌ها |
+| [raja-mcp](https://github.com/sepehr071/raja-mcp) | [رجا](https://www.raja.ir) | ۵ | [![PyPI](https://img.shields.io/pypi/v/raja-mcp?label=&color=2fe0cf)](https://pypi.org/project/raja-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/raja-mcp?label=&color=ffc23d)](https://github.com/sepehr071/raja-mcp/commits/main) | قطار: ایستگاه‌ها، جست‌وجو با قیمت و صندلی خالی، توقف‌ها و زمان‌بندی، اطلاعیه‌ها |
+| [iran-bus-mcp](https://github.com/sepehr071/iran-bus-mcp) | [سفر۷۲۴](https://safar724.com) | ۵ | [![PyPI](https://img.shields.io/pypi/v/iran-bus-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-bus-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-bus-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-bus-mcp/commits/main) | سفرهای اتوبوس با قیمت تومانی و صندلی خالی، ارزان‌ترین بلیت، پایانه‌ها |
 
-### 🗺️ نقشه و مسیریابی
+### 🗺️ نقشه، جاده و هوا
 
 | سرور | سایت | ابزار | نسخه | آخرین تغییر | ایجنت چه می‌تواند بکند |
 |---|---|---:|:---:|:---:|---|
 | [neshan-mcp](https://github.com/sepehr071/neshan-mcp) | [نشان](https://neshan.org) | ۱۱ | [![PyPI](https://img.shields.io/pypi/v/neshan-mcp?label=&color=2fe0cf)](https://pypi.org/project/neshan-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/neshan-mcp?label=&color=ffc23d)](https://github.com/sepehr071/neshan-mcp/commits/main) | جست‌وجوی مکان، نظرها، مکان‌های نزدیک، نشانی از مختصات، کیفیت هوا، مسیر خودرو، دوچرخه، پیاده و مترو و اتوبوس، بررسی طرح ترافیک |
 | [balad-mcp](https://github.com/sepehr071/balad-mcp) | [بلد](https://balad.ir) | ۹ | [![PyPI](https://img.shields.io/pypi/v/balad-mcp?label=&color=2fe0cf)](https://pypi.org/project/balad-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/balad-mcp?label=&color=ffc23d)](https://github.com/sepehr071/balad-mcp/commits/main) | مکان و نشانی، مکان‌های نزدیک و نزدیک‌ترین با زمان رانندگی، مکان‌های سر راه، ساعت کار، نظرها، مسیر خودرو با ترافیک زنده |
+| [iran-roads-mcp](https://github.com/sepehr071/iran-roads-mcp) | [۱۴۱ راهداری](https://141.ir) | ۸ | [![PyPI](https://img.shields.io/pypi/v/iran-roads-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-roads-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-roads-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-roads-mcp/commits/main) | وضعیت راه‌ها، انسداد، محدودیت تردد، کارگاه‌های راهداری، هوای جاده‌ها، محورهای اصلی |
+| [iran-weather-mcp](https://github.com/sepehr071/iran-weather-mcp) | [سازمان هواشناسی](https://www.irimo.ir) | ۹ | [![PyPI](https://img.shields.io/pypi/v/iran-weather-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-weather-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-weather-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-weather-mcp/commits/main) | پیش‌بینی شهرها، دیده‌بانی لحظه‌ای، هشدارهای هواشناسی، هوای جاده و فرودگاه، بولتن‌ها |
 
 ### 🩺 سلامت
 
@@ -319,6 +358,7 @@ cd iran-mcp && claude
 | [milligold-mcp](https://github.com/sepehr071/milligold-mcp) | [میلی](https://milli.gold) | ۸ | [![PyPI](https://img.shields.io/pypi/v/milligold-mcp?label=&color=2fe0cf)](https://pypi.org/project/milligold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/milligold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/milligold-mcp/commits/main) | قیمت لحظه‌ای طلای ۱۸ عیار به گرم، تاریخچه، کارمزدها و محاسبهٔ هزینهٔ معامله، تازه‌ترین اخبار و راهنما، آمار پلتفرم |
 | [iran-gold-mcp](https://github.com/sepehr071/iran-gold-mcp) | [میلی](https://milli.gold)، [وال‌گلد](https://wallgold.ir)، [ملی‌گلد](https://melligold.com)، [داریک](https://daric.gold)، [طلاین](https://taline.ir) | ۳ | [![PyPI](https://img.shields.io/pypi/v/iran-gold-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-gold-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-gold-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-gold-mcp/commits/main) | مقایسهٔ قیمت خرید و فروش هر گرم طلای ۱۸ عیار در ۵ پلتفرم به تومان، ارزان‌ترین جا برای خرید و بهترین جا برای فروش، تاریخچهٔ قیمت میلی |
 | [iran-news-mcp](https://github.com/sepehr071/iran-news-mcp) | [مهر](https://www.mehrnews.com)، [خبرآنلاین](https://www.khabaronline.ir)، [همشهری](https://www.hamshahrionline.ir)، [تابناک](https://www.tabnak.ir)، [انتخاب](https://www.entekhab.ir)، [عصر ایران](https://www.asriran.com)، [زومیت](https://www.zoomit.ir)، [دیجیاتو](https://digiato.com)، [ورزش۳](https://www.varzesh3.com)، [خبرورزشی](https://www.khabarvarzeshi.com) | ۶ | [![PyPI](https://img.shields.io/pypi/v/iran-news-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-news-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-news-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-news-mcp/commits/main) | تازه‌ترین خبرها بر اساس منبع و دسته، جست‌وجوی کلیدواژه، متن کامل خبر |
+| [digiato-mcp](https://github.com/sepehr071/digiato-mcp) | [دیجیاتو](https://digiato.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/digiato-mcp?label=&color=2fe0cf)](https://pypi.org/project/digiato-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/digiato-mcp?label=&color=ffc23d)](https://github.com/sepehr071/digiato-mcp/commits/main) | خبر فناوری: تازه‌ها، بر اساس دسته و برچسب، جست‌وجو، نقدها، متن کامل |
 | [iran-quake-mcp](https://github.com/sepehr071/iran-quake-mcp) | [مرکز لرزه‌نگاری](https://irsc.ut.ac.ir)، [USGS](https://earthquake.usgs.gov) و [EMSC](https://www.emsc-csem.org) | ۵ | [![PyPI](https://img.shields.io/pypi/v/iran-quake-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-quake-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-quake-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-quake-mcp/commits/main) | تازه‌ترین و قوی‌ترین زلزله‌های ایران، جست‌وجوی سوابق، جزئیات رویداد، آمار لرزه‌خیزی |
 | [qavanin-mcp](https://github.com/sepehr071/qavanin-mcp) | [سامانهٔ قوانین](https://qavanin.ir) | ۷ | [![PyPI](https://img.shields.io/pypi/v/qavanin-mcp?label=&color=2fe0cf)](https://pypi.org/project/qavanin-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/qavanin-mcp?label=&color=ffc23d)](https://github.com/sepehr071/qavanin-mcp/commits/main) | ۱۶۸ هزار قانون، مقرره و رأی: جست‌وجو، متن کامل، یک ماده، اصلاحات، اسناد مرتبط |
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [سازمان امور مالیاتی](https://tax.gov.ir)، [سامانهٔ شناسه کالا](https://stuffid.tax.gov.ir)، [پایگاه قوانین مالیاتی](https://regulation.tax.gov.ir) | ۶ | [![PyPI](https://img.shields.io/pypi/v/iran-tax-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-tax-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-tax-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-tax-mcp/commits/main) | شناسهٔ کالا و خدمت با نرخ ارزش افزوده، کد فعالیت، ارزش معاملاتی املاک، قوانین و بخشنامه‌های مالیاتی، پرسش‌های متداول |
@@ -330,6 +370,26 @@ cd iran-mcp && claude
 | [time-ir-mcp](https://github.com/sepehr071/time-ir-mcp) | [تایم](https://www.time.ir) | ۱۳ | [![PyPI](https://img.shields.io/pypi/v/time-ir-mcp?label=&color=2fe0cf)](https://pypi.org/project/time-ir-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/time-ir-mcp?label=&color=ffc23d)](https://github.com/sepehr071/time-ir-mcp/commits/main) | تاریخ شمسی، میلادی و قمری، تعطیلات و تعطیلی‌های پشت‌سرهم، مناسبت‌ها، اوقات شرعی، قبله |
 | [rrk-mcp](https://github.com/sepehr071/rrk-mcp) | [روزنامهٔ رسمی](https://rrk.ir) | ۵ | [![PyPI](https://img.shields.io/pypi/v/rrk-mcp?label=&color=2fe0cf)](https://pypi.org/project/rrk-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/rrk-mcp?label=&color=ffc23d)](https://github.com/sepehr071/rrk-mcp/commits/main) | قوانین، مصوبات و آرای منتشرشده در روزنامهٔ رسمی: جست‌وجو، تازه‌ترین‌ها، متن کامل |
 | [iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp) | [ابر آروان](https://www.arvancloud.ir)، [هم‌روش](https://hamravesh.com)، [چابکان](https://chabokan.net)، [لیارا](https://liara.ir) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/iran-cloud-status-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-cloud-status-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-cloud-status-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-cloud-status-mcp/commits/main) | وضعیت لحظه‌ای، قطعی‌ها، تعمیرات برنامه‌ریزی‌شده، پایداری، مقایسهٔ قیمت‌های عمومی |
+
+### 🎬 ویدیو، رادیو و رویدادها
+
+| سرور | سایت | ابزار | نسخه | آخرین تغییر | ایجنت چه می‌تواند بکند |
+|---|---|---:|:---:|:---:|---|
+| [aparat-mcp](https://github.com/sepehr071/aparat-mcp) | [آپارات](https://www.aparat.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/aparat-mcp?label=&color=2fe0cf)](https://pypi.org/project/aparat-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/aparat-mcp?label=&color=ffc23d)](https://github.com/sepehr071/aparat-mcp/commits/main) | جست‌وجوی ویدیو، جزئیات و نظرها، ویدیوهای مرتبط، کانال‌ها، دسته‌ها، پربازدیدها |
+| [namasha-mcp](https://github.com/sepehr071/namasha-mcp) | [نماشا](https://www.namasha.com) | ۹ | [![PyPI](https://img.shields.io/pypi/v/namasha-mcp?label=&color=2fe0cf)](https://pypi.org/project/namasha-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/namasha-mcp?label=&color=ffc23d)](https://github.com/sepehr071/namasha-mcp/commits/main) | جست‌وجوی ویدیو، جزئیات و نظرها، کانال‌ها، ویدیوهای ویژه، دسته‌ها |
+| [telewebion-mcp](https://github.com/sepehr071/telewebion-mcp) | [تلوبیون](https://telewebion.ir) | ۷ | [![PyPI](https://img.shields.io/pypi/v/telewebion-mcp?label=&color=2fe0cf)](https://pypi.org/project/telewebion-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/telewebion-mcp?label=&color=ffc23d)](https://github.com/sepehr071/telewebion-mcp/commits/main) | شبکه‌های تلویزیون، جدول پخش، پخش زنده، برنامه‌ها، قسمت‌ها، ورزش زنده |
+| [iranseda-mcp](https://github.com/sepehr071/iranseda-mcp) | [ایران‌صدا](https://www.iranseda.ir) | ۹ | [![PyPI](https://img.shields.io/pypi/v/iranseda-mcp?label=&color=2fe0cf)](https://pypi.org/project/iranseda-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iranseda-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iranseda-mcp/commits/main) | شبکه‌های رادیو، پخش زنده و جدول پخش، برنامه‌ها، کتاب صوتی، موسیقی، قرآن |
+| [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) | [سینماتیکت](https://cinematicket.org) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/cinematicket-mcp?label=&color=2fe0cf)](https://pypi.org/project/cinematicket-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/cinematicket-mcp?label=&color=ffc23d)](https://github.com/sepehr071/cinematicket-mcp/commits/main) | فیلم‌های روی پرده، سینماها، سانس و قیمت بلیت، اکران‌های آینده، تئاتر، فروش گیشه |
+| [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) | [تیوال](https://www.tiwall.com) | ۹ | [![PyPI](https://img.shields.io/pypi/v/tiwall-mcp?label=&color=2fe0cf)](https://pypi.org/project/tiwall-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tiwall-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tiwall-mcp/commits/main) | تئاتر، کنسرت و رویدادها: جست‌وجو، سانس و قیمت، سالن‌ها، نقدها |
+
+### 📖 فرهنگ لغت، دانشنامه و انجمن‌ها
+
+| سرور | سایت | ابزار | نسخه | آخرین تغییر | ایجنت چه می‌تواند بکند |
+|---|---|---:|:---:|:---:|---|
+| [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) | [آبادیس](https://abadis.ir)، [واژه‌یاب](https://vajehyab.com) | ۷ | [![PyPI](https://img.shields.io/pypi/v/iran-dictionary-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-dictionary-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-dictionary-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-dictionary-mcp/commits/main) | معنی واژه، مترادف، ترجمهٔ انگلیسی و فارسی، معنی نام‌ها |
+| [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp) | [ویکی‌پدیای فارسی](https://fa.wikipedia.org) | ۹ | [![PyPI](https://img.shields.io/pypi/v/persian-wikipedia-mcp?label=&color=2fe0cf)](https://pypi.org/project/persian-wikipedia-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/persian-wikipedia-mcp?label=&color=ffc23d)](https://github.com/sepehr071/persian-wikipedia-mcp/commits/main) | جست‌وجوی مقاله، خلاصه، متن کامل و بخش‌ها، جعبهٔ اطلاعات، داغ‌ترین‌ها، مکان‌های نزدیک |
+| [virgool-mcp](https://github.com/sepehr071/virgool-mcp) | [ویرگول](https://virgool.io) | ۱۱ | [![PyPI](https://img.shields.io/pypi/v/virgool-mcp?label=&color=2fe0cf)](https://pypi.org/project/virgool-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/virgool-mcp?label=&color=ffc23d)](https://github.com/sepehr071/virgool-mcp/commits/main) | پست‌های وبلاگ فارسی، نظرها، نویسنده‌ها، موضوع‌ها، برچسب‌ها، نشریه‌ها |
+| [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) | [نی‌نی‌سایت](https://www.ninisite.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/ninisite-mcp?label=&color=2fe0cf)](https://pypi.org/project/ninisite-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ninisite-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ninisite-mcp/commits/main) | تاپیک‌های انجمن والدین، بحث‌های داغ، مقاله‌ها، بارداری هفته به هفته |
 
 ### 💳 حساب‌های خودتان (توکن یا ورود لازم است)
 
@@ -349,7 +409,7 @@ cd iran-mcp && claude
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | کدام سرور برای کدام کار، قراردادها، قوانین ایمنی، نحوهٔ کار در این مخزن |
 | [`servers.json`](servers.json) | کاتالوگ ماشین‌خوان: پکیج یا آدرس، نسخه، دسته، متغیرهای محیطی و همهٔ ابزارهای هر سرور |
-| [`TOOLS.md`](TOOLS.md) | هر ۹۹۴ ابزار به تفکیک سرور |
+| [`TOOLS.md`](TOOLS.md) | هر ۱۱۵۰ ابزار به تفکیک سرور |
 | [`llms.txt`](llms.txt) | فهرست کوتاه برای LLMها |
 | [`.mcp.json`](.mcp.json) | تنظیمات آماده برای همهٔ سرورها |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | مارکت‌پلیس پلاگین `iran-mcp`: یک پلاگین برای هر سرور به‌اضافهٔ بسته‌ها |

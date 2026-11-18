@@ -1,0 +1,27 @@
+{
+  "name": "digiato",
+  "displayName": "Digiato Tech News",
+  "version": "0.1.1",
+  "description": "Read-only Digiato tech news: latest, by category, search, full articles, reviews and tags.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/digiato-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "news",
+    "digiato.com"
+  ],
+  "mcpServers": {
+    "digiato": {
+      "command": "uvx",
+      "args": [
+        "digiato-mcp@0.1.1"
+      ]
+    }
+  }
+}

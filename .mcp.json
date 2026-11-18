@@ -102,6 +102,12 @@
         "banimode-mcp@0.2.2"
       ]
     },
+    "digistyle": {
+      "command": "uvx",
+      "args": [
+        "digistyle-mcp@0.1.1"
+      ]
+    },
     "divar": {
       "command": "uvx",
       "args": [
@@ -112,6 +118,12 @@
       "command": "uvx",
       "args": [
         "sheypoor-mcp@0.2.2"
+      ]
+    },
+    "kilid": {
+      "command": "uvx",
+      "args": [
+        "kilid-mcp@0.1.2"
       ]
     },
     "bama-ir": {
@@ -130,6 +142,12 @@
       "command": "uvx",
       "args": [
         "hamrah-mechanic-mcp@0.2.1"
+      ]
+    },
+    "khodro45": {
+      "command": "uvx",
+      "args": [
+        "khodro45-mcp@0.1.1"
       ]
     },
     "otaghak": {
@@ -168,6 +186,24 @@
         "eghamat24-mcp@0.2.1"
       ]
     },
+    "snapptrip": {
+      "command": "uvx",
+      "args": [
+        "snapptrip-mcp@0.1.2"
+      ]
+    },
+    "raja": {
+      "command": "uvx",
+      "args": [
+        "raja-mcp@0.1.2"
+      ]
+    },
+    "iran-bus": {
+      "command": "uvx",
+      "args": [
+        "iran-bus-mcp@0.1.2"
+      ]
+    },
     "neshan": {
       "command": "uvx",
       "args": [
@@ -178,6 +214,12 @@
       "command": "uvx",
       "args": [
         "balad-mcp@0.2.2"
+      ]
+    },
+    "iran-roads": {
+      "command": "uvx",
+      "args": [
+        "iran-roads-mcp@0.1.2"
       ]
     },
     "paziresh24": {
@@ -378,6 +420,12 @@
         "iran-news-mcp@0.3.2"
       ]
     },
+    "digiato": {
+      "command": "uvx",
+      "args": [
+        "digiato-mcp@0.1.1"
+      ]
+    },
     "varzesh3": {
       "command": "uvx",
       "args": [
@@ -396,6 +444,42 @@
         "iran-vod-mcp@0.2.1"
       ]
     },
+    "aparat": {
+      "command": "uvx",
+      "args": [
+        "aparat-mcp@0.1.2"
+      ]
+    },
+    "namasha": {
+      "command": "uvx",
+      "args": [
+        "namasha-mcp@0.1.1"
+      ]
+    },
+    "telewebion": {
+      "command": "uvx",
+      "args": [
+        "telewebion-mcp@0.1.2"
+      ]
+    },
+    "iranseda": {
+      "command": "uvx",
+      "args": [
+        "iranseda-mcp@0.1.1"
+      ]
+    },
+    "cinematicket": {
+      "command": "uvx",
+      "args": [
+        "cinematicket-mcp@0.1.2"
+      ]
+    },
+    "tiwall": {
+      "command": "uvx",
+      "args": [
+        "tiwall-mcp@0.1.2"
+      ]
+    },
     "time-ir": {
       "command": "uvx",
       "args": [
@@ -406,6 +490,12 @@
       "command": "uvx",
       "args": [
         "iran-quake-mcp@0.2.2"
+      ]
+    },
+    "iran-weather": {
+      "command": "uvx",
+      "args": [
+        "iran-weather-mcp@0.1.1"
       ]
     },
     "qavanin": {
@@ -436,6 +526,30 @@
       "command": "uvx",
       "args": [
         "rasmio-mcp@0.2.1"
+      ]
+    },
+    "iran-dictionary": {
+      "command": "uvx",
+      "args": [
+        "iran-dictionary-mcp@0.1.2"
+      ]
+    },
+    "persian-wikipedia": {
+      "command": "uvx",
+      "args": [
+        "persian-wikipedia-mcp@0.1.0"
+      ]
+    },
+    "virgool": {
+      "command": "uvx",
+      "args": [
+        "virgool-mcp@0.1.0"
+      ]
+    },
+    "ninisite": {
+      "command": "uvx",
+      "args": [
+        "ninisite-mcp@0.1.0"
       ]
     },
     "payping": {

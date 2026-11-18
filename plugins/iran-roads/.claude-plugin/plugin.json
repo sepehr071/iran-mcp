@@ -1,0 +1,27 @@
+{
+  "name": "iran-roads",
+  "displayName": "Iran Roads",
+  "version": "0.1.2",
+  "description": "Read-only Iran road status (141.ir): bulletins, closures, restrictions, road works, weather.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-roads-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "maps",
+    "141.ir"
+  ],
+  "mcpServers": {
+    "iran-roads": {
+      "command": "uvx",
+      "args": [
+        "iran-roads-mcp@0.1.2"
+      ]
+    }
+  }
+}

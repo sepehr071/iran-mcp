@@ -1,5 +1,40 @@
 # Changelog
 
+## v2.5 (2026-11-18)
+
+19 new servers: video, radio and TV, cinema and event tickets, trains and buses, roads and weather, real estate, used cars,
+fashion, tech news, dictionaries, Persian Wikipedia, blogs and a parenting forum.
+Every existing server keeps its tool names.
+
+### Added
+
+- **[aparat-mcp](https://github.com/sepehr071/aparat-mcp)**, 8 tools: Aparat video platform: search, videos, comments, related videos, channels, categories, trending.
+- **[namasha-mcp](https://github.com/sepehr071/namasha-mcp)**, 9 tools: Namasha video platform: search, videos, comments, channels, featured videos, categories.
+- **[telewebion-mcp](https://github.com/sepehr071/telewebion-mcp)**, 7 tools: Telewebion IRIB TV: channels, schedules, what is on now, programs, episodes, live sports.
+- **[iranseda-mcp](https://github.com/sepehr071/iranseda-mcp)**, 9 tools: Iranseda IRIB radio: channels, live streams, schedules, programs, audiobooks, music, Quran.
+- **[cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp)**, 10 tools: Cinematicket: cinemas, films now showing, showtimes and ticket prices, upcoming films, theatre, box office.
+- **[tiwall-mcp](https://github.com/sepehr071/tiwall-mcp)**, 9 tools: Tiwall event tickets: theatre, concerts, venues, sessions and prices, reviews.
+- **[snapptrip-mcp](https://github.com/sepehr071/snapptrip-mcp)**, 10 tools: SnappTrip hotels (rooms, price calendar, reviews) and domestic flights.
+- **[raja-mcp](https://github.com/sepehr071/raja-mcp)**, 5 tools: Raja trains: stations, search with prices and free seats, stops, announcements, news.
+- **[iran-bus-mcp](https://github.com/sepehr071/iran-bus-mcp)**, 5 tools: Bus tickets on Safar724: trips, Toman prices, free seats, the cheapest ticket, terminals.
+- **[iran-roads-mcp](https://github.com/sepehr071/iran-roads-mcp)**, 8 tools: Road status from 141.ir: bulletins, closures, restrictions, road works, road weather, main routes.
+- **[iran-weather-mcp](https://github.com/sepehr071/iran-weather-mcp)**, 9 tools: Iran Meteorological Organization: city forecasts, observations, warnings, road and airport weather.
+- **[kilid-mcp](https://github.com/sepehr071/kilid-mcp)**, 8 tools: Kilid real estate: listings, districts, price per square metre, neighbourhood prices, agencies.
+- **[khodro45-mcp](https://github.com/sepehr071/khodro45-mcp)**, 10 tools: Khodro45 used cars: listings, inspection reports, price estimate, deals, new-car prices.
+- **[digistyle-mcp](https://github.com/sepehr071/digistyle-mcp)**, 6 tools: Digistyle fashion store: search, filters, product details, brands, deals.
+- **[digiato-mcp](https://github.com/sepehr071/digiato-mcp)**, 8 tools: Digiato tech news: latest, categories, tags, search, reviews, full articles.
+- **[iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp)**, 7 tools: Abadis and Vajehyab Persian dictionaries: meanings, synonyms, translation, suggestions, names.
+- **[persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp)**, 9 tools: Persian Wikipedia: search, summaries, article text and sections, infoboxes, languages, trending, nearby places.
+- **[virgool-mcp](https://github.com/sepehr071/virgool-mcp)**, 11 tools: Virgool Persian blogs: search, posts, comments, authors, feed, topics, tags, publications.
+- **[ninisite-mcp](https://github.com/sepehr071/ninisite-mcp)**, 8 tools: Ninisite parenting forum: forums, hot topics, threads, articles, pregnancy week by week.
+
+### Changed
+
+- Every server is updated to its latest release.
+- New categories: media, events, weather, reference, community. New bundles: `iran-media`, `iran-events`,
+  `iran-reference`, `iran-community`, and `iran-news-bundle` (iran-news-mcp and digiato-mcp).
+- The README has a section on [mcpfarsi.ir](https://mcpfarsi.ir/), the Persian MCP marketplace.
+
 ## v2.4 (2026-11-07)
 
 6 new servers: insurance, company records, broker market data, film and series, Snapp! Shop and three job sites in one.

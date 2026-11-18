@@ -1,0 +1,27 @@
+{
+  "name": "aparat",
+  "displayName": "Aparat Videos",
+  "version": "0.1.2",
+  "description": "Read-only Aparat (aparat.com) Iranian video platform: search, videos, channels, trending, comments.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/aparat-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "media",
+    "aparat.com"
+  ],
+  "mcpServers": {
+    "aparat": {
+      "command": "uvx",
+      "args": [
+        "aparat-mcp@0.1.2"
+      ]
+    }
+  }
+}

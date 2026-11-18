@@ -1,0 +1,27 @@
+{
+  "name": "iran-bus",
+  "displayName": "Iran Bus Tickets",
+  "version": "0.1.2",
+  "description": "Read-only Iranian bus tickets (Safar724): trips, Toman prices, free seats, cheapest ticket.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/iran-bus-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "travel",
+    "safar724.com"
+  ],
+  "mcpServers": {
+    "iran-bus": {
+      "command": "uvx",
+      "args": [
+        "iran-bus-mcp@0.1.2"
+      ]
+    }
+  }
+}

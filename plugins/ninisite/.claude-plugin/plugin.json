@@ -1,0 +1,27 @@
+{
+  "name": "ninisite",
+  "displayName": "Ninisite Parenting",
+  "version": "0.1.0",
+  "description": "Read-only Ninisite (ninisite.com) parenting forum topics, articles and pregnancy weeks.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/ninisite-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "community",
+    "ninisite.com"
+  ],
+  "mcpServers": {
+    "ninisite": {
+      "command": "uvx",
+      "args": [
+        "ninisite-mcp@0.1.0"
+      ]
+    }
+  }
+}

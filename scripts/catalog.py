@@ -5,11 +5,13 @@ Run from the repo root after `git submodule update --init --remote`:  python scr
 """
 
 import ast
+import http.client
 import json
 import pathlib
 import re
 import shutil
 import sys
+import time
 import urllib.error
 import urllib.request
 from urllib.parse import urlparse
@@ -32,7 +34,7 @@ USE = {
     "classifieds": "classified ads for homes, cars, phones and more",
     "cars": "used or new car ads and prices",
     "travel": "flights, trains, buses, hotels, villas or tours",
-    "maps": "places, addresses, routes or travel times on a map",
+    "maps": "places, addresses, routes, travel times or road closures",
     "health": "doctors, clinics, labs, appointments or pharmacy products",
     "books": "ebooks, audiobooks or printed books",
     "learning": "online courses, lessons or certificates",
@@ -47,12 +49,17 @@ USE = {
     "sports": "live scores, league tables, fixtures or sports news",
     "entertainment": "game and film news, reviews or release dates",
     "video": "films and series to stream on Filimo or Namava, or where to watch a title",
+    "media": "online videos, TV channels and schedules or radio and audio archives",
+    "events": "cinema showtimes or theatre, concert and event tickets",
     "calendar": "Jalali, Gregorian or Hijri dates, holidays or prayer times",
     "quakes": "recent or past earthquake data",
+    "weather": "weather forecasts, observations or weather warnings",
     "law": "laws, regulations, court votes, legal opinions or Official Gazette texts",
     "tax": "e-invoice goods IDs, VAT rates, activity codes, property values or tax laws and circulars",
     "insurance": "insurance quotes, insurer ratings or how an insurance line works",
     "companies": "registered companies, their board members, gazette ads, products or brands",
+    "reference": "Persian word meanings, synonyms, translations or encyclopedia articles",
+    "community": "Persian blog posts, forum topics or parenting articles",
     "business": "to manage their own PayPing merchant account",
     "messaging": "to run their own Bale messenger bot",
     "crypto": "to check or use their own SwapWallet crypto wallet",
@@ -122,6 +129,11 @@ NOTES = {
     "user needs IRAN_JOBS_MCP_PROXY.",
     "rasmio-mcp": "Money is Rial, not Toman. Dates are Jalali.",
     "snappshop-mcp": "Snapp! Shop answers only Iranian connections (HTTP 403 elsewhere).",
+    "iran-bus-mcp": "Site: Safar724.",
+    "iran-roads-mcp": "Site: 141.ir (Iran Road Maintenance and Transportation Organization).",
+    "iran-weather-mcp": "Site: irimo.ir (Iran Meteorological Organization).",
+    "iran-dictionary-mcp": "Sites: Abadis, Vajehyab.",
+    "ninisite-mcp": "Forum posts are users' own words, not medical advice: tell the user to ask a doctor.",
 }
 
 # name -> (category, site url); order here is the order everywhere else
@@ -143,19 +155,26 @@ SERVERS = {
     "asalbanoo-mcp": ("beauty", "https://asalbanooshop.com"),
     "shopino-mcp": ("fashion", "https://shopino.app"),
     "banimode-mcp": ("fashion", "https://www.banimode.com"),
+    "digistyle-mcp": ("fashion", "https://www.digistyle.com"),
     "divar-mcp": ("classifieds", "https://divar.ir"),
     "sheypoor-mcp": ("classifieds", "https://www.sheypoor.com"),
+    "kilid-mcp": ("classifieds", "https://kilid.com"),
     "bama-ir-mcp": ("cars", "https://bama.ir"),
     "karnameh-mcp": ("cars", "https://karnameh.com"),
     "hamrah-mechanic-mcp": ("cars", "https://www.hamrah-mechanic.com"),
+    "khodro45-mcp": ("cars", "https://khodro45.com"),
     "otaghak-mcp": ("travel", "https://www.otaghak.com"),
     "jabama-mcp": ("travel", "https://www.jabama.com"),
     "mrbilit-mcp": ("travel", "https://mrbilit.com"),
     "flytoday-mcp": ("travel", "https://www.flytoday.ir"),
     "alibaba-ir-mcp": ("travel", "https://www.alibaba.ir"),
     "eghamat24-mcp": ("travel", "https://www.eghamat24.com"),
+    "snapptrip-mcp": ("travel", "https://www.snapptrip.com"),
+    "raja-mcp": ("travel", "https://www.raja.ir"),
+    "iran-bus-mcp": ("travel", "https://safar724.com"),
     "neshan-mcp": ("maps", "https://neshan.org"),
     "balad-mcp": ("maps", "https://balad.ir"),
+    "iran-roads-mcp": ("maps", "https://141.ir"),
     "paziresh24-mcp": ("health", "https://www.paziresh24.com"),
     "doctoreto-mcp": ("health", "https://doctoreto.com"),
     "exiryab-mcp": ("health", "https://exiryab.com"),
@@ -189,16 +208,28 @@ SERVERS = {
     "cbi-mcp": ("economy", "https://www.cbi.ir"),
     "amar-mcp": ("economy", "https://amar.org.ir"),
     "iran-news-mcp": ("news", "https://www.mehrnews.com"),
+    "digiato-mcp": ("news", "https://digiato.com"),
     "varzesh3-mcp": ("sports", "https://www.varzesh3.com"),
     "gamefa-mcp": ("entertainment", "https://gamefa.com"),
     "iran-vod-mcp": ("video", "https://www.filimo.com"),
+    "aparat-mcp": ("media", "https://www.aparat.com"),
+    "namasha-mcp": ("media", "https://www.namasha.com"),
+    "telewebion-mcp": ("media", "https://telewebion.ir"),
+    "iranseda-mcp": ("media", "https://www.iranseda.ir"),
+    "cinematicket-mcp": ("events", "https://cinematicket.org"),
+    "tiwall-mcp": ("events", "https://www.tiwall.com"),
     "time-ir-mcp": ("calendar", "https://www.time.ir"),
     "iran-quake-mcp": ("quakes", "https://irsc.ut.ac.ir"),
+    "iran-weather-mcp": ("weather", "https://www.irimo.ir"),
     "qavanin-mcp": ("law", "https://qavanin.ir"),
     "rrk-mcp": ("law", "https://rrk.ir"),
     "iran-tax-mcp": ("tax", "https://tax.gov.ir"),
     "iran-insurance-mcp": ("insurance", "https://bimebazar.com"),
     "rasmio-mcp": ("companies", "https://rasmio.com"),
+    "iran-dictionary-mcp": ("reference", "https://abadis.ir"),
+    "persian-wikipedia-mcp": ("reference", "https://fa.wikipedia.org"),
+    "virgool-mcp": ("community", "https://virgool.io"),
+    "ninisite-mcp": ("community", "https://www.ninisite.com"),
     "payping-mcp": ("business", "https://www.payping.ir"),
     "bale-mcp": ("messaging", "https://bale.ai"),
 }
@@ -215,7 +246,8 @@ REMOTE = {
 def tools(src: pathlib.Path) -> list[dict]:
     """Every function decorated with @tool("Title") under src, in file order."""
     out = []
-    for path in sorted(src.rglob("*.py")):
+    # sort by POSIX path: Windows sorts paths case-insensitively, CI doesn't, and the tool order must match
+    for path in sorted(src.rglob("*.py"), key=lambda p: p.relative_to(src).as_posix()):
         for node in ast.parse(path.read_text(encoding="utf-8")).body:
             if not isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
                 continue
@@ -226,18 +258,45 @@ def tools(src: pathlib.Path) -> list[dict]:
                     doc = re.split(r"(?<=[.?!])\s+(?=[A-Z`(])", para, maxsplit=1)[0]
                     kw = {k.arg: k.value for k in dec.keywords}
                     # @tool("Title", read_only=False) marks a tool that changes something (login, cart, booking, ...)
-                    read_only = ast.literal_eval(kw["read_only"]) if "read_only" in kw else True
-                    out.append(
-                        {"name": node.name, "title": ast.literal_eval(dec.args[0]), "summary": doc, "read_only": read_only}
-                    )
+                    try:
+                        read_only = ast.literal_eval(kw["read_only"]) if "read_only" in kw else True
+                        title = ast.literal_eval(dec.args[0])
+                    except ValueError:
+                        raise SystemExit(f"{path}:{node.lineno}: @tool title and read_only must be literals")
+                    out.append({"name": node.name, "title": title, "summary": doc, "read_only": read_only})
     return out
 
 
 def card(url: str) -> dict:
     """The MCP server card (SEP-1649, SEP-2127) published next to a hosted server's endpoint."""
     u = urlparse(url)
-    with urllib.request.urlopen(f"{u.scheme}://{u.netloc}/.well-known/mcp/server-card.json", timeout=30) as r:
-        return json.load(r)
+    with urllib.request.urlopen(f"https://{u.netloc}/.well-known/mcp/server-card.json", timeout=30) as r:
+        if not r.geturl().startswith("https://"):
+            raise ValueError(f"server card redirected off https: {r.geturl()}")
+        data = r.read(1_000_001)
+    if len(data) > 1_000_000:
+        raise ValueError("server card over 1 MB")
+    return json.loads(data)
+
+
+def card_tools(info: dict) -> tuple[list[dict], str, bool]:
+    """Tools, sign-in ("oauth" or "none") and read-only status from a server card. Raises on a malformed card."""
+    login = info.get("authentication") or {}
+    if login.get("required") and "oauth2" not in login.get("schemes", []):
+        raise SystemExit(f"hosted servers must use OAuth or no sign-in, the card says {login}")
+    found = []
+    for t in info["tools"]:
+        # card text lands in committed SKILL.md files agents read: one line, bounded length, plain tool names
+        if not re.fullmatch(r"[A-Za-z0-9_.-]{1,64}", t["name"]):
+            raise ValueError(f"bad tool name {t['name']!r}")
+        text = " ".join(t["description"].split())
+        # the description's first sentence, like a package tool's first docstring line
+        summary = re.split(r"(?<=\.)\s+", text, maxsplit=1)[0][:300]
+        title = " ".join(str(t.get("title") or t["name"]).split())[:100]
+        read_only = bool((t.get("annotations") or {}).get("readOnlyHint"))
+        found.append({"name": t["name"], "title": title, "summary": summary, "read_only": read_only})
+    # like a package server with no required token: no sign-in, and no tool that changes anything
+    return found, "oauth" if login.get("required") else "none", not login.get("required") and all(t["read_only"] for t in found)
 
 
 def main() -> None:
@@ -248,10 +307,14 @@ def main() -> None:
         meta = json.loads((repo / "server.json").read_text(encoding="utf-8"))
         pkg = meta["packages"][0]
         env = [
-            {k: v[k] for k in ("name", "isRequired", "isSecret", "description")}
+            # the MCP Registry schema makes the flags and description optional
+            {"name": v["name"], "isRequired": v.get("isRequired", False), "isSecret": v.get("isSecret", False),
+             "description": v.get("description", "")}
             for v in pkg.get("environmentVariables", [])
         ]
         found = tools(repo / "src")
+        if not found:  # a missing checkout or a moved src/ would otherwise write 0 tools into the docs
+            raise SystemExit(f"{name}: no @tool functions under {repo / 'src'}")
         catalog.append(
             {
                 "name": name,
@@ -280,30 +343,16 @@ def main() -> None:
         meta = json.loads((ROOT / "servers" / name / "server.json").read_text(encoding="utf-8"))
         url = meta["remotes"][0]["url"]
         try:
-            info = card(url)
-        except (OSError, ValueError) as e:  # network errors and timeouts are OSError, bad JSON is ValueError
+            found, auth, read_only = card_tools(card(url))
+        # network errors and timeouts are OSError/HTTPException, bad JSON is ValueError, a wrong shape the rest
+        except (OSError, http.client.HTTPException, ValueError, KeyError, TypeError, AttributeError) as e:
             # one server's outage must not stop the sync of the others: keep what the last good run read
             if name not in previous:
                 raise
-            print(f"warning: {name}: server card unavailable ({e}), keeping its tools from servers.json", file=sys.stderr)
-            info = None
-        if info is None:
+            print(f"warning: {name}: server card unavailable ({e!r}), keeping its tools from servers.json", file=sys.stderr)
             found, auth, read_only = previous[name]["tools"], previous[name]["auth"], previous[name]["read_only"]
-        else:
-            login = info.get("authentication", {})
-            if login.get("required") and "oauth2" not in login.get("schemes", []):
-                raise SystemExit(f"{name}: hosted servers must use OAuth or no sign-in, the card says {login}")
-            found = []
-            for t in info["tools"]:
-                # the description's first sentence, like a package tool's first docstring line
-                summary = re.split(r"(?<=\.)\s+", t["description"].strip(), maxsplit=1)[0]
-                read_only = bool(t.get("annotations", {}).get("readOnlyHint"))
-                found.append(
-                    {"name": t["name"], "title": t.get("title") or t["name"], "summary": summary, "read_only": read_only}
-                )
-            auth = "oauth" if login.get("required") else "none"
-            # like a package server with no required token: no sign-in, and no tool that changes anything
-            read_only = not login.get("required") and all(t["read_only"] for t in found)
+        except SystemExit as e:
+            raise SystemExit(f"{name}: {e}")
         catalog.append(
             {
                 "name": name,
@@ -331,11 +380,14 @@ def main() -> None:
 
     old_total = sum(s["tool_count"] for s in previous.values())
     total = sum(s["tool_count"] for s in catalog)
-    (ROOT / "servers.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "TOOLS.md").write_text("\n".join(md), encoding="utf-8")
+    # plugins() makes the network calls, so it runs first; servers.json goes last, since the next run reads it
     pinned = plugins(catalog, mcp)
-    (ROOT / ".mcp.json").write_text(json.dumps({"mcpServers": pinned}, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "TOOLS.md").write_text("\n".join(md), encoding="utf-8", newline="\n")
+    (ROOT / ".mcp.json").write_text(json.dumps({"mcpServers": pinned}, indent=2) + "\n", encoding="utf-8", newline="\n")
     sync_docs(catalog, old_total, total)
+    (ROOT / "servers.json").write_text(
+        json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
     print(f"{len(catalog)} servers, {total} tools")
 
 
@@ -346,7 +398,11 @@ def skill(s: dict, key: str, entry: dict) -> str:
     own = ROOT / "servers" / s["name"] / "skills" / key / "SKILL.md"
     intro, rules = "", ""
     if own.exists():
-        body = own.read_text(encoding="utf-8").split("\n# ", 1)[1].split("\n", 1)[1]  # drop front matter and title
+        text = own.read_text(encoding="utf-8")
+        title = re.search(r"^# .*$\n?", text, re.M)  # drop front matter and title
+        if not title:
+            raise SystemExit(f"{own}: no '# Title' line")
+        body = text[title.end():]
         intro, _, rules = body.strip().partition("\n## ")
     lines = [
         "---",
@@ -448,16 +504,28 @@ def released(package: str, version: str, ours: bool = True) -> str:
 
     A server we don't own gets no fallback: its newest release hasn't been reviewed, so only the pinned one ships.
     """
+    for attempt in range(3):  # PyPI hiccups (timeouts, 5xx) are retried; a 404 is an answer
+        try:
+            urllib.request.urlopen(f"https://pypi.org/pypi/{package}/{version}/json", timeout=30).close()
+            return version
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                break
+            if e.code < 500 or attempt == 2:
+                raise
+        except (urllib.error.URLError, TimeoutError, http.client.HTTPException):
+            if attempt == 2:
+                raise
+        time.sleep(5)
+    if not ours:
+        raise SystemExit(f"{package} {version} is not on PyPI; move the fork only to a published, reviewed release")
     try:
-        urllib.request.urlopen(f"https://pypi.org/pypi/{package}/{version}/json", timeout=30).close()
-        return version
+        with urllib.request.urlopen(f"https://pypi.org/pypi/{package}/json", timeout=30) as r:
+            return json.load(r)["info"]["version"]
     except urllib.error.HTTPError as e:
-        if e.code != 404:
-            raise
-        if not ours:
-            raise SystemExit(f"{package} {version} is not on PyPI; move the fork only to a published, reviewed release")
-    with urllib.request.urlopen(f"https://pypi.org/pypi/{package}/json", timeout=30) as r:
-        return json.load(r)["info"]["version"]
+        if e.code == 404:
+            raise SystemExit(f"{package} has no release on PyPI yet; publish one before adding it here")
+        raise
 
 
 def plugins(catalog: list[dict], mcp: dict) -> dict:
@@ -465,13 +533,21 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
 
     Returns each server's MCP config pinned to the version its plugin runs, for .mcp.json.
     """
+    # resolve every pin before deleting plugins/, so a PyPI failure leaves the old tree in place
+    versions = {
+        s["name"]: released(s["pypi"], s["version"], s["repository"].startswith(OWNER["url"] + "/"))
+        for s in catalog
+        if "url" not in s
+    }
     out = ROOT / "plugins"
     shutil.rmtree(out, ignore_errors=True)
     entries, pinned = [], {}
 
     def write(name: str, manifest: dict, category: str) -> None:
         (out / name / ".claude-plugin").mkdir(parents=True)
-        (out / name / ".claude-plugin" / "plugin.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        (out / name / ".claude-plugin" / "plugin.json").write_text(
+            json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n"
+        )
         entries.append({"name": name, "source": f"./plugins/{name}", "description": manifest["description"], "category": category})
 
     for s in catalog:
@@ -480,7 +556,7 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
             version, server = s["version"], mcp[key]
         else:
             # pin the exact release: bare `uvx pkg` keeps running its cached copy forever
-            version = released(s["pypi"], s["version"], s["repository"].startswith(OWNER["url"] + "/"))
+            version = versions[s["name"]]
             server = {**mcp[key], "args": [f"{s['pypi']}@{version}"]}
         pinned[key] = server
         write(
@@ -500,7 +576,7 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
             s["category"],
         )
         (out / key / "skills" / key).mkdir(parents=True)
-        (out / key / "skills" / key / "SKILL.md").write_text(skill(s, key, mcp[key]), encoding="utf-8")
+        (out / key / "skills" / key / "SKILL.md").write_text(skill(s, key, mcp[key]), encoding="utf-8", newline="\n")
 
     # bundles carry no version: Claude Code then versions them by commit, so a changed list reaches users
     # bundles hold servers that work with no setup: no required token and no OAuth (a login from the chat is optional)
@@ -527,7 +603,7 @@ def plugins(catalog: list[dict], mcp: dict) -> dict:
     }
     path = ROOT / ".claude-plugin" / "marketplace.json"
     path.parent.mkdir(exist_ok=True)
-    path.write_text(json.dumps(marketplace, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(marketplace, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     return pinned
 
 
@@ -543,7 +619,9 @@ def sync_docs(catalog: list[dict], old_total: int, total: int) -> None:
             # table row: | [name](repo) | site | <count> |
             text = re.sub(rf"(^\| \[{s['name']}\]\([^)]*\) \| [^|]* \| )[^|]+( \|)", rf"\g<1>{count}\2", text, flags=re.M)
         if old_total != total:
-            text = text.replace(str(old_total), str(total)).replace(str(old_total).translate(fa), str(total).translate(fa))
+            # whole numbers only: a price or limit that merely contains the old total stays as it is
+            for old, new in ((str(old_total), str(total)), (str(old_total).translate(fa), str(total).translate(fa))):
+                text = re.sub(rf"(?<![\d۰-۹]){old}(?![\d۰-۹])", new, text)
         path.write_text(text, encoding="utf-8", newline="")
 
 

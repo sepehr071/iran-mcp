@@ -1,6 +1,6 @@
 ---
 name: balad
-description: "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes. Use when the user asks about Balad Maps (balad.ir) or wants places, addresses, routes or travel times on a map in Iran."
+description: "Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, reviews, driving routes. Use when the user asks about Balad Maps (balad.ir) or wants places, addresses, routes, travel times or road closures in Iran."
 ---
 
 # Balad Maps

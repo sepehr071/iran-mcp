@@ -1,0 +1,14 @@
+{
+  "name": "iran-community",
+  "description": "Everything for Persian blog posts, forum topics or parenting articles in Iran: Virgool Blog, Ninisite Parenting.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "virgool",
+    "ninisite"
+  ]
+}

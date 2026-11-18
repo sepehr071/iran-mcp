@@ -1,0 +1,27 @@
+{
+  "name": "telewebion",
+  "displayName": "Telewebion TV",
+  "version": "0.1.2",
+  "description": "Read-only Telewebion (telewebion.ir) IRIB TV: channels, what aired, programs, episodes, live sports.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/telewebion-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "media",
+    "telewebion.ir"
+  ],
+  "mcpServers": {
+    "telewebion": {
+      "command": "uvx",
+      "args": [
+        "telewebion-mcp@0.1.2"
+      ]
+    }
+  }
+}

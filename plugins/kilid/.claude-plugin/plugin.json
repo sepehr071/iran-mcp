@@ -1,0 +1,27 @@
+{
+  "name": "kilid",
+  "displayName": "Kilid Real Estate",
+  "version": "0.1.2",
+  "description": "Read-only Kilid (kilid.com) Iranian real estate: listings, districts, price per m2, agencies.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/kilid-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "classifieds",
+    "kilid.com"
+  ],
+  "mcpServers": {
+    "kilid": {
+      "command": "uvx",
+      "args": [
+        "kilid-mcp@0.1.2"
+      ]
+    }
+  }
+}

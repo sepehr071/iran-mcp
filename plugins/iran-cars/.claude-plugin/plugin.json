@@ -1,6 +1,6 @@
 {
   "name": "iran-cars",
-  "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars.",
+  "description": "Everything for used or new car ads and prices in Iran: Bama Cars, Karnameh Cars, Hamrah Mechanic Cars, Khodro45 Used Cars.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -10,6 +10,7 @@
   "dependencies": [
     "bama-ir",
     "karnameh",
-    "hamrah-mechanic"
+    "hamrah-mechanic",
+    "khodro45"
   ]
 }

@@ -328,6 +328,17 @@ Unofficial read-only Banimode: search fashion, compare prices, sizes, stock and 
 - `bm_product`: Get one product: every color with its price, discount, stock per size, features and short description.
 - `bm_reviews`: Read customer reviews of a product: stars (1-5, null if only text), text, date and the shop's answer.
 
+## Digistyle Fashion (`digistyle-mcp`, 6 tools)
+
+Read-only Digistyle (digistyle.com) fashion store: search, filters, product details, brands, deals.
+
+- `ds_search`: Search Digistyle fashion products with filters for category, brand, size, color and price (Toman).
+- `ds_product`: Get a Digistyle product: price, discount, every size and color with stock, seller, specs, rating, comments.
+- `ds_categories`: List Digistyle categories (from the site menu) with the code to pass to ds_search, ds_filters and ds_deals.
+- `ds_brands`: List Digistyle brands with their code (for ds_search's brand argument); search by name.
+- `ds_filters`: Show what a Digistyle category can be filtered by: sizes, colors, top brands, price range, other attributes.
+- `ds_deals`: Find discounted Digistyle products, biggest discount first, from a category, brand or campaign.
+
 ## Divar (`divar-mcp`, 31 tools)
 
 Unofficial read-only Divar: search Iran's classified ads, cheapest and best-value ads, price checks.
@@ -379,6 +390,19 @@ Read-only Sheypoor (sheypoor.com) classifieds: search ads, ad details, price sum
 - `sp_shop`: Get one internet shop or agency: name, hours, group, its agents and its current ads.
 - `sp_car_prices`: Get Sheypoor's daily car price list (قیمت روز خودرو): market price and factory price per model and year, with the day's change.
 - `sp_area_prices`: Compare asking prices between neighbourhoods of a city: median price, price per square metre, rent and deposit.
+
+## Kilid Real Estate (`kilid-mcp`, 8 tools)
+
+Read-only Kilid (kilid.com) Iranian real estate: listings, districts, price per m2, agencies.
+
+- `kl_cities`: Find the city id and slug Kilid uses for a city (needed by kl_search_listings and kl_districts).
+- `kl_districts`: List the districts or neighborhoods of a city with the ids kl_search_listings takes as region_ids.
+- `kl_search_listings`: Search Kilid sale and rental listings with price, area, room and place filters.
+- `kl_listing`: Get one Kilid listing: price, area, rooms, floor, facilities, description, location point and agency.
+- `kl_price_stats`: Get median price per m2 for a city or area from Kilid's market report, with sub-areas and a 12-month trend.
+- `kl_neighborhood_prices`: Rank a city's neighborhoods by median price per m2 (Toman), from Kilid's neighborhood guide.
+- `kl_agencies`: Search real-estate agencies registered on Kilid by name; open one with kl_agency.
+- `kl_agency`: Get a Kilid real-estate agency: address, district, location point, active listings and agent count.
 
 ## Bama Cars (`bama-ir-mcp`, 12 tools)
 
@@ -433,6 +457,21 @@ Read-only Hamrah Mechanic (hamrah-mechanic.com) car prices, used cars for sale, 
 - `hm_price_list`: List the market price of every car on Hamrah Mechanic's front price list, filtered by budget or brand.
 - `hm_reviews`: Get Hamrah Mechanic's expert review of a model (pros, cons, engine and safety notes) with owner scores and comments.
 - `hm_articles`: Search the Hamrah Mechanic magazine (3,000+ Persian articles) or read one article.
+
+## Khodro45 Used Cars (`khodro45-mcp`, 10 tools)
+
+Read-only Khodro45 (khodro45.com) Iran used cars: listings, inspection reports, price estimate.
+
+- `k45_brands`: List the car brands Khodro45 knows, optionally filtered by name.
+- `k45_models`: List the models of one brand, e.g.
+- `k45_trims`: List the trims (types) of a model and the model years each one was built.
+- `k45_price_estimate`: Estimate the used-car price of a trim and year, the same public estimate khodro45.com/carprice shows.
+- `k45_cities`: List the cities where Khodro45 sells cars, optionally filtered by name.
+- `k45_cars`: Search the used cars listed for sale on Khodro45 (inspected by the company).
+- `k45_car`: Get one used-car listing in full: price, specs, ownership and document facts, photos.
+- `k45_inspection`: Get the public Khodro45 expert inspection report of a listing: section scores and every found defect.
+- `k45_deals`: List used cars Khodro45 really sold lately (the public deals hall), newest first, with the sale price.
+- `k45_new_car_prices`: Get today's zero-km car prices (market, factory, dealer) of a brand, or the market price indexes.
 
 ## Otaghak (`otaghak-mcp`, 15 tools)
 
@@ -572,6 +611,41 @@ Read-only Eghamat24 (eghamat24.com) Iran hotels: search, room prices, deals, rev
 - `eg_reviews`: Read guest reviews of a hotel, newest first.
 - `eg_questions`: Read the public questions guests asked about a hotel and the answers, if any.
 
+## SnappTrip Hotels and Flights (`snapptrip-mcp`, 10 tools)
+
+Read-only SnappTrip: Iranian hotel search, rooms, reviews, calendar prices and domestic flights.
+
+- `st_flight_airports`: List the cities SnappTrip offers flights from, with IATA codes and airports.
+- `st_flight_search`: Search one-way domestic economy flights for a date, cheapest first.
+- `st_flight_prices`: Show the lowest one-way price per day for the next weeks and the cheapest days.
+- `st_hotel_places`: Find a SnappTrip hotel city or a hotel by name.
+- `st_hotel_search`: Search hotels in a city for dates with star, price and facility filters.
+- `st_hotel_filters`: List the filters a city offers for dates: facilities (ids), categories, accommodation types, price range, stars.
+- `st_hotel_detail`: Get a hotel's description, location, facilities, policies, photos and guest rating breakdown.
+- `st_hotel_rooms`: List the rooms of a hotel with prices for the dates.
+- `st_hotel_calendar`: Show a room's per-night price and rooms left for each day, with the cheapest bookable nights.
+- `st_hotel_reviews`: Read guest reviews of a hotel, newest first, with pros, cons and the room stayed in.
+
+## Raja Train Tickets (`raja-mcp`, 5 tools)
+
+Read-only Raja (raja.ir) Iranian trains: stations, search with prices and seats, timetables, news.
+
+- `rj_stations`: Find Raja railway stations and their codes by Persian or English name.
+- `rj_search_trains`: Search one-way trains between two stations on a date, with prices in Toman and free seats.
+- `rj_train_stops`: List every stop of a train with its time, from a row's `ref` of rj_search_trains.
+- `rj_announcements`: Read the notices Raja shows at the top of its site: presale dates, refund rules, boarding rules.
+- `rj_news`: List the latest Raja company news (title, Jalali date, id) or read one story's text by id.
+
+## Iran Bus Tickets (`iran-bus-mcp`, 5 tools)
+
+Read-only Iranian bus tickets (Safar724): trips, Toman prices, free seats, cheapest ticket.
+
+- `bus_cities`: Look up cities (name, code, province) that tickets can be bought for; use it to spell a city exactly.
+- `bus_search`: List bus trips between two cities on one day: time, company, bus type, price in Toman, free seats, terminals.
+- `bus_cheapest`: Cheapest bus trips between two cities on one day, merged across providers and sorted by price in Toman.
+- `bus_terminals`: List the departure and arrival terminals that have trips on a route and the companies running them.
+- `bus_trip`: Seat map summary and refund penalties of one trip: free seat numbers, seats taken by men or women.
+
 ## Neshan Maps (`neshan-mcp`, 11 tools)
 
 Read-only Neshan map of Iran: places, reviews, photos, routes, travel times, zones, air quality.
@@ -601,6 +675,19 @@ Read-only Balad (balad.ir) Iran map: places nearby or on the way, details, revie
 - `bl_nearest_by_drive`: Rank places of one kind around a point by driving time from it in current traffic, quickest first.
 - `bl_along_route`: Find places of one kind (gas station, restaurant, pharmacy...) along the suggested driving route between two points.
 - `bl_categories`: List Balad's place categories with the slug bl_nearby takes, grouped (food, health, shopping, services...).
+
+## Iran Roads (`iran-roads-mcp`, 8 tools)
+
+Read-only Iran road status (141.ir): bulletins, closures, restrictions, road works, weather.
+
+- `rd_provinces`: List the 31 provinces with the ids the other tools accept (and the province centre point).
+- `rd_bulletin`: Latest official road weather and traffic status bulletin (northern axes, other axes) of the Road Maintenance Organization.
+- `rd_closures`: List current road closures (blockades) with cause, direction, alternative route text and coordinates.
+- `rd_restrictions`: List traffic restrictions announced by the traffic police (limited vehicle types or hours, road still open).
+- `rd_workshops`: List road works (workshops) with work type, whether traffic can pass, period and alternative route.
+- `rd_weather`: Current weather warnings for roads: hazard, affected provinces by day, and validity dates.
+- `rd_main_routes`: List the 22 main intercity axes the 141 app tracks (Tehran-North, Tehran-Mashhad...) with endpoints.
+- `rd_traffic_map`: Get the URL of the province's traffic status map image (updated by 141; the image shows live congestion).
 
 ## Paziresh24 (`paziresh24-mcp`, 12 tools)
 
@@ -1154,6 +1241,19 @@ Unofficial read-only Persian news RSS: Mehr, Tabnak, Entekhab, Zoomit, Varzesh3,
 - `nw_latest_all`: Return the newest headlines from every source (or the chosen ones), merged and sorted by time.
 - `nw_tech_news`: Return the newest technology news (phones, laptops, AI, gadgets, apps, crypto, cars, security, games) with long summaries.
 
+## Digiato Tech News (`digiato-mcp`, 8 tools)
+
+Read-only Digiato tech news: latest, by category, search, full articles, reviews and tags.
+
+- `dgt_latest`: Latest Digiato articles (news, reviews, guides), newest first.
+- `dgt_categories`: List Digiato categories with article counts and parent, e.g. tech > mobile, artificial-intelligence, security.
+- `dgt_category`: Newest articles of one category (children included), e.g. mobile, artificial-intelligence, car-news, security.
+- `dgt_search`: Search Digiato articles by words in the title and text, best matches first.
+- `dgt_reviews`: Newest Digiato product reviews (نقد و بررسی), optionally of one device type.
+- `dgt_tags`: Find Digiato tags (companies, products, topics) with article counts, most used first.
+- `dgt_tag`: Newest articles carrying one tag, e.g. apple, samsung, google, mobile.
+- `dgt_article`: Read one Digiato article as plain text with title, author, summary, date, categories, tags and cover.
+
 ## Varzesh3 Sports (`varzesh3-mcp`, 18 tools)
 
 Read-only Varzesh3 (varzesh3.com) Iranian sports: live scores, tables, fixtures, teams, news.
@@ -1213,6 +1313,88 @@ Read-only Filimo and Namava catalogs: search, title details, episodes, new, genr
 - `vod_collection`: Show the titles of one curated list on Filimo or Namava, such as the IMDb top 250 or coming soon.
 - `vod_plans`: Show Namava's public subscription plans and prices (Filimo's prices are not available in its JSON API).
 
+## Aparat Videos (`aparat-mcp`, 8 tools)
+
+Read-only Aparat (aparat.com) Iranian video platform: search, videos, channels, trending, comments.
+
+- `apr_search`: Search Aparat videos and channels by text.
+- `apr_video`: Get one Aparat video: title, description, views, likes, duration, tags, category, channel, publish date.
+- `apr_comments`: Read the top comments under an Aparat video (10 per page, most liked first as the site orders them).
+- `apr_related`: List videos Aparat recommends next to a video (about 10).
+- `apr_channel`: Get an Aparat channel: name, followers, video count, total views, description, start date.
+- `apr_channel_videos`: List a channel's videos, newest first or most viewed (10 per page).
+- `apr_categories`: List the category names Aparat's trending tabs use.
+- `apr_trending`: List trending Aparat videos, overall or in one category (up to 40).
+
+## Namasha Videos (`namasha-mcp`, 9 tools)
+
+Read-only Namasha (namasha.com) Iranian video platform: search, videos, channels, categories.
+
+- `nm_search`: Search Namasha videos by text.
+- `nm_video`: Get one Namasha video: title, description, views, likes, comment count, duration, upload date, tags, channel.
+- `nm_related`: List the videos Namasha suggests next to a video (page 1 about 12, later pages 20 each).
+- `nm_comments`: List the public comments of a video (text, author, age, likes; replies follow their parent).
+- `nm_channel`: Get a Namasha channel: name, verified flag, description, creation date, links.
+- `nm_channel_videos`: List a channel's videos, newest first (60 per page).
+- `nm_featured`: List the videos on Namasha's home page: editors' picks or the special row.
+- `nm_categories`: List Namasha's video categories with the slug nm_category_videos takes.
+- `nm_category_videos`: List the newest videos of a category (60 per page).
+
+## Telewebion TV (`telewebion-mcp`, 7 tools)
+
+Read-only Telewebion (telewebion.ir) IRIB TV: channels, what aired, programs, episodes, live sports.
+
+- `tv_channels`: List Telewebion live channels (TV, provincial, radio) with the id the other tools take.
+- `tv_channel_schedule`: What aired on a channel on a day, oldest first, with start/end (Tehran time) and episode page URLs.
+- `tv_live_now`: Show the most recent program on each channel of a group (national TV by default), with live page URLs.
+- `tv_search`: Search programs (TV shows) and movies/series by title, with their page URLs.
+- `tv_program`: Show a program's summary and its episodes, newest first, with episode page URLs.
+- `tv_episode`: Show one episode: title, program, channel, air time (Tehran), duration, quality variants and page URL.
+- `tv_live_events`: List sports broadcasts (football, volleyball, ...) scheduled or live on Telewebion that day, with page URLs.
+
+## Iranseda Radio Archive (`iranseda-mcp`, 9 tools)
+
+Read-only Iranseda (IRIB audio): radio channels, live streams, schedules, audiobooks, music, Quran.
+
+- `sd_library_search`: Search Iranseda's audiobooks, music, kids, speeches, nava and Quran recitations.
+- `sd_library_item`: Get an audiobook, song, speech, nava or recitation's details and its tracks.
+- `sd_library_file`: Get the mp3 and mp4 download links and sizes of one library track.
+- `sd_channels`: List IRIB radio channels with the program playing now.
+- `sd_live_now`: Get a radio channel's public live stream URL and what is on now and next.
+- `sd_schedule`: List a radio channel's programs for one day, with episode ids.
+- `sd_search_programs`: Find programs of one radio channel by name (the site has no global search).
+- `sd_program`: Get a radio program's description, broadcast time and its latest episodes.
+- `sd_episode`: Get one episode's date, description and the audio file URL of each part.
+
+## Cinematicket Tickets (`cinematicket-mcp`, 10 tools)
+
+Read-only Cinematicket (cinematicket.org): cinemas, films, showtimes, prices, theatre, box office.
+
+- `ct_cities`: List the cities Cinematicket sells tickets in, with the city ids other tools take.
+- `ct_now_showing`: Films and shows on sale now, grouped by category, nationwide (the site's home feed).
+- `ct_film`: Cast, director, genre, rating, duration, summary and sales of one film or show, plus how widely it is screened.
+- `ct_cinemas`: Cinemas and venues in a city, most popular first, with rating, address, facilities and coordinates.
+- `ct_cinema`: One cinema's info (address, phone, halls, rules) and its full program for a day: films, halls, times, prices (Toman).
+- `ct_showtimes`: Where and when a film or show plays: cinemas, halls, times and ticket prices (Toman) for one day.
+- `ct_upcoming`: Films announced as coming soon, with release dates (the site's next-programs page; it is often empty).
+- `ct_events`: List theatre plays, concerts or films with sessions on sale, with rating and director.
+- `ct_box_office`: Top-grossing films by total ticket sales (Toman), with audience figures, cinemas and weeks on screen.
+- `ct_search`: Search films, shows and cinemas by name; returns ids for ct_film, ct_showtimes and ct_cinema.
+
+## Tiwall Events (`tiwall-mcp`, 9 tools)
+
+Read-only Tiwall (tiwall.com) Iranian event tickets: theatre, concerts, venues, sessions, prices.
+
+- `tw_categories`: List Tiwall's event categories, sort orders and main cities with the ids tw_events needs.
+- `tw_events`: List current Tiwall events filtered by category, city, venue, date and sort order.
+- `tw_popular`: List the best-selling, best-rated or newest Tiwall events, optionally per category or city.
+- `tw_search`: Search Tiwall events by title, artist or venue words.
+- `tw_event`: Get one event: venue and address, dates, time, duration, price, cast and crew, summary, tags, rating, sale status.
+- `tw_sessions`: List the show times (sessions) of an event with date, time, seat status and ticket price in Toman.
+- `tw_venues`: Search Tiwall venues and cities by name and get their ids, addresses, coordinates and ratings.
+- `tw_venue`: Get a venue page (address, phones, social links, followers) and its current events.
+- `tw_reviews`: Read the public rating breakdown and audience posts of an event (newest page only).
+
 ## Time.ir Calendar (`time-ir-mcp`, 13 tools)
 
 Read-only Time.ir Iranian calendar: Jalali/Gregorian/Hijri dates, holidays, events, prayer times.
@@ -1240,6 +1422,20 @@ Unofficial read-only Iran earthquakes: latest, search, strongest, detail, stats 
 - `eq_significant`: List the strongest recent earthquakes in Iran, largest magnitude first.
 - `eq_detail`: Get one earthquake in full: location, depth_km, magnitude type and source quality fields.
 - `eq_stats`: Count earthquakes in Iran over a window: by magnitude band, by place, plus the strongest event.
+
+## Iran Weather (`iran-weather-mcp`, 9 tools)
+
+Read-only Iran Meteorological Org (irimo.ir): city forecasts, observations, warnings.
+
+- `wx_cities`: Today's forecast (condition, max and min temperature) for the main cities (about 35), with the ids wx_weather accepts.
+- `wx_weather`: Current observation and 3-day forecast for one city or weather station.
+- `wx_province`: Latest observations of every weather station in the province of a city.
+- `wx_observations`: Current temperature, humidity and wind at the ~37 stations on the national map of irimo.ir.
+- `wx_warnings`: Latest official warnings of the Iran Meteorological Organization, newest first.
+- `wx_road`: Current weather of every city along a main road, from the road-weather service of irimo.ir.
+- `wx_airports`: Aviation forecasts (TAF) of about 29 Iranian airports with their flight category (vfr, mvfr, ifr, lifr).
+- `wx_bulletins`: Link to the latest official forecast bulletin (PDF): 5-day, weekly, seasonal, Tehran province or Tehran air quality.
+- `wx_warning`: Full text of one warning: system description, start and end time, hazard, affected area, impact, advice.
 
 ## Qavanin (`qavanin-mcp`, 7 tools)
 
@@ -1309,6 +1505,61 @@ Read-only Rasmio (rasmio.com): Iranian companies, board members, gazette ads, pr
 - `rs_search_companies`: Search Iranian companies by name or activity with filters; returns national ids for rs_company.
 - `rs_search`: Search people (board members, managers), products, registered brands or patents and industrial designs.
 - `rs_options`: List the ids and names the search filters take: legal forms, licenses, product categories, brand classes.
+
+## Iran Dictionary (Abadis + Vajehyab) (`iran-dictionary-mcp`, 7 tools)
+
+Read-only Persian dictionaries: Abadis and Vajehyab. Meanings, synonyms, translation, names.
+
+- `dic_abadis_names`: Search Abadis's Persian first-name list by name, gender, origin, theme or first letter.
+- `dic_lookup`: Look a word up in the Persian dictionaries of Abadis and Vajehyab, one block per site.
+- `dic_synonyms`: Find synonyms, antonyms and pure-Persian equivalents (برابر پارسی) of a Persian word, one block per site.
+- `dic_translate`: Translate a single word or short phrase between Persian and English, Arabic or Turkish, one block per site.
+- `dic_suggest`: Complete the start of a word into dictionary headwords, one list per site; use it to find the exact spelling.
+- `dic_vajehyab_search`: Search Vajehyab's dictionaries with a scope: exact entries, entries naming it a synonym or antonym, rhymes, sound-alikes.
+- `dic_vajehyab_entry`: Read one whole Vajehyab entry (for example the full Dehkhoda text with its poetry), cut at `max_chars`.
+
+## Persian Wikipedia (`persian-wikipedia-mcp`, 9 tools)
+
+Read-only Persian Wikipedia (fa.wikipedia.org): search, summaries, article text, nearby places.
+
+- `wiki_search`: Search Persian Wikipedia articles by words; returns titles with a short snippet and the total hit count.
+- `wiki_summary`: Get the lead summary of an article: one-line description, intro paragraph, image, coordinates and URL.
+- `wiki_article`: Read an article as plain text with '== heading ==' lines, optionally one section, cut to max_chars.
+- `wiki_sections`: List an article's section headings with their level and number (the table of contents).
+- `wiki_languages`: Get the titles of the same article in other Wikipedia languages (e.g. the English title).
+- `wiki_infobox`: Get an article's infobox facts (birth date, population, director...) and its visible categories.
+- `wiki_random`: Get a random Persian Wikipedia article with its summary.
+- `wiki_trending`: Get the most-read articles of a day and the picture of the day (fa has no 'on this day' or featured article).
+- `wiki_nearby`: Find articles about places near a latitude/longitude, nearest first, with distance in metres.
+
+## Virgool Blog (`virgool-mcp`, 11 tools)
+
+Read-only Virgool (virgool.ir) Persian blog platform: search, posts, authors, topics, publications.
+
+- `vg_search`: Search Virgool posts, authors, publications or tags.
+- `vg_post`: Read one Virgool post: title, author, topics, tags, counts and the full story text (images are skipped).
+- `vg_comments`: List the public top-level comments of a post, or the replies of one comment (`replies` counts them).
+- `vg_user`: Get an author's public profile (bio, followers, post count, links) and the publications they belong to.
+- `vg_user_posts`: List an author's published posts, newest first.
+- `vg_feed`: List Virgool's front-page posts: editors' picks or the newest posts.
+- `vg_topics`: List all Virgool topics (broad categories) with follower counts. vg_topic_posts takes `name` or `fa_name`.
+- `vg_topic_posts`: List the latest posts of a topic (category) such as book, economy or psychology.
+- `vg_tag_posts`: List the latest posts carrying a tag.
+- `vg_publications`: Search or list Virgool publications (group blogs). vg_publication_posts reads one by its `name`.
+- `vg_publication_posts`: List the latest posts of a publication, newest first.
+
+## Ninisite Parenting (`ninisite-mcp`, 8 tools)
+
+Read-only Ninisite (ninisite.com) parenting forum topics, articles and pregnancy weeks.
+
+- `nn_forums`: List every forum category and its forums (id and name) on ninisite.com/discussion.
+- `nn_forum_topics`: List the topics of one forum, most recently active first; pinned admin topics come first on page 1.
+- `nn_hot_topics`: List the site-wide hottest or recently updated forum topics.
+- `nn_topic`: Read a forum topic: the opening post plus one page of replies (about 15 posts per page).
+- `nn_article_categories`: List magazine article categories (ids for nn_articles); pass a top-level id to see its sub-categories.
+- `nn_articles`: List magazine articles, newest first, for all categories or one category.
+- `nn_article`: Read one magazine article: title, date, tags, text and counts.
+- `nn_pregnancy_week`: Read the week-by-week pregnancy guide for one week: symptoms, nutrition, fetus size, care, checklist.
 
 ## PayPing (`payping-mcp`, 21 tools)
 

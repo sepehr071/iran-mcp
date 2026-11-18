@@ -1,6 +1,6 @@
 {
   "name": "iran-classifieds",
-  "description": "Everything for classified ads for homes, cars, phones and more in Iran: Divar, Sheypoor Classifieds.",
+  "description": "Everything for classified ads for homes, cars, phones and more in Iran: Divar, Sheypoor Classifieds, Kilid Real Estate.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -9,6 +9,7 @@
   "homepage": "https://github.com/sepehr071/iran-mcp",
   "dependencies": [
     "divar",
-    "sheypoor"
+    "sheypoor",
+    "kilid"
   ]
 }

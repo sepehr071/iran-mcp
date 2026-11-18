@@ -1,0 +1,14 @@
+{
+  "name": "iran-reference",
+  "description": "Everything for Persian word meanings, synonyms, translations or encyclopedia articles in Iran: Iran Dictionary (Abadis + Vajehyab), Persian Wikipedia.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "dependencies": [
+    "iran-dictionary",
+    "persian-wikipedia"
+  ]
+}
