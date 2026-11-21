@@ -59,6 +59,7 @@ USE = {
     "insurance": "insurance quotes, insurer ratings or how an insurance line works",
     "companies": "registered companies, their board members, gazette ads, products or brands",
     "reference": "Persian word meanings, synonyms, translations or encyclopedia articles",
+    "literature": "classical Persian poems, poets, couplet meanings or poetic meters",
     "community": "Persian blog posts, forum topics or parenting articles",
     "business": "to manage their own PayPing merchant account",
     "messaging": "to run their own Bale messenger bot",
@@ -133,6 +134,8 @@ NOTES = {
     "iran-roads-mcp": "Site: 141.ir (Iran Road Maintenance and Transportation Organization).",
     "iran-weather-mcp": "Site: irimo.ir (Iran Meteorological Organization).",
     "iran-dictionary-mcp": "Sites: Abadis, Vajehyab.",
+    "ganjoor-mcp": "Site: ganjoor.net. A couplet meaning that starts with «هوش مصنوعی:» is AI-written: say so when you "
+    "quote it.",
     "ninisite-mcp": "Forum posts are users' own words, not medical advice: tell the user to ask a doctor.",
 }
 
@@ -228,6 +231,7 @@ SERVERS = {
     "rasmio-mcp": ("companies", "https://rasmio.com"),
     "iran-dictionary-mcp": ("reference", "https://abadis.ir"),
     "persian-wikipedia-mcp": ("reference", "https://fa.wikipedia.org"),
+    "ganjoor-mcp": ("literature", "https://ganjoor.net"),
     "virgool-mcp": ("community", "https://virgool.io"),
     "ninisite-mcp": ("community", "https://www.ninisite.com"),
     "payping-mcp": ("business", "https://www.payping.ir"),

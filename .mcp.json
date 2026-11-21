@@ -540,6 +540,12 @@
         "persian-wikipedia-mcp@0.1.0"
       ]
     },
+    "ganjoor": {
+      "command": "uvx",
+      "args": [
+        "ganjoor-mcp@0.1.0"
+      ]
+    },
     "virgool": {
       "command": "uvx",
       "args": [

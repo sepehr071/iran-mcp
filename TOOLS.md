@@ -1532,6 +1532,29 @@ Read-only Persian Wikipedia (fa.wikipedia.org): search, summaries, article text,
 - `wiki_trending`: Get the most-read articles of a day and the picture of the day (fa has no 'on this day' or featured article).
 - `wiki_nearby`: Find articles about places near a latitude/longitude, nearest first, with distance in metres.
 
+## Ganjoor Poetry (`ganjoor-mcp`, 18 tools)
+
+Read-only Ganjoor (ganjoor.net) Persian poetry: poems with meanings, search, meters, audio.
+
+- `gj_meters`: List poetic meters (وزن) with couplet counts, biggest first; filter by name.
+- `gj_similar`: Find poems that share a meter and rhyme, with their first couplet; 10 per page.
+- `gj_recitations`: List poem recitations (خوانش) with reciter, mp3 link, size and votes; give exactly one of poem_id, cat_id, latest.
+- `gj_literary`: Show rhetorical devices (آرایه: tashbih, esteare...) and concepts tagged in poems; coverage is partial, mostly Hafez.
+- `gj_words`: Count word use in a poet's or book's poems: the most frequent words, or how often one word appears.
+- `gj_people`: Look up people and characters of epic poems (Shahnameh...): search, relations, family tree, or a book's cast.
+- `gj_places`: Find geotagged places (locations with latitude and longitude) named in poems, a book, or by name.
+- `gj_museum`: Browse Ganjoor museum manuscripts and scans (گنجینه): search, one manuscript's details, or one page image.
+- `gj_search`: Full-text search of poems by the words they contain, with the matching couplet.
+- `gj_semantic_search`: Find poems by meaning or theme (embedding search), with score, summary and first couplets.
+- `gj_find_verse`: Locate which poem and couplet a quoted line comes from, with the couplet's meaning.
+- `gj_poem`: Read a poem: text by couplet with meanings, summary, meter, rhyme, source and previous/next poem.
+- `gj_poem_extras`: Recitations with mp3 links, manuscript images, songs, related poems, quoting poems and reader comments.
+- `gj_faal`: Draw a Hafez faal (a random ghazal of Hafez) or, with random=True, a random poem, read with meanings.
+- `gj_poets`: List poets with ids, nicknames, life years (Hijri) and birthplace, filtered by name or century.
+- `gj_poet`: A poet's biography (shortened) and the top-level books to open with gj_book.
+- `gj_book`: Sub-books and the poems of one book or section, each with its first couplet, paged by 30.
+- `gj_tajik`: Search or read poems in Tajik Cyrillic transliteration (titles Cyrillic, poet names Persian).
+
 ## Virgool Blog (`virgool-mcp`, 11 tools)
 
 Read-only Virgool (virgool.ir) Persian blog platform: search, posts, authors, topics, publications.

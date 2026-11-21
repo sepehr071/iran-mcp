@@ -286,3 +286,6 @@
 [submodule "servers/digistyle-mcp"]
 	path = servers/digistyle-mcp
 	url = https://github.com/sepehr071/digistyle-mcp
+[submodule "servers/ganjoor-mcp"]
+	path = servers/ganjoor-mcp
+	url = https://github.com/sepehr071/ganjoor-mcp.git

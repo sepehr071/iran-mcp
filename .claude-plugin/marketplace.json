@@ -548,6 +548,12 @@
       "category": "reference"
     },
     {
+      "name": "ganjoor",
+      "source": "./plugins/ganjoor",
+      "description": "Read-only Ganjoor (ganjoor.net) Persian poetry: poems with meanings, search, meters, audio.",
+      "category": "literature"
+    },
+    {
       "name": "virgool",
       "source": "./plugins/virgool",
       "description": "Read-only Virgool (virgool.ir) Persian blog platform: search, posts, authors, topics, publications.",
@@ -586,7 +592,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 93 Iranian site servers that need no setup, in one install.",
+      "description": "All 94 Iranian site servers that need no setup, in one install.",
       "category": "bundle"
     },
     {

@@ -8652,6 +8652,138 @@
     ]
   },
   {
+    "name": "ganjoor-mcp",
+    "title": "Ganjoor Poetry",
+    "category": "literature",
+    "site": "https://ganjoor.net",
+    "description": "Read-only Ganjoor (ganjoor.net) Persian poetry: poems with meanings, search, meters, audio.",
+    "version": "0.1.0",
+    "pypi": "ganjoor-mcp",
+    "repository": "https://github.com/sepehr071/ganjoor-mcp",
+    "registry_name": "io.github.sepehr071/ganjoor-mcp",
+    "run": "uvx ganjoor-mcp",
+    "read_only": true,
+    "env": [
+      {
+        "name": "GANJOOR_MCP_PROXY",
+        "isRequired": false,
+        "isSecret": false,
+        "description": "Optional HTTP proxy URL for the Ganjoor requests; system proxy settings are ignored. Also accepts a comma-separated list: one is used until it gets blocked or fails to connect, then the next."
+      }
+    ],
+    "tool_count": 18,
+    "tools": [
+      {
+        "name": "gj_meters",
+        "title": "Poetic meters",
+        "summary": "List poetic meters (وزن) with couplet counts, biggest first; filter by name.",
+        "read_only": true
+      },
+      {
+        "name": "gj_similar",
+        "title": "Poems with same meter and rhyme",
+        "summary": "Find poems that share a meter and rhyme, with their first couplet; 10 per page.",
+        "read_only": true
+      },
+      {
+        "name": "gj_recitations",
+        "title": "Recitations",
+        "summary": "List poem recitations (خوانش) with reciter, mp3 link, size and votes; give exactly one of poem_id, cat_id, latest.",
+        "read_only": true
+      },
+      {
+        "name": "gj_literary",
+        "title": "Literary devices",
+        "summary": "Show rhetorical devices (آرایه: tashbih, esteare...) and concepts tagged in poems; coverage is partial, mostly Hafez.",
+        "read_only": true
+      },
+      {
+        "name": "gj_words",
+        "title": "Word frequency",
+        "summary": "Count word use in a poet's or book's poems: the most frequent words, or how often one word appears.",
+        "read_only": true
+      },
+      {
+        "name": "gj_people",
+        "title": "People and characters",
+        "summary": "Look up people and characters of epic poems (Shahnameh...): search, relations, family tree, or a book's cast.",
+        "read_only": true
+      },
+      {
+        "name": "gj_places",
+        "title": "Places in poems",
+        "summary": "Find geotagged places (locations with latitude and longitude) named in poems, a book, or by name.",
+        "read_only": true
+      },
+      {
+        "name": "gj_museum",
+        "title": "Museum manuscripts",
+        "summary": "Browse Ganjoor museum manuscripts and scans (گنجینه): search, one manuscript's details, or one page image.",
+        "read_only": true
+      },
+      {
+        "name": "gj_search",
+        "title": "Search poems by words",
+        "summary": "Full-text search of poems by the words they contain, with the matching couplet.",
+        "read_only": true
+      },
+      {
+        "name": "gj_semantic_search",
+        "title": "Search poems by meaning",
+        "summary": "Find poems by meaning or theme (embedding search), with score, summary and first couplets.",
+        "read_only": true
+      },
+      {
+        "name": "gj_find_verse",
+        "title": "Find the poem of a quoted line",
+        "summary": "Locate which poem and couplet a quoted line comes from, with the couplet's meaning.",
+        "read_only": true
+      },
+      {
+        "name": "gj_poem",
+        "title": "Read a poem",
+        "summary": "Read a poem: text by couplet with meanings, summary, meter, rhyme, source and previous/next poem.",
+        "read_only": true
+      },
+      {
+        "name": "gj_poem_extras",
+        "title": "Poem recitations, replies and comments",
+        "summary": "Recitations with mp3 links, manuscript images, songs, related poems, quoting poems and reader comments.",
+        "read_only": true
+      },
+      {
+        "name": "gj_faal",
+        "title": "Hafez faal or random poem",
+        "summary": "Draw a Hafez faal (a random ghazal of Hafez) or, with random=True, a random poem, read with meanings.",
+        "read_only": true
+      },
+      {
+        "name": "gj_poets",
+        "title": "List poets",
+        "summary": "List poets with ids, nicknames, life years (Hijri) and birthplace, filtered by name or century.",
+        "read_only": true
+      },
+      {
+        "name": "gj_poet",
+        "title": "Poet biography and books",
+        "summary": "A poet's biography (shortened) and the top-level books to open with gj_book.",
+        "read_only": true
+      },
+      {
+        "name": "gj_book",
+        "title": "Browse a book",
+        "summary": "Sub-books and the poems of one book or section, each with its first couplet, paged by 30.",
+        "read_only": true
+      },
+      {
+        "name": "gj_tajik",
+        "title": "Tajik Cyrillic poems",
+        "summary": "Search or read poems in Tajik Cyrillic transliteration (titles Cyrillic, poet names Persian).",
+        "read_only": true
+      }
+    ]
+  },
+  {
     "name": "virgool-mcp",
     "title": "Virgool Blog",
     "category": "community",

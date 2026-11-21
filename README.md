@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="iran-mcp: 96 MCP servers and 1150 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, insurance, company registry, economy, news, video, radio, cinema, weather, dictionary, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
+<img src="assets/banner.svg" alt="iran-mcp: 97 MCP servers and 1168 tools for Iranian shopping, classifieds, car, food, travel, map, health, book, course, job, freelance, app, price, stock, insurance, company registry, economy, news, video, radio, cinema, weather, dictionary, sports, law, tax and crypto sites, for Claude, Cursor and Copilot" width="100%">
 
 **English** · [فارسی](README.fa.md)
 
 # Iran MCP servers: iran-mcp
 
 **Give your AI agent the Iranian web.**<br>
-93 unofficial, open-source Persian-web MCP servers for Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Alibaba, Neshan, Balad, Paziresh24, Taaghche, Jobinja, Bama, Aparat, Raja, SnappTrip, Kilid, Persian Wikipedia, the Tehran stock exchange, Codal, the Central Bank, Iranian crypto exchanges, the tax administration, qavanin.ir laws and more, plus official ones from ExirYab, Pasavard and SwapWallet.<br>
+94 unofficial, open-source Persian-web MCP servers for Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Alibaba, Neshan, Balad, Paziresh24, Taaghche, Jobinja, Bama, Aparat, Raja, SnappTrip, Kilid, Persian Wikipedia, the Tehran stock exchange, Codal, the Central Bank, Iranian crypto exchanges, the tax administration, qavanin.ir laws and more, plus official ones from ExirYab, Pasavard and SwapWallet.<br>
 Search, compare prices in Toman, find free slots and today's deals from Claude, Cursor, GitHub Copilot in VS Code or any MCP client.<br>
 Install them as Claude Code plugins with skills, or as Agent Skills for Codex, Cursor, Antigravity and Grok Build.
 
-[![Servers](https://img.shields.io/badge/servers-96-3fd6c9)](#the-servers)
-[![Tools](https://img.shields.io/badge/tools-1150-f4b54a)](TOOLS.md)
+[![Servers](https://img.shields.io/badge/servers-97-3fd6c9)](#the-servers)
+[![Tools](https://img.shields.io/badge/tools-1168-f4b54a)](TOOLS.md)
 [![Claude Code plugins](https://img.shields.io/badge/Claude_Code-plugin_marketplace-d97757)](#quick-start)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071-7c3aed)](https://registry.modelcontextprotocol.io/?q=sepehr071)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-c2410c)](LICENSE)
@@ -239,7 +239,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 `swapwallet-mcp` is added by URL, and each client takes a URL in its own shape (Windsurf uses `serverUrl`, Claude
 Desktop takes it under Settings → Connectors): see [its setup for each client](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**All 96 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
+**All 97 at once:** clone this repo and open it in Claude Code. The [`.mcp.json`](.mcp.json) at the root
 registers every server; approve the ones you want.
 
 ```bash
@@ -248,7 +248,7 @@ cd iran-mcp && claude
 ```
 
 > [!TIP]
-> 1150 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
+> 1168 tools is a lot of context. Enable the servers for the task at hand rather than all of them.
 
 ## Use them from the web: mcpfarsi.ir
 
@@ -425,12 +425,13 @@ context stays small however many servers you turn on.
 | [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) | [Cinematicket](https://cinematicket.org) | 10 | [![PyPI](https://img.shields.io/pypi/v/cinematicket-mcp?label=&color=2fe0cf)](https://pypi.org/project/cinematicket-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/cinematicket-mcp?label=&color=ffc23d)](https://github.com/sepehr071/cinematicket-mcp/commits/main) | Films now showing, cinemas, showtimes and ticket prices, upcoming films, theatre, box office |
 | [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) | [Tiwall](https://www.tiwall.com) | 9 | [![PyPI](https://img.shields.io/pypi/v/tiwall-mcp?label=&color=2fe0cf)](https://pypi.org/project/tiwall-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tiwall-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tiwall-mcp/commits/main) | Theatre, concerts and events: search, sessions and prices, venues, reviews |
 
-### 📖 Dictionary, encyclopedia and community
+### 📖 Dictionary, encyclopedia, poetry and community
 
 | Server | Site | Tools | Version | Updated | What your agent can do |
 |---|---|---:|:---:|:---:|---|
 | [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) | [Abadis](https://abadis.ir), [Vajehyab](https://vajehyab.com) | 7 | [![PyPI](https://img.shields.io/pypi/v/iran-dictionary-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-dictionary-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-dictionary-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-dictionary-mcp/commits/main) | Word meanings, synonyms, English and Persian translation, Persian names |
 | [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp) | [Persian Wikipedia](https://fa.wikipedia.org) | 9 | [![PyPI](https://img.shields.io/pypi/v/persian-wikipedia-mcp?label=&color=2fe0cf)](https://pypi.org/project/persian-wikipedia-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/persian-wikipedia-mcp?label=&color=ffc23d)](https://github.com/sepehr071/persian-wikipedia-mcp/commits/main) | Article search, summaries, full text and sections, infoboxes, trending, nearby places |
+| [ganjoor-mcp](https://github.com/sepehr071/ganjoor-mcp) | [Ganjoor](https://ganjoor.net) | 18 | [![PyPI](https://img.shields.io/pypi/v/ganjoor-mcp?label=&color=2fe0cf)](https://pypi.org/project/ganjoor-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ganjoor-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ganjoor-mcp/commits/main) | Classical Persian poetry: poem search by words or meaning, the poem a quoted line comes from, couplet meanings, poets, meters, recitations, Hafez faal |
 | [virgool-mcp](https://github.com/sepehr071/virgool-mcp) | [Virgool](https://virgool.io) | 11 | [![PyPI](https://img.shields.io/pypi/v/virgool-mcp?label=&color=2fe0cf)](https://pypi.org/project/virgool-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/virgool-mcp?label=&color=ffc23d)](https://github.com/sepehr071/virgool-mcp/commits/main) | Persian blog posts, comments, authors, topics, tags, publications |
 | [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) | [Ninisite](https://www.ninisite.com) | 8 | [![PyPI](https://img.shields.io/pypi/v/ninisite-mcp?label=&color=2fe0cf)](https://pypi.org/project/ninisite-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ninisite-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ninisite-mcp/commits/main) | Parenting forum topics, hot threads, articles, pregnancy week by week |
 
@@ -452,7 +453,7 @@ This repo is built to be read by agents as much as by people:
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Which server to pick for which task, conventions, safety rules, how to work in this repo |
 | [`servers.json`](servers.json) | Machine-readable catalog: package or URL, version, category, env vars and every tool of each server |
-| [`TOOLS.md`](TOOLS.md) | All 1150 tools grouped by server, one line each |
+| [`TOOLS.md`](TOOLS.md) | All 1168 tools grouped by server, one line each |
 | [`llms.txt`](llms.txt) | Short index for LLMs ([llmstxt.org](https://llmstxt.org)) |
 | [`.mcp.json`](.mcp.json) | Ready-to-use config for every server |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | The `iran-mcp` plugin marketplace: one plugin per server plus bundles |
