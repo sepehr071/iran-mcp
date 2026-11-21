@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **[ganjoor-mcp](https://github.com/sepehr071/ganjoor-mcp)**, 18 tools: Ganjoor classical Persian poetry: poem search by words or meaning, quoted-line lookup, poems with couplet meanings, poets, books, meters, recitations, Hafez faal. New `literature` category.
+
 ## v2.5 (2026-11-18)
 
 19 new servers: video, radio and TV, cinema and event tickets, trains and buses, roads and weather, real estate, used cars,

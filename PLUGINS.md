@@ -8,7 +8,7 @@ How the `iran-mcp` plugin marketplace is built, which agents can use it, and wha
 
 ```
 .claude-plugin/marketplace.json        the `iran-mcp` marketplace: one entry per plugin
-plugins/<name>/                        one plugin per server (96)
+plugins/<name>/                        one plugin per server (97)
   .claude-plugin/plugin.json           manifest: version + the MCP server, pinned to that version
   skills/<name>/SKILL.md               when to use the server, its tools, its rules
 plugins/iran-<bundle>/                 bundles (24): a manifest with `dependencies` and nothing else

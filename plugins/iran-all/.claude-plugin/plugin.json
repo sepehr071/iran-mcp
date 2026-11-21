@@ -1,6 +1,6 @@
 {
   "name": "iran-all",
-  "description": "All 93 Iranian site servers that need no setup, in one install.",
+  "description": "All 94 Iranian site servers that need no setup, in one install.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -98,6 +98,7 @@
     "rasmio",
     "iran-dictionary",
     "persian-wikipedia",
+    "ganjoor",
     "virgool",
     "ninisite",
     "pasavard"

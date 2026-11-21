@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.fa.svg" alt="iran-mcp: ۹۶ سرور MCP و ۱۱۵۰ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، بیمه، ثبت شرکت‌ها، اقتصاد، خبر، ویدیو، رادیو، سینما، هواشناسی، فرهنگ لغت، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
+<img src="assets/banner.fa.svg" alt="iran-mcp: ۹۷ سرور MCP و ۱۱۶۸ ابزار برای فروشگاه‌ها، خودرو، غذا، سفر، نقشه، سلامت، کتاب، کار، قیمت، بورس، بیمه، ثبت شرکت‌ها، اقتصاد، خبر، ویدیو، رادیو، سینما، هواشناسی، فرهنگ لغت، ورزش، قانون، مالیات و صرافی رمزارز ایرانی، برای Claude، Cursor و Copilot" width="100%">
 
 [English](README.md) · **فارسی**
 
@@ -12,7 +12,7 @@
 
 <p align="center">
 <b>وب ایران را به ایجنت هوش مصنوعی‌تان بدهید.</b><br>
-۹۳ سرور MCP متن‌باز و غیررسمی برای ایران و سایت‌های فارسی: دیجی‌کالا، ترب، دیوار، اسنپ‌فود، جاباما، مستربلیط، علی‌بابا، نشان، بلد، پذیرش۲۴، طاقچه، جابینجا، باما، آپارات، رجا، اسنپ‌تریپ، کلید، ویکی‌پدیای فارسی، بورس تهران، کدال، بانک مرکزی، صرافی رمزارز ایرانی، سازمان امور مالیاتی، سامانهٔ قوانین و بقیه، به‌اضافهٔ سرورهای رسمی اکسیریاب، پس‌آورد و سواپ‌ولت.<br>
+۹۴ سرور MCP متن‌باز و غیررسمی برای ایران و سایت‌های فارسی: دیجی‌کالا، ترب، دیوار، اسنپ‌فود، جاباما، مستربلیط، علی‌بابا، نشان، بلد، پذیرش۲۴، طاقچه، جابینجا، باما، آپارات، رجا، اسنپ‌تریپ، کلید، ویکی‌پدیای فارسی، بورس تهران، کدال، بانک مرکزی، صرافی رمزارز ایرانی، سازمان امور مالیاتی، سامانهٔ قوانین و بقیه، به‌اضافهٔ سرورهای رسمی اکسیریاب، پس‌آورد و سواپ‌ولت.<br>
 جست‌وجو، مقایسهٔ قیمت به تومان، پیدا کردن نوبت خالی و تخفیف‌های امروز، از داخل Claude، Cursor، GitHub Copilot در VS Code یا هر کلاینت MCP.<br>
 به‌صورت پلاگین Claude Code همراه با اسکیل نصب کنید، یا به‌صورت Agent Skills برای Codex، Cursor، Antigravity و Grok Build.
 </p>
@@ -193,7 +193,7 @@ claude mcp add --transport http pasavard https://pasavard.ir/api/mcp      # host
 
 `swapwallet-mcp` با آدرسش اضافه می‌شود و هر کلاینت آدرس را به شکل خودش می‌گیرد (Windsurf با `serverUrl`، و Claude Desktop از Settings ← Connectors): [راه‌اندازی آن در هر کلاینت](https://github.com/SwapWallet/swapwallet-mcp#connect).
 
-**هر ۹۶ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
+**هر ۹۷ سرور با هم:** این مخزن را کلون کنید و در Claude Code باز کنید. فایل [`.mcp.json`](.mcp.json) همهٔ سرورها را ثبت می‌کند؛ هر کدام را که لازم دارید تأیید کنید.
 
 </div>
 
@@ -205,7 +205,7 @@ cd iran-mcp && claude
 <div dir="rtl">
 
 > [!TIP]
-> ۱۱۵۰ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
+> ۱۱۶۸ ابزار کانتکست زیادی می‌گیرد. به‌جای همه، فقط سرورهای لازم برای همان کار را فعال کنید.
 
 ## از وب استفاده کنید: mcpfarsi.ir
 
@@ -382,12 +382,13 @@ cd iran-mcp && claude
 | [cinematicket-mcp](https://github.com/sepehr071/cinematicket-mcp) | [سینماتیکت](https://cinematicket.org) | ۱۰ | [![PyPI](https://img.shields.io/pypi/v/cinematicket-mcp?label=&color=2fe0cf)](https://pypi.org/project/cinematicket-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/cinematicket-mcp?label=&color=ffc23d)](https://github.com/sepehr071/cinematicket-mcp/commits/main) | فیلم‌های روی پرده، سینماها، سانس و قیمت بلیت، اکران‌های آینده، تئاتر، فروش گیشه |
 | [tiwall-mcp](https://github.com/sepehr071/tiwall-mcp) | [تیوال](https://www.tiwall.com) | ۹ | [![PyPI](https://img.shields.io/pypi/v/tiwall-mcp?label=&color=2fe0cf)](https://pypi.org/project/tiwall-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/tiwall-mcp?label=&color=ffc23d)](https://github.com/sepehr071/tiwall-mcp/commits/main) | تئاتر، کنسرت و رویدادها: جست‌وجو، سانس و قیمت، سالن‌ها، نقدها |
 
-### 📖 فرهنگ لغت، دانشنامه و انجمن‌ها
+### 📖 فرهنگ لغت، دانشنامه، شعر و انجمن‌ها
 
 | سرور | سایت | ابزار | نسخه | آخرین تغییر | ایجنت چه می‌تواند بکند |
 |---|---|---:|:---:|:---:|---|
 | [iran-dictionary-mcp](https://github.com/sepehr071/iran-dictionary-mcp) | [آبادیس](https://abadis.ir)، [واژه‌یاب](https://vajehyab.com) | ۷ | [![PyPI](https://img.shields.io/pypi/v/iran-dictionary-mcp?label=&color=2fe0cf)](https://pypi.org/project/iran-dictionary-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/iran-dictionary-mcp?label=&color=ffc23d)](https://github.com/sepehr071/iran-dictionary-mcp/commits/main) | معنی واژه، مترادف، ترجمهٔ انگلیسی و فارسی، معنی نام‌ها |
 | [persian-wikipedia-mcp](https://github.com/sepehr071/persian-wikipedia-mcp) | [ویکی‌پدیای فارسی](https://fa.wikipedia.org) | ۹ | [![PyPI](https://img.shields.io/pypi/v/persian-wikipedia-mcp?label=&color=2fe0cf)](https://pypi.org/project/persian-wikipedia-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/persian-wikipedia-mcp?label=&color=ffc23d)](https://github.com/sepehr071/persian-wikipedia-mcp/commits/main) | جست‌وجوی مقاله، خلاصه، متن کامل و بخش‌ها، جعبهٔ اطلاعات، داغ‌ترین‌ها، مکان‌های نزدیک |
+| [ganjoor-mcp](https://github.com/sepehr071/ganjoor-mcp) | [گنجور](https://ganjoor.net) | ۱۸ | [![PyPI](https://img.shields.io/pypi/v/ganjoor-mcp?label=&color=2fe0cf)](https://pypi.org/project/ganjoor-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ganjoor-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ganjoor-mcp/commits/main) | شعر کلاسیک فارسی: جست‌وجوی شعر با واژه یا مضمون، یافتن شعرِ یک بیتِ ازبر، معنی بیت‌ها، شاعران، وزن‌ها، خوانش‌ها، فال حافظ |
 | [virgool-mcp](https://github.com/sepehr071/virgool-mcp) | [ویرگول](https://virgool.io) | ۱۱ | [![PyPI](https://img.shields.io/pypi/v/virgool-mcp?label=&color=2fe0cf)](https://pypi.org/project/virgool-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/virgool-mcp?label=&color=ffc23d)](https://github.com/sepehr071/virgool-mcp/commits/main) | پست‌های وبلاگ فارسی، نظرها، نویسنده‌ها، موضوع‌ها، برچسب‌ها، نشریه‌ها |
 | [ninisite-mcp](https://github.com/sepehr071/ninisite-mcp) | [نی‌نی‌سایت](https://www.ninisite.com) | ۸ | [![PyPI](https://img.shields.io/pypi/v/ninisite-mcp?label=&color=2fe0cf)](https://pypi.org/project/ninisite-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/ninisite-mcp?label=&color=ffc23d)](https://github.com/sepehr071/ninisite-mcp/commits/main) | تاپیک‌های انجمن والدین، بحث‌های داغ، مقاله‌ها، بارداری هفته به هفته |
 
@@ -409,7 +410,7 @@ cd iran-mcp && claude
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | کدام سرور برای کدام کار، قراردادها، قوانین ایمنی، نحوهٔ کار در این مخزن |
 | [`servers.json`](servers.json) | کاتالوگ ماشین‌خوان: پکیج یا آدرس، نسخه، دسته، متغیرهای محیطی و همهٔ ابزارهای هر سرور |
-| [`TOOLS.md`](TOOLS.md) | هر ۱۱۵۰ ابزار به تفکیک سرور |
+| [`TOOLS.md`](TOOLS.md) | هر ۱۱۶۸ ابزار به تفکیک سرور |
 | [`llms.txt`](llms.txt) | فهرست کوتاه برای LLMها |
 | [`.mcp.json`](.mcp.json) | تنظیمات آماده برای همهٔ سرورها |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | مارکت‌پلیس پلاگین `iran-mcp`: یک پلاگین برای هر سرور به‌اضافهٔ بسته‌ها |

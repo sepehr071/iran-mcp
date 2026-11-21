@@ -1,0 +1,27 @@
+{
+  "name": "ganjoor",
+  "displayName": "Ganjoor Poetry",
+  "version": "0.1.0",
+  "description": "Read-only Ganjoor (ganjoor.net) Persian poetry: poems with meanings, search, meters, audio.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/sepehr071/ganjoor-mcp",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "iran",
+    "literature",
+    "ganjoor.net"
+  ],
+  "mcpServers": {
+    "ganjoor": {
+      "command": "uvx",
+      "args": [
+        "ganjoor-mcp@0.1.0"
+      ]
+    }
+  }
+}

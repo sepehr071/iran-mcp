@@ -1,7 +1,7 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 96 MCP servers for Iranian websites, 1150 tools in
-total. 94 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
+Guide for AI agents using or working on **iran-mcp**: 97 MCP servers for Iranian websites, 1168 tools in
+total. 95 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
 sign-in).
@@ -90,6 +90,7 @@ sign-in).
 | E-invoice goods ID and VAT rate, activity code, property value, a tax law or circular | `iran-tax-mcp` | `tx_goods_search`, `tx_activity_codes`, `tx_regulations_search` |
 | A Persian word's meaning, synonyms or translation, a name's meaning (Abadis, Vajehyab) | `iran-dictionary-mcp` | `dic_lookup`, `dic_synonyms`, `dic_translate`, `dic_abadis_names` |
 | A Persian Wikipedia article, summary, infobox, places nearby | `persian-wikipedia-mcp` | `wiki_search`, then `wiki_summary`, `wiki_article`; `wiki_nearby` |
+| A Persian poem by words or theme, which poem a quoted couplet is from, what a couplet means, poets and meters (Ganjoor) | `ganjoor-mcp` | `gj_find_verse`, `gj_semantic_search`, `gj_search`, then `gj_poem` |
 | Persian blog posts and authors on Virgool | `virgool-mcp` | `vg_search`, `vg_post`, `vg_feed`, `vg_topic_posts` |
 | Parenting forum topics, articles, pregnancy week by week (Ninisite) | `ninisite-mcp` | `nn_hot_topics`, `nn_topic`, `nn_articles`, `nn_pregnancy_week` |
 | Merchant payments (user's own PayPing account) | `payping-mcp` | `payping_get_balance`, `payping_get_sales_summary` |
@@ -129,7 +130,7 @@ Bundles: `iran-all`, `iran-food`, `iran-shopping`, `iran-beauty`, `iran-fashion`
 `iran-reference`, `iran-community`.
 Skills only, for any agent: `npx skills add sepehr071/iran-mcp`.
 
-The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 96.
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 97.
 Requires [uv](https://docs.astral.sh/uv/) (`pasavard-mcp` and `swapwallet-mcp` don't). Add only the servers the task needs: each one adds 3 to 31 tools.
 
 ## Rules every server follows
@@ -185,7 +186,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the server count (96) written in the docs; `catalog.py` updates the tool counts.
+  READMEs and the table above. Update the server count (97) written in the docs; `catalog.py` updates the tool counts.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card
