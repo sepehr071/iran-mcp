@@ -43,7 +43,7 @@
 - [iran-apps-mcp](https://github.com/sepehr071/iran-apps-mcp): Android apps on Cafe Bazaar and Myket: search, compare across both stores, top lists
 - [iran-downloads-mcp](https://github.com/sepehr071/iran-downloads-mcp): metadata-only search of Soft98, P30Download, Downloadly and VGDL (item page links, never download links)
 - [tgju-mcp](https://github.com/sepehr071/tgju-mcp): TGJU live gold, coin, currency and crypto prices with daily history
-- [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp): Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex and Exir public market data in Toman: price comparison, order books, trades, candles, top movers
+- [iran-crypto-mcp](https://github.com/sepehr071/iran-crypto-mcp): Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir, Bit24, Balinex, Aban Tether, Kifpool, OK-EX and Tetherland public market data in Toman: price comparison, order books, trades, candles, top movers
 - [milligold-mcp](https://github.com/sepehr071/milligold-mcp): Milli.gold live 18k gold price, history, fees, trade cost quotes, news and help articles, platform statistics
 - [iran-gold-mcp](https://github.com/sepehr071/iran-gold-mcp): live 18k gold buy and sell prices per gram on Milli.gold, Wallgold, Melligold, Daric and Taline in Toman, cheapest to buy and best to sell
 - [tsetmc-mcp](https://github.com/sepehr071/tsetmc-mcp): Tehran Stock Exchange and Iran Fara Bourse (tsetmc.com) quotes, movers, order book, history, indices, real versus legal trading (prices in Rial)
