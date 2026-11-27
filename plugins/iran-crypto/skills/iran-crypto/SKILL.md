@@ -30,7 +30,7 @@ The tools below come from the `iran-crypto-mcp` MCP server. If they are not avai
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `IRAN_CRYPTO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
-- Public market data only: no keys, no trading. Every IRT price is already Toman and USDT markets are USDT. Check the order book before treating a spread between exchanges as an opportunity. Sites: Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir.
+- Public market data only: no keys, no trading. Every IRT price is already Toman and USDT markets are USDT. Check the order book before treating a spread between exchanges as an opportunity. Sites: Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir, Bit24, Balinex, Aban Tether, Kifpool, OK-EX, Tetherland.
 
 ## Maintainer
 
